@@ -1,0 +1,28 @@
+{
+  "name": "y",
+  "version": "0.1.0",
+  "description": "Quill Extension for Emoji Selection",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentco/quill-emoji.git"
+  },
+  "keywords": [
+    "content",
+    "marketing",
+    "quill",
+    "editor"
+  ],
+  "author": "Ye Min Htut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contentco/quill-emoji/issues"
+  },
+  "homepage": "https://github.com/contentco/quill-emoji#readme"
+}
