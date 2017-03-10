@@ -4,6 +4,10 @@
   "description": "Quill Extension for Emoji Selection",
   "main": "webpack.config.js",
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-es2015": "^6.22.0",
     "webpack": "^2.2.1"
   },
   "scripts": {
@@ -24,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/contentco/quill-emoji/issues"
   },
-  "homepage": "https://github.com/contentco/quill-emoji#readme"
+  "homepage": "https://github.com/contentco/quill-emoji#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "fuse.js": "^2.6.2",
+    "preact": "^7.2.0",
+    "quill": "^1.2.2"
+  }
 }

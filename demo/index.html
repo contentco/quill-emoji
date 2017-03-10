@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    </head>
+    <body>
+    	<div class="container" style="position:relative;">
+            <div id="quill-editor"></div>
+            <ul class="completions"></ul>
+            <ul class="emoji_completions"></ul>
+        </div>
+        <script src="../node_modules/quill/dist/quill.js"></script>
+        <script src="../src/emojione.js"></script>
+        <script src="../dist/quill-emoji.js"></script>
+        <script type="text/javascript">
+        	var quill = new Quill('#quill-editor', {
+		        modules: {
+		            mentions: {
+		              	container: '.completions',
+		              	users: [
+		                	{label:'Joe', username: 'Joe'},
+		                   	{label:'Mike', username: 'Mike'},
+		                   	{label:'Diane', username: 'Diane'}
+		              	]
+		            },
+		            short_name_emoji: {
+		                container: '.emoji_completions',
+		            },
+		        },
+		        placeholder: 'Compose an epic...',
+		           theme: 'snow'
+		       });
+        </script>
+    </body>
+</html>
