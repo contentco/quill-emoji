@@ -1,4 +1,4 @@
-const emojiOne = [
+export let emojiOne = [
   {
     "name": "100",
     "unicode": "1f4af",

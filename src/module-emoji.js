@@ -1,4 +1,5 @@
 import Fuse from '../node_modules/fuse.js';
+import {emojiOne as emojiList} from '../src/emojione.js';
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
     Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
@@ -11,39 +12,36 @@ const e = (tag, attrs, ...children) => {
 };
 const Inline = Quill.import('blots/inline');
 class EmojiBlot extends Inline {
-        static create(unicode) {
-            const node = super.create();
-            node.dataset.unicode = unicode;
-            return node;
-        }
-        static formats(node) {
-            return node.dataset.unicode;
-        }
-        format(name, value) {
-            if (name === "emoji" && value) {
-                this.domNode.dataset.unicode = value;
-            } else {
-                super.format(name, value);
-            }
-        }
-
-        formats() {
-            const formats = super.formats();
-            formats['emoji'] = EmojiBlot.formats(this.domNode);
-            return formats;
+    static create(unicode) {
+        const node = super.create();
+        node.dataset.unicode = unicode;
+        return node;
+    }
+    static formats(node) {
+        return node.dataset.unicode;
+    }
+    format(name, value) {
+        if (name === "emoji" && value) {
+            this.domNode.dataset.unicode = value;
+        } else {
+            super.format(name, value);
         }
     }
-    
-    
 
-    EmojiBlot.blotName = "emoji";
-    EmojiBlot.tagName = "SPAN";
-    EmojiBlot.className = "emoji";
+    formats() {
+        const formats = super.formats();
+        formats['emoji'] = EmojiBlot.formats(this.domNode);
+        return formats;
+    }
+} 
 
+EmojiBlot.blotName = "emoji";
+EmojiBlot.tagName = "SPAN";
+EmojiBlot.className = "emoji";
 
-    Quill.register({
-        'formats/emoji': EmojiBlot
-    });
+Quill.register({
+    'formats/emoji': EmojiBlot
+});
 
 class ShortNameEmoji {
     constructor(quill, props) {
@@ -59,22 +57,22 @@ class ShortNameEmoji {
 				"shortname"
 			]
 		};
-        this.emojiList = emojiOne;
-        this.fuse = new Fuse(this.emojiList, this.fuseOptions);
+        this.emojiList  = emojiList;
+        this.fuse       = new Fuse(this.emojiList, this.fuseOptions);
     	
-        this.quill = quill;
-        this.onClose = props.onClose;
-        this.onOpen = props.onOpen;
-        this.container = this.quill.container.parentNode.querySelector(props.container);
-        this.container.style.position = "absolute";
-        this.container.style.display = "none";
+        this.quill      = quill;
+        this.onClose    = props.onClose;
+        this.onOpen     = props.onOpen;
+        this.container  = this.quill.container.parentNode.querySelector(props.container);
+        this.container.style.position   = "absolute";
+        this.container.style.display    = "none";
 
-        this.onSelectionChange = this.maybeUnfocus.bind(this);
-        this.onTextChange = this.update.bind(this);
+        this.onSelectionChange  = this.maybeUnfocus.bind(this);
+        this.onTextChange       = this.update.bind(this);
 
-        this.open = false;
-        this.atIndex = null;
-        this.focusedButton = null;
+        this.open           = false;
+        this.atIndex        = null;
+        this.focusedButton  = null;
 
         quill.keyboard.addBinding({
             // TODO: Once Quill supports using event.key (#1091) use that instead of shift-2
@@ -98,10 +96,9 @@ class ShortNameEmoji {
 
     onAtKey(range, context) {
         if (this.open) return true;
-        if (range.length > 0) {
+        if (range.length > 0) 
             this.quill.deleteText(range.index, range.length, Quill.sources.USER);
-        }
-
+        
         this.quill.insertText(range.index, ":", "emoji", Quill.sources.USER);
         const atSignBounds = this.quill.getBounds(range.index);
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
