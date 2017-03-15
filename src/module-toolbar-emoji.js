@@ -1,7 +1,6 @@
 import {emojiOne as emojiList} from '../src/emojione.js';
 import Fuse from '../node_modules/fuse.js';
 class ToolbarEmoji {
-
     constructor(quill,options){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
@@ -9,7 +8,7 @@ class ToolbarEmoji {
     }
 
     checkPalatteExist() {
-        fn_showEmojiPalatte(quill);
+        fn_checkDialogOpen();
         quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
                 fn_checkDialogOpen();
@@ -24,6 +23,9 @@ function fn_checkDialogOpen(){
     if (elementExists) {
         return elementExists.remove();
     }
+    else{
+        fn_showEmojiPalatte(quill);
+    }
 }
 
 function fn_updateRange(quill){
@@ -32,64 +34,67 @@ function fn_updateRange(quill){
 }
 
 function fn_showEmojiPalatte(quill) {
-        let ele_toolbar_emoji = quill.container;
-        let ele_emoji_area = document.createElement('div');
-        let toolbar_container = document.querySelector('.ql-toolbar');
-        let offsetHeight = toolbar_container.offsetHeight;
+    let ele_toolbar_emoji = quill.container;
+    let ele_emoji_area = document.createElement('div');
+    let toolbar_container = document.querySelector('.ql-toolbar');
+    let offsetHeight = toolbar_container.offsetHeight;
 
-        let range = quill.getSelection();
-        const atSignBounds = quill.getBounds(range.index);
+    let range = quill.getSelection();
+    const atSignBounds = quill.getBounds(range.index);
 
-        ele_toolbar_emoji.parentElement.appendChild(ele_emoji_area);
-        ele_emoji_area.id = 'emoji-palette';
+    ele_toolbar_emoji.parentElement.appendChild(ele_emoji_area);
+    ele_emoji_area.id = 'emoji-palette';
 
-        ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
-        ele_emoji_area.style.left = atSignBounds.left + "px";
+    ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
+    ele_emoji_area.style.left = atSignBounds.left + "px";
 
-        let tabToolbar = document.createElement('div');
-        tabToolbar.id="tab-toolbar";
-        ele_emoji_area.appendChild(tabToolbar);
+    let tabToolbar = document.createElement('div');
+    tabToolbar.id="tab-toolbar";
+    ele_emoji_area.appendChild(tabToolbar);
 
-        ele_toolbar_emoji.addEventListener('click',function(){
-            fn_checkDialogOpen();
-        });
-        //panel
-        let panel = document.createElement('div');
-        panel.id="tab-panel";
-        ele_emoji_area.appendChild(panel);
+    ele_toolbar_emoji.addEventListener('click',function(){
+        fn_checkDialogOpen();
+    });
+    //panel
+    let panel = document.createElement('div');
+    panel.id="tab-panel";
+    ele_emoji_area.appendChild(panel);
 
-        var emojiType = [
-                            {'type':'people','icon_code_decimal':'&#128523;'},
-                            {'type':'nature','icon_code_decimal':'&#128051;'},
-                            {'type':'food','icon_code_decimal':'&#127826;'},
-                            {'type':'symbols','icon_code_decimal':'&#10084;'},
-                            {'type':'activity','icon_code_decimal':'&#127943;'},
-                            {'type':'objects','icon_code_decimal':'&#127881;'},
-                            {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
-                        ];
+    var emojiType = [
+                        {'type':'people','icon_code_decimal':'&#128523;'},
+                        {'type':'nature','icon_code_decimal':'&#128051;'},
+                        {'type':'food','icon_code_decimal':'&#127826;'},
+                        {'type':'symbols','icon_code_decimal':'&#10084;'},
+                        {'type':'activity','icon_code_decimal':'&#127943;'},
+                        {'type':'objects','icon_code_decimal':'&#127881;'},
+                        {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
+                    ];
 
 
-        emojiType.map(function(emojiType) {
-            //add tab bar
-            let tabElement = document.createElement('span');
-            tabElement.classList.add('tab');
-            tabElement.classList.add('filter-'+emojiType.type);
-            let tabValue = emojiType.icon_code_decimal;
-            tabElement.innerHTML = tabValue;
-            tabElement.dataset.filter = emojiType.type;
-            tabToolbar.appendChild(tabElement);
-            
-            let emojiFilter = document.querySelector('.filter-'+emojiType.type);
-            emojiFilter.addEventListener('click',function(){ 
-                let tab = document.querySelector('.active');
-                if (tab) {
-                    tab.classList.remove('active');
-                };
-                emojiFilter.classList.toggle('active');
-                fn_updateEmojiContainer(emojiFilter,panel,quill);
-            })
-        });
-        fn_emojiPanelInit(panel,quill);
+    let tabElementHolder = document.createElement('ul');
+    tabToolbar.appendChild(tabElementHolder);
+
+    emojiType.map(function(emojiType) {
+        //add tab bar
+        let tabElement = document.createElement('li');
+        tabElement.classList.add('tab');
+        tabElement.classList.add('filter-'+emojiType.type);
+        let tabValue = emojiType.icon_code_decimal;
+        tabElement.innerHTML = tabValue;
+        tabElement.dataset.filter = emojiType.type;
+        tabElementHolder.appendChild(tabElement);
+        
+        let emojiFilter = document.querySelector('.filter-'+emojiType.type);
+        emojiFilter.addEventListener('click',function(){ 
+            let tab = document.querySelector('.active');
+            if (tab) {
+                tab.classList.remove('active');
+            };
+            emojiFilter.classList.toggle('active');
+            fn_updateEmojiContainer(emojiFilter,panel,quill);
+        })
+    });
+    fn_emojiPanelInit(panel,quill);
 }
 
 function fn_emojiPanelInit(panel,quill){

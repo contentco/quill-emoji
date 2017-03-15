@@ -15524,24 +15524,25 @@ Quill.register({
 class ShortNameEmoji {
     constructor(quill, props) {
         this.fuseOptions = {
-			shouldSort: true,
-			matchAllTokens: true,
-			threshold: 0.3,
-			location: 0,
-			distance: 100,
-			maxPatternLength: 32,
-			minMatchCharLength: 3,
-			keys: [
-				"shortname"
-			]
-		};
+            shouldSort: true,
+            threshold: 0.1,
+            location: 0,
+            distance: 100,
+            maxPatternLength: 32,
+            minMatchCharLength: 3,
+            keys: [
+                "shortname"
+            ]
+        };
         this.emojiList  = __WEBPACK_IMPORTED_MODULE_1__src_emojione_js__["a" /* emojiOne */];
         this.fuse       = new __WEBPACK_IMPORTED_MODULE_0__node_modules_fuse_js___default.a(this.emojiList, this.fuseOptions);
-    	
+        
         this.quill      = quill;
         this.onClose    = props.onClose;
         this.onOpen     = props.onOpen;
-        this.container  = this.quill.container.parentNode.querySelector(props.container);
+        this.container  = document.createElement('ul');
+        this.container.classList.add('emoji_completions');
+        this.quill.container.appendChild(this.container);
         this.container.style.position   = "absolute";
         this.container.style.display    = "none";
 
@@ -15583,7 +15584,7 @@ class ShortNameEmoji {
         
         this.atIndex = range.index;
         this.container.style.left = atSignBounds.left + "px";
-        this.container.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
+        this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
         this.quill.on('text-change', this.onTextChange);
@@ -15599,14 +15600,22 @@ class ShortNameEmoji {
 
     update() {
         const sel = this.quill.getSelection().index;
-
         //Using: fuse.js
         this.query = this.quill.getText(this.atIndex);
         this.query = this.query.trim();
+ 
+        //this.query = ':smile:';
         let emojis = this.fuse.search(this.query);
+        emojis.sort(function (a, b) {
+          return a.emoji_order - b.emoji_order;
+        });
         
+        if (this.query.length < 3 || emojis.length == 0){
+            this.container.style.display = "none";
+            return;
+        }
         if (emojis.length > 50) { //return only 50
-        	emojis = emojis.slice(0, 40);
+            emojis = emojis.slice(0, 40);
         };
         this.renderCompletions(emojis);
     }
@@ -15620,6 +15629,7 @@ class ShortNameEmoji {
         while (this.container.firstChild) this.container.removeChild(this.container.firstChild);
         const buttons = Array(emojis.length);
         this.buttons = buttons;
+        
         const handler = (i, emoji) => event => {
             if (event.key === "ArrowRight" || event.keyCode === 39) {
                 event.preventDefault();
@@ -15632,19 +15642,25 @@ class ShortNameEmoji {
                 event.preventDefault();
                 buttons[Math.min(buttons.length - 1, i + 1)].focus();
             }
+            else if (event.key === "ArrowUp" || event.keyCode === 38) {
+                event.preventDefault();
+                buttons[Math.max(0, i - 1)].focus();
+            } 
             else if (event.key === "Enter" || event.keyCode === 13
                        || event.key === " " || event.keyCode === 32
                        || event.key === "Tab" || event.keyCode === 9) {
                 event.preventDefault();
                 this.close(emoji);
-            }
+            }    
         };
+
         emojis.forEach((emoji, i) => {
             const li =  e('li', {},
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
                         e('span', {className: "matched"}, this.query),
-                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length))));
+                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length))
+                        ));
             this.container.appendChild(li);
             buttons[i] = li.firstChild;
             // Events will be GC-ed with button on each re-render:
@@ -15663,12 +15679,12 @@ class ShortNameEmoji {
         this.quill.off('text-change', this.onTextChange);
         if (value) {
             const {name, unicode, shortname,code_decimal} = value;
-            let emoji_icon_html = e("span", {className: "ico", innerHTML: code_decimal });
+            let emoji_icon_html = e("span", {className: "ico", innerHTML: ' '+code_decimal+' ' });
             let emoji_icon = emoji_icon_html.innerHTML;
             this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
             this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
-            this.quill.insertText(this.atIndex + emoji_icon.length + 2, " ", 'emoji', false, Quill.sources.USER);
-            this.quill.setSelection(this.atIndex + emoji_icon.length + 2, 0, Quill.sources.SILENT);
+            this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
+            this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.SILENT);
         }
         this.quill.focus();
         this.open = false;
@@ -15869,7 +15885,6 @@ Quill.register('modules/mentions', Mentions);
 
 
 class ToolbarEmoji {
-
     constructor(quill,options){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
@@ -15877,7 +15892,7 @@ class ToolbarEmoji {
     }
 
     checkPalatteExist() {
-        fn_showEmojiPalatte(quill);
+        fn_checkDialogOpen();
         quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
                 fn_checkDialogOpen();
@@ -15891,6 +15906,9 @@ function fn_checkDialogOpen(){
     let elementExists = document.getElementById("emoji-palette");
     if (elementExists) {
         return elementExists.remove();
+    }
+    else{
+        fn_showEmojiPalatte(quill);
     }
 }
 
@@ -15937,15 +15955,18 @@ function fn_showEmojiPalatte(quill) {
                         ];
 
 
+        let tabElementHolder = document.createElement('ul');
+        tabToolbar.appendChild(tabElementHolder);
+
         emojiType.map(function(emojiType) {
             //add tab bar
-            let tabElement = document.createElement('span');
+            let tabElement = document.createElement('li');
             tabElement.classList.add('tab');
             tabElement.classList.add('filter-'+emojiType.type);
             let tabValue = emojiType.icon_code_decimal;
             tabElement.innerHTML = tabValue;
             tabElement.dataset.filter = emojiType.type;
-            tabToolbar.appendChild(tabElement);
+            tabElementHolder.appendChild(tabElement);
             
             let emojiFilter = document.querySelector('.filter-'+emojiType.type);
             emojiFilter.addEventListener('click',function(){ 
