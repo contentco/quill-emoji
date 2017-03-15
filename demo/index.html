@@ -8,6 +8,7 @@
     	<div class="container" style="position:relative;">
             <div id="quill-editor"></div>
             <ul class="completions"></ul>
+            <div id="preview"></div>
         </div>
         <script src="../node_modules/quill/dist/quill.js"></script>
         <script src="../dist/quill-emoji.js"></script>
@@ -17,6 +18,7 @@
                         ["bold", "italic", "underline", "blockquote", "code-block"],
                         [{"header": 1}],
                         [{"list": "ordered"}, {"list": "bullet"}],
+                        ['image'],
                         [{"color": []}, {"background": []}],
                         ["emoji"]
                     ],
@@ -28,6 +30,7 @@
 		        modules: {
                     toolbar: toolbarOptions,
                     toolbar_emoji: true,
+                    short_name_emoji: true,
 		            mentions: {
 		              	container: '.completions',
 		              	users: [
@@ -35,15 +38,12 @@
 		                   	{label:'Mike', username: 'Mike'},
 		                   	{label:'Diane', username: 'Diane'}
 		              	]
-		            },
-		            short_name_emoji: {
-		                container: '.emoji_completions',
-		            },
+		            }  
 		        },
 		        placeholder: 'Compose an epic...',
 		        theme: 'snow',
-
 		    });
+  
         </script>
     </body>
 </html>

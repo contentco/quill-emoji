@@ -1,7 +1,9 @@
 import {emojiOne as emojiList} from '../src/emojione.js';
 import Fuse from '../node_modules/fuse.js';
+
+
 class ToolbarEmoji {
-    constructor(quill,options){
+    constructor(quill){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
         this.toolbar.addHandler('emoji', this.checkPalatteExist);
@@ -9,19 +11,24 @@ class ToolbarEmoji {
 
     checkPalatteExist() {
         fn_checkDialogOpen();
-        quill.on('text-change', function(delta, oldDelta, source) {
+        this.quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
-                fn_checkDialogOpen();
+                fn_close();
                 fn_updateRange(quill);
             }
         });
     }  
 }
 
+function fn_close(){
+    let ele_emoji_plate = document.getElementById('emoji-palette');
+    if (ele_emoji_plate) {ele_emoji_plate.remove()};
+}
+
 function fn_checkDialogOpen(){
     let elementExists = document.getElementById("emoji-palette");
     if (elementExists) {
-        return elementExists.remove();
+        elementExists.remove();
     }
     else{
         fn_showEmojiPalatte(quill);
@@ -34,27 +41,24 @@ function fn_updateRange(quill){
 }
 
 function fn_showEmojiPalatte(quill) {
-    let ele_toolbar_emoji = quill.container;
     let ele_emoji_area = document.createElement('div');
     let toolbar_container = document.querySelector('.ql-toolbar');
-    let offsetHeight = toolbar_container.offsetHeight;
-
     let range = quill.getSelection();
     const atSignBounds = quill.getBounds(range.index);
 
-    ele_toolbar_emoji.parentElement.appendChild(ele_emoji_area);
-    ele_emoji_area.id = 'emoji-palette';
+    quill.container.appendChild(ele_emoji_area);
 
-    ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
+    ele_emoji_area.id = 'emoji-palette';
+    ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + "px",
     ele_emoji_area.style.left = atSignBounds.left + "px";
 
     let tabToolbar = document.createElement('div');
     tabToolbar.id="tab-toolbar";
     ele_emoji_area.appendChild(tabToolbar);
 
-    ele_toolbar_emoji.addEventListener('click',function(){
-        fn_checkDialogOpen();
-    });
+    // quill.container.addEventListener('click',function(){
+    //     fn_close();
+    // });
     //panel
     let panel = document.createElement('div');
     panel.id="tab-panel";

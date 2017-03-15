@@ -152,14 +152,6 @@ export let emojiOne = [
     "emoji_order": "17"
   },
   {
-    "name": "relaxed",
-    "unicode": "263a",
-    "shortname": ":relaxed:",
-    "code_decimal": "&#9786;",
-    "category": "people",
-    "emoji_order": "18"
-  },
-  {
     "name": "slight_smile",
     "unicode": "1f642",
     "shortname": ":slight_smile:",
@@ -390,14 +382,6 @@ export let emojiOne = [
     "code_decimal": "&#128562;",
     "category": "people",
     "emoji_order": "47"
-  },
-  {
-    "name": "frowning2",
-    "unicode": "2639",
-    "shortname": ":frowning2:",
-    "code_decimal": "&#9785;",
-    "category": "people",
-    "emoji_order": "48"
   },
   {
     "name": "slight_frown",
@@ -3319,22 +3303,7 @@ export let emojiOne = [
     "category": "people",
     "emoji_order": "1036"
   },
-  {
-    "name": "kiss_mm",
-    "unicode": "1f468-2764-1f48b-1f468",
-    "shortname": ":kiss_mm:",
-    "code_decimal": "&#128104;&#10084;&#128139;&#128104;",
-    "category": "people",
-    "emoji_order": "1038"
-  },
-  {
-    "name": "kiss_ww",
-    "unicode": "1f469-2764-1f48b-1f469",
-    "shortname": ":kiss_ww:",
-    "code_decimal": "&#128105;&#10084;&#128139;&#128105;",
-    "category": "people",
-    "emoji_order": "1039"
-  },
+
   {
     "name": "couple_with_heart",
     "unicode": "1f491",
@@ -3344,140 +3313,12 @@ export let emojiOne = [
     "emoji_order": "1040"
   },
   {
-    "name": "couple_mm",
-    "unicode": "1f468-2764-1f468",
-    "shortname": ":couple_mm:",
-    "code_decimal": "&#128104;&#10084;&#128104;",
-    "category": "people",
-    "emoji_order": "1042"
-  },
-  {
-    "name": "couple_ww",
-    "unicode": "1f469-2764-1f469",
-    "shortname": ":couple_ww:",
-    "code_decimal": "&#128105;&#10084;&#128105;",
-    "category": "people",
-    "emoji_order": "1043"
-  },
-  {
     "name": "family",
     "unicode": "1f46a",
     "shortname": ":family:",
     "code_decimal": "&#128106;",
     "category": "people",
     "emoji_order": "1044"
-  },
-  {
-    "name": "family_mwg",
-    "unicode": "1f468-1f469-1f467",
-    "shortname": ":family_mwg:",
-    "code_decimal": "&#128104;&#128105;&#128103;",
-    "category": "people",
-    "emoji_order": "1051"
-  },
-  {
-    "name": "family_mwgb",
-    "unicode": "1f468-1f469-1f467-1f466",
-    "shortname": ":family_mwgb:",
-    "code_decimal": "&#128104;&#128105;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1052"
-  },
-  {
-    "name": "family_mwbb",
-    "unicode": "1f468-1f469-1f466-1f466",
-    "shortname": ":family_mwbb:",
-    "code_decimal": "&#128104;&#128105;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1053"
-  },
-  {
-    "name": "family_mwgg",
-    "unicode": "1f468-1f469-1f467-1f467",
-    "shortname": ":family_mwgg:",
-    "code_decimal": "&#128104;&#128105;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1054"
-  },
-  {
-    "name": "family_mmb",
-    "unicode": "1f468-1f468-1f466",
-    "shortname": ":family_mmb:",
-    "code_decimal": "&#128104;&#128104;&#128102;",
-    "category": "people",
-    "emoji_order": "1055"
-  },
-  {
-    "name": "family_mmg",
-    "unicode": "1f468-1f468-1f467",
-    "shortname": ":family_mmg:",
-    "code_decimal": "&#128104;&#128104;&#128103;",
-    "category": "people",
-    "emoji_order": "1056"
-  },
-  {
-    "name": "family_mmgb",
-    "unicode": "1f468-1f468-1f467-1f466",
-    "shortname": ":family_mmgb:",
-    "code_decimal": "&#128104;&#128104;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1057"
-  },
-  {
-    "name": "family_mmbb",
-    "unicode": "1f468-1f468-1f466-1f466",
-    "shortname": ":family_mmbb:",
-    "code_decimal": "&#128104;&#128104;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1058"
-  },
-  {
-    "name": "family_mmgg",
-    "unicode": "1f468-1f468-1f467-1f467",
-    "shortname": ":family_mmgg:",
-    "code_decimal": "&#128104;&#128104;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1059"
-  },
-  {
-    "name": "family_wwb",
-    "unicode": "1f469-1f469-1f466",
-    "shortname": ":family_wwb:",
-    "code_decimal": "&#128105;&#128105;&#128102;",
-    "category": "people",
-    "emoji_order": "1060"
-  },
-  {
-    "name": "family_wwg",
-    "unicode": "1f469-1f469-1f467",
-    "shortname": ":family_wwg:",
-    "code_decimal": "&#128105;&#128105;&#128103;",
-    "category": "people",
-    "emoji_order": "1061"
-  },
-  {
-    "name": "family_wwgb",
-    "unicode": "1f469-1f469-1f467-1f466",
-    "shortname": ":family_wwgb:",
-    "code_decimal": "&#128105;&#128105;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1062"
-  },
-  {
-    "name": "family_wwbb",
-    "unicode": "1f469-1f469-1f466-1f466",
-    "shortname": ":family_wwbb:",
-    "code_decimal": "&#128105;&#128105;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1063"
-  },
-  {
-    "name": "family_wwgg",
-    "unicode": "1f469-1f469-1f467-1f467",
-    "shortname": ":family_wwgg:",
-    "code_decimal": "&#128105;&#128105;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1064"
   },
   {
     "name": "tone1",
@@ -5126,14 +4967,6 @@ export let emojiOne = [
     "code_decimal": "&#128065;",
     "category": "people",
     "emoji_order": "1280"
-  },
-  {
-    "name": "eye_in_speech_bubble",
-    "unicode": "1f441-1f5e8",
-    "shortname": ":eye_in_speech_bubble:",
-    "code_decimal": "&#128065;&#128488;",
-    "category": "symbols",
-    "emoji_order": "1281"
   },
   {
     "name": "tongue",
@@ -12286,14 +12119,6 @@ export let emojiOne = [
     "code_decimal": "&#127987;",
     "category": "objects",
     "emoji_order": "2185"
-  },
-  {
-    "name": "rainbow_flag",
-    "unicode": "1f3f3-1f308",
-    "shortname": ":rainbow_flag:",
-    "code_decimal": "&#127987;&#127752;",
-    "category": "objects",
-    "emoji_order": "2186"
   },
   {
     "name": "flag_ac",

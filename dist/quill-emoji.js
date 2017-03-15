@@ -1057,14 +1057,6 @@ let emojiOne = [
     "emoji_order": "17"
   },
   {
-    "name": "relaxed",
-    "unicode": "263a",
-    "shortname": ":relaxed:",
-    "code_decimal": "&#9786;",
-    "category": "people",
-    "emoji_order": "18"
-  },
-  {
     "name": "slight_smile",
     "unicode": "1f642",
     "shortname": ":slight_smile:",
@@ -1295,14 +1287,6 @@ let emojiOne = [
     "code_decimal": "&#128562;",
     "category": "people",
     "emoji_order": "47"
-  },
-  {
-    "name": "frowning2",
-    "unicode": "2639",
-    "shortname": ":frowning2:",
-    "code_decimal": "&#9785;",
-    "category": "people",
-    "emoji_order": "48"
   },
   {
     "name": "slight_frown",
@@ -4224,22 +4208,7 @@ let emojiOne = [
     "category": "people",
     "emoji_order": "1036"
   },
-  {
-    "name": "kiss_mm",
-    "unicode": "1f468-2764-1f48b-1f468",
-    "shortname": ":kiss_mm:",
-    "code_decimal": "&#128104;&#10084;&#128139;&#128104;",
-    "category": "people",
-    "emoji_order": "1038"
-  },
-  {
-    "name": "kiss_ww",
-    "unicode": "1f469-2764-1f48b-1f469",
-    "shortname": ":kiss_ww:",
-    "code_decimal": "&#128105;&#10084;&#128139;&#128105;",
-    "category": "people",
-    "emoji_order": "1039"
-  },
+
   {
     "name": "couple_with_heart",
     "unicode": "1f491",
@@ -4249,140 +4218,12 @@ let emojiOne = [
     "emoji_order": "1040"
   },
   {
-    "name": "couple_mm",
-    "unicode": "1f468-2764-1f468",
-    "shortname": ":couple_mm:",
-    "code_decimal": "&#128104;&#10084;&#128104;",
-    "category": "people",
-    "emoji_order": "1042"
-  },
-  {
-    "name": "couple_ww",
-    "unicode": "1f469-2764-1f469",
-    "shortname": ":couple_ww:",
-    "code_decimal": "&#128105;&#10084;&#128105;",
-    "category": "people",
-    "emoji_order": "1043"
-  },
-  {
     "name": "family",
     "unicode": "1f46a",
     "shortname": ":family:",
     "code_decimal": "&#128106;",
     "category": "people",
     "emoji_order": "1044"
-  },
-  {
-    "name": "family_mwg",
-    "unicode": "1f468-1f469-1f467",
-    "shortname": ":family_mwg:",
-    "code_decimal": "&#128104;&#128105;&#128103;",
-    "category": "people",
-    "emoji_order": "1051"
-  },
-  {
-    "name": "family_mwgb",
-    "unicode": "1f468-1f469-1f467-1f466",
-    "shortname": ":family_mwgb:",
-    "code_decimal": "&#128104;&#128105;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1052"
-  },
-  {
-    "name": "family_mwbb",
-    "unicode": "1f468-1f469-1f466-1f466",
-    "shortname": ":family_mwbb:",
-    "code_decimal": "&#128104;&#128105;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1053"
-  },
-  {
-    "name": "family_mwgg",
-    "unicode": "1f468-1f469-1f467-1f467",
-    "shortname": ":family_mwgg:",
-    "code_decimal": "&#128104;&#128105;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1054"
-  },
-  {
-    "name": "family_mmb",
-    "unicode": "1f468-1f468-1f466",
-    "shortname": ":family_mmb:",
-    "code_decimal": "&#128104;&#128104;&#128102;",
-    "category": "people",
-    "emoji_order": "1055"
-  },
-  {
-    "name": "family_mmg",
-    "unicode": "1f468-1f468-1f467",
-    "shortname": ":family_mmg:",
-    "code_decimal": "&#128104;&#128104;&#128103;",
-    "category": "people",
-    "emoji_order": "1056"
-  },
-  {
-    "name": "family_mmgb",
-    "unicode": "1f468-1f468-1f467-1f466",
-    "shortname": ":family_mmgb:",
-    "code_decimal": "&#128104;&#128104;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1057"
-  },
-  {
-    "name": "family_mmbb",
-    "unicode": "1f468-1f468-1f466-1f466",
-    "shortname": ":family_mmbb:",
-    "code_decimal": "&#128104;&#128104;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1058"
-  },
-  {
-    "name": "family_mmgg",
-    "unicode": "1f468-1f468-1f467-1f467",
-    "shortname": ":family_mmgg:",
-    "code_decimal": "&#128104;&#128104;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1059"
-  },
-  {
-    "name": "family_wwb",
-    "unicode": "1f469-1f469-1f466",
-    "shortname": ":family_wwb:",
-    "code_decimal": "&#128105;&#128105;&#128102;",
-    "category": "people",
-    "emoji_order": "1060"
-  },
-  {
-    "name": "family_wwg",
-    "unicode": "1f469-1f469-1f467",
-    "shortname": ":family_wwg:",
-    "code_decimal": "&#128105;&#128105;&#128103;",
-    "category": "people",
-    "emoji_order": "1061"
-  },
-  {
-    "name": "family_wwgb",
-    "unicode": "1f469-1f469-1f467-1f466",
-    "shortname": ":family_wwgb:",
-    "code_decimal": "&#128105;&#128105;&#128103;&#128102;",
-    "category": "people",
-    "emoji_order": "1062"
-  },
-  {
-    "name": "family_wwbb",
-    "unicode": "1f469-1f469-1f466-1f466",
-    "shortname": ":family_wwbb:",
-    "code_decimal": "&#128105;&#128105;&#128102;&#128102;",
-    "category": "people",
-    "emoji_order": "1063"
-  },
-  {
-    "name": "family_wwgg",
-    "unicode": "1f469-1f469-1f467-1f467",
-    "shortname": ":family_wwgg:",
-    "code_decimal": "&#128105;&#128105;&#128103;&#128103;",
-    "category": "people",
-    "emoji_order": "1064"
   },
   {
     "name": "tone1",
@@ -6031,14 +5872,6 @@ let emojiOne = [
     "code_decimal": "&#128065;",
     "category": "people",
     "emoji_order": "1280"
-  },
-  {
-    "name": "eye_in_speech_bubble",
-    "unicode": "1f441-1f5e8",
-    "shortname": ":eye_in_speech_bubble:",
-    "code_decimal": "&#128065;&#128488;",
-    "category": "symbols",
-    "emoji_order": "1281"
   },
   {
     "name": "tongue",
@@ -13193,14 +13026,6 @@ let emojiOne = [
     "emoji_order": "2185"
   },
   {
-    "name": "rainbow_flag",
-    "unicode": "1f3f3-1f308",
-    "shortname": ":rainbow_flag:",
-    "code_decimal": "&#127987;&#127752;",
-    "category": "objects",
-    "emoji_order": "2186"
-  },
-  {
     "name": "flag_ac",
     "unicode": "1f1e6-1f1e8",
     "shortname": ":flag_ac:",
@@ -15884,8 +15709,10 @@ Quill.register('modules/mentions', Mentions);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__);
 
 
+
+
 class ToolbarEmoji {
-    constructor(quill,options){
+    constructor(quill){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
         this.toolbar.addHandler('emoji', this.checkPalatteExist);
@@ -15893,19 +15720,24 @@ class ToolbarEmoji {
 
     checkPalatteExist() {
         fn_checkDialogOpen();
-        quill.on('text-change', function(delta, oldDelta, source) {
+        this.quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
-                fn_checkDialogOpen();
+                fn_close();
                 fn_updateRange(quill);
             }
         });
     }  
 }
 
+function fn_close(){
+    let ele_emoji_plate = document.getElementById('emoji-palette');
+    if (ele_emoji_plate) {ele_emoji_plate.remove()};
+}
+
 function fn_checkDialogOpen(){
     let elementExists = document.getElementById("emoji-palette");
     if (elementExists) {
-        return elementExists.remove();
+        elementExists.remove();
     }
     else{
         fn_showEmojiPalatte(quill);
@@ -15918,67 +15750,64 @@ function fn_updateRange(quill){
 }
 
 function fn_showEmojiPalatte(quill) {
-        let ele_toolbar_emoji = quill.container;
-        let ele_emoji_area = document.createElement('div');
-        let toolbar_container = document.querySelector('.ql-toolbar');
-        let offsetHeight = toolbar_container.offsetHeight;
+    let ele_emoji_area = document.createElement('div');
+    let toolbar_container = document.querySelector('.ql-toolbar');
+    let range = quill.getSelection();
+    const atSignBounds = quill.getBounds(range.index);
 
-        let range = quill.getSelection();
-        const atSignBounds = quill.getBounds(range.index);
+    quill.container.appendChild(ele_emoji_area);
 
-        ele_toolbar_emoji.parentElement.appendChild(ele_emoji_area);
-        ele_emoji_area.id = 'emoji-palette';
+    ele_emoji_area.id = 'emoji-palette';
+    ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + "px",
+    ele_emoji_area.style.left = atSignBounds.left + "px";
 
-        ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
-        ele_emoji_area.style.left = atSignBounds.left + "px";
+    let tabToolbar = document.createElement('div');
+    tabToolbar.id="tab-toolbar";
+    ele_emoji_area.appendChild(tabToolbar);
 
-        let tabToolbar = document.createElement('div');
-        tabToolbar.id="tab-toolbar";
-        ele_emoji_area.appendChild(tabToolbar);
+    // quill.container.addEventListener('click',function(){
+    //     fn_close();
+    // });
+    //panel
+    let panel = document.createElement('div');
+    panel.id="tab-panel";
+    ele_emoji_area.appendChild(panel);
 
-        ele_toolbar_emoji.addEventListener('click',function(){
-            fn_checkDialogOpen();
-        });
-        //panel
-        let panel = document.createElement('div');
-        panel.id="tab-panel";
-        ele_emoji_area.appendChild(panel);
-
-        var emojiType = [
-                            {'type':'people','icon_code_decimal':'&#128523;'},
-                            {'type':'nature','icon_code_decimal':'&#128051;'},
-                            {'type':'food','icon_code_decimal':'&#127826;'},
-                            {'type':'symbols','icon_code_decimal':'&#10084;'},
-                            {'type':'activity','icon_code_decimal':'&#127943;'},
-                            {'type':'objects','icon_code_decimal':'&#127881;'},
-                            {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
-                        ];
+    var emojiType = [
+                        {'type':'people','icon_code_decimal':'&#128523;'},
+                        {'type':'nature','icon_code_decimal':'&#128051;'},
+                        {'type':'food','icon_code_decimal':'&#127826;'},
+                        {'type':'symbols','icon_code_decimal':'&#10084;'},
+                        {'type':'activity','icon_code_decimal':'&#127943;'},
+                        {'type':'objects','icon_code_decimal':'&#127881;'},
+                        {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
+                    ];
 
 
-        let tabElementHolder = document.createElement('ul');
-        tabToolbar.appendChild(tabElementHolder);
+    let tabElementHolder = document.createElement('ul');
+    tabToolbar.appendChild(tabElementHolder);
 
-        emojiType.map(function(emojiType) {
-            //add tab bar
-            let tabElement = document.createElement('li');
-            tabElement.classList.add('tab');
-            tabElement.classList.add('filter-'+emojiType.type);
-            let tabValue = emojiType.icon_code_decimal;
-            tabElement.innerHTML = tabValue;
-            tabElement.dataset.filter = emojiType.type;
-            tabElementHolder.appendChild(tabElement);
-            
-            let emojiFilter = document.querySelector('.filter-'+emojiType.type);
-            emojiFilter.addEventListener('click',function(){ 
-                let tab = document.querySelector('.active');
-                if (tab) {
-                    tab.classList.remove('active');
-                };
-                emojiFilter.classList.toggle('active');
-                fn_updateEmojiContainer(emojiFilter,panel,quill);
-            })
-        });
-        fn_emojiPanelInit(panel,quill);
+    emojiType.map(function(emojiType) {
+        //add tab bar
+        let tabElement = document.createElement('li');
+        tabElement.classList.add('tab');
+        tabElement.classList.add('filter-'+emojiType.type);
+        let tabValue = emojiType.icon_code_decimal;
+        tabElement.innerHTML = tabValue;
+        tabElement.dataset.filter = emojiType.type;
+        tabElementHolder.appendChild(tabElement);
+        
+        let emojiFilter = document.querySelector('.filter-'+emojiType.type);
+        emojiFilter.addEventListener('click',function(){ 
+            let tab = document.querySelector('.active');
+            if (tab) {
+                tab.classList.remove('active');
+            };
+            emojiFilter.classList.toggle('active');
+            fn_updateEmojiContainer(emojiFilter,panel,quill);
+        })
+    });
+    fn_emojiPanelInit(panel,quill);
 }
 
 function fn_emojiPanelInit(panel,quill){
