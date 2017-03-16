@@ -169,4 +169,4 @@ class Mentions {
 
 }
 Quill.register('modules/mentions', Mentions);
-export { Mentions as Mentions};
+export { Mentions as mentions};

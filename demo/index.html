@@ -14,18 +14,24 @@
         <script src="../dist/quill-emoji.js"></script>
         <script type="text/javascript">
             var toolbarOptions = {
-                    container: [
-                        ["bold", "italic", "underline", "blockquote", "code-block"],
-                        [{"header": 1}],
-                        [{"list": "ordered"}, {"list": "bullet"}],
-                        ['image'],
-                        [{"color": []}, {"background": []}],
-                        ["emoji"]
-                    ],
-                    handlers: {
-                        'emoji': function() {}
-                    }
-                }
+                                    container: [
+                                      ['bold', 'italic', 'underline', 'strike'],
+                                      ['blockquote', 'code-block'],
+                                      [{ 'header': 1 }, { 'header': 2 }], 
+                                      [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                                      [{ 'script': 'sub' }, { 'script': 'super' }], 
+                                      [{ 'indent': '-1' }, { 'indent': '+1' }], 
+                                      [{ 'direction': 'rtl' }],
+                                      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                                      [{ 'color': [] }, { 'background': [] }], 
+                                      [{ 'font': [] }],
+                                      [{ 'align': [] }],
+                                      ['clean'],     
+                                      ["emoji"],
+                                      ['link', 'image', 'video']         
+                                    ],
+                                    handlers: {'emoji': function() {}}
+                                }
         	var quill = new Quill('#quill-editor', {
 		        modules: {
                     toolbar: toolbarOptions,
@@ -47,7 +53,6 @@
 		        placeholder: 'Compose an epic...',
 		        theme: 'snow',
 		    });
-  
         </script>
     </body>
 </html>

@@ -214,4 +214,4 @@ class ShortNameEmoji {
     }
 }
 Quill.register('modules/short_name_emoji', ShortNameEmoji);
-export { ShortNameEmoji as ShortNameEmoji};
+export { ShortNameEmoji as shortNameEmoji};
