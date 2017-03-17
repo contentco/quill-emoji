@@ -49,9 +49,11 @@ class Mentions {
         this.onOpen = props.onOpen;
         this.users = props.users;
         this.container = this.quill.container.parentNode.querySelector(props.container);
-        this.container.style.position = "absolute";
-        this.container.style.display = "none";
-
+        this.container = document.createElement("ul");
+        this.container.classList.add('completions');
+        this.quill.container.appendChild(this.container);
+        this.container.style.position   = "absolute";
+        this.container.style.display    = "none";
         this.onSelectionChange = this.maybeUnfocus.bind(this);
         this.onTextChange = this.update.bind(this);
 
@@ -84,7 +86,7 @@ class Mentions {
         
         this.atIndex = range.index;
         this.container.style.left = atSignBounds.left + "px";
-        this.container.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
+        this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
         this.quill.on('text-change', this.onTextChange);

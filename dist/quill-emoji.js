@@ -15932,9 +15932,11 @@ class Mentions {
         this.onOpen = props.onOpen;
         this.users = props.users;
         this.container = this.quill.container.parentNode.querySelector(props.container);
-        this.container.style.position = "absolute";
-        this.container.style.display = "none";
-
+        this.container = document.createElement("ul");
+        this.container.classList.add('completions');
+        this.quill.container.appendChild(this.container);
+        this.container.style.position   = "absolute";
+        this.container.style.display    = "none";
         this.onSelectionChange = this.maybeUnfocus.bind(this);
         this.onTextChange = this.update.bind(this);
 
@@ -15967,7 +15969,7 @@ class Mentions {
         
         this.atIndex = range.index;
         this.container.style.left = atSignBounds.left + "px";
-        this.container.style.top = atSignBounds.top + atSignBounds.height + 50 + "px",
+        this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
         this.quill.on('text-change', this.onTextChange);
@@ -16062,8 +16064,6 @@ Quill.register('modules/mentions', Mentions);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_emojione_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__);
-/* unused harmony export toolbarEmoji */
-
 
 
 
@@ -16071,11 +16071,13 @@ class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
-        this.toolbar.addHandler('emoji', this.checkPalatteExist);
+        if (typeof this.toolbar != 'undefined')
+            this.toolbar.addHandler('emoji', this.checkPalatteExist);
     }
 
     checkPalatteExist() {
-        fn_checkDialogOpen();
+        let quill = this.quill;
+        fn_checkDialogOpen(quill);
         this.quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
                 fn_close();
@@ -16090,7 +16092,7 @@ function fn_close(){
     if (ele_emoji_plate) {ele_emoji_plate.remove()};
 }
 
-function fn_checkDialogOpen(){
+function fn_checkDialogOpen(quill){
     let elementExists = document.getElementById("emoji-palette");
     if (elementExists) {
         elementExists.remove();
@@ -16223,7 +16225,7 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-
+//export { ToolbarEmoji as toolbarEmoji};
 
 
 /***/ }),

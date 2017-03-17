@@ -1,19 +1,20 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     </head>
     <body>
     	<div class="container" style="position:relative;">
-            <div id="quill-editor"></div>
-            <ul class="completions"></ul>
-            <div id="preview"></div>
-        </div>
+          <div id="quill-editor"></div>
+          <div id="preview"></div>
+      </div>
         <script src="../node_modules/quill/dist/quill.js"></script>
         <script src="../dist/quill-emoji.js"></script>
+        <!--<script src="../src/module-toolbar-emoji.js"></script>-->
         <script type="text/javascript">
-            var toolbarOptions = {
+          var toolbarOptions = {
                                     container: [
                                       ['bold', 'italic', 'underline', 'strike'],
                                       ['blockquote', 'code-block'],
@@ -27,7 +28,7 @@
                                       [{ 'font': [] }],
                                       [{ 'align': [] }],
                                       ['clean'],     
-                                      ["emoji"],
+                                      ['emoji'],
                                       ['link', 'image', 'video']         
                                     ],
                                     handlers: {'emoji': function() {}}
@@ -41,14 +42,13 @@
                     imageResize: {
                         displaySize: true
                     },
-		            mentions: {
-		              	container: '.completions',
-		              	users: [
-		                	{label:'Joe', username: 'Joe'},
-		                   	{label:'Mike', username: 'Mike'},
-		                   	{label:'Diane', username: 'Diane'}
-		              	]
-		            }  
+      	            mentions: {
+      	              	users: [
+      	                	{label:'Joe', username: 'Joe'},
+      	                  {label:'Mike', username: 'Mike'},
+      	                  {label:'Diane', username: 'Diane'}
+      	              	]
+      	            }  
 		        },
 		        placeholder: 'Compose an epic...',
 		        theme: 'snow',

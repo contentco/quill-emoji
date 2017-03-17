@@ -1,16 +1,17 @@
 import {emojiOne as emojiList} from '../src/emojione.js';
 import Fuse from '../node_modules/fuse.js';
 
-
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
-        this.toolbar.addHandler('emoji', this.checkPalatteExist);
+        if (typeof this.toolbar != 'undefined')
+            this.toolbar.addHandler('emoji', this.checkPalatteExist);
     }
 
     checkPalatteExist() {
-        fn_checkDialogOpen();
+        let quill = this.quill;
+        fn_checkDialogOpen(quill);
         this.quill.on('text-change', function(delta, oldDelta, source) {
             if (source == 'user') {
                 fn_close();
@@ -25,7 +26,7 @@ function fn_close(){
     if (ele_emoji_plate) {ele_emoji_plate.remove()};
 }
 
-function fn_checkDialogOpen(){
+function fn_checkDialogOpen(quill){
     let elementExists = document.getElementById("emoji-palette");
     if (elementExists) {
         elementExists.remove();
@@ -158,4 +159,4 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji as toolbarEmoji};
+//export { ToolbarEmoji as toolbarEmoji};

@@ -136,7 +136,7 @@ body {
     background-color: #FFF;
 }
 #tab-panel {
-    max-height: 190px;
+    max-height: 200px;
     overflow-y: scroll;
     padding: 2px;
     background: #FFF;
