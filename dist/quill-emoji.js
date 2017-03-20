@@ -15425,11 +15425,13 @@ class ShortNameEmoji {
 
     update() {
         const sel = this.quill.getSelection().index;
+        if (this.atIndex >= sel) { // Deleted the at character
+            return this.close(null);
+        }
         //Using: fuse.js
-        this.query = this.quill.getText(this.atIndex);
+        this.query = this.quill.getText(this.atIndex + 1, sel - this.atIndex - 1);
         this.query = this.query.trim();
- 
-        //this.query = ':smile:';
+
         let emojis = this.fuse.search(this.query);
         emojis.sort(function (a, b) {
           return a.emoji_order - b.emoji_order;
@@ -15484,7 +15486,7 @@ class ShortNameEmoji {
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
                         e('span', {className: "matched"}, this.query),
-                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length))
+                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
                         ));
             this.container.appendChild(li);
             buttons[i] = li.firstChild;
