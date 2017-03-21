@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -16112,6 +16112,70 @@ Quill.register('modules/mentions', Mentions);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__ = __webpack_require__(9);
+/**
+ * Custom module for quilljs to allow user to change url format and inline images format when copy and paste from their file system into the editor
+ * @see https://quilljs.com/blog/building-a-custom-module/
+ * extend from author https://github.com/schneidmaster
+ */
+let Delta = Quill.import('delta');
+
+class PasteHandler {
+	constructor(quill, options = {}) {
+		// save the quill reference
+		this.quill = quill;
+		// bind handlers to this instance
+		this.handlePaste = this.handlePaste.bind(this);
+		this.quill.root.addEventListener('paste', this.handlePaste, false);
+	}
+	handlePaste(evt) {
+		if (evt.clipboardData && evt.clipboardData.items && evt.clipboardData.items.length) {
+			this.quill.clipboard.addMatcher(Node.TEXT_NODE, function(node, delta) {
+				var regex = /https?:\/\/[^\s]+/g;
+				if(typeof(node.data) !== 'string') return;
+				var matches = node.data.match(regex);
+			  	if(matches && matches.length > 0) {
+				    var ops = [];
+				    var str = node.data;
+				    matches.forEach(function(match) {
+				      	var split = str.split(match);
+				      	var beforeLink = split.shift();
+				      	ops.push({ insert: beforeLink });
+				      	ops.push({ insert: match, attributes: { link: match } });
+				      	str = split.join(match);
+				    });
+				    ops.push({ insert: str });
+				    delta.ops = ops;
+			  	}
+				return delta;
+			});	
+			let table_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	        let row_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	        this.quill.clipboard.addMatcher('TABLE', function(node, delta) {
+				table_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+				return delta;
+	        });
+	        this.quill.clipboard.addMatcher('TR', function(node, delta) {
+	          row_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	          return delta;
+	        });
+	        this.quill.clipboard.addMatcher('TD', function(node, delta) {
+	          let cell_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	          return delta.compose(new Delta().retain(delta.length(), { td: table_id+'|'+row_id+'|'+cell_id }));
+	        });
+		}
+	}
+}
+/* unused harmony export PasteHandler */
+
+Quill.register('modules/pasteHandler', PasteHandler);
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_emojione_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__);
@@ -16280,17 +16344,298 @@ Quill.register('modules/toolbar_emoji', ToolbarEmoji);
 
 
 /***/ }),
-/* 8 */
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+let Container = Quill.import('blots/container');
+let Scroll = Quill.import('blots/scroll');
+let Inline = Quill.import('blots/inline');
+let Block = Quill.import('blots/block');
+let Delta = Quill.import('delta');
+let Parchment = Quill.import('parchment');
+let BlockEmbed = Quill.import('blots/block/embed');
+let TextBlot = Quill.import('blots/text');
+
+// CONTAINER TAG
+
+class ContainBlot extends Container {
+  static create(value) {
+    let tagName = 'contain';
+    let node = super.create(tagName);
+    return node;
+  }
+
+  insertBefore(blot, ref) {
+    if (blot.statics.blotName == this.statics.blotName) {
+      super.insertBefore(blot.children.head, ref);
+    } else {
+      super.insertBefore(blot, ref);
+    }
+  }
+
+  static formats(domNode) {
+    return domNode.tagName;
+  }
+
+  formats() {
+    // We don't inherit from FormatBlot
+    return { [this.statics.blotName]: this.statics.formats(this.domNode) }
+  }
+
+  replace(target) {
+    if (target.statics.blotName !== this.statics.blotName) {
+      let item = Parchment.create(this.statics.defaultChild);
+      target.moveChildren(item);
+      this.appendChild(item);
+    }
+    if (target.parent == null) return;
+    super.replace(target)
+  }
+}
+/* unused harmony export ContainBlot */
+
+
+ContainBlot.blotName = 'contain';
+ContainBlot.tagName = 'contain';
+ContainBlot.scope = Parchment.Scope.BLOCK_BLOT;
+ContainBlot.defaultChild = 'block';
+ContainBlot.allowedChildren = [Block, BlockEmbed, Container];
+Quill.register(ContainBlot);
+
+// CONTAINER TR
+
+class TableRow extends Container {
+  static create(value) {
+    let tagName = 'tr';
+    let node = super.create(tagName);
+    node.setAttribute('row_id', value);
+    return node;
+  }
+
+  optimize() {
+    super.optimize();
+    let next = this.next;
+    if (next != null && next.prev === this &&
+        next.statics.blotName === this.statics.blotName &&
+        next.domNode.tagName === this.domNode.tagName &&
+        next.domNode.getAttribute('row_id') === this.domNode.getAttribute('row_id')) {
+      next.moveChildren(this);
+      next.remove();
+    }
+  }
+}
+/* unused harmony export TableRow */
+
+
+TableRow.blotName = 'tr';
+TableRow.tagName = 'tr';
+TableRow.scope = Parchment.Scope.BLOCK_BLOT;
+TableRow.defaultChild = 'td';
+Quill.register(TableRow);
+
+// CONTAINER TABLE
+class TableTrick {
+  static random_id() {
+    return Math.random().toString(36).slice(2)
+  }
+  static find_td(what) {
+    let leaf = quill.getLeaf(quill.getSelection()['index']);
+    let blot = leaf[0];
+    for(;blot!=null && blot.statics.blotName!=what;) {
+      blot=blot.parent;
+    }
+    return blot; // return TD or NULL
+  }
+  static append_col() {
+    let td = TableTrick.find_td('td')
+    if(td) {
+      let table = td.parent.parent;
+      let table_id = table.domNode.getAttribute('table_id')
+      td.parent.parent.children.forEach(function(tr) {
+        let row_id = tr.domNode.getAttribute('row_id')
+        let cell_id = TableTrick.random_id();
+        let td = Parchment.create('td', table_id+'|'+row_id+'|'+cell_id);
+        tr.appendChild(td);
+      });
+    }
+  }
+  static append_row() {
+    let td = TableTrick.find_td('td')
+    if(td) {
+      let col_count = td.parent.children.length;
+      let table = td.parent.parent;
+      let new_row = td.parent.clone()
+      let table_id = table.domNode.getAttribute('table_id')
+      let row_id = TableTrick.random_id();
+      new_row.domNode.setAttribute('row_id', row_id)
+      for (var i = col_count - 1; i >= 0; i--) {
+        let cell_id = TableTrick.random_id();
+        let td = Parchment.create('td', table_id+'|'+row_id+'|'+cell_id);
+        new_row.appendChild(td);
+      };
+      table.appendChild(new_row);
+    }
+  }
+
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = TableTrick;
+
+
+class Table extends Container {
+  static create(value) {
+    // special adding commands - belongs somewhere else out of constructor
+    if(value == 'append-row') {
+      let blot = TableTrick.append_row();
+      return blot;
+    } else if(value == 'append-col') {
+      let blot = TableTrick.append_col();
+      return blot;
+    } else if(value.includes('newtable_')) {
+      let node = null;
+      let sizes = value.split('_');
+      let row_count = Number.parseInt(sizes[1])
+      let col_count = Number.parseInt(sizes[2])
+      let table_id = TableTrick.random_id();
+      let table = Parchment.create('table', table_id);
+      for (var ri = 0; ri < row_count; ri++) {
+        let row_id = TableTrick.random_id();
+        let tr = Parchment.create('tr', row_id);
+        table.appendChild(tr);
+        for (var ci = 0; ci < col_count; ci++) {
+          let cell_id = TableTrick.random_id();
+          value = table_id+'|'+row_id+'|'+cell_id;
+          let td = Parchment.create('td', value);
+          tr.appendChild(td);
+          let p = Parchment.create('block');
+          td.appendChild(p);
+          let br = Parchment.create('break');
+          p.appendChild(br);
+          node = p;
+        }
+      }
+      let leaf = quill.getLeaf(quill.getSelection()['index']);
+      let blot = leaf[0];
+      let top_branch = null;
+      for(;blot!=null && !(blot instanceof Container || blot instanceof Scroll);) {
+        top_branch = blot
+        blot=blot.parent;
+      }
+      blot.insertBefore(table, top_branch);
+      return node;
+    } else {
+      // normal table
+      let tagName = 'table';
+      let node = super.create(tagName);
+      node.setAttribute('table_id', value);
+      return node;
+    }
+  }
+
+  optimize() {
+    super.optimize();
+    let next = this.next;
+    if (next != null && next.prev === this &&
+        next.statics.blotName === this.statics.blotName &&
+        next.domNode.tagName === this.domNode.tagName &&
+        next.domNode.getAttribute('table_id') === this.domNode.getAttribute('table_id')) {
+      next.moveChildren(this);
+      next.remove();
+    }
+  }
+
+}
+
+Table.blotName = 'table';
+Table.tagName = 'table';
+Table.scope = Parchment.Scope.BLOCK_BLOT;
+Table.defaultChild = 'tr';
+Table.allowedChildren = [TableRow];
+Quill.register(Table);
+
+// CONTAINER TD
+
+class TableCell extends ContainBlot {
+  static create(value) {
+    let tagName = 'td';
+    let node = super.create(tagName);
+    let ids = value.split('|')
+    node.setAttribute('table_id', ids[0]);
+    node.setAttribute('row_id', ids[1]);
+    node.setAttribute('cell_id', ids[2]);
+    return node;
+  }
+
+  format() {
+    this.getAttribute('id');
+  }
+
+  formats() {
+    // We don't inherit from FormatBlot
+    return { [this.statics.blotName]:
+      this.domNode.getAttribute('table_id') + '|' +
+      this.domNode.getAttribute('row_id') + '|' +
+      this.domNode.getAttribute('cell_id') }
+  }
+
+  optimize() {
+    super.optimize();
+
+    // Add parent TR and TABLE when missing
+    let parent = this.parent;
+    if (parent != null && parent.statics.blotName != 'tr') {
+      // we will mark td position, put in table and replace mark
+      let mark = Parchment.create('block');
+      this.parent.insertBefore(mark, this.next);
+      let table = Parchment.create('table', this.domNode.getAttribute('table_id'));
+      let tr = Parchment.create('tr', this.domNode.getAttribute('row_id'));
+      table.appendChild(tr);
+      tr.appendChild(this);
+      table.replace(mark)
+    }
+
+    // merge same TD id
+    let next = this.next;
+    if (next != null && next.prev === this &&
+        next.statics.blotName === this.statics.blotName &&
+        next.domNode.tagName === this.domNode.tagName &&
+        next.domNode.getAttribute('cell_id') === this.domNode.getAttribute('cell_id')) {
+      next.moveChildren(this);
+      next.remove();
+    }
+  }
+}
+
+TableCell.blotName = 'td';
+TableCell.tagName = 'td';
+TableCell.scope = Parchment.Scope.BLOCK_BLOT;
+TableCell.defaultChild = 'block';
+TableCell.allowedChildren = [Block, BlockEmbed, Container];
+Quill.register(TableCell);
+TableRow.allowedChildren = [TableCell];
+
+Container.order = [
+  'list', 'contain',   // Must be lower
+  'td', 'tr', 'table' // Must be higher
+];
+
+Quill.debug('debug');
+
+
+/***/ }),
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_module_mention__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_module_emoji__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_module_toolbar_emoji__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_module_toolbar_emoji__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_module_image_import__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_module_link_import__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_module_image_resize__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_module_paste_handler__ = __webpack_require__(7);
+
 
 
 

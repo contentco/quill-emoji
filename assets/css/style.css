@@ -141,3 +141,32 @@ body {
     padding: 2px;
     background: #FFF;
 }
+
+#quill-editor x-contain, contain {
+  background: #ffbb88;
+  display: block;
+}
+
+#quill-editor table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#quill-editor table td {
+  border: 1px solid black;
+  padding: 5px;
+  height: 25px;
+}
+
+button.ql-table::after { content: "TABLE"; }
+.ql-picker.ql-table .ql-picker-label::before { content: "TABLE"; }
+button.ql-contain::after { content: "WRAP"; }
+button.ql-table[value="append-row"]::after { content: "ROWS+"; }
+button.ql-table[value="append-col"]::after { content: "COLS+"; }
+
+.ql-table,
+.ql-contain {
+  width: auto !important;
+  margin-right: -15px;
+}
+
