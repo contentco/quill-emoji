@@ -12,9 +12,6 @@
       </div>
         <script src="../node_modules/quill/dist/quill.js"></script>
         <script src="../dist/quill-emoji.js"></script>
-        <!--<script src="../src/module-toolbar-emoji.js"></script>
-        <script src="../src/emojione.js"></script>
-        <script src="../src/module-emoji.js"></script>-->
         <script type="text/javascript">
           var toolbarOptions = {
                                     container: [
@@ -37,20 +34,21 @@
                                 }
         	var quill = new Quill('#quill-editor', {
                         		        modules: {
-                                            toolbar: toolbarOptions,
-                                            //toolbar_emoji: true,
-                                            short_name_emoji: true,
-                                           //  imageImport: true,
-                                           //  imageResize: {
-                                           //      displaySize: true
-                                           //  },
-                              	            // mentions: {
-                              	            //   	users: [
-                              	            //     	{label:'Joe', username: 'Joe'},
-                              	            //       {label:'Mike', username: 'Mike'},
-                              	            //       {label:'Diane', username: 'Diane'}
-                              	            //   	]
-                              	            // }  
+                                          toolbar: toolbarOptions,
+                                          linkImport: true,
+                                          toolbar_emoji: true,
+                                          short_name_emoji: true,
+                                          imageImport: true,
+                                          imageResize: {
+                                                displaySize: true
+                                            },
+                            	            mentions: {
+                            	              	users: [
+                            	                  {label:'Joe', username: 'Joe'},
+                            	                  {label:'Mike', username: 'Mike'},
+                            	                  {label:'Diane', username: 'Diane'}
+                            	              	]
+                            	            }  
                         		        },
                         		        placeholder: 'Compose an epic...',
                         		        theme: 'snow',
