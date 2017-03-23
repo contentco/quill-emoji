@@ -48,6 +48,29 @@ export class PasteHandler {
 	          let cell_id = TableTrick.random_id();
 	          return delta.compose(new Delta().retain(delta.length(), { td: table_id+'|'+row_id+'|'+cell_id }));
 	        });
+
+	        this.quill.clipboard.addMatcher('LI', function(node, delta) {
+				var style = window.getComputedStyle(node);
+				var list_style = style.getPropertyValue('list-style-type');
+				if (list_style) {
+					var ops = [];
+					var str = node.textContent;
+					if (list_style == 'decimal') {
+						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"ordered"}});
+					}
+					else if (list_style == 'lower-alpha') {
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":1,"list":"ordered"}});
+					}
+					else if(list_style == 'lower-roman'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":2,"list":"ordered"}});
+					}
+					else{
+						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"ordered"}});
+					}
+					delta.ops = ops;
+				};
+				return delta;
+			});	
 		}
 	}
 }
