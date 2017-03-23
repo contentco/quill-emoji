@@ -64,6 +64,15 @@ export class PasteHandler {
 					else if(list_style == 'lower-roman'){
 						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":2,"list":"ordered"}});
 					}
+					else if(list_style == 'disc'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"bullet"}});
+					}
+					else if(list_style == 'circle'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":1,"list":"bullet"}});
+					}
+					else if(list_style == 'square'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":2,"list":"bullet"}});
+					}
 					else{
 						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"ordered"}});
 					}

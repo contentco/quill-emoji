@@ -16179,6 +16179,15 @@ class PasteHandler {
 					else if(list_style == 'lower-roman'){
 						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":2,"list":"ordered"}});
 					}
+					else if(list_style == 'disc'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"bullet"}});
+					}
+					else if(list_style == 'circle'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":1,"list":"bullet"}});
+					}
+					else if(list_style == 'square'){
+						ops.push({"insert":str},{"insert":"\n","attributes":{"indent":2,"list":"bullet"}});
+					}
 					else{
 						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"ordered"}});
 					}
@@ -16202,6 +16211,7 @@ Quill.register('modules/pasteHandler', PasteHandler);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_emojione_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_fuse_js__);
+/* unused harmony export toolbarEmoji */
 
 
 
@@ -16261,9 +16271,6 @@ function fn_showEmojiPalatte(quill) {
     tabToolbar.id="tab-toolbar";
     ele_emoji_area.appendChild(tabToolbar);
 
-    // quill.container.addEventListener('click',function(){
-    //     fn_close();
-    // });
     //panel
     let panel = document.createElement('div');
     panel.id="tab-panel";
@@ -16278,7 +16285,6 @@ function fn_showEmojiPalatte(quill) {
                         {'type':'objects','icon_code_decimal':'&#127881;'},
                         {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
                     ];
-
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
@@ -16363,7 +16369,7 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-//export { ToolbarEmoji as toolbarEmoji};
+
 
 
 /***/ }),

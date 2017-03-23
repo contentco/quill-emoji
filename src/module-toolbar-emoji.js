@@ -57,9 +57,6 @@ function fn_showEmojiPalatte(quill) {
     tabToolbar.id="tab-toolbar";
     ele_emoji_area.appendChild(tabToolbar);
 
-    // quill.container.addEventListener('click',function(){
-    //     fn_close();
-    // });
     //panel
     let panel = document.createElement('div');
     panel.id="tab-panel";
@@ -74,7 +71,6 @@ function fn_showEmojiPalatte(quill) {
                         {'type':'objects','icon_code_decimal':'&#127881;'},
                         {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
                     ];
-
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
@@ -159,4 +155,4 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-//export { ToolbarEmoji as toolbarEmoji};
+export { ToolbarEmoji as toolbarEmoji};
