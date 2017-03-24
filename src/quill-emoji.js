@@ -4,4 +4,4 @@ import toolbarEmoji from '../src/module-toolbar-emoji';
 import imageImport from '../src/module-image-import';
 import linkImport from '../src/module-link-import';
 import imageResize from '../src/module-image-resize';
-import { PasteHandler } from '../src/module-paste-handler';
+import {PasteHandler} from '../src/module-paste-handler';

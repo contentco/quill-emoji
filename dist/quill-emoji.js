@@ -16131,15 +16131,15 @@ class PasteHandler {
 	handlePaste(evt) {
 		if (evt.clipboardData && evt.clipboardData.items && evt.clipboardData.items.length) {
 			this.quill.clipboard.addMatcher(Node.TEXT_NODE, function(node, delta) {
-				var regex = /https?:\/\/[^\s]+/g;
+				let regex = /https?:\/\/[^\s]+/g;
 				if(typeof(node.data) !== 'string') return;
-				var matches = node.data.match(regex);
+				let matches = node.data.match(regex);
 			  	if(matches && matches.length > 0) {
-				    var ops = [];
-				    var str = node.data;
+				    let ops = [];
+				    let str = node.data;
 				    matches.forEach(function(match) {
-				      	var split = str.split(match);
-				      	var beforeLink = split.shift();
+				      	let split = str.split(match);
+				      	let beforeLink = split.shift();
 				      	ops.push({ insert: beforeLink });
 				      	ops.push({ insert: match, attributes: { link: match } });
 				      	str = split.join(match);
@@ -16165,11 +16165,11 @@ class PasteHandler {
 	        });
 
 	        this.quill.clipboard.addMatcher('LI', function(node, delta) {
-				var style = window.getComputedStyle(node);
-				var list_style = style.getPropertyValue('list-style-type');
+				let style = window.getComputedStyle(node);
+				let list_style = style.getPropertyValue('list-style-type');
 				if (list_style) {
-					var ops = [];
-					var str = node.textContent;
+					let ops = [];
+					let str = node.textContent;
 					if (list_style == 'decimal') {
 						ops.push({"insert":str},{"insert":"\n","attributes":{"list":"ordered"}});
 					}
