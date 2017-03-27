@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "quill-emoji",
   "version": "0.1.0",
   "description": "Quill Extension for Emoji Selection",
   "main": "webpack.config.js",
@@ -19,7 +19,7 @@
   },
   "keywords": [
     "content",
-    "marketing",
+    "emoji",
     "quill",
     "editor"
   ],
