@@ -15150,9 +15150,9 @@ Quill.debug('debug');
 "use strict";
 
 
-var _style = __webpack_require__(9);
+var _base = __webpack_require__(9);
 
-var _style2 = _interopRequireDefault(_style);
+var _base2 = _interopRequireDefault(_base);
 
 var _moduleMention = __webpack_require__(6);
 

@@ -1,4 +1,4 @@
-import css from './css/style.css';
+import css from './scss/base.scss';
 import mentions from '../src/module-mention';
 import shortNameEmoji from '../src/module-emoji';
 import toolbarEmoji from '../src/module-toolbar-emoji';

@@ -1,11 +1,13 @@
+@import 'core/variables'; /* sass-loader doesnt like absolute imports*/
+
 body {
-    background: #FFF;
+    background: $white;
 }
 #quill-editor {
     position: relative;
 }
 .mention {
-    color: #0366d6;
+    color: $blue;
 }
 .ql-container {
     max-height: 400px;
@@ -14,7 +16,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: white;
+    background: $white;
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -34,10 +36,10 @@ body {
     background: none;
 }
 .completions > li > button:hover {
-    background: #ddd;
+    background: $light-gray;
 }
 .completions > li > button:focus {
-    background: #ddd;
+    background: $light-gray;
     outline: none;
 }
 .completions > li > button > .matched {
@@ -50,9 +52,9 @@ body {
 .emoji_completions {
     list-style: none;
     margin: 0;
-    border: 1px solid #84a8cc;
+    border: 1px solid $light-blue;
     padding: 6px;
-    background: white;
+    background: $white;
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -72,19 +74,19 @@ body {
     text-align: left;
     border: none;
     background: #efefef;
-    border: 1px solid #2D9EE0;
+    border: 1px solid $cyan;
     border-radius: 5px;
     text-shadow: 0 1px rgba(0,0,0,.1);
 }
 
 .emoji_completions > li > button:hover {
-            background: #2D9EE0;
-            color:#FFF;
+            background: $cyan;
+            color: $white;
 }
 .emoji_completions > li > button:focus {
-            background: #2D9EE0;
+            background: $cyan;
             outline: none;
-            color:#FFF;
+            color: $white;
 }
 .emoji_completions > li > button > .matched {
             font-weight: bold;
@@ -133,13 +135,13 @@ body {
     padding:0px;
 }
 .active {
-    background-color: #FFF;
+    background-color: $white;
 }
 #tab-panel {
     max-height: 200px;
     overflow-y: scroll;
     padding: 2px;
-    background: #FFF;
+    background: $white;
 }
 
 #quill-editor x-contain, contain {

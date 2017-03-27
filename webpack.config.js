@@ -10,13 +10,15 @@ const config = {
     },
     module: {
         rules: [{
-            test: /\.css$/,
+            test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 use: [{
                     loader: 'css-loader',
                     options: {
                         minimize: true || {/* CSSNano Options */}
-                    }
+                    } 
+                }, {
+                    loader: 'sass-loader',
                 }]
             })
         },
