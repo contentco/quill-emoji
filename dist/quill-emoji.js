@@ -14525,16 +14525,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Delta = Quill.import('delta');
 
 var PasteHandler = exports.PasteHandler = function () {
-	function PasteHandler(quill) {
-		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
+	function PasteHandler(quill, options) {
 		_classCallCheck(this, PasteHandler);
 
 		// save the quill reference
 		this.quill = quill;
 		// bind handlers to this instance
 		this.handlePaste = this.handlePaste.bind(this);
+		this.handleGetData = this.handleGetData.bind(this);
 		this.quill.root.addEventListener('paste', this.handlePaste, false);
+		this.quill.once('editor-change', this.handleGetData, false);
 	}
 
 	_createClass(PasteHandler, [{
@@ -14601,6 +14601,28 @@ var PasteHandler = exports.PasteHandler = function () {
 					return delta;
 				});
 			}
+		}
+	}, {
+		key: 'handleGetData',
+		value: function handleGetData(evt) {
+			var current_container = this.quill.container;
+			var editor = current_container.children[0];
+			var current_html = editor.innerHTML;
+			var table_id = _moduleTable.TableTrick.random_id();
+			var row_id = _moduleTable.TableTrick.random_id();
+			this.quill.clipboard.addMatcher('TABLE', function (node, delta) {
+				table_id = _moduleTable.TableTrick.random_id();
+				return delta;
+			});
+			this.quill.clipboard.addMatcher('TR', function (node, delta) {
+				row_id = _moduleTable.TableTrick.random_id();
+				return delta;
+			});
+			this.quill.clipboard.addMatcher('TD', function (node, delta) {
+				var cell_id = _moduleTable.TableTrick.random_id();
+				return delta.compose(new Delta().retain(delta.length(), { td: table_id + '|' + row_id + '|' + cell_id }));
+			});
+			this.quill.clipboard.dangerouslyPasteHTML(current_html);
 		}
 	}]);
 
