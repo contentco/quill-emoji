@@ -22,3 +22,6 @@ const quill = new Quill(editor, {
 });
 ```
 
+
+
+__Currently in Active Development__

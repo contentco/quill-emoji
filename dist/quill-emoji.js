@@ -16127,6 +16127,7 @@ class PasteHandler {
 		// bind handlers to this instance
 		this.handlePaste = this.handlePaste.bind(this);
 		this.quill.root.addEventListener('paste', this.handlePaste, false);
+		this.quill.once('editor-change', this.handleGetData, false);
 	}
 	handlePaste(evt) {
 		if (evt.clipboardData && evt.clipboardData.items && evt.clipboardData.items.length) {
@@ -16196,6 +16197,26 @@ class PasteHandler {
 				return delta;
 			});	
 		}
+	}
+	handleGetData(evt){
+		let current_container = this.quill.container;
+		let editor = current_container.children[0];
+		let current_html = editor.innerHTML;
+		let table_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	    let row_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();	    
+	    this.quill.clipboard.addMatcher('TABLE', function(node, delta) {
+	     	table_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	    	return delta;
+	    });
+	    this.quill.clipboard.addMatcher('TR', function(node, delta) {
+	      row_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	      return delta;
+	    });
+	    this.quill.clipboard.addMatcher('TD', function(node, delta) {
+	      let cell_id = __WEBPACK_IMPORTED_MODULE_0__src_module_table_js__["a" /* TableTrick */].random_id();
+	      return delta.compose(new Delta().retain(delta.length(), { td: table_id+'|'+row_id+'|'+cell_id }));
+	    });
+		this.quill.clipboard.dangerouslyPasteHTML(current_html);	
 	}
 }
 /* unused harmony export PasteHandler */
