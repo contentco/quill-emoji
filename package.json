@@ -4,13 +4,13 @@
   "description": "Quill Extension for Emoji Selection",
   "main": "webpack.config.js",
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0",
-    "babel-preset-env": "^1.2.1",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.3.2"
   },
   "scripts": {
     "test": "npm test",

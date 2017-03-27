@@ -19,10 +19,41 @@ const config = {
                     }
                 }]
             })
-        }]
+        },
+        {
+            test: /\.js$/,
+            include: [
+                path.resolve(__dirname, "src/")
+            ],
+            exclude: /(node_modules)/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: [['es2015', {modules: false}],]
+                }
+            }
+        }
+        ]
     },
     plugins: [
         new ExtractTextPlugin('quill-emoji.css'),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false,
+        //         screw_ie8: true,
+        //         conditionals: true,
+        //         unused: true,
+        //         comparisons: true,
+        //         sequences: true,
+        //         dead_code: true,
+        //         evaluate: true,
+        //         join_vars: true,
+        //         if_return: true
+        //     },
+        //     output: {
+        //         comments: false
+        //     }
+        // }),
     ]
 };
 
