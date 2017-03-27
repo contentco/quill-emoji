@@ -1,10 +1,16 @@
 # Quill Emoji Selector
 Module extension for [Quill.js](https://github.com/quilljs/quill) that handles emojis in the toolbar.
 
-# Usage
-### Webpack/ES6
+## Installation
 
 ```sh
+bower install quill-emoji
+```
+
+## Usage
+### Webpack/ES6
+
+```javascript
 const toolbarOptions = {
                         container: [
                             ['bold', 'italic', 'underline', 'strike'],
@@ -22,6 +28,12 @@ const quill = new Quill(editor, {
 });
 ```
 
+<<<<<<< HEAD
 
 
 __Currently in Active Development__
+=======
+## Contributing
+
+Please check out our [contributing guidelines](CONTRIBUTING.md).
+>>>>>>> a2ce0e3e8d5659d3b27bbc946e35baba8412b9f6

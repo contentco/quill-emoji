@@ -15,7 +15,6 @@ export class PasteHandler {
 		this.quill.root.addEventListener('paste', this.handlePaste, false);
 		this.quill.once('editor-change', this.handleGetData, false);
 	}
-	}
 	handlePaste(evt) {
 		if (evt.clipboardData && evt.clipboardData.items && evt.clipboardData.items.length) {
 			this.quill.clipboard.addMatcher(Node.TEXT_NODE, function(node, delta) {
