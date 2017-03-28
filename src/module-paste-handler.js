@@ -40,6 +40,7 @@ export class PasteHandler {
 	        let row_id = TableTrick.random_id();
 	        this.quill.clipboard.addMatcher('TABLE', function(node, delta) {
 				table_id = TableTrick.random_id();
+				delta.insert('\n');
 				return delta;
 	        });
 	        this.quill.clipboard.addMatcher('TR', function(node, delta) {
