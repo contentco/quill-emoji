@@ -117,7 +117,12 @@ class ShortNameEmoji {
 
     handleArrow() {
         if (!this.open) return true;
+        //this.buttons[0].focus();
+        this.buttons[0].classList.remove('emoji-active');
         this.buttons[0].focus();
+        if (this.buttons.length > 1) {
+            this.buttons[1].focus();
+        };
     }
 
     update() {
@@ -150,6 +155,14 @@ class ShortNameEmoji {
     }
 
     renderCompletions(emojis) {
+        if (event) {
+            if (event.key === "Enter" || event.keyCode === 13) {
+                event.preventDefault();
+                this.enterEmoji(emojis[0]);
+                this.container.style.display = "none";
+                return;
+            };       
+        }
         while (this.container.firstChild) this.container.removeChild(this.container.firstChild);
         const buttons = Array(emojis.length);
         this.buttons = buttons;
@@ -194,6 +207,7 @@ class ShortNameEmoji {
             buttons[i].addEventListener("unfocus", () => this.focusedButton = null);
         });
         this.container.style.display = "block";
+        buttons[0].classList.add('emoji-active');
     }
 
     close(value) {
@@ -211,6 +225,20 @@ class ShortNameEmoji {
             this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.SILENT);
         }
         this.quill.focus();
+        this.open = false;
+        this.onClose && this.onClose(value);
+    }
+    enterEmoji(value){
+        if (value) {
+            const {name, unicode, shortname,code_decimal} = value;
+            let emoji_icon_html = e("span", {className: "ico", innerHTML: ' '+code_decimal+' ' });
+            let emoji_icon = emoji_icon_html.innerHTML;
+            this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
+            this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
+            this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
+            this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.USER);
+        }
+        this.quill.blur();
         this.open = false;
         this.onClose && this.onClose(value);
     }

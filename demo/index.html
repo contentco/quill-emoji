@@ -33,26 +33,13 @@
                                   handlers: {'emoji': function() {}}
                                 }
         	var quill = new Quill('#quill-editor', {
-                        		        modules: {
-                                          toolbar: toolbarOptions,
-                                          pasteHandler: true,
-                                          linkImport: true,
-                                          toolbar_emoji: true,
-                                          short_name_emoji: true,
-                                          imageImport: true,
-                                          imageResize: {
-                                                displaySize: true
-                                            },
-                            	            mentions: {
-                            	              	users: [
-                            	                  {label:'Joe', username: 'Joe'},
-                            	                  {label:'Mike', username: 'Mike'},
-                            	                  {label:'Diane', username: 'Diane'}
-                            	              	]
-                            	            }  
-                        		        },
-                        		        placeholder: 'Compose an epic...',
-                        		        theme: 'snow',
+  		        modules: {
+                    toolbar: toolbarOptions,
+                    toolbar_emoji: true,
+                    short_name_emoji: true,
+  		        },
+  		        placeholder: 'Compose an epic...',
+  		        theme: 'snow',
 		    });
 
         </script>

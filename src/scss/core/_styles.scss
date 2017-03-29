@@ -88,6 +88,7 @@ body {
             outline: none;
             color: $white;
 }
+.emoji_completions>li>button.emoji-active{background:red;background:#2d9ee0;outline:none;color:#fff}
 .emoji_completions > li > button > .matched {
             font-weight: bold;
             /*color: black;*/
