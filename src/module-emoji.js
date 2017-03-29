@@ -1,5 +1,5 @@
 import Fuse from '../node_modules/fuse.js';
-import {emojiOne as emojiList} from '../src/emojione.js';
+import {emojiList} from '../src/emojiList.js';
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
     Object.keys(attrs).forEach(key => elem[key] = attrs[key]);

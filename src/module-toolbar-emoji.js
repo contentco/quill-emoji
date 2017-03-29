@@ -1,6 +1,5 @@
-import {emojiOne as emojiList} from '../src/emojione.js';
 import Fuse from '../node_modules/fuse.js';
-
+import {emojiList} from '../src/emojiList.js';
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;

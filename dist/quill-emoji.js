@@ -76,7 +76,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var emojiOne = exports.emojiOne = [{
+var emojiList = exports.emojiList = [{
   "name": "100",
   "unicode": "1f4af",
   "shortname": ":100:",
@@ -13515,7 +13515,7 @@ var _fuse = __webpack_require__(1);
 
 var _fuse2 = _interopRequireDefault(_fuse);
 
-var _emojione = __webpack_require__(0);
+var _emojiList = __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13605,7 +13605,7 @@ var ShortNameEmoji = function () {
             minMatchCharLength: 3,
             keys: ["shortname"]
         };
-        this.emojiList = _emojione.emojiOne;
+        this.emojiList = _emojiList.emojiList;
         this.fuse = new _fuse2.default(this.emojiList, this.fuseOptions);
 
         this.quill = quill;
@@ -13832,11 +13832,11 @@ exports.toolbarEmoji = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _emojione = __webpack_require__(0);
-
 var _fuse = __webpack_require__(1);
 
 var _fuse2 = _interopRequireDefault(_fuse);
+
+var _emojiList = __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13953,7 +13953,7 @@ function fn_emojiElementsToPanel(type, panel, quill) {
         minMatchCharLength: 3,
         keys: ["category"]
     };
-    var fuse = new _fuse2.default(_emojione.emojiOne, fuseOptions);
+    var fuse = new _fuse2.default(_emojiList.emojiList, fuseOptions);
     var result = fuse.search(type);
     result.sort(function (a, b) {
         return a.emoji_order - b.emoji_order;
