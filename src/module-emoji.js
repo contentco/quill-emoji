@@ -242,7 +242,6 @@ class ShortNameEmoji {
             this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
             if(this.quill.getSelection()) this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
             this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.USER);
-            
         }
         this.quill.blur();
         this.open = false;
