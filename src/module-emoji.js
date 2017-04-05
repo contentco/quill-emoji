@@ -159,11 +159,16 @@ class ShortNameEmoji {
             if (event.key === "Enter" || event.keyCode === 13) {
                 event.preventDefault();
                 this.enterEmoji(emojis[0]);
+                this.enterEmoji(emojis[0]);
                 this.container.style.display = "none";
                 return;
             };       
         }
-        while (this.container.firstChild) this.container.removeChild(this.container.firstChild);
+        if (event) {return;};
+        while (this.container.firstChild){
+
+            this.container.removeChild(this.container.firstChild);
+        } 
         const buttons = Array(emojis.length);
         this.buttons = buttons;
         
@@ -235,8 +240,9 @@ class ShortNameEmoji {
             let emoji_icon = emoji_icon_html.innerHTML;
             this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
             this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
-            this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
+            if(this.quill.getSelection()) this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
             this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.USER);
+            
         }
         this.quill.blur();
         this.open = false;
