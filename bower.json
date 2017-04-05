@@ -1,6 +1,6 @@
 {
   "name": "quill-emoji",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Quill Extension for Emoji Selection",
   "main": "webpack.config.js",
   "authors": [
