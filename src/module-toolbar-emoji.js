@@ -49,7 +49,7 @@ function fn_showEmojiPalatte(quill) {
     quill.container.appendChild(ele_emoji_area);
 
     ele_emoji_area.id = 'emoji-palette';
-    ele_emoji_area.style.top = atSignBounds.top + atSignBounds.height + "px",
+    ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px",
     ele_emoji_area.style.left = atSignBounds.left + "px";
 
     let tabToolbar = document.createElement('div');
@@ -73,7 +73,14 @@ function fn_showEmojiPalatte(quill) {
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
+    //close btn
+    let close_btn = document.createElement('span');
+    close_btn.innerHTML = 'X';
 
+    tabToolbar.appendChild(close_btn);
+    close_btn.id = "tab_close";
+    close_btn.addEventListener("click", fn_close, false);
+    
     emojiType.map(function(emojiType) {
         //add tab bar
         let tabElement = document.createElement('li');

@@ -63,6 +63,20 @@ body {
     margin-right: 2px;
     margin-bottom: 2px;
 }
+#tab_close{
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    color: #000;
+    padding: 2px;
+    border-radius: 4px;
+    width: 26px;
+    text-align: center;
+    border: 2px solid #CCC;
+    font-size: 12px;
+    background: #FFF;
+    border-radius: 20px;
+}
  .emoji_completions > li > button {
     box-sizing: border-box;
     padding: 0.25em;
@@ -105,7 +119,9 @@ body {
     max-width: 212px;
     z-index: 999;
     border: 1px solid #66afe9;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.12);
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.15);
 }
 .bem {
     font-size: 24px;
@@ -127,14 +143,16 @@ body {
     min-height: 30px;
 }
 #tab-toolbar {
-    background-color: #e5e5e5;
+    background-color: #f7f7f7;
+    padding: 4px 0 0 0px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
 }
 #tab-toolbar ul{
     margin:0px;
     padding:0px;
 }
-.active {
-    background-color: $white;
+#tab-toolbar .active {
+    border-bottom: 3px solid #2ab27b;
 }
 #tab-panel {
     max-height: 200px;
