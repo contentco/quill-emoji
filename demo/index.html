@@ -7,15 +7,16 @@
     </head>
     <body>
     	<div class="container" style="position:relative;">
-          <div id="quill-editor"></div>
-          <textarea id="preview" style="width:100%;margin:40px;"></textarea>
+        <textarea id="preview" style="width:100%;margin:40px;"></textarea>
           <textarea id="output_delta" style="width:100%;margin:40px;"></textarea>
+          <div id="quill-editor"></div>
+          
       </div>
         <script src="../node_modules/quill/dist/quill.js"></script>
-        <script src="../dist/quill-emoji.js"></script>
-        <!--<script src="../src/module-emoji.js"></script>
+        <!--<script src="../dist/quill-emoji.js"></script>-->
+        <script src="../src/module-emoji.js"></script>
         <script src="../node_modules/fuse.js/src/fuse.js"></script>
-        <script src="../src/emojiList.js"></script>-->
+        <script src="../src/emojiList.js"></script>
         <script type="text/javascript">
           var toolbarOptions = {
                                   container: [
@@ -45,8 +46,13 @@
   		        placeholder: 'Compose an epic...',
   		        theme: 'snow',
 		    });
-        // setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
-        // setInterval( function() { document.getElementById("preview").value=quill.root.innerHTML }, 500);
+        setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
+        setInterval( function() { document.getElementById("preview").value=quill.root.innerHTML }, 500);
+        // var whiteSpace = false;
+        // if (/\s/.test('test ')) {
+        //         whiteSpace = true;
+        // }
+        // console.log(whiteSpace);
         </script>
     </body>
 </html>

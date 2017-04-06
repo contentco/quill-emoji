@@ -13624,6 +13624,14 @@ var ShortNameEmoji = function () {
         this.atIndex = null;
         this.focusedButton = null;
 
+        this.isWhiteSpace = function (ch) {
+            var whiteSpace = false;
+            if (/\s/.test(ch)) {
+                whiteSpace = true;
+            }
+            return whiteSpace;
+        };
+
         quill.keyboard.addBinding({
             // TODO: Once Quill supports using event.key (#1091) use that instead of shift-2
             key: 186, // 2
@@ -13667,7 +13675,6 @@ var ShortNameEmoji = function () {
         key: 'handleArrow',
         value: function handleArrow() {
             if (!this.open) return true;
-            //this.buttons[0].focus();
             this.buttons[0].classList.remove('emoji-active');
             this.buttons[0].focus();
             if (this.buttons.length > 1) {
@@ -13684,6 +13691,11 @@ var ShortNameEmoji = function () {
             }
             //Using: fuse.js
             this.query = this.quill.getText(this.atIndex + 1, sel - this.atIndex - 1);
+            if (!event && this.isWhiteSpace(this.query)) {
+                this.close(null);
+                return;
+            }
+
             this.query = this.query.trim();
 
             var emojis = this.fuse.search(this.query);
