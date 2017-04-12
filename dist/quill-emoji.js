@@ -13814,6 +13814,9 @@ var ToolbarEmoji = function () {
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
         if (typeof this.toolbar != 'undefined') this.toolbar.addHandler('emoji', this.checkPalatteExist);
+
+        var emojiBtn = document.getElementsByClassName('ql-emoji')[0];
+        emojiBtn.innerHTML = '<svg viewbox="0 0 18 18"><circle class="ql-fill" cx="7" cy="7" r="1"></circle><circle class="ql-fill" cx="11" cy="7" r="1"></circle><path class="ql-stroke" d="M7,10a2,2,0,0,0,4,0H7Z"></path><circle class="ql-stroke" cx="9" cy="9" r="6"></circle></svg>';
     }
 
     _createClass(ToolbarEmoji, [{
@@ -13835,6 +13838,7 @@ var ToolbarEmoji = function () {
 
 function fn_close() {
     var ele_emoji_plate = document.getElementById('emoji-palette');
+    document.getElementById('emoji-close-div').style.display = "none";
     if (ele_emoji_plate) {
         ele_emoji_plate.remove();
     };
@@ -13874,22 +13878,24 @@ function fn_showEmojiPalatte(quill) {
     panel.id = "tab-panel";
     ele_emoji_area.appendChild(panel);
 
-    var emojiType = [{ 'type': 'people', 'icon_code_decimal': '&#128523;' }, { 'type': 'nature', 'icon_code_decimal': '&#128051;' }, { 'type': 'food', 'icon_code_decimal': '&#127826;' }, { 'type': 'symbols', 'icon_code_decimal': '&#10084;' }, { 'type': 'activity', 'icon_code_decimal': '&#127943;' }, { 'type': 'objects', 'icon_code_decimal': '&#127881;' }, { 'type': 'flags', 'icon_code_decimal': '&#127480;&#127468;' }];
+    var emojiType = [{ 'type': 'people', 'icon_code_decimal': '&#128515;' }, { 'type': 'nature', 'icon_code_decimal': '&#128051;' }, { 'type': 'food', 'icon_code_decimal': '&#127826;' }, { 'type': 'symbols', 'icon_code_decimal': '&#10084;' }, { 'type': 'activity', 'icon_code_decimal': '&#127943;' }, { 'type': 'objects', 'icon_code_decimal': '&#127881;' }, { 'type': 'flags', 'icon_code_decimal': '&#127480;&#127468;' }];
 
     var tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
-    //close btn
-    var close_btn = document.createElement('span');
-    close_btn.innerHTML = 'X';
 
-    tabToolbar.appendChild(close_btn);
-    close_btn.id = "tab_close";
-    close_btn.addEventListener("click", fn_close, false);
+    if (document.getElementById('emoji-close-div') == null) {
+        var closeDiv = document.createElement('div');
+        closeDiv.id = 'emoji-close-div';
+        closeDiv.addEventListener("click", fn_close, false);
+        document.getElementsByTagName('body')[0].appendChild(closeDiv);
+    } else {
+        document.getElementById('emoji-close-div').style.display = "block";
+    }
 
     emojiType.map(function (emojiType) {
         //add tab bar
         var tabElement = document.createElement('li');
-        tabElement.classList.add('tab');
+        tabElement.classList.add('emoji-tab');
         tabElement.classList.add('filter-' + emojiType.type);
         var tabValue = emojiType.icon_code_decimal;
         tabElement.innerHTML = tabValue;

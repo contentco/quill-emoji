@@ -63,21 +63,8 @@ body {
     margin-right: 2px;
     margin-bottom: 2px;
 }
-#tab_close{
-    position: absolute;
-    top: -14px;
-    right: -14px;
-    color: #000;
-    padding: 2px;
-    border-radius: 4px;
-    width: 26px;
-    text-align: center;
-    border: 2px solid #CCC;
-    font-size: 12px;
-    background: #FFF;
-    border-radius: 20px;
-}
- .emoji_completions > li > button {
+
+.emoji_completions > li > button {
     box-sizing: border-box;
     padding: 0.25em;
     margin: 0;
@@ -103,14 +90,11 @@ body {
 .emoji_completions>li>button.emoji-active{background:red;background:#2d9ee0;outline:none;color:#fff}
 .emoji_completions > li > button > .matched {
             font-weight: bold;
-            /*color: black;*/
 }
 .emoji_completions > li > button > * {
             vertical-align: "middle";
 }
-.ql-emoji:after {
-    content: "😊";
-}
+
 .ico {
     margin-right: 10px;
 }
@@ -134,7 +118,7 @@ body {
     margin: 0px auto;
     margin-top: 20px;
 }
-.tab {
+.emoji-tab {
     font-size: 24px;
     display: inline-table;
     text-align: center;
@@ -187,5 +171,12 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
 .ql-contain {
   width: auto !important;
   margin-right: -15px;
+}
+#emoji-close-div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
