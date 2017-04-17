@@ -769,1554 +769,1776 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#128102;",
   "category": "people",
   "emoji_order": "99"
-}, {
-  "name": "boy_tone1",
-  "unicode": "1f466-1f3fb",
-  "shortname": ":boy_tone1:",
-  "code_decimal": "&#128102;&#127995;",
-  "category": "people",
-  "emoji_order": "100"
-}, {
-  "name": "boy_tone2",
-  "unicode": "1f466-1f3fc",
-  "shortname": ":boy_tone2:",
-  "code_decimal": "&#128102;&#127996;",
-  "category": "people",
-  "emoji_order": "101"
-}, {
-  "name": "boy_tone3",
-  "unicode": "1f466-1f3fd",
-  "shortname": ":boy_tone3:",
-  "code_decimal": "&#128102;&#127997;",
-  "category": "people",
-  "emoji_order": "102"
-}, {
-  "name": "boy_tone4",
-  "unicode": "1f466-1f3fe",
-  "shortname": ":boy_tone4:",
-  "code_decimal": "&#128102;&#127998;",
-  "category": "people",
-  "emoji_order": "103"
-}, {
-  "name": "boy_tone5",
-  "unicode": "1f466-1f3ff",
-  "shortname": ":boy_tone5:",
-  "code_decimal": "&#128102;&#127999;",
-  "category": "people",
-  "emoji_order": "104"
-}, {
+},
+// {
+//   "name": "boy_tone1",
+//   "unicode": "1f466-1f3fb",
+//   "shortname": ":boy_tone1:",
+//   "code_decimal": "&#128102;&#127995;",
+//   "category": "people",
+//   "emoji_order": "100"
+// },
+// {
+//   "name": "boy_tone2",
+//   "unicode": "1f466-1f3fc",
+//   "shortname": ":boy_tone2:",
+//   "code_decimal": "&#128102;&#127996;",
+//   "category": "people",
+//   "emoji_order": "101"
+// },
+// {
+//   "name": "boy_tone3",
+//   "unicode": "1f466-1f3fd",
+//   "shortname": ":boy_tone3:",
+//   "code_decimal": "&#128102;&#127997;",
+//   "category": "people",
+//   "emoji_order": "102"
+// },
+// {
+//   "name": "boy_tone4",
+//   "unicode": "1f466-1f3fe",
+//   "shortname": ":boy_tone4:",
+//   "code_decimal": "&#128102;&#127998;",
+//   "category": "people",
+//   "emoji_order": "103"
+// },
+// {
+//   "name": "boy_tone5",
+//   "unicode": "1f466-1f3ff",
+//   "shortname": ":boy_tone5:",
+//   "code_decimal": "&#128102;&#127999;",
+//   "category": "people",
+//   "emoji_order": "104"
+// },
+{
   "name": "girl",
   "unicode": "1f467",
   "shortname": ":girl:",
   "code_decimal": "&#128103;",
   "category": "people",
   "emoji_order": "105"
-}, {
-  "name": "girl_tone1",
-  "unicode": "1f467-1f3fb",
-  "shortname": ":girl_tone1:",
-  "code_decimal": "&#128103;&#127995;",
-  "category": "people",
-  "emoji_order": "106"
-}, {
-  "name": "girl_tone2",
-  "unicode": "1f467-1f3fc",
-  "shortname": ":girl_tone2:",
-  "code_decimal": "&#128103;&#127996;",
-  "category": "people",
-  "emoji_order": "107"
-}, {
-  "name": "girl_tone3",
-  "unicode": "1f467-1f3fd",
-  "shortname": ":girl_tone3:",
-  "code_decimal": "&#128103;&#127997;",
-  "category": "people",
-  "emoji_order": "108"
-}, {
-  "name": "girl_tone4",
-  "unicode": "1f467-1f3fe",
-  "shortname": ":girl_tone4:",
-  "code_decimal": "&#128103;&#127998;",
-  "category": "people",
-  "emoji_order": "109"
-}, {
-  "name": "girl_tone5",
-  "unicode": "1f467-1f3ff",
-  "shortname": ":girl_tone5:",
-  "code_decimal": "&#128103;&#127999;",
-  "category": "people",
-  "emoji_order": "110"
-}, {
+},
+// {
+//   "name": "girl_tone1",
+//   "unicode": "1f467-1f3fb",
+//   "shortname": ":girl_tone1:",
+//   "code_decimal": "&#128103;&#127995;",
+//   "category": "people",
+//   "emoji_order": "106"
+// },
+// {
+//   "name": "girl_tone2",
+//   "unicode": "1f467-1f3fc",
+//   "shortname": ":girl_tone2:",
+//   "code_decimal": "&#128103;&#127996;",
+//   "category": "people",
+//   "emoji_order": "107"
+// },
+// {
+//   "name": "girl_tone3",
+//   "unicode": "1f467-1f3fd",
+//   "shortname": ":girl_tone3:",
+//   "code_decimal": "&#128103;&#127997;",
+//   "category": "people",
+//   "emoji_order": "108"
+// },
+// {
+//   "name": "girl_tone4",
+//   "unicode": "1f467-1f3fe",
+//   "shortname": ":girl_tone4:",
+//   "code_decimal": "&#128103;&#127998;",
+//   "category": "people",
+//   "emoji_order": "109"
+// },
+// {
+//   "name": "girl_tone5",
+//   "unicode": "1f467-1f3ff",
+//   "shortname": ":girl_tone5:",
+//   "code_decimal": "&#128103;&#127999;",
+//   "category": "people",
+//   "emoji_order": "110"
+// },
+{
   "name": "man",
   "unicode": "1f468",
   "shortname": ":man:",
   "code_decimal": "&#128104;",
   "category": "people",
   "emoji_order": "111"
-}, {
-  "name": "man_tone1",
-  "unicode": "1f468-1f3fb",
-  "shortname": ":man_tone1:",
-  "code_decimal": "&#128104;&#127995;",
-  "category": "people",
-  "emoji_order": "112"
-}, {
-  "name": "man_tone2",
-  "unicode": "1f468-1f3fc",
-  "shortname": ":man_tone2:",
-  "code_decimal": "&#128104;&#127996;",
-  "category": "people",
-  "emoji_order": "113"
-}, {
-  "name": "man_tone3",
-  "unicode": "1f468-1f3fd",
-  "shortname": ":man_tone3:",
-  "code_decimal": "&#128104;&#127997;",
-  "category": "people",
-  "emoji_order": "114"
-}, {
-  "name": "man_tone4",
-  "unicode": "1f468-1f3fe",
-  "shortname": ":man_tone4:",
-  "code_decimal": "&#128104;&#127998;",
-  "category": "people",
-  "emoji_order": "115"
-}, {
-  "name": "man_tone5",
-  "unicode": "1f468-1f3ff",
-  "shortname": ":man_tone5:",
-  "code_decimal": "&#128104;&#127999;",
-  "category": "people",
-  "emoji_order": "116"
-}, {
+},
+// {
+//   "name": "man_tone1",
+//   "unicode": "1f468-1f3fb",
+//   "shortname": ":man_tone1:",
+//   "code_decimal": "&#128104;&#127995;",
+//   "category": "people",
+//   "emoji_order": "112"
+// },
+// {
+//   "name": "man_tone2",
+//   "unicode": "1f468-1f3fc",
+//   "shortname": ":man_tone2:",
+//   "code_decimal": "&#128104;&#127996;",
+//   "category": "people",
+//   "emoji_order": "113"
+// },
+// {
+//   "name": "man_tone3",
+//   "unicode": "1f468-1f3fd",
+//   "shortname": ":man_tone3:",
+//   "code_decimal": "&#128104;&#127997;",
+//   "category": "people",
+//   "emoji_order": "114"
+// },
+// {
+//   "name": "man_tone4",
+//   "unicode": "1f468-1f3fe",
+//   "shortname": ":man_tone4:",
+//   "code_decimal": "&#128104;&#127998;",
+//   "category": "people",
+//   "emoji_order": "115"
+// },
+// {
+//   "name": "man_tone5",
+//   "unicode": "1f468-1f3ff",
+//   "shortname": ":man_tone5:",
+//   "code_decimal": "&#128104;&#127999;",
+//   "category": "people",
+//   "emoji_order": "116"
+// },
+{
   "name": "woman",
   "unicode": "1f469",
   "shortname": ":woman:",
   "code_decimal": "&#128105;",
   "category": "people",
   "emoji_order": "117"
-}, {
-  "name": "woman_tone1",
-  "unicode": "1f469-1f3fb",
-  "shortname": ":woman_tone1:",
-  "code_decimal": "&#128105;&#127995;",
-  "category": "people",
-  "emoji_order": "118"
-}, {
-  "name": "woman_tone2",
-  "unicode": "1f469-1f3fc",
-  "shortname": ":woman_tone2:",
-  "code_decimal": "&#128105;&#127996;",
-  "category": "people",
-  "emoji_order": "119"
-}, {
-  "name": "woman_tone3",
-  "unicode": "1f469-1f3fd",
-  "shortname": ":woman_tone3:",
-  "code_decimal": "&#128105;&#127997;",
-  "category": "people",
-  "emoji_order": "120"
-}, {
-  "name": "woman_tone4",
-  "unicode": "1f469-1f3fe",
-  "shortname": ":woman_tone4:",
-  "code_decimal": "&#128105;&#127998;",
-  "category": "people",
-  "emoji_order": "121"
-}, {
-  "name": "woman_tone5",
-  "unicode": "1f469-1f3ff",
-  "shortname": ":woman_tone5:",
-  "code_decimal": "&#128105;&#127999;",
-  "category": "people",
-  "emoji_order": "122"
-}, {
+},
+// {
+//   "name": "woman_tone1",
+//   "unicode": "1f469-1f3fb",
+//   "shortname": ":woman_tone1:",
+//   "code_decimal": "&#128105;&#127995;",
+//   "category": "people",
+//   "emoji_order": "118"
+// },
+// {
+//   "name": "woman_tone2",
+//   "unicode": "1f469-1f3fc",
+//   "shortname": ":woman_tone2:",
+//   "code_decimal": "&#128105;&#127996;",
+//   "category": "people",
+//   "emoji_order": "119"
+// },
+// {
+//   "name": "woman_tone3",
+//   "unicode": "1f469-1f3fd",
+//   "shortname": ":woman_tone3:",
+//   "code_decimal": "&#128105;&#127997;",
+//   "category": "people",
+//   "emoji_order": "120"
+// },
+// {
+//   "name": "woman_tone4",
+//   "unicode": "1f469-1f3fe",
+//   "shortname": ":woman_tone4:",
+//   "code_decimal": "&#128105;&#127998;",
+//   "category": "people",
+//   "emoji_order": "121"
+// },
+// {
+//   "name": "woman_tone5",
+//   "unicode": "1f469-1f3ff",
+//   "shortname": ":woman_tone5:",
+//   "code_decimal": "&#128105;&#127999;",
+//   "category": "people",
+//   "emoji_order": "122"
+// },
+{
   "name": "older_man",
   "unicode": "1f474",
   "shortname": ":older_man:",
   "code_decimal": "&#128116;",
   "category": "people",
   "emoji_order": "123"
-}, {
-  "name": "older_man_tone1",
-  "unicode": "1f474-1f3fb",
-  "shortname": ":older_man_tone1:",
-  "code_decimal": "&#128116;&#127995;",
-  "category": "people",
-  "emoji_order": "124"
-}, {
-  "name": "older_man_tone2",
-  "unicode": "1f474-1f3fc",
-  "shortname": ":older_man_tone2:",
-  "code_decimal": "&#128116;&#127996;",
-  "category": "people",
-  "emoji_order": "125"
-}, {
-  "name": "older_man_tone3",
-  "unicode": "1f474-1f3fd",
-  "shortname": ":older_man_tone3:",
-  "code_decimal": "&#128116;&#127997;",
-  "category": "people",
-  "emoji_order": "126"
-}, {
-  "name": "older_man_tone4",
-  "unicode": "1f474-1f3fe",
-  "shortname": ":older_man_tone4:",
-  "code_decimal": "&#128116;&#127998;",
-  "category": "people",
-  "emoji_order": "127"
-}, {
-  "name": "older_man_tone5",
-  "unicode": "1f474-1f3ff",
-  "shortname": ":older_man_tone5:",
-  "code_decimal": "&#128116;&#127999;",
-  "category": "people",
-  "emoji_order": "128"
-}, {
+},
+// {
+//   "name": "older_man_tone1",
+//   "unicode": "1f474-1f3fb",
+//   "shortname": ":older_man_tone1:",
+//   "code_decimal": "&#128116;&#127995;",
+//   "category": "people",
+//   "emoji_order": "124"
+// },
+// {
+//   "name": "older_man_tone2",
+//   "unicode": "1f474-1f3fc",
+//   "shortname": ":older_man_tone2:",
+//   "code_decimal": "&#128116;&#127996;",
+//   "category": "people",
+//   "emoji_order": "125"
+// },
+// {
+//   "name": "older_man_tone3",
+//   "unicode": "1f474-1f3fd",
+//   "shortname": ":older_man_tone3:",
+//   "code_decimal": "&#128116;&#127997;",
+//   "category": "people",
+//   "emoji_order": "126"
+// },
+// {
+//   "name": "older_man_tone4",
+//   "unicode": "1f474-1f3fe",
+//   "shortname": ":older_man_tone4:",
+//   "code_decimal": "&#128116;&#127998;",
+//   "category": "people",
+//   "emoji_order": "127"
+// },
+// {
+//   "name": "older_man_tone5",
+//   "unicode": "1f474-1f3ff",
+//   "shortname": ":older_man_tone5:",
+//   "code_decimal": "&#128116;&#127999;",
+//   "category": "people",
+//   "emoji_order": "128"
+// },
+{
   "name": "older_woman",
   "unicode": "1f475",
   "shortname": ":older_woman:",
   "code_decimal": "&#128117;",
   "category": "people",
   "emoji_order": "129"
-}, {
-  "name": "older_woman_tone1",
-  "unicode": "1f475-1f3fb",
-  "shortname": ":older_woman_tone1:",
-  "code_decimal": "&#128117;&#127995;",
-  "category": "people",
-  "emoji_order": "130"
-}, {
-  "name": "older_woman_tone2",
-  "unicode": "1f475-1f3fc",
-  "shortname": ":older_woman_tone2:",
-  "code_decimal": "&#128117;&#127996;",
-  "category": "people",
-  "emoji_order": "131"
-}, {
-  "name": "older_woman_tone3",
-  "unicode": "1f475-1f3fd",
-  "shortname": ":older_woman_tone3:",
-  "code_decimal": "&#128117;&#127997;",
-  "category": "people",
-  "emoji_order": "132"
-}, {
-  "name": "older_woman_tone4",
-  "unicode": "1f475-1f3fe",
-  "shortname": ":older_woman_tone4:",
-  "code_decimal": "&#128117;&#127998;",
-  "category": "people",
-  "emoji_order": "133"
-}, {
-  "name": "older_woman_tone5",
-  "unicode": "1f475-1f3ff",
-  "shortname": ":older_woman_tone5:",
-  "code_decimal": "&#128117;&#127999;",
-  "category": "people",
-  "emoji_order": "134"
-}, {
+},
+// {
+//   "name": "older_woman_tone1",
+//   "unicode": "1f475-1f3fb",
+//   "shortname": ":older_woman_tone1:",
+//   "code_decimal": "&#128117;&#127995;",
+//   "category": "people",
+//   "emoji_order": "130"
+// },
+// {
+//   "name": "older_woman_tone2",
+//   "unicode": "1f475-1f3fc",
+//   "shortname": ":older_woman_tone2:",
+//   "code_decimal": "&#128117;&#127996;",
+//   "category": "people",
+//   "emoji_order": "131"
+// },
+// {
+//   "name": "older_woman_tone3",
+//   "unicode": "1f475-1f3fd",
+//   "shortname": ":older_woman_tone3:",
+//   "code_decimal": "&#128117;&#127997;",
+//   "category": "people",
+//   "emoji_order": "132"
+// },
+// {
+//   "name": "older_woman_tone4",
+//   "unicode": "1f475-1f3fe",
+//   "shortname": ":older_woman_tone4:",
+//   "code_decimal": "&#128117;&#127998;",
+//   "category": "people",
+//   "emoji_order": "133"
+// },
+// {
+//   "name": "older_woman_tone5",
+//   "unicode": "1f475-1f3ff",
+//   "shortname": ":older_woman_tone5:",
+//   "code_decimal": "&#128117;&#127999;",
+//   "category": "people",
+//   "emoji_order": "134"
+// },
+{
   "name": "baby",
   "unicode": "1f476",
   "shortname": ":baby:",
   "code_decimal": "&#128118;",
   "category": "people",
   "emoji_order": "135"
-}, {
-  "name": "baby_tone1",
-  "unicode": "1f476-1f3fb",
-  "shortname": ":baby_tone1:",
-  "code_decimal": "&#128118;&#127995;",
-  "category": "people",
-  "emoji_order": "136"
-}, {
-  "name": "baby_tone2",
-  "unicode": "1f476-1f3fc",
-  "shortname": ":baby_tone2:",
-  "code_decimal": "&#128118;&#127996;",
-  "category": "people",
-  "emoji_order": "137"
-}, {
-  "name": "baby_tone3",
-  "unicode": "1f476-1f3fd",
-  "shortname": ":baby_tone3:",
-  "code_decimal": "&#128118;&#127997;",
-  "category": "people",
-  "emoji_order": "138"
-}, {
-  "name": "baby_tone4",
-  "unicode": "1f476-1f3fe",
-  "shortname": ":baby_tone4:",
-  "code_decimal": "&#128118;&#127998;",
-  "category": "people",
-  "emoji_order": "139"
-}, {
-  "name": "baby_tone5",
-  "unicode": "1f476-1f3ff",
-  "shortname": ":baby_tone5:",
-  "code_decimal": "&#128118;&#127999;",
-  "category": "people",
-  "emoji_order": "140"
-}, {
+},
+// {
+//   "name": "baby_tone1",
+//   "unicode": "1f476-1f3fb",
+//   "shortname": ":baby_tone1:",
+//   "code_decimal": "&#128118;&#127995;",
+//   "category": "people",
+//   "emoji_order": "136"
+// },
+// {
+//   "name": "baby_tone2",
+//   "unicode": "1f476-1f3fc",
+//   "shortname": ":baby_tone2:",
+//   "code_decimal": "&#128118;&#127996;",
+//   "category": "people",
+//   "emoji_order": "137"
+// },
+// {
+//   "name": "baby_tone3",
+//   "unicode": "1f476-1f3fd",
+//   "shortname": ":baby_tone3:",
+//   "code_decimal": "&#128118;&#127997;",
+//   "category": "people",
+//   "emoji_order": "138"
+// },
+// {
+//   "name": "baby_tone4",
+//   "unicode": "1f476-1f3fe",
+//   "shortname": ":baby_tone4:",
+//   "code_decimal": "&#128118;&#127998;",
+//   "category": "people",
+//   "emoji_order": "139"
+// },
+// {
+//   "name": "baby_tone5",
+//   "unicode": "1f476-1f3ff",
+//   "shortname": ":baby_tone5:",
+//   "code_decimal": "&#128118;&#127999;",
+//   "category": "people",
+//   "emoji_order": "140"
+// },
+{
   "name": "angel",
   "unicode": "1f47c",
   "shortname": ":angel:",
   "code_decimal": "&#128124;",
   "category": "people",
   "emoji_order": "141"
-}, {
-  "name": "angel_tone1",
-  "unicode": "1f47c-1f3fb",
-  "shortname": ":angel_tone1:",
-  "code_decimal": "&#128124;&#127995;",
-  "category": "people",
-  "emoji_order": "142"
-}, {
-  "name": "angel_tone2",
-  "unicode": "1f47c-1f3fc",
-  "shortname": ":angel_tone2:",
-  "code_decimal": "&#128124;&#127996;",
-  "category": "people",
-  "emoji_order": "143"
-}, {
-  "name": "angel_tone3",
-  "unicode": "1f47c-1f3fd",
-  "shortname": ":angel_tone3:",
-  "code_decimal": "&#128124;&#127997;",
-  "category": "people",
-  "emoji_order": "144"
-}, {
-  "name": "angel_tone4",
-  "unicode": "1f47c-1f3fe",
-  "shortname": ":angel_tone4:",
-  "code_decimal": "&#128124;&#127998;",
-  "category": "people",
-  "emoji_order": "145"
-}, {
-  "name": "angel_tone5",
-  "unicode": "1f47c-1f3ff",
-  "shortname": ":angel_tone5:",
-  "code_decimal": "&#128124;&#127999;",
-  "category": "people",
-  "emoji_order": "146"
-}, {
+},
+// {
+//   "name": "angel_tone1",
+//   "unicode": "1f47c-1f3fb",
+//   "shortname": ":angel_tone1:",
+//   "code_decimal": "&#128124;&#127995;",
+//   "category": "people",
+//   "emoji_order": "142"
+// },
+// {
+//   "name": "angel_tone2",
+//   "unicode": "1f47c-1f3fc",
+//   "shortname": ":angel_tone2:",
+//   "code_decimal": "&#128124;&#127996;",
+//   "category": "people",
+//   "emoji_order": "143"
+// },
+// {
+//   "name": "angel_tone3",
+//   "unicode": "1f47c-1f3fd",
+//   "shortname": ":angel_tone3:",
+//   "code_decimal": "&#128124;&#127997;",
+//   "category": "people",
+//   "emoji_order": "144"
+// },
+// {
+//   "name": "angel_tone4",
+//   "unicode": "1f47c-1f3fe",
+//   "shortname": ":angel_tone4:",
+//   "code_decimal": "&#128124;&#127998;",
+//   "category": "people",
+//   "emoji_order": "145"
+// },
+// {
+//   "name": "angel_tone5",
+//   "unicode": "1f47c-1f3ff",
+//   "shortname": ":angel_tone5:",
+//   "code_decimal": "&#128124;&#127999;",
+//   "category": "people",
+//   "emoji_order": "146"
+// },
+{
   "name": "cop",
   "unicode": "1f46e",
   "shortname": ":cop:",
   "code_decimal": "&#128110;",
   "category": "people",
   "emoji_order": "339"
-}, {
-  "name": "cop_tone1",
-  "unicode": "1f46e-1f3fb",
-  "shortname": ":cop_tone1:",
-  "code_decimal": "&#128110;&#127995;",
-  "category": "people",
-  "emoji_order": "340"
-}, {
-  "name": "cop_tone2",
-  "unicode": "1f46e-1f3fc",
-  "shortname": ":cop_tone2:",
-  "code_decimal": "&#128110;&#127996;",
-  "category": "people",
-  "emoji_order": "341"
-}, {
-  "name": "cop_tone3",
-  "unicode": "1f46e-1f3fd",
-  "shortname": ":cop_tone3:",
-  "code_decimal": "&#128110;&#127997;",
-  "category": "people",
-  "emoji_order": "342"
-}, {
-  "name": "cop_tone4",
-  "unicode": "1f46e-1f3fe",
-  "shortname": ":cop_tone4:",
-  "code_decimal": "&#128110;&#127998;",
-  "category": "people",
-  "emoji_order": "343"
-}, {
-  "name": "cop_tone5",
-  "unicode": "1f46e-1f3ff",
-  "shortname": ":cop_tone5:",
-  "code_decimal": "&#128110;&#127999;",
-  "category": "people",
-  "emoji_order": "344"
-}, {
+},
+// {
+//   "name": "cop_tone1",
+//   "unicode": "1f46e-1f3fb",
+//   "shortname": ":cop_tone1:",
+//   "code_decimal": "&#128110;&#127995;",
+//   "category": "people",
+//   "emoji_order": "340"
+// },
+// {
+//   "name": "cop_tone2",
+//   "unicode": "1f46e-1f3fc",
+//   "shortname": ":cop_tone2:",
+//   "code_decimal": "&#128110;&#127996;",
+//   "category": "people",
+//   "emoji_order": "341"
+// },
+// {
+//   "name": "cop_tone3",
+//   "unicode": "1f46e-1f3fd",
+//   "shortname": ":cop_tone3:",
+//   "code_decimal": "&#128110;&#127997;",
+//   "category": "people",
+//   "emoji_order": "342"
+// },
+// {
+//   "name": "cop_tone4",
+//   "unicode": "1f46e-1f3fe",
+//   "shortname": ":cop_tone4:",
+//   "code_decimal": "&#128110;&#127998;",
+//   "category": "people",
+//   "emoji_order": "343"
+// },
+// {
+//   "name": "cop_tone5",
+//   "unicode": "1f46e-1f3ff",
+//   "shortname": ":cop_tone5:",
+//   "code_decimal": "&#128110;&#127999;",
+//   "category": "people",
+//   "emoji_order": "344"
+// },
+{
   "name": "spy",
   "unicode": "1f575",
   "shortname": ":spy:",
   "code_decimal": "&#128373;",
   "category": "people",
   "emoji_order": "357"
-}, {
-  "name": "spy_tone1",
-  "unicode": "1f575-1f3fb",
-  "shortname": ":spy_tone1:",
-  "code_decimal": "&#128373;&#127995;",
-  "category": "people",
-  "emoji_order": "358"
-}, {
-  "name": "spy_tone2",
-  "unicode": "1f575-1f3fc",
-  "shortname": ":spy_tone2:",
-  "code_decimal": "&#128373;&#127996;",
-  "category": "people",
-  "emoji_order": "359"
-}, {
-  "name": "spy_tone3",
-  "unicode": "1f575-1f3fd",
-  "shortname": ":spy_tone3:",
-  "code_decimal": "&#128373;&#127997;",
-  "category": "people",
-  "emoji_order": "360"
-}, {
-  "name": "spy_tone4",
-  "unicode": "1f575-1f3fe",
-  "shortname": ":spy_tone4:",
-  "code_decimal": "&#128373;&#127998;",
-  "category": "people",
-  "emoji_order": "361"
-}, {
-  "name": "spy_tone5",
-  "unicode": "1f575-1f3ff",
-  "shortname": ":spy_tone5:",
-  "code_decimal": "&#128373;&#127999;",
-  "category": "people",
-  "emoji_order": "362"
-}, {
+},
+// {
+//   "name": "spy_tone1",
+//   "unicode": "1f575-1f3fb",
+//   "shortname": ":spy_tone1:",
+//   "code_decimal": "&#128373;&#127995;",
+//   "category": "people",
+//   "emoji_order": "358"
+// },
+// {
+//   "name": "spy_tone2",
+//   "unicode": "1f575-1f3fc",
+//   "shortname": ":spy_tone2:",
+//   "code_decimal": "&#128373;&#127996;",
+//   "category": "people",
+//   "emoji_order": "359"
+// },
+// {
+//   "name": "spy_tone3",
+//   "unicode": "1f575-1f3fd",
+//   "shortname": ":spy_tone3:",
+//   "code_decimal": "&#128373;&#127997;",
+//   "category": "people",
+//   "emoji_order": "360"
+// },
+// {
+//   "name": "spy_tone4",
+//   "unicode": "1f575-1f3fe",
+//   "shortname": ":spy_tone4:",
+//   "code_decimal": "&#128373;&#127998;",
+//   "category": "people",
+//   "emoji_order": "361"
+// },
+// {
+//   "name": "spy_tone5",
+//   "unicode": "1f575-1f3ff",
+//   "shortname": ":spy_tone5:",
+//   "code_decimal": "&#128373;&#127999;",
+//   "category": "people",
+//   "emoji_order": "362"
+// },
+{
   "name": "guardsman",
   "unicode": "1f482",
   "shortname": ":guardsman:",
   "code_decimal": "&#128130;",
   "category": "people",
   "emoji_order": "375"
-}, {
-  "name": "guardsman_tone1",
-  "unicode": "1f482-1f3fb",
-  "shortname": ":guardsman_tone1:",
-  "code_decimal": "&#128130;&#127995;",
-  "category": "people",
-  "emoji_order": "376"
-}, {
-  "name": "guardsman_tone2",
-  "unicode": "1f482-1f3fc",
-  "shortname": ":guardsman_tone2:",
-  "code_decimal": "&#128130;&#127996;",
-  "category": "people",
-  "emoji_order": "377"
-}, {
-  "name": "guardsman_tone3",
-  "unicode": "1f482-1f3fd",
-  "shortname": ":guardsman_tone3:",
-  "code_decimal": "&#128130;&#127997;",
-  "category": "people",
-  "emoji_order": "378"
-}, {
-  "name": "guardsman_tone4",
-  "unicode": "1f482-1f3fe",
-  "shortname": ":guardsman_tone4:",
-  "code_decimal": "&#128130;&#127998;",
-  "category": "people",
-  "emoji_order": "379"
-}, {
-  "name": "guardsman_tone5",
-  "unicode": "1f482-1f3ff",
-  "shortname": ":guardsman_tone5:",
-  "code_decimal": "&#128130;&#127999;",
-  "category": "people",
-  "emoji_order": "380"
-}, {
+},
+// {
+//   "name": "guardsman_tone1",
+//   "unicode": "1f482-1f3fb",
+//   "shortname": ":guardsman_tone1:",
+//   "code_decimal": "&#128130;&#127995;",
+//   "category": "people",
+//   "emoji_order": "376"
+// },
+// {
+//   "name": "guardsman_tone2",
+//   "unicode": "1f482-1f3fc",
+//   "shortname": ":guardsman_tone2:",
+//   "code_decimal": "&#128130;&#127996;",
+//   "category": "people",
+//   "emoji_order": "377"
+// },
+// {
+//   "name": "guardsman_tone3",
+//   "unicode": "1f482-1f3fd",
+//   "shortname": ":guardsman_tone3:",
+//   "code_decimal": "&#128130;&#127997;",
+//   "category": "people",
+//   "emoji_order": "378"
+// },
+// {
+//   "name": "guardsman_tone4",
+//   "unicode": "1f482-1f3fe",
+//   "shortname": ":guardsman_tone4:",
+//   "code_decimal": "&#128130;&#127998;",
+//   "category": "people",
+//   "emoji_order": "379"
+// },
+// {
+//   "name": "guardsman_tone5",
+//   "unicode": "1f482-1f3ff",
+//   "shortname": ":guardsman_tone5:",
+//   "code_decimal": "&#128130;&#127999;",
+//   "category": "people",
+//   "emoji_order": "380"
+// },
+{
   "name": "construction_worker",
   "unicode": "1f477",
   "shortname": ":construction_worker:",
   "code_decimal": "&#128119;",
   "category": "people",
   "emoji_order": "393"
-}, {
-  "name": "construction_worker_tone1",
-  "unicode": "1f477-1f3fb",
-  "shortname": ":construction_worker_tone1:",
-  "code_decimal": "&#128119;&#127995;",
-  "category": "people",
-  "emoji_order": "394"
-}, {
-  "name": "construction_worker_tone2",
-  "unicode": "1f477-1f3fc",
-  "shortname": ":construction_worker_tone2:",
-  "code_decimal": "&#128119;&#127996;",
-  "category": "people",
-  "emoji_order": "395"
-}, {
-  "name": "construction_worker_tone3",
-  "unicode": "1f477-1f3fd",
-  "shortname": ":construction_worker_tone3:",
-  "code_decimal": "&#128119;&#127997;",
-  "category": "people",
-  "emoji_order": "396"
-}, {
-  "name": "construction_worker_tone4",
-  "unicode": "1f477-1f3fe",
-  "shortname": ":construction_worker_tone4:",
-  "code_decimal": "&#128119;&#127998;",
-  "category": "people",
-  "emoji_order": "397"
-}, {
-  "name": "construction_worker_tone5",
-  "unicode": "1f477-1f3ff",
-  "shortname": ":construction_worker_tone5:",
-  "code_decimal": "&#128119;&#127999;",
-  "category": "people",
-  "emoji_order": "398"
-}, {
+},
+// {
+//   "name": "construction_worker_tone1",
+//   "unicode": "1f477-1f3fb",
+//   "shortname": ":construction_worker_tone1:",
+//   "code_decimal": "&#128119;&#127995;",
+//   "category": "people",
+//   "emoji_order": "394"
+// },
+// {
+//   "name": "construction_worker_tone2",
+//   "unicode": "1f477-1f3fc",
+//   "shortname": ":construction_worker_tone2:",
+//   "code_decimal": "&#128119;&#127996;",
+//   "category": "people",
+//   "emoji_order": "395"
+// },
+// {
+//   "name": "construction_worker_tone3",
+//   "unicode": "1f477-1f3fd",
+//   "shortname": ":construction_worker_tone3:",
+//   "code_decimal": "&#128119;&#127997;",
+//   "category": "people",
+//   "emoji_order": "396"
+// },
+// {
+//   "name": "construction_worker_tone4",
+//   "unicode": "1f477-1f3fe",
+//   "shortname": ":construction_worker_tone4:",
+//   "code_decimal": "&#128119;&#127998;",
+//   "category": "people",
+//   "emoji_order": "397"
+// },
+// {
+//   "name": "construction_worker_tone5",
+//   "unicode": "1f477-1f3ff",
+//   "shortname": ":construction_worker_tone5:",
+//   "code_decimal": "&#128119;&#127999;",
+//   "category": "people",
+//   "emoji_order": "398"
+// },
+{
   "name": "man_with_turban",
   "unicode": "1f473",
   "shortname": ":man_with_turban:",
   "code_decimal": "&#128115;",
   "category": "people",
   "emoji_order": "411"
-}, {
-  "name": "man_with_turban_tone1",
-  "unicode": "1f473-1f3fb",
-  "shortname": ":man_with_turban_tone1:",
-  "code_decimal": "&#128115;&#127995;",
-  "category": "people",
-  "emoji_order": "412"
-}, {
-  "name": "man_with_turban_tone2",
-  "unicode": "1f473-1f3fc",
-  "shortname": ":man_with_turban_tone2:",
-  "code_decimal": "&#128115;&#127996;",
-  "category": "people",
-  "emoji_order": "413"
-}, {
-  "name": "man_with_turban_tone3",
-  "unicode": "1f473-1f3fd",
-  "shortname": ":man_with_turban_tone3:",
-  "code_decimal": "&#128115;&#127997;",
-  "category": "people",
-  "emoji_order": "414"
-}, {
-  "name": "man_with_turban_tone4",
-  "unicode": "1f473-1f3fe",
-  "shortname": ":man_with_turban_tone4:",
-  "code_decimal": "&#128115;&#127998;",
-  "category": "people",
-  "emoji_order": "415"
-}, {
-  "name": "man_with_turban_tone5",
-  "unicode": "1f473-1f3ff",
-  "shortname": ":man_with_turban_tone5:",
-  "code_decimal": "&#128115;&#127999;",
-  "category": "people",
-  "emoji_order": "416"
-}, {
+},
+// {
+//   "name": "man_with_turban_tone1",
+//   "unicode": "1f473-1f3fb",
+//   "shortname": ":man_with_turban_tone1:",
+//   "code_decimal": "&#128115;&#127995;",
+//   "category": "people",
+//   "emoji_order": "412"
+// },
+// {
+//   "name": "man_with_turban_tone2",
+//   "unicode": "1f473-1f3fc",
+//   "shortname": ":man_with_turban_tone2:",
+//   "code_decimal": "&#128115;&#127996;",
+//   "category": "people",
+//   "emoji_order": "413"
+// },
+// {
+//   "name": "man_with_turban_tone3",
+//   "unicode": "1f473-1f3fd",
+//   "shortname": ":man_with_turban_tone3:",
+//   "code_decimal": "&#128115;&#127997;",
+//   "category": "people",
+//   "emoji_order": "414"
+// },
+// {
+//   "name": "man_with_turban_tone4",
+//   "unicode": "1f473-1f3fe",
+//   "shortname": ":man_with_turban_tone4:",
+//   "code_decimal": "&#128115;&#127998;",
+//   "category": "people",
+//   "emoji_order": "415"
+// },
+// {
+//   "name": "man_with_turban_tone5",
+//   "unicode": "1f473-1f3ff",
+//   "shortname": ":man_with_turban_tone5:",
+//   "code_decimal": "&#128115;&#127999;",
+//   "category": "people",
+//   "emoji_order": "416"
+// },
+{
   "name": "person_with_blond_hair",
   "unicode": "1f471",
   "shortname": ":person_with_blond_hair:",
   "code_decimal": "&#128113;",
   "category": "people",
   "emoji_order": "429"
-}, {
-  "name": "person_with_blond_hair_tone1",
-  "unicode": "1f471-1f3fb",
-  "shortname": ":person_with_blond_hair_tone1:",
-  "code_decimal": "&#128113;&#127995;",
-  "category": "people",
-  "emoji_order": "430"
-}, {
-  "name": "person_with_blond_hair_tone2",
-  "unicode": "1f471-1f3fc",
-  "shortname": ":person_with_blond_hair_tone2:",
-  "code_decimal": "&#128113;&#127996;",
-  "category": "people",
-  "emoji_order": "431"
-}, {
-  "name": "person_with_blond_hair_tone3",
-  "unicode": "1f471-1f3fd",
-  "shortname": ":person_with_blond_hair_tone3:",
-  "code_decimal": "&#128113;&#127997;",
-  "category": "people",
-  "emoji_order": "432"
-}, {
-  "name": "person_with_blond_hair_tone4",
-  "unicode": "1f471-1f3fe",
-  "shortname": ":person_with_blond_hair_tone4:",
-  "code_decimal": "&#128113;&#127998;",
-  "category": "people",
-  "emoji_order": "433"
-}, {
-  "name": "person_with_blond_hair_tone5",
-  "unicode": "1f471-1f3ff",
-  "shortname": ":person_with_blond_hair_tone5:",
-  "code_decimal": "&#128113;&#127999;",
-  "category": "people",
-  "emoji_order": "434"
-}, {
+},
+// {
+//   "name": "person_with_blond_hair_tone1",
+//   "unicode": "1f471-1f3fb",
+//   "shortname": ":person_with_blond_hair_tone1:",
+//   "code_decimal": "&#128113;&#127995;",
+//   "category": "people",
+//   "emoji_order": "430"
+// },
+// {
+//   "name": "person_with_blond_hair_tone2",
+//   "unicode": "1f471-1f3fc",
+//   "shortname": ":person_with_blond_hair_tone2:",
+//   "code_decimal": "&#128113;&#127996;",
+//   "category": "people",
+//   "emoji_order": "431"
+// },
+// {
+//   "name": "person_with_blond_hair_tone3",
+//   "unicode": "1f471-1f3fd",
+//   "shortname": ":person_with_blond_hair_tone3:",
+//   "code_decimal": "&#128113;&#127997;",
+//   "category": "people",
+//   "emoji_order": "432"
+// },
+// {
+//   "name": "person_with_blond_hair_tone4",
+//   "unicode": "1f471-1f3fe",
+//   "shortname": ":person_with_blond_hair_tone4:",
+//   "code_decimal": "&#128113;&#127998;",
+//   "category": "people",
+//   "emoji_order": "433"
+// },
+// {
+//   "name": "person_with_blond_hair_tone5",
+//   "unicode": "1f471-1f3ff",
+//   "shortname": ":person_with_blond_hair_tone5:",
+//   "code_decimal": "&#128113;&#127999;",
+//   "category": "people",
+//   "emoji_order": "434"
+// },
+{
   "name": "santa",
   "unicode": "1f385",
   "shortname": ":santa:",
   "code_decimal": "&#127877;",
   "category": "people",
   "emoji_order": "447"
-}, {
-  "name": "santa_tone1",
-  "unicode": "1f385-1f3fb",
-  "shortname": ":santa_tone1:",
-  "code_decimal": "&#127877;&#127995;",
-  "category": "people",
-  "emoji_order": "448"
-}, {
-  "name": "santa_tone2",
-  "unicode": "1f385-1f3fc",
-  "shortname": ":santa_tone2:",
-  "code_decimal": "&#127877;&#127996;",
-  "category": "people",
-  "emoji_order": "449"
-}, {
-  "name": "santa_tone3",
-  "unicode": "1f385-1f3fd",
-  "shortname": ":santa_tone3:",
-  "code_decimal": "&#127877;&#127997;",
-  "category": "people",
-  "emoji_order": "450"
-}, {
-  "name": "santa_tone4",
-  "unicode": "1f385-1f3fe",
-  "shortname": ":santa_tone4:",
-  "code_decimal": "&#127877;&#127998;",
-  "category": "people",
-  "emoji_order": "451"
-}, {
-  "name": "santa_tone5",
-  "unicode": "1f385-1f3ff",
-  "shortname": ":santa_tone5:",
-  "code_decimal": "&#127877;&#127999;",
-  "category": "people",
-  "emoji_order": "452"
-}, {
+},
+// {
+//   "name": "santa_tone1",
+//   "unicode": "1f385-1f3fb",
+//   "shortname": ":santa_tone1:",
+//   "code_decimal": "&#127877;&#127995;",
+//   "category": "people",
+//   "emoji_order": "448"
+// },
+// {
+//   "name": "santa_tone2",
+//   "unicode": "1f385-1f3fc",
+//   "shortname": ":santa_tone2:",
+//   "code_decimal": "&#127877;&#127996;",
+//   "category": "people",
+//   "emoji_order": "449"
+// },
+// {
+//   "name": "santa_tone3",
+//   "unicode": "1f385-1f3fd",
+//   "shortname": ":santa_tone3:",
+//   "code_decimal": "&#127877;&#127997;",
+//   "category": "people",
+//   "emoji_order": "450"
+// },
+// {
+//   "name": "santa_tone4",
+//   "unicode": "1f385-1f3fe",
+//   "shortname": ":santa_tone4:",
+//   "code_decimal": "&#127877;&#127998;",
+//   "category": "people",
+//   "emoji_order": "451"
+// },
+// {
+//   "name": "santa_tone5",
+//   "unicode": "1f385-1f3ff",
+//   "shortname": ":santa_tone5:",
+//   "code_decimal": "&#127877;&#127999;",
+//   "category": "people",
+//   "emoji_order": "452"
+// },
+{
   "name": "mrs_claus",
   "unicode": "1f936",
   "shortname": ":mrs_claus:",
   "code_decimal": "&#129334;",
   "category": "people",
   "emoji_order": "453"
-}, {
-  "name": "mrs_claus_tone1",
-  "unicode": "1f936-1f3fb",
-  "shortname": ":mrs_claus_tone1:",
-  "code_decimal": "&#129334;&#127995;",
-  "category": "people",
-  "emoji_order": "454"
-}, {
-  "name": "mrs_claus_tone2",
-  "unicode": "1f936-1f3fc",
-  "shortname": ":mrs_claus_tone2:",
-  "code_decimal": "&#129334;&#127996;",
-  "category": "people",
-  "emoji_order": "455"
-}, {
-  "name": "mrs_claus_tone3",
-  "unicode": "1f936-1f3fd",
-  "shortname": ":mrs_claus_tone3:",
-  "code_decimal": "&#129334;&#127997;",
-  "category": "people",
-  "emoji_order": "456"
-}, {
-  "name": "mrs_claus_tone4",
-  "unicode": "1f936-1f3fe",
-  "shortname": ":mrs_claus_tone4:",
-  "code_decimal": "&#129334;&#127998;",
-  "category": "people",
-  "emoji_order": "457"
-}, {
-  "name": "mrs_claus_tone5",
-  "unicode": "1f936-1f3ff",
-  "shortname": ":mrs_claus_tone5:",
-  "code_decimal": "&#129334;&#127999;",
-  "category": "people",
-  "emoji_order": "458"
-}, {
+},
+// {
+//   "name": "mrs_claus_tone1",
+//   "unicode": "1f936-1f3fb",
+//   "shortname": ":mrs_claus_tone1:",
+//   "code_decimal": "&#129334;&#127995;",
+//   "category": "people",
+//   "emoji_order": "454"
+// },
+// {
+//   "name": "mrs_claus_tone2",
+//   "unicode": "1f936-1f3fc",
+//   "shortname": ":mrs_claus_tone2:",
+//   "code_decimal": "&#129334;&#127996;",
+//   "category": "people",
+//   "emoji_order": "455"
+// },
+// {
+//   "name": "mrs_claus_tone3",
+//   "unicode": "1f936-1f3fd",
+//   "shortname": ":mrs_claus_tone3:",
+//   "code_decimal": "&#129334;&#127997;",
+//   "category": "people",
+//   "emoji_order": "456"
+// },
+// {
+//   "name": "mrs_claus_tone4",
+//   "unicode": "1f936-1f3fe",
+//   "shortname": ":mrs_claus_tone4:",
+//   "code_decimal": "&#129334;&#127998;",
+//   "category": "people",
+//   "emoji_order": "457"
+// },
+// {
+//   "name": "mrs_claus_tone5",
+//   "unicode": "1f936-1f3ff",
+//   "shortname": ":mrs_claus_tone5:",
+//   "code_decimal": "&#129334;&#127999;",
+//   "category": "people",
+//   "emoji_order": "458"
+// },
+{
   "name": "princess",
   "unicode": "1f478",
   "shortname": ":princess:",
   "code_decimal": "&#128120;",
   "category": "people",
   "emoji_order": "459"
-}, {
-  "name": "princess_tone1",
-  "unicode": "1f478-1f3fb",
-  "shortname": ":princess_tone1:",
-  "code_decimal": "&#128120;&#127995;",
-  "category": "people",
-  "emoji_order": "460"
-}, {
-  "name": "princess_tone2",
-  "unicode": "1f478-1f3fc",
-  "shortname": ":princess_tone2:",
-  "code_decimal": "&#128120;&#127996;",
-  "category": "people",
-  "emoji_order": "461"
-}, {
-  "name": "princess_tone3",
-  "unicode": "1f478-1f3fd",
-  "shortname": ":princess_tone3:",
-  "code_decimal": "&#128120;&#127997;",
-  "category": "people",
-  "emoji_order": "462"
-}, {
-  "name": "princess_tone4",
-  "unicode": "1f478-1f3fe",
-  "shortname": ":princess_tone4:",
-  "code_decimal": "&#128120;&#127998;",
-  "category": "people",
-  "emoji_order": "463"
-}, {
-  "name": "princess_tone5",
-  "unicode": "1f478-1f3ff",
-  "shortname": ":princess_tone5:",
-  "code_decimal": "&#128120;&#127999;",
-  "category": "people",
-  "emoji_order": "464"
-}, {
+},
+// {
+//   "name": "princess_tone1",
+//   "unicode": "1f478-1f3fb",
+//   "shortname": ":princess_tone1:",
+//   "code_decimal": "&#128120;&#127995;",
+//   "category": "people",
+//   "emoji_order": "460"
+// },
+// {
+//   "name": "princess_tone2",
+//   "unicode": "1f478-1f3fc",
+//   "shortname": ":princess_tone2:",
+//   "code_decimal": "&#128120;&#127996;",
+//   "category": "people",
+//   "emoji_order": "461"
+// },
+// {
+//   "name": "princess_tone3",
+//   "unicode": "1f478-1f3fd",
+//   "shortname": ":princess_tone3:",
+//   "code_decimal": "&#128120;&#127997;",
+//   "category": "people",
+//   "emoji_order": "462"
+// },
+// {
+//   "name": "princess_tone4",
+//   "unicode": "1f478-1f3fe",
+//   "shortname": ":princess_tone4:",
+//   "code_decimal": "&#128120;&#127998;",
+//   "category": "people",
+//   "emoji_order": "463"
+// },
+// {
+//   "name": "princess_tone5",
+//   "unicode": "1f478-1f3ff",
+//   "shortname": ":princess_tone5:",
+//   "code_decimal": "&#128120;&#127999;",
+//   "category": "people",
+//   "emoji_order": "464"
+// },
+{
   "name": "prince",
   "unicode": "1f934",
   "shortname": ":prince:",
   "code_decimal": "&#129332;",
   "category": "people",
   "emoji_order": "465"
-}, {
-  "name": "prince_tone1",
-  "unicode": "1f934-1f3fb",
-  "shortname": ":prince_tone1:",
-  "code_decimal": "&#129332;&#127995;",
-  "category": "people",
-  "emoji_order": "466"
-}, {
-  "name": "prince_tone2",
-  "unicode": "1f934-1f3fc",
-  "shortname": ":prince_tone2:",
-  "code_decimal": "&#129332;&#127996;",
-  "category": "people",
-  "emoji_order": "467"
-}, {
-  "name": "prince_tone3",
-  "unicode": "1f934-1f3fd",
-  "shortname": ":prince_tone3:",
-  "code_decimal": "&#129332;&#127997;",
-  "category": "people",
-  "emoji_order": "468"
-}, {
-  "name": "prince_tone4",
-  "unicode": "1f934-1f3fe",
-  "shortname": ":prince_tone4:",
-  "code_decimal": "&#129332;&#127998;",
-  "category": "people",
-  "emoji_order": "469"
-}, {
-  "name": "prince_tone5",
-  "unicode": "1f934-1f3ff",
-  "shortname": ":prince_tone5:",
-  "code_decimal": "&#129332;&#127999;",
-  "category": "people",
-  "emoji_order": "470"
-}, {
+},
+// {
+//   "name": "prince_tone1",
+//   "unicode": "1f934-1f3fb",
+//   "shortname": ":prince_tone1:",
+//   "code_decimal": "&#129332;&#127995;",
+//   "category": "people",
+//   "emoji_order": "466"
+// },
+// {
+//   "name": "prince_tone2",
+//   "unicode": "1f934-1f3fc",
+//   "shortname": ":prince_tone2:",
+//   "code_decimal": "&#129332;&#127996;",
+//   "category": "people",
+//   "emoji_order": "467"
+// },
+// {
+//   "name": "prince_tone3",
+//   "unicode": "1f934-1f3fd",
+//   "shortname": ":prince_tone3:",
+//   "code_decimal": "&#129332;&#127997;",
+//   "category": "people",
+//   "emoji_order": "468"
+// },
+// {
+//   "name": "prince_tone4",
+//   "unicode": "1f934-1f3fe",
+//   "shortname": ":prince_tone4:",
+//   "code_decimal": "&#129332;&#127998;",
+//   "category": "people",
+//   "emoji_order": "469"
+// },
+// {
+//   "name": "prince_tone5",
+//   "unicode": "1f934-1f3ff",
+//   "shortname": ":prince_tone5:",
+//   "code_decimal": "&#129332;&#127999;",
+//   "category": "people",
+//   "emoji_order": "470"
+// },
+{
   "name": "bride_with_veil",
   "unicode": "1f470",
   "shortname": ":bride_with_veil:",
   "code_decimal": "&#128112;",
   "category": "people",
   "emoji_order": "471"
-}, {
-  "name": "bride_with_veil_tone1",
-  "unicode": "1f470-1f3fb",
-  "shortname": ":bride_with_veil_tone1:",
-  "code_decimal": "&#128112;&#127995;",
-  "category": "people",
-  "emoji_order": "472"
-}, {
-  "name": "bride_with_veil_tone2",
-  "unicode": "1f470-1f3fc",
-  "shortname": ":bride_with_veil_tone2:",
-  "code_decimal": "&#128112;&#127996;",
-  "category": "people",
-  "emoji_order": "473"
-}, {
-  "name": "bride_with_veil_tone3",
-  "unicode": "1f470-1f3fd",
-  "shortname": ":bride_with_veil_tone3:",
-  "code_decimal": "&#128112;&#127997;",
-  "category": "people",
-  "emoji_order": "474"
-}, {
-  "name": "bride_with_veil_tone4",
-  "unicode": "1f470-1f3fe",
-  "shortname": ":bride_with_veil_tone4:",
-  "code_decimal": "&#128112;&#127998;",
-  "category": "people",
-  "emoji_order": "475"
-}, {
-  "name": "bride_with_veil_tone5",
-  "unicode": "1f470-1f3ff",
-  "shortname": ":bride_with_veil_tone5:",
-  "code_decimal": "&#128112;&#127999;",
-  "category": "people",
-  "emoji_order": "476"
-}, {
+},
+// {
+//   "name": "bride_with_veil_tone1",
+//   "unicode": "1f470-1f3fb",
+//   "shortname": ":bride_with_veil_tone1:",
+//   "code_decimal": "&#128112;&#127995;",
+//   "category": "people",
+//   "emoji_order": "472"
+// },
+// {
+//   "name": "bride_with_veil_tone2",
+//   "unicode": "1f470-1f3fc",
+//   "shortname": ":bride_with_veil_tone2:",
+//   "code_decimal": "&#128112;&#127996;",
+//   "category": "people",
+//   "emoji_order": "473"
+// },
+// {
+//   "name": "bride_with_veil_tone3",
+//   "unicode": "1f470-1f3fd",
+//   "shortname": ":bride_with_veil_tone3:",
+//   "code_decimal": "&#128112;&#127997;",
+//   "category": "people",
+//   "emoji_order": "474"
+// },
+// {
+//   "name": "bride_with_veil_tone4",
+//   "unicode": "1f470-1f3fe",
+//   "shortname": ":bride_with_veil_tone4:",
+//   "code_decimal": "&#128112;&#127998;",
+//   "category": "people",
+//   "emoji_order": "475"
+// },
+// {
+//   "name": "bride_with_veil_tone5",
+//   "unicode": "1f470-1f3ff",
+//   "shortname": ":bride_with_veil_tone5:",
+//   "code_decimal": "&#128112;&#127999;",
+//   "category": "people",
+//   "emoji_order": "476"
+// },
+{
   "name": "man_in_tuxedo",
   "unicode": "1f935",
   "shortname": ":man_in_tuxedo:",
   "code_decimal": "&#129333;",
   "category": "people",
   "emoji_order": "477"
-}, {
-  "name": "man_in_tuxedo_tone1",
-  "unicode": "1f935-1f3fb",
-  "shortname": ":man_in_tuxedo_tone1:",
-  "code_decimal": "&#129333;&#127995;",
-  "category": "people",
-  "emoji_order": "478"
-}, {
-  "name": "man_in_tuxedo_tone2",
-  "unicode": "1f935-1f3fc",
-  "shortname": ":man_in_tuxedo_tone2:",
-  "code_decimal": "&#129333;&#127996;",
-  "category": "people",
-  "emoji_order": "479"
-}, {
-  "name": "man_in_tuxedo_tone3",
-  "unicode": "1f935-1f3fd",
-  "shortname": ":man_in_tuxedo_tone3:",
-  "code_decimal": "&#129333;&#127997;",
-  "category": "people",
-  "emoji_order": "480"
-}, {
-  "name": "man_in_tuxedo_tone4",
-  "unicode": "1f935-1f3fe",
-  "shortname": ":man_in_tuxedo_tone4:",
-  "code_decimal": "&#129333;&#127998;",
-  "category": "people",
-  "emoji_order": "481"
-}, {
-  "name": "man_in_tuxedo_tone5",
-  "unicode": "1f935-1f3ff",
-  "shortname": ":man_in_tuxedo_tone5:",
-  "code_decimal": "&#129333;&#127999;",
-  "category": "people",
-  "emoji_order": "482"
-}, {
+},
+// {
+//   "name": "man_in_tuxedo_tone1",
+//   "unicode": "1f935-1f3fb",
+//   "shortname": ":man_in_tuxedo_tone1:",
+//   "code_decimal": "&#129333;&#127995;",
+//   "category": "people",
+//   "emoji_order": "478"
+// },
+// {
+//   "name": "man_in_tuxedo_tone2",
+//   "unicode": "1f935-1f3fc",
+//   "shortname": ":man_in_tuxedo_tone2:",
+//   "code_decimal": "&#129333;&#127996;",
+//   "category": "people",
+//   "emoji_order": "479"
+// },
+// {
+//   "name": "man_in_tuxedo_tone3",
+//   "unicode": "1f935-1f3fd",
+//   "shortname": ":man_in_tuxedo_tone3:",
+//   "code_decimal": "&#129333;&#127997;",
+//   "category": "people",
+//   "emoji_order": "480"
+// },
+// {
+//   "name": "man_in_tuxedo_tone4",
+//   "unicode": "1f935-1f3fe",
+//   "shortname": ":man_in_tuxedo_tone4:",
+//   "code_decimal": "&#129333;&#127998;",
+//   "category": "people",
+//   "emoji_order": "481"
+// },
+// {
+//   "name": "man_in_tuxedo_tone5",
+//   "unicode": "1f935-1f3ff",
+//   "shortname": ":man_in_tuxedo_tone5:",
+//   "code_decimal": "&#129333;&#127999;",
+//   "category": "people",
+//   "emoji_order": "482"
+// },
+{
   "name": "pregnant_woman",
   "unicode": "1f930",
   "shortname": ":pregnant_woman:",
   "code_decimal": "&#129328;",
   "category": "people",
   "emoji_order": "483"
-}, {
-  "name": "pregnant_woman_tone1",
-  "unicode": "1f930-1f3fb",
-  "shortname": ":pregnant_woman_tone1:",
-  "code_decimal": "&#129328;&#127995;",
-  "category": "people",
-  "emoji_order": "484"
-}, {
-  "name": "pregnant_woman_tone2",
-  "unicode": "1f930-1f3fc",
-  "shortname": ":pregnant_woman_tone2:",
-  "code_decimal": "&#129328;&#127996;",
-  "category": "people",
-  "emoji_order": "485"
-}, {
-  "name": "pregnant_woman_tone3",
-  "unicode": "1f930-1f3fd",
-  "shortname": ":pregnant_woman_tone3:",
-  "code_decimal": "&#129328;&#127997;",
-  "category": "people",
-  "emoji_order": "486"
-}, {
-  "name": "pregnant_woman_tone4",
-  "unicode": "1f930-1f3fe",
-  "shortname": ":pregnant_woman_tone4:",
-  "code_decimal": "&#129328;&#127998;",
-  "category": "people",
-  "emoji_order": "487"
-}, {
-  "name": "pregnant_woman_tone5",
-  "unicode": "1f930-1f3ff",
-  "shortname": ":pregnant_woman_tone5:",
-  "code_decimal": "&#129328;&#127999;",
-  "category": "people",
-  "emoji_order": "488"
-}, {
+},
+// {
+//   "name": "pregnant_woman_tone1",
+//   "unicode": "1f930-1f3fb",
+//   "shortname": ":pregnant_woman_tone1:",
+//   "code_decimal": "&#129328;&#127995;",
+//   "category": "people",
+//   "emoji_order": "484"
+// },
+// {
+//   "name": "pregnant_woman_tone2",
+//   "unicode": "1f930-1f3fc",
+//   "shortname": ":pregnant_woman_tone2:",
+//   "code_decimal": "&#129328;&#127996;",
+//   "category": "people",
+//   "emoji_order": "485"
+// },
+// {
+//   "name": "pregnant_woman_tone3",
+//   "unicode": "1f930-1f3fd",
+//   "shortname": ":pregnant_woman_tone3:",
+//   "code_decimal": "&#129328;&#127997;",
+//   "category": "people",
+//   "emoji_order": "486"
+// },
+// {
+//   "name": "pregnant_woman_tone4",
+//   "unicode": "1f930-1f3fe",
+//   "shortname": ":pregnant_woman_tone4:",
+//   "code_decimal": "&#129328;&#127998;",
+//   "category": "people",
+//   "emoji_order": "487"
+// },
+// {
+//   "name": "pregnant_woman_tone5",
+//   "unicode": "1f930-1f3ff",
+//   "shortname": ":pregnant_woman_tone5:",
+//   "code_decimal": "&#129328;&#127999;",
+//   "category": "people",
+//   "emoji_order": "488"
+// },
+{
   "name": "man_with_gua_pi_mao",
   "unicode": "1f472",
   "shortname": ":man_with_gua_pi_mao:",
   "code_decimal": "&#128114;",
   "category": "people",
   "emoji_order": "489"
-}, {
-  "name": "man_with_gua_pi_mao_tone1",
-  "unicode": "1f472-1f3fb",
-  "shortname": ":man_with_gua_pi_mao_tone1:",
-  "code_decimal": "&#128114;&#127995;",
-  "category": "people",
-  "emoji_order": "490"
-}, {
-  "name": "man_with_gua_pi_mao_tone2",
-  "unicode": "1f472-1f3fc",
-  "shortname": ":man_with_gua_pi_mao_tone2:",
-  "code_decimal": "&#128114;&#127996;",
-  "category": "people",
-  "emoji_order": "491"
-}, {
-  "name": "man_with_gua_pi_mao_tone3",
-  "unicode": "1f472-1f3fd",
-  "shortname": ":man_with_gua_pi_mao_tone3:",
-  "code_decimal": "&#128114;&#127997;",
-  "category": "people",
-  "emoji_order": "492"
-}, {
-  "name": "man_with_gua_pi_mao_tone4",
-  "unicode": "1f472-1f3fe",
-  "shortname": ":man_with_gua_pi_mao_tone4:",
-  "code_decimal": "&#128114;&#127998;",
-  "category": "people",
-  "emoji_order": "493"
-}, {
-  "name": "man_with_gua_pi_mao_tone5",
-  "unicode": "1f472-1f3ff",
-  "shortname": ":man_with_gua_pi_mao_tone5:",
-  "code_decimal": "&#128114;&#127999;",
-  "category": "people",
-  "emoji_order": "494"
-}, {
+},
+// {
+//   "name": "man_with_gua_pi_mao_tone1",
+//   "unicode": "1f472-1f3fb",
+//   "shortname": ":man_with_gua_pi_mao_tone1:",
+//   "code_decimal": "&#128114;&#127995;",
+//   "category": "people",
+//   "emoji_order": "490"
+// },
+// {
+//   "name": "man_with_gua_pi_mao_tone2",
+//   "unicode": "1f472-1f3fc",
+//   "shortname": ":man_with_gua_pi_mao_tone2:",
+//   "code_decimal": "&#128114;&#127996;",
+//   "category": "people",
+//   "emoji_order": "491"
+// },
+// {
+//   "name": "man_with_gua_pi_mao_tone3",
+//   "unicode": "1f472-1f3fd",
+//   "shortname": ":man_with_gua_pi_mao_tone3:",
+//   "code_decimal": "&#128114;&#127997;",
+//   "category": "people",
+//   "emoji_order": "492"
+// },
+// {
+//   "name": "man_with_gua_pi_mao_tone4",
+//   "unicode": "1f472-1f3fe",
+//   "shortname": ":man_with_gua_pi_mao_tone4:",
+//   "code_decimal": "&#128114;&#127998;",
+//   "category": "people",
+//   "emoji_order": "493"
+// },
+// {
+//   "name": "man_with_gua_pi_mao_tone5",
+//   "unicode": "1f472-1f3ff",
+//   "shortname": ":man_with_gua_pi_mao_tone5:",
+//   "code_decimal": "&#128114;&#127999;",
+//   "category": "people",
+//   "emoji_order": "494"
+// },
+{
   "name": "person_frowning",
   "unicode": "1f64d",
   "shortname": ":person_frowning:",
   "code_decimal": "&#128589;",
   "category": "people",
   "emoji_order": "495"
-}, {
-  "name": "person_frowning_tone1",
-  "unicode": "1f64d-1f3fb",
-  "shortname": ":person_frowning_tone1:",
-  "code_decimal": "&#128589;&#127995;",
-  "category": "people",
-  "emoji_order": "496"
-}, {
-  "name": "person_frowning_tone2",
-  "unicode": "1f64d-1f3fc",
-  "shortname": ":person_frowning_tone2:",
-  "code_decimal": "&#128589;&#127996;",
-  "category": "people",
-  "emoji_order": "497"
-}, {
-  "name": "person_frowning_tone3",
-  "unicode": "1f64d-1f3fd",
-  "shortname": ":person_frowning_tone3:",
-  "code_decimal": "&#128589;&#127997;",
-  "category": "people",
-  "emoji_order": "498"
-}, {
-  "name": "person_frowning_tone4",
-  "unicode": "1f64d-1f3fe",
-  "shortname": ":person_frowning_tone4:",
-  "code_decimal": "&#128589;&#127998;",
-  "category": "people",
-  "emoji_order": "499"
-}, {
-  "name": "person_frowning_tone5",
-  "unicode": "1f64d-1f3ff",
-  "shortname": ":person_frowning_tone5:",
-  "code_decimal": "&#128589;&#127999;",
-  "category": "people",
-  "emoji_order": "500"
-}, {
+},
+// {
+//   "name": "person_frowning_tone1",
+//   "unicode": "1f64d-1f3fb",
+//   "shortname": ":person_frowning_tone1:",
+//   "code_decimal": "&#128589;&#127995;",
+//   "category": "people",
+//   "emoji_order": "496"
+// },
+// {
+//   "name": "person_frowning_tone2",
+//   "unicode": "1f64d-1f3fc",
+//   "shortname": ":person_frowning_tone2:",
+//   "code_decimal": "&#128589;&#127996;",
+//   "category": "people",
+//   "emoji_order": "497"
+// },
+// {
+//   "name": "person_frowning_tone3",
+//   "unicode": "1f64d-1f3fd",
+//   "shortname": ":person_frowning_tone3:",
+//   "code_decimal": "&#128589;&#127997;",
+//   "category": "people",
+//   "emoji_order": "498"
+// },
+// {
+//   "name": "person_frowning_tone4",
+//   "unicode": "1f64d-1f3fe",
+//   "shortname": ":person_frowning_tone4:",
+//   "code_decimal": "&#128589;&#127998;",
+//   "category": "people",
+//   "emoji_order": "499"
+// },
+// {
+//   "name": "person_frowning_tone5",
+//   "unicode": "1f64d-1f3ff",
+//   "shortname": ":person_frowning_tone5:",
+//   "code_decimal": "&#128589;&#127999;",
+//   "category": "people",
+//   "emoji_order": "500"
+// },
+{
   "name": "person_with_pouting_face",
   "unicode": "1f64e",
   "shortname": ":person_with_pouting_face:",
   "code_decimal": "&#128590;",
   "category": "people",
   "emoji_order": "513"
-}, {
-  "name": "person_with_pouting_face_tone1",
-  "unicode": "1f64e-1f3fb",
-  "shortname": ":person_with_pouting_face_tone1:",
-  "code_decimal": "&#128590;&#127995;",
-  "category": "people",
-  "emoji_order": "514"
-}, {
-  "name": "person_with_pouting_face_tone2",
-  "unicode": "1f64e-1f3fc",
-  "shortname": ":person_with_pouting_face_tone2:",
-  "code_decimal": "&#128590;&#127996;",
-  "category": "people",
-  "emoji_order": "515"
-}, {
-  "name": "person_with_pouting_face_tone3",
-  "unicode": "1f64e-1f3fd",
-  "shortname": ":person_with_pouting_face_tone3:",
-  "code_decimal": "&#128590;&#127997;",
-  "category": "people",
-  "emoji_order": "516"
-}, {
-  "name": "person_with_pouting_face_tone4",
-  "unicode": "1f64e-1f3fe",
-  "shortname": ":person_with_pouting_face_tone4:",
-  "code_decimal": "&#128590;&#127998;",
-  "category": "people",
-  "emoji_order": "517"
-}, {
-  "name": "person_with_pouting_face_tone5",
-  "unicode": "1f64e-1f3ff",
-  "shortname": ":person_with_pouting_face_tone5:",
-  "code_decimal": "&#128590;&#127999;",
-  "category": "people",
-  "emoji_order": "518"
-}, {
+},
+// {
+//   "name": "person_with_pouting_face_tone1",
+//   "unicode": "1f64e-1f3fb",
+//   "shortname": ":person_with_pouting_face_tone1:",
+//   "code_decimal": "&#128590;&#127995;",
+//   "category": "people",
+//   "emoji_order": "514"
+// },
+// {
+//   "name": "person_with_pouting_face_tone2",
+//   "unicode": "1f64e-1f3fc",
+//   "shortname": ":person_with_pouting_face_tone2:",
+//   "code_decimal": "&#128590;&#127996;",
+//   "category": "people",
+//   "emoji_order": "515"
+// },
+// {
+//   "name": "person_with_pouting_face_tone3",
+//   "unicode": "1f64e-1f3fd",
+//   "shortname": ":person_with_pouting_face_tone3:",
+//   "code_decimal": "&#128590;&#127997;",
+//   "category": "people",
+//   "emoji_order": "516"
+// },
+// {
+//   "name": "person_with_pouting_face_tone4",
+//   "unicode": "1f64e-1f3fe",
+//   "shortname": ":person_with_pouting_face_tone4:",
+//   "code_decimal": "&#128590;&#127998;",
+//   "category": "people",
+//   "emoji_order": "517"
+// },
+// {
+//   "name": "person_with_pouting_face_tone5",
+//   "unicode": "1f64e-1f3ff",
+//   "shortname": ":person_with_pouting_face_tone5:",
+//   "code_decimal": "&#128590;&#127999;",
+//   "category": "people",
+//   "emoji_order": "518"
+// },
+{
   "name": "no_good",
   "unicode": "1f645",
   "shortname": ":no_good:",
   "code_decimal": "&#128581;",
   "category": "people",
   "emoji_order": "531"
-}, {
-  "name": "no_good_tone1",
-  "unicode": "1f645-1f3fb",
-  "shortname": ":no_good_tone1:",
-  "code_decimal": "&#128581;&#127995;",
-  "category": "people",
-  "emoji_order": "532"
-}, {
-  "name": "no_good_tone2",
-  "unicode": "1f645-1f3fc",
-  "shortname": ":no_good_tone2:",
-  "code_decimal": "&#128581;&#127996;",
-  "category": "people",
-  "emoji_order": "533"
-}, {
-  "name": "no_good_tone3",
-  "unicode": "1f645-1f3fd",
-  "shortname": ":no_good_tone3:",
-  "code_decimal": "&#128581;&#127997;",
-  "category": "people",
-  "emoji_order": "534"
-}, {
-  "name": "no_good_tone4",
-  "unicode": "1f645-1f3fe",
-  "shortname": ":no_good_tone4:",
-  "code_decimal": "&#128581;&#127998;",
-  "category": "people",
-  "emoji_order": "535"
-}, {
-  "name": "no_good_tone5",
-  "unicode": "1f645-1f3ff",
-  "shortname": ":no_good_tone5:",
-  "code_decimal": "&#128581;&#127999;",
-  "category": "people",
-  "emoji_order": "536"
-}, {
+},
+// {
+//   "name": "no_good_tone1",
+//   "unicode": "1f645-1f3fb",
+//   "shortname": ":no_good_tone1:",
+//   "code_decimal": "&#128581;&#127995;",
+//   "category": "people",
+//   "emoji_order": "532"
+// },
+// {
+//   "name": "no_good_tone2",
+//   "unicode": "1f645-1f3fc",
+//   "shortname": ":no_good_tone2:",
+//   "code_decimal": "&#128581;&#127996;",
+//   "category": "people",
+//   "emoji_order": "533"
+// },
+// {
+//   "name": "no_good_tone3",
+//   "unicode": "1f645-1f3fd",
+//   "shortname": ":no_good_tone3:",
+//   "code_decimal": "&#128581;&#127997;",
+//   "category": "people",
+//   "emoji_order": "534"
+// },
+// {
+//   "name": "no_good_tone4",
+//   "unicode": "1f645-1f3fe",
+//   "shortname": ":no_good_tone4:",
+//   "code_decimal": "&#128581;&#127998;",
+//   "category": "people",
+//   "emoji_order": "535"
+// },
+// {
+//   "name": "no_good_tone5",
+//   "unicode": "1f645-1f3ff",
+//   "shortname": ":no_good_tone5:",
+//   "code_decimal": "&#128581;&#127999;",
+//   "category": "people",
+//   "emoji_order": "536"
+// },
+{
   "name": "ok_woman",
   "unicode": "1f646",
   "shortname": ":ok_woman:",
   "code_decimal": "&#128582;",
   "category": "people",
   "emoji_order": "549"
-}, {
-  "name": "ok_woman_tone1",
-  "unicode": "1f646-1f3fb",
-  "shortname": ":ok_woman_tone1:",
-  "code_decimal": "&#128582;&#127995;",
-  "category": "people",
-  "emoji_order": "550"
-}, {
-  "name": "ok_woman_tone2",
-  "unicode": "1f646-1f3fc",
-  "shortname": ":ok_woman_tone2:",
-  "code_decimal": "&#128582;&#127996;",
-  "category": "people",
-  "emoji_order": "551"
-}, {
-  "name": "ok_woman_tone3",
-  "unicode": "1f646-1f3fd",
-  "shortname": ":ok_woman_tone3:",
-  "code_decimal": "&#128582;&#127997;",
-  "category": "people",
-  "emoji_order": "552"
-}, {
-  "name": "ok_woman_tone4",
-  "unicode": "1f646-1f3fe",
-  "shortname": ":ok_woman_tone4:",
-  "code_decimal": "&#128582;&#127998;",
-  "category": "people",
-  "emoji_order": "553"
-}, {
-  "name": "ok_woman_tone5",
-  "unicode": "1f646-1f3ff",
-  "shortname": ":ok_woman_tone5:",
-  "code_decimal": "&#128582;&#127999;",
-  "category": "people",
-  "emoji_order": "554"
-}, {
+},
+// {
+//   "name": "ok_woman_tone1",
+//   "unicode": "1f646-1f3fb",
+//   "shortname": ":ok_woman_tone1:",
+//   "code_decimal": "&#128582;&#127995;",
+//   "category": "people",
+//   "emoji_order": "550"
+// },
+// {
+//   "name": "ok_woman_tone2",
+//   "unicode": "1f646-1f3fc",
+//   "shortname": ":ok_woman_tone2:",
+//   "code_decimal": "&#128582;&#127996;",
+//   "category": "people",
+//   "emoji_order": "551"
+// },
+// {
+//   "name": "ok_woman_tone3",
+//   "unicode": "1f646-1f3fd",
+//   "shortname": ":ok_woman_tone3:",
+//   "code_decimal": "&#128582;&#127997;",
+//   "category": "people",
+//   "emoji_order": "552"
+// },
+// {
+//   "name": "ok_woman_tone4",
+//   "unicode": "1f646-1f3fe",
+//   "shortname": ":ok_woman_tone4:",
+//   "code_decimal": "&#128582;&#127998;",
+//   "category": "people",
+//   "emoji_order": "553"
+// },
+// {
+//   "name": "ok_woman_tone5",
+//   "unicode": "1f646-1f3ff",
+//   "shortname": ":ok_woman_tone5:",
+//   "code_decimal": "&#128582;&#127999;",
+//   "category": "people",
+//   "emoji_order": "554"
+// },
+{
   "name": "information_desk_person",
   "unicode": "1f481",
   "shortname": ":information_desk_person:",
   "code_decimal": "&#128129;",
   "category": "people",
   "emoji_order": "567"
-}, {
-  "name": "information_desk_person_tone1",
-  "unicode": "1f481-1f3fb",
-  "shortname": ":information_desk_person_tone1:",
-  "code_decimal": "&#128129;&#127995;",
-  "category": "people",
-  "emoji_order": "568"
-}, {
-  "name": "information_desk_person_tone2",
-  "unicode": "1f481-1f3fc",
-  "shortname": ":information_desk_person_tone2:",
-  "code_decimal": "&#128129;&#127996;",
-  "category": "people",
-  "emoji_order": "569"
-}, {
-  "name": "information_desk_person_tone3",
-  "unicode": "1f481-1f3fd",
-  "shortname": ":information_desk_person_tone3:",
-  "code_decimal": "&#128129;&#127997;",
-  "category": "people",
-  "emoji_order": "570"
-}, {
-  "name": "information_desk_person_tone4",
-  "unicode": "1f481-1f3fe",
-  "shortname": ":information_desk_person_tone4:",
-  "code_decimal": "&#128129;&#127998;",
-  "category": "people",
-  "emoji_order": "571"
-}, {
-  "name": "information_desk_person_tone5",
-  "unicode": "1f481-1f3ff",
-  "shortname": ":information_desk_person_tone5:",
-  "code_decimal": "&#128129;&#127999;",
-  "category": "people",
-  "emoji_order": "572"
-}, {
+},
+// {
+//   "name": "information_desk_person_tone1",
+//   "unicode": "1f481-1f3fb",
+//   "shortname": ":information_desk_person_tone1:",
+//   "code_decimal": "&#128129;&#127995;",
+//   "category": "people",
+//   "emoji_order": "568"
+// },
+// {
+//   "name": "information_desk_person_tone2",
+//   "unicode": "1f481-1f3fc",
+//   "shortname": ":information_desk_person_tone2:",
+//   "code_decimal": "&#128129;&#127996;",
+//   "category": "people",
+//   "emoji_order": "569"
+// },
+// {
+//   "name": "information_desk_person_tone3",
+//   "unicode": "1f481-1f3fd",
+//   "shortname": ":information_desk_person_tone3:",
+//   "code_decimal": "&#128129;&#127997;",
+//   "category": "people",
+//   "emoji_order": "570"
+// },
+// {
+//   "name": "information_desk_person_tone4",
+//   "unicode": "1f481-1f3fe",
+//   "shortname": ":information_desk_person_tone4:",
+//   "code_decimal": "&#128129;&#127998;",
+//   "category": "people",
+//   "emoji_order": "571"
+// },
+// {
+//   "name": "information_desk_person_tone5",
+//   "unicode": "1f481-1f3ff",
+//   "shortname": ":information_desk_person_tone5:",
+//   "code_decimal": "&#128129;&#127999;",
+//   "category": "people",
+//   "emoji_order": "572"
+// },
+{
   "name": "raising_hand",
   "unicode": "1f64b",
   "shortname": ":raising_hand:",
   "code_decimal": "&#128587;",
   "category": "people",
   "emoji_order": "585"
-}, {
-  "name": "raising_hand_tone1",
-  "unicode": "1f64b-1f3fb",
-  "shortname": ":raising_hand_tone1:",
-  "code_decimal": "&#128587;&#127995;",
-  "category": "people",
-  "emoji_order": "586"
-}, {
-  "name": "raising_hand_tone2",
-  "unicode": "1f64b-1f3fc",
-  "shortname": ":raising_hand_tone2:",
-  "code_decimal": "&#128587;&#127996;",
-  "category": "people",
-  "emoji_order": "587"
-}, {
-  "name": "raising_hand_tone3",
-  "unicode": "1f64b-1f3fd",
-  "shortname": ":raising_hand_tone3:",
-  "code_decimal": "&#128587;&#127997;",
-  "category": "people",
-  "emoji_order": "588"
-}, {
-  "name": "raising_hand_tone4",
-  "unicode": "1f64b-1f3fe",
-  "shortname": ":raising_hand_tone4:",
-  "code_decimal": "&#128587;&#127998;",
-  "category": "people",
-  "emoji_order": "589"
-}, {
-  "name": "raising_hand_tone5",
-  "unicode": "1f64b-1f3ff",
-  "shortname": ":raising_hand_tone5:",
-  "code_decimal": "&#128587;&#127999;",
-  "category": "people",
-  "emoji_order": "590"
-}, {
+},
+// {
+//   "name": "raising_hand_tone1",
+//   "unicode": "1f64b-1f3fb",
+//   "shortname": ":raising_hand_tone1:",
+//   "code_decimal": "&#128587;&#127995;",
+//   "category": "people",
+//   "emoji_order": "586"
+// },
+// {
+//   "name": "raising_hand_tone2",
+//   "unicode": "1f64b-1f3fc",
+//   "shortname": ":raising_hand_tone2:",
+//   "code_decimal": "&#128587;&#127996;",
+//   "category": "people",
+//   "emoji_order": "587"
+// },
+// {
+//   "name": "raising_hand_tone3",
+//   "unicode": "1f64b-1f3fd",
+//   "shortname": ":raising_hand_tone3:",
+//   "code_decimal": "&#128587;&#127997;",
+//   "category": "people",
+//   "emoji_order": "588"
+// },
+// {
+//   "name": "raising_hand_tone4",
+//   "unicode": "1f64b-1f3fe",
+//   "shortname": ":raising_hand_tone4:",
+//   "code_decimal": "&#128587;&#127998;",
+//   "category": "people",
+//   "emoji_order": "589"
+// },
+// {
+//   "name": "raising_hand_tone5",
+//   "unicode": "1f64b-1f3ff",
+//   "shortname": ":raising_hand_tone5:",
+//   "code_decimal": "&#128587;&#127999;",
+//   "category": "people",
+//   "emoji_order": "590"
+// },
+{
   "name": "bow",
   "unicode": "1f647",
   "shortname": ":bow:",
   "code_decimal": "&#128583;",
   "category": "people",
   "emoji_order": "603"
-}, {
-  "name": "bow_tone1",
-  "unicode": "1f647-1f3fb",
-  "shortname": ":bow_tone1:",
-  "code_decimal": "&#128583;&#127995;",
-  "category": "people",
-  "emoji_order": "604"
-}, {
-  "name": "bow_tone2",
-  "unicode": "1f647-1f3fc",
-  "shortname": ":bow_tone2:",
-  "code_decimal": "&#128583;&#127996;",
-  "category": "people",
-  "emoji_order": "605"
-}, {
-  "name": "bow_tone3",
-  "unicode": "1f647-1f3fd",
-  "shortname": ":bow_tone3:",
-  "code_decimal": "&#128583;&#127997;",
-  "category": "people",
-  "emoji_order": "606"
-}, {
-  "name": "bow_tone4",
-  "unicode": "1f647-1f3fe",
-  "shortname": ":bow_tone4:",
-  "code_decimal": "&#128583;&#127998;",
-  "category": "people",
-  "emoji_order": "607"
-}, {
-  "name": "bow_tone5",
-  "unicode": "1f647-1f3ff",
-  "shortname": ":bow_tone5:",
-  "code_decimal": "&#128583;&#127999;",
-  "category": "people",
-  "emoji_order": "608"
-}, {
+},
+// {
+//   "name": "bow_tone1",
+//   "unicode": "1f647-1f3fb",
+//   "shortname": ":bow_tone1:",
+//   "code_decimal": "&#128583;&#127995;",
+//   "category": "people",
+//   "emoji_order": "604"
+// },
+// {
+//   "name": "bow_tone2",
+//   "unicode": "1f647-1f3fc",
+//   "shortname": ":bow_tone2:",
+//   "code_decimal": "&#128583;&#127996;",
+//   "category": "people",
+//   "emoji_order": "605"
+// },
+// {
+//   "name": "bow_tone3",
+//   "unicode": "1f647-1f3fd",
+//   "shortname": ":bow_tone3:",
+//   "code_decimal": "&#128583;&#127997;",
+//   "category": "people",
+//   "emoji_order": "606"
+// },
+// {
+//   "name": "bow_tone4",
+//   "unicode": "1f647-1f3fe",
+//   "shortname": ":bow_tone4:",
+//   "code_decimal": "&#128583;&#127998;",
+//   "category": "people",
+//   "emoji_order": "607"
+// },
+// {
+//   "name": "bow_tone5",
+//   "unicode": "1f647-1f3ff",
+//   "shortname": ":bow_tone5:",
+//   "code_decimal": "&#128583;&#127999;",
+//   "category": "people",
+//   "emoji_order": "608"
+// },
+{
   "name": "face_palm",
   "unicode": "1f926",
   "shortname": ":face_palm:",
   "code_decimal": "&#129318;",
   "category": "people",
   "emoji_order": "621"
-}, {
-  "name": "face_palm_tone1",
-  "unicode": "1f926-1f3fb",
-  "shortname": ":face_palm_tone1:",
-  "code_decimal": "&#129318;&#127995;",
-  "category": "people",
-  "emoji_order": "622"
-}, {
-  "name": "face_palm_tone2",
-  "unicode": "1f926-1f3fc",
-  "shortname": ":face_palm_tone2:",
-  "code_decimal": "&#129318;&#127996;",
-  "category": "people",
-  "emoji_order": "623"
-}, {
-  "name": "face_palm_tone3",
-  "unicode": "1f926-1f3fd",
-  "shortname": ":face_palm_tone3:",
-  "code_decimal": "&#129318;&#127997;",
-  "category": "people",
-  "emoji_order": "624"
-}, {
-  "name": "face_palm_tone4",
-  "unicode": "1f926-1f3fe",
-  "shortname": ":face_palm_tone4:",
-  "code_decimal": "&#129318;&#127998;",
-  "category": "people",
-  "emoji_order": "625"
-}, {
-  "name": "face_palm_tone5",
-  "unicode": "1f926-1f3ff",
-  "shortname": ":face_palm_tone5:",
-  "code_decimal": "&#129318;&#127999;",
-  "category": "people",
-  "emoji_order": "626"
-}, {
+},
+// {
+//   "name": "face_palm_tone1",
+//   "unicode": "1f926-1f3fb",
+//   "shortname": ":face_palm_tone1:",
+//   "code_decimal": "&#129318;&#127995;",
+//   "category": "people",
+//   "emoji_order": "622"
+// },
+// {
+//   "name": "face_palm_tone2",
+//   "unicode": "1f926-1f3fc",
+//   "shortname": ":face_palm_tone2:",
+//   "code_decimal": "&#129318;&#127996;",
+//   "category": "people",
+//   "emoji_order": "623"
+// },
+// {
+//   "name": "face_palm_tone3",
+//   "unicode": "1f926-1f3fd",
+//   "shortname": ":face_palm_tone3:",
+//   "code_decimal": "&#129318;&#127997;",
+//   "category": "people",
+//   "emoji_order": "624"
+// },
+// {
+//   "name": "face_palm_tone4",
+//   "unicode": "1f926-1f3fe",
+//   "shortname": ":face_palm_tone4:",
+//   "code_decimal": "&#129318;&#127998;",
+//   "category": "people",
+//   "emoji_order": "625"
+// },
+// {
+//   "name": "face_palm_tone5",
+//   "unicode": "1f926-1f3ff",
+//   "shortname": ":face_palm_tone5:",
+//   "code_decimal": "&#129318;&#127999;",
+//   "category": "people",
+//   "emoji_order": "626"
+// },
+{
   "name": "shrug",
   "unicode": "1f937",
   "shortname": ":shrug:",
   "code_decimal": "&#129335;",
   "category": "people",
   "emoji_order": "639"
-}, {
-  "name": "shrug_tone1",
-  "unicode": "1f937-1f3fb",
-  "shortname": ":shrug_tone1:",
-  "code_decimal": "&#129335;&#127995;",
-  "category": "people",
-  "emoji_order": "640"
-}, {
-  "name": "shrug_tone2",
-  "unicode": "1f937-1f3fc",
-  "shortname": ":shrug_tone2:",
-  "code_decimal": "&#129335;&#127996;",
-  "category": "people",
-  "emoji_order": "641"
-}, {
-  "name": "shrug_tone3",
-  "unicode": "1f937-1f3fd",
-  "shortname": ":shrug_tone3:",
-  "code_decimal": "&#129335;&#127997;",
-  "category": "people",
-  "emoji_order": "642"
-}, {
-  "name": "shrug_tone4",
-  "unicode": "1f937-1f3fe",
-  "shortname": ":shrug_tone4:",
-  "code_decimal": "&#129335;&#127998;",
-  "category": "people",
-  "emoji_order": "643"
-}, {
-  "name": "shrug_tone5",
-  "unicode": "1f937-1f3ff",
-  "shortname": ":shrug_tone5:",
-  "code_decimal": "&#129335;&#127999;",
-  "category": "people",
-  "emoji_order": "644"
-}, {
+},
+// {
+//   "name": "shrug_tone1",
+//   "unicode": "1f937-1f3fb",
+//   "shortname": ":shrug_tone1:",
+//   "code_decimal": "&#129335;&#127995;",
+//   "category": "people",
+//   "emoji_order": "640"
+// },
+// {
+//   "name": "shrug_tone2",
+//   "unicode": "1f937-1f3fc",
+//   "shortname": ":shrug_tone2:",
+//   "code_decimal": "&#129335;&#127996;",
+//   "category": "people",
+//   "emoji_order": "641"
+// },
+// {
+//   "name": "shrug_tone3",
+//   "unicode": "1f937-1f3fd",
+//   "shortname": ":shrug_tone3:",
+//   "code_decimal": "&#129335;&#127997;",
+//   "category": "people",
+//   "emoji_order": "642"
+// },
+// {
+//   "name": "shrug_tone4",
+//   "unicode": "1f937-1f3fe",
+//   "shortname": ":shrug_tone4:",
+//   "code_decimal": "&#129335;&#127998;",
+//   "category": "people",
+//   "emoji_order": "643"
+// },
+// {
+//   "name": "shrug_tone5",
+//   "unicode": "1f937-1f3ff",
+//   "shortname": ":shrug_tone5:",
+//   "code_decimal": "&#129335;&#127999;",
+//   "category": "people",
+//   "emoji_order": "644"
+// },
+{
   "name": "massage",
   "unicode": "1f486",
   "shortname": ":massage:",
   "code_decimal": "&#128134;",
   "category": "people",
   "emoji_order": "657"
-}, {
-  "name": "massage_tone1",
-  "unicode": "1f486-1f3fb",
-  "shortname": ":massage_tone1:",
-  "code_decimal": "&#128134;&#127995;",
-  "category": "people",
-  "emoji_order": "658"
-}, {
-  "name": "massage_tone2",
-  "unicode": "1f486-1f3fc",
-  "shortname": ":massage_tone2:",
-  "code_decimal": "&#128134;&#127996;",
-  "category": "people",
-  "emoji_order": "659"
-}, {
-  "name": "massage_tone3",
-  "unicode": "1f486-1f3fd",
-  "shortname": ":massage_tone3:",
-  "code_decimal": "&#128134;&#127997;",
-  "category": "people",
-  "emoji_order": "660"
-}, {
-  "name": "massage_tone4",
-  "unicode": "1f486-1f3fe",
-  "shortname": ":massage_tone4:",
-  "code_decimal": "&#128134;&#127998;",
-  "category": "people",
-  "emoji_order": "661"
-}, {
-  "name": "massage_tone5",
-  "unicode": "1f486-1f3ff",
-  "shortname": ":massage_tone5:",
-  "code_decimal": "&#128134;&#127999;",
-  "category": "people",
-  "emoji_order": "662"
-}, {
+},
+// {
+//   "name": "massage_tone1",
+//   "unicode": "1f486-1f3fb",
+//   "shortname": ":massage_tone1:",
+//   "code_decimal": "&#128134;&#127995;",
+//   "category": "people",
+//   "emoji_order": "658"
+// },
+// {
+//   "name": "massage_tone2",
+//   "unicode": "1f486-1f3fc",
+//   "shortname": ":massage_tone2:",
+//   "code_decimal": "&#128134;&#127996;",
+//   "category": "people",
+//   "emoji_order": "659"
+// },
+// {
+//   "name": "massage_tone3",
+//   "unicode": "1f486-1f3fd",
+//   "shortname": ":massage_tone3:",
+//   "code_decimal": "&#128134;&#127997;",
+//   "category": "people",
+//   "emoji_order": "660"
+// },
+// {
+//   "name": "massage_tone4",
+//   "unicode": "1f486-1f3fe",
+//   "shortname": ":massage_tone4:",
+//   "code_decimal": "&#128134;&#127998;",
+//   "category": "people",
+//   "emoji_order": "661"
+// },
+// {
+//   "name": "massage_tone5",
+//   "unicode": "1f486-1f3ff",
+//   "shortname": ":massage_tone5:",
+//   "code_decimal": "&#128134;&#127999;",
+//   "category": "people",
+//   "emoji_order": "662"
+// },
+{
   "name": "haircut",
   "unicode": "1f487",
   "shortname": ":haircut:",
   "code_decimal": "&#128135;",
   "category": "people",
   "emoji_order": "675"
-}, {
-  "name": "haircut_tone1",
-  "unicode": "1f487-1f3fb",
-  "shortname": ":haircut_tone1:",
-  "code_decimal": "&#128135;&#127995;",
-  "category": "people",
-  "emoji_order": "676"
-}, {
-  "name": "haircut_tone2",
-  "unicode": "1f487-1f3fc",
-  "shortname": ":haircut_tone2:",
-  "code_decimal": "&#128135;&#127996;",
-  "category": "people",
-  "emoji_order": "677"
-}, {
-  "name": "haircut_tone3",
-  "unicode": "1f487-1f3fd",
-  "shortname": ":haircut_tone3:",
-  "code_decimal": "&#128135;&#127997;",
-  "category": "people",
-  "emoji_order": "678"
-}, {
-  "name": "haircut_tone4",
-  "unicode": "1f487-1f3fe",
-  "shortname": ":haircut_tone4:",
-  "code_decimal": "&#128135;&#127998;",
-  "category": "people",
-  "emoji_order": "679"
-}, {
-  "name": "haircut_tone5",
-  "unicode": "1f487-1f3ff",
-  "shortname": ":haircut_tone5:",
-  "code_decimal": "&#128135;&#127999;",
-  "category": "people",
-  "emoji_order": "680"
-}, {
+},
+// {
+//   "name": "haircut_tone1",
+//   "unicode": "1f487-1f3fb",
+//   "shortname": ":haircut_tone1:",
+//   "code_decimal": "&#128135;&#127995;",
+//   "category": "people",
+//   "emoji_order": "676"
+// },
+// {
+//   "name": "haircut_tone2",
+//   "unicode": "1f487-1f3fc",
+//   "shortname": ":haircut_tone2:",
+//   "code_decimal": "&#128135;&#127996;",
+//   "category": "people",
+//   "emoji_order": "677"
+// },
+// {
+//   "name": "haircut_tone3",
+//   "unicode": "1f487-1f3fd",
+//   "shortname": ":haircut_tone3:",
+//   "code_decimal": "&#128135;&#127997;",
+//   "category": "people",
+//   "emoji_order": "678"
+// },
+// {
+//   "name": "haircut_tone4",
+//   "unicode": "1f487-1f3fe",
+//   "shortname": ":haircut_tone4:",
+//   "code_decimal": "&#128135;&#127998;",
+//   "category": "people",
+//   "emoji_order": "679"
+// },
+// {
+//   "name": "haircut_tone5",
+//   "unicode": "1f487-1f3ff",
+//   "shortname": ":haircut_tone5:",
+//   "code_decimal": "&#128135;&#127999;",
+//   "category": "people",
+//   "emoji_order": "680"
+// },
+{
   "name": "walking",
   "unicode": "1f6b6",
   "shortname": ":walking:",
   "code_decimal": "&#128694;",
   "category": "people",
   "emoji_order": "693"
-}, {
-  "name": "walking_tone1",
-  "unicode": "1f6b6-1f3fb",
-  "shortname": ":walking_tone1:",
-  "code_decimal": "&#128694;&#127995;",
-  "category": "people",
-  "emoji_order": "694"
-}, {
-  "name": "walking_tone2",
-  "unicode": "1f6b6-1f3fc",
-  "shortname": ":walking_tone2:",
-  "code_decimal": "&#128694;&#127996;",
-  "category": "people",
-  "emoji_order": "695"
-}, {
-  "name": "walking_tone3",
-  "unicode": "1f6b6-1f3fd",
-  "shortname": ":walking_tone3:",
-  "code_decimal": "&#128694;&#127997;",
-  "category": "people",
-  "emoji_order": "696"
-}, {
-  "name": "walking_tone4",
-  "unicode": "1f6b6-1f3fe",
-  "shortname": ":walking_tone4:",
-  "code_decimal": "&#128694;&#127998;",
-  "category": "people",
-  "emoji_order": "697"
-}, {
-  "name": "walking_tone5",
-  "unicode": "1f6b6-1f3ff",
-  "shortname": ":walking_tone5:",
-  "code_decimal": "&#128694;&#127999;",
-  "category": "people",
-  "emoji_order": "698"
-}, {
+},
+// {
+//   "name": "walking_tone1",
+//   "unicode": "1f6b6-1f3fb",
+//   "shortname": ":walking_tone1:",
+//   "code_decimal": "&#128694;&#127995;",
+//   "category": "people",
+//   "emoji_order": "694"
+// },
+// {
+//   "name": "walking_tone2",
+//   "unicode": "1f6b6-1f3fc",
+//   "shortname": ":walking_tone2:",
+//   "code_decimal": "&#128694;&#127996;",
+//   "category": "people",
+//   "emoji_order": "695"
+// },
+// {
+//   "name": "walking_tone3",
+//   "unicode": "1f6b6-1f3fd",
+//   "shortname": ":walking_tone3:",
+//   "code_decimal": "&#128694;&#127997;",
+//   "category": "people",
+//   "emoji_order": "696"
+// },
+// {
+//   "name": "walking_tone4",
+//   "unicode": "1f6b6-1f3fe",
+//   "shortname": ":walking_tone4:",
+//   "code_decimal": "&#128694;&#127998;",
+//   "category": "people",
+//   "emoji_order": "697"
+// },
+// {
+//   "name": "walking_tone5",
+//   "unicode": "1f6b6-1f3ff",
+//   "shortname": ":walking_tone5:",
+//   "code_decimal": "&#128694;&#127999;",
+//   "category": "people",
+//   "emoji_order": "698"
+// },
+{
   "name": "runner",
   "unicode": "1f3c3",
   "shortname": ":runner:",
   "code_decimal": "&#127939;",
   "category": "people",
   "emoji_order": "711"
-}, {
-  "name": "runner_tone1",
-  "unicode": "1f3c3-1f3fb",
-  "shortname": ":runner_tone1:",
-  "code_decimal": "&#127939;&#127995;",
-  "category": "people",
-  "emoji_order": "712"
-}, {
-  "name": "runner_tone2",
-  "unicode": "1f3c3-1f3fc",
-  "shortname": ":runner_tone2:",
-  "code_decimal": "&#127939;&#127996;",
-  "category": "people",
-  "emoji_order": "713"
-}, {
-  "name": "runner_tone3",
-  "unicode": "1f3c3-1f3fd",
-  "shortname": ":runner_tone3:",
-  "code_decimal": "&#127939;&#127997;",
-  "category": "people",
-  "emoji_order": "714"
-}, {
-  "name": "runner_tone4",
-  "unicode": "1f3c3-1f3fe",
-  "shortname": ":runner_tone4:",
-  "code_decimal": "&#127939;&#127998;",
-  "category": "people",
-  "emoji_order": "715"
-}, {
-  "name": "runner_tone5",
-  "unicode": "1f3c3-1f3ff",
-  "shortname": ":runner_tone5:",
-  "code_decimal": "&#127939;&#127999;",
-  "category": "people",
-  "emoji_order": "716"
-}, {
+},
+// {
+//   "name": "runner_tone1",
+//   "unicode": "1f3c3-1f3fb",
+//   "shortname": ":runner_tone1:",
+//   "code_decimal": "&#127939;&#127995;",
+//   "category": "people",
+//   "emoji_order": "712"
+// },
+// {
+//   "name": "runner_tone2",
+//   "unicode": "1f3c3-1f3fc",
+//   "shortname": ":runner_tone2:",
+//   "code_decimal": "&#127939;&#127996;",
+//   "category": "people",
+//   "emoji_order": "713"
+// },
+// {
+//   "name": "runner_tone3",
+//   "unicode": "1f3c3-1f3fd",
+//   "shortname": ":runner_tone3:",
+//   "code_decimal": "&#127939;&#127997;",
+//   "category": "people",
+//   "emoji_order": "714"
+// },
+// {
+//   "name": "runner_tone4",
+//   "unicode": "1f3c3-1f3fe",
+//   "shortname": ":runner_tone4:",
+//   "code_decimal": "&#127939;&#127998;",
+//   "category": "people",
+//   "emoji_order": "715"
+// },
+// {
+//   "name": "runner_tone5",
+//   "unicode": "1f3c3-1f3ff",
+//   "shortname": ":runner_tone5:",
+//   "code_decimal": "&#127939;&#127999;",
+//   "category": "people",
+//   "emoji_order": "716"
+// },
+{
   "name": "dancer",
   "unicode": "1f483",
   "shortname": ":dancer:",
   "code_decimal": "&#128131;",
   "category": "people",
   "emoji_order": "729"
-}, {
-  "name": "dancer_tone1",
-  "unicode": "1f483-1f3fb",
-  "shortname": ":dancer_tone1:",
-  "code_decimal": "&#128131;&#127995;",
-  "category": "people",
-  "emoji_order": "730"
-}, {
-  "name": "dancer_tone2",
-  "unicode": "1f483-1f3fc",
-  "shortname": ":dancer_tone2:",
-  "code_decimal": "&#128131;&#127996;",
-  "category": "people",
-  "emoji_order": "731"
-}, {
-  "name": "dancer_tone3",
-  "unicode": "1f483-1f3fd",
-  "shortname": ":dancer_tone3:",
-  "code_decimal": "&#128131;&#127997;",
-  "category": "people",
-  "emoji_order": "732"
-}, {
-  "name": "dancer_tone4",
-  "unicode": "1f483-1f3fe",
-  "shortname": ":dancer_tone4:",
-  "code_decimal": "&#128131;&#127998;",
-  "category": "people",
-  "emoji_order": "733"
-}, {
-  "name": "dancer_tone5",
-  "unicode": "1f483-1f3ff",
-  "shortname": ":dancer_tone5:",
-  "code_decimal": "&#128131;&#127999;",
-  "category": "people",
-  "emoji_order": "734"
-}, {
+},
+// {
+//   "name": "dancer_tone1",
+//   "unicode": "1f483-1f3fb",
+//   "shortname": ":dancer_tone1:",
+//   "code_decimal": "&#128131;&#127995;",
+//   "category": "people",
+//   "emoji_order": "730"
+// },
+// {
+//   "name": "dancer_tone2",
+//   "unicode": "1f483-1f3fc",
+//   "shortname": ":dancer_tone2:",
+//   "code_decimal": "&#128131;&#127996;",
+//   "category": "people",
+//   "emoji_order": "731"
+// },
+// {
+//   "name": "dancer_tone3",
+//   "unicode": "1f483-1f3fd",
+//   "shortname": ":dancer_tone3:",
+//   "code_decimal": "&#128131;&#127997;",
+//   "category": "people",
+//   "emoji_order": "732"
+// },
+// {
+//   "name": "dancer_tone4",
+//   "unicode": "1f483-1f3fe",
+//   "shortname": ":dancer_tone4:",
+//   "code_decimal": "&#128131;&#127998;",
+//   "category": "people",
+//   "emoji_order": "733"
+// },
+// {
+//   "name": "dancer_tone5",
+//   "unicode": "1f483-1f3ff",
+//   "shortname": ":dancer_tone5:",
+//   "code_decimal": "&#128131;&#127999;",
+//   "category": "people",
+//   "emoji_order": "734"
+// },
+{
   "name": "man_dancing",
   "unicode": "1f57a",
   "shortname": ":man_dancing:",
   "code_decimal": "&#128378;",
   "category": "people",
   "emoji_order": "735"
-}, {
-  "name": "man_dancing_tone1",
-  "unicode": "1f57a-1f3fb",
-  "shortname": ":man_dancing_tone1:",
-  "code_decimal": "&#128378;&#127995;",
-  "category": "people",
-  "emoji_order": "736"
-}, {
-  "name": "man_dancing_tone2",
-  "unicode": "1f57a-1f3fc",
-  "shortname": ":man_dancing_tone2:",
-  "code_decimal": "&#128378;&#127996;",
-  "category": "people",
-  "emoji_order": "737"
-}, {
-  "name": "man_dancing_tone3",
-  "unicode": "1f57a-1f3fd",
-  "shortname": ":man_dancing_tone3:",
-  "code_decimal": "&#128378;&#127997;",
-  "category": "people",
-  "emoji_order": "738"
-}, {
-  "name": "man_dancing_tone4",
-  "unicode": "1f57a-1f3fe",
-  "shortname": ":man_dancing_tone4:",
-  "code_decimal": "&#128378;&#127998;",
-  "category": "people",
-  "emoji_order": "739"
-}, {
-  "name": "man_dancing_tone5",
-  "unicode": "1f57a-1f3ff",
-  "shortname": ":man_dancing_tone5:",
-  "code_decimal": "&#128378;&#127999;",
-  "category": "people",
-  "emoji_order": "740"
-}, {
+},
+// {
+//   "name": "man_dancing_tone1",
+//   "unicode": "1f57a-1f3fb",
+//   "shortname": ":man_dancing_tone1:",
+//   "code_decimal": "&#128378;&#127995;",
+//   "category": "people",
+//   "emoji_order": "736"
+// },
+// {
+//   "name": "man_dancing_tone2",
+//   "unicode": "1f57a-1f3fc",
+//   "shortname": ":man_dancing_tone2:",
+//   "code_decimal": "&#128378;&#127996;",
+//   "category": "people",
+//   "emoji_order": "737"
+// },
+// {
+//   "name": "man_dancing_tone3",
+//   "unicode": "1f57a-1f3fd",
+//   "shortname": ":man_dancing_tone3:",
+//   "code_decimal": "&#128378;&#127997;",
+//   "category": "people",
+//   "emoji_order": "738"
+// },
+// {
+//   "name": "man_dancing_tone4",
+//   "unicode": "1f57a-1f3fe",
+//   "shortname": ":man_dancing_tone4:",
+//   "code_decimal": "&#128378;&#127998;",
+//   "category": "people",
+//   "emoji_order": "739"
+// },
+// {
+//   "name": "man_dancing_tone5",
+//   "unicode": "1f57a-1f3ff",
+//   "shortname": ":man_dancing_tone5:",
+//   "code_decimal": "&#128378;&#127999;",
+//   "category": "people",
+//   "emoji_order": "740"
+// },
+{
   "name": "dancers",
   "unicode": "1f46f",
   "shortname": ":dancers:",
@@ -2365,42 +2587,48 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#127943;",
   "category": "activity",
   "emoji_order": "769"
-}, {
-  "name": "horse_racing_tone1",
-  "unicode": "1f3c7-1f3fb",
-  "shortname": ":horse_racing_tone1:",
-  "code_decimal": "&#127943;&#127995;",
-  "category": "activity",
-  "emoji_order": "770"
-}, {
-  "name": "horse_racing_tone2",
-  "unicode": "1f3c7-1f3fc",
-  "shortname": ":horse_racing_tone2:",
-  "code_decimal": "&#127943;&#127996;",
-  "category": "activity",
-  "emoji_order": "771"
-}, {
-  "name": "horse_racing_tone3",
-  "unicode": "1f3c7-1f3fd",
-  "shortname": ":horse_racing_tone3:",
-  "code_decimal": "&#127943;&#127997;",
-  "category": "activity",
-  "emoji_order": "772"
-}, {
-  "name": "horse_racing_tone4",
-  "unicode": "1f3c7-1f3fe",
-  "shortname": ":horse_racing_tone4:",
-  "code_decimal": "&#127943;&#127998;",
-  "category": "activity",
-  "emoji_order": "773"
-}, {
-  "name": "horse_racing_tone5",
-  "unicode": "1f3c7-1f3ff",
-  "shortname": ":horse_racing_tone5:",
-  "code_decimal": "&#127943;&#127999;",
-  "category": "activity",
-  "emoji_order": "774"
-}, {
+},
+// {
+//   "name": "horse_racing_tone1",
+//   "unicode": "1f3c7-1f3fb",
+//   "shortname": ":horse_racing_tone1:",
+//   "code_decimal": "&#127943;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "770"
+// },
+// {
+//   "name": "horse_racing_tone2",
+//   "unicode": "1f3c7-1f3fc",
+//   "shortname": ":horse_racing_tone2:",
+//   "code_decimal": "&#127943;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "771"
+// },
+// {
+//   "name": "horse_racing_tone3",
+//   "unicode": "1f3c7-1f3fd",
+//   "shortname": ":horse_racing_tone3:",
+//   "code_decimal": "&#127943;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "772"
+// },
+// {
+//   "name": "horse_racing_tone4",
+//   "unicode": "1f3c7-1f3fe",
+//   "shortname": ":horse_racing_tone4:",
+//   "code_decimal": "&#127943;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "773"
+// },
+// {
+//   "name": "horse_racing_tone5",
+//   "unicode": "1f3c7-1f3ff",
+//   "shortname": ":horse_racing_tone5:",
+//   "code_decimal": "&#127943;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "774"
+// },
+{
   "name": "skier",
   "unicode": "26f7",
   "shortname": ":skier:",
@@ -2428,294 +2656,336 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#127940;",
   "category": "activity",
   "emoji_order": "800"
-}, {
-  "name": "surfer_tone1",
-  "unicode": "1f3c4-1f3fb",
-  "shortname": ":surfer_tone1:",
-  "code_decimal": "&#127940;&#127995;",
-  "category": "activity",
-  "emoji_order": "801"
-}, {
-  "name": "surfer_tone2",
-  "unicode": "1f3c4-1f3fc",
-  "shortname": ":surfer_tone2:",
-  "code_decimal": "&#127940;&#127996;",
-  "category": "activity",
-  "emoji_order": "802"
-}, {
-  "name": "surfer_tone3",
-  "unicode": "1f3c4-1f3fd",
-  "shortname": ":surfer_tone3:",
-  "code_decimal": "&#127940;&#127997;",
-  "category": "activity",
-  "emoji_order": "803"
-}, {
-  "name": "surfer_tone4",
-  "unicode": "1f3c4-1f3fe",
-  "shortname": ":surfer_tone4:",
-  "code_decimal": "&#127940;&#127998;",
-  "category": "activity",
-  "emoji_order": "804"
-}, {
-  "name": "surfer_tone5",
-  "unicode": "1f3c4-1f3ff",
-  "shortname": ":surfer_tone5:",
-  "code_decimal": "&#127940;&#127999;",
-  "category": "activity",
-  "emoji_order": "805"
-}, {
+},
+// {
+//   "name": "surfer_tone1",
+//   "unicode": "1f3c4-1f3fb",
+//   "shortname": ":surfer_tone1:",
+//   "code_decimal": "&#127940;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "801"
+// },
+// {
+//   "name": "surfer_tone2",
+//   "unicode": "1f3c4-1f3fc",
+//   "shortname": ":surfer_tone2:",
+//   "code_decimal": "&#127940;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "802"
+// },
+// {
+//   "name": "surfer_tone3",
+//   "unicode": "1f3c4-1f3fd",
+//   "shortname": ":surfer_tone3:",
+//   "code_decimal": "&#127940;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "803"
+// },
+// {
+//   "name": "surfer_tone4",
+//   "unicode": "1f3c4-1f3fe",
+//   "shortname": ":surfer_tone4:",
+//   "code_decimal": "&#127940;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "804"
+// },
+// {
+//   "name": "surfer_tone5",
+//   "unicode": "1f3c4-1f3ff",
+//   "shortname": ":surfer_tone5:",
+//   "code_decimal": "&#127940;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "805"
+// },
+{
   "name": "rowboat",
   "unicode": "1f6a3",
   "shortname": ":rowboat:",
   "code_decimal": "&#128675;",
   "category": "activity",
   "emoji_order": "818"
-}, {
-  "name": "rowboat_tone1",
-  "unicode": "1f6a3-1f3fb",
-  "shortname": ":rowboat_tone1:",
-  "code_decimal": "&#128675;&#127995;",
-  "category": "activity",
-  "emoji_order": "819"
-}, {
-  "name": "rowboat_tone2",
-  "unicode": "1f6a3-1f3fc",
-  "shortname": ":rowboat_tone2:",
-  "code_decimal": "&#128675;&#127996;",
-  "category": "activity",
-  "emoji_order": "820"
-}, {
-  "name": "rowboat_tone3",
-  "unicode": "1f6a3-1f3fd",
-  "shortname": ":rowboat_tone3:",
-  "code_decimal": "&#128675;&#127997;",
-  "category": "activity",
-  "emoji_order": "821"
-}, {
-  "name": "rowboat_tone4",
-  "unicode": "1f6a3-1f3fe",
-  "shortname": ":rowboat_tone4:",
-  "code_decimal": "&#128675;&#127998;",
-  "category": "activity",
-  "emoji_order": "822"
-}, {
-  "name": "rowboat_tone5",
-  "unicode": "1f6a3-1f3ff",
-  "shortname": ":rowboat_tone5:",
-  "code_decimal": "&#128675;&#127999;",
-  "category": "activity",
-  "emoji_order": "823"
-}, {
+},
+// {
+//   "name": "rowboat_tone1",
+//   "unicode": "1f6a3-1f3fb",
+//   "shortname": ":rowboat_tone1:",
+//   "code_decimal": "&#128675;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "819"
+// },
+// {
+//   "name": "rowboat_tone2",
+//   "unicode": "1f6a3-1f3fc",
+//   "shortname": ":rowboat_tone2:",
+//   "code_decimal": "&#128675;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "820"
+// },
+// {
+//   "name": "rowboat_tone3",
+//   "unicode": "1f6a3-1f3fd",
+//   "shortname": ":rowboat_tone3:",
+//   "code_decimal": "&#128675;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "821"
+// },
+// {
+//   "name": "rowboat_tone4",
+//   "unicode": "1f6a3-1f3fe",
+//   "shortname": ":rowboat_tone4:",
+//   "code_decimal": "&#128675;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "822"
+// },
+// {
+//   "name": "rowboat_tone5",
+//   "unicode": "1f6a3-1f3ff",
+//   "shortname": ":rowboat_tone5:",
+//   "code_decimal": "&#128675;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "823"
+// },
+{
   "name": "swimmer",
   "unicode": "1f3ca",
   "shortname": ":swimmer:",
   "code_decimal": "&#127946;",
   "category": "activity",
   "emoji_order": "836"
-}, {
-  "name": "swimmer_tone1",
-  "unicode": "1f3ca-1f3fb",
-  "shortname": ":swimmer_tone1:",
-  "code_decimal": "&#127946;&#127995;",
-  "category": "activity",
-  "emoji_order": "837"
-}, {
-  "name": "swimmer_tone2",
-  "unicode": "1f3ca-1f3fc",
-  "shortname": ":swimmer_tone2:",
-  "code_decimal": "&#127946;&#127996;",
-  "category": "activity",
-  "emoji_order": "838"
-}, {
-  "name": "swimmer_tone3",
-  "unicode": "1f3ca-1f3fd",
-  "shortname": ":swimmer_tone3:",
-  "code_decimal": "&#127946;&#127997;",
-  "category": "activity",
-  "emoji_order": "839"
-}, {
-  "name": "swimmer_tone4",
-  "unicode": "1f3ca-1f3fe",
-  "shortname": ":swimmer_tone4:",
-  "code_decimal": "&#127946;&#127998;",
-  "category": "activity",
-  "emoji_order": "840"
-}, {
-  "name": "swimmer_tone5",
-  "unicode": "1f3ca-1f3ff",
-  "shortname": ":swimmer_tone5:",
-  "code_decimal": "&#127946;&#127999;",
-  "category": "activity",
-  "emoji_order": "841"
-}, {
+},
+// {
+//   "name": "swimmer_tone1",
+//   "unicode": "1f3ca-1f3fb",
+//   "shortname": ":swimmer_tone1:",
+//   "code_decimal": "&#127946;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "837"
+// },
+// {
+//   "name": "swimmer_tone2",
+//   "unicode": "1f3ca-1f3fc",
+//   "shortname": ":swimmer_tone2:",
+//   "code_decimal": "&#127946;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "838"
+// },
+// {
+//   "name": "swimmer_tone3",
+//   "unicode": "1f3ca-1f3fd",
+//   "shortname": ":swimmer_tone3:",
+//   "code_decimal": "&#127946;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "839"
+// },
+// {
+//   "name": "swimmer_tone4",
+//   "unicode": "1f3ca-1f3fe",
+//   "shortname": ":swimmer_tone4:",
+//   "code_decimal": "&#127946;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "840"
+// },
+// {
+//   "name": "swimmer_tone5",
+//   "unicode": "1f3ca-1f3ff",
+//   "shortname": ":swimmer_tone5:",
+//   "code_decimal": "&#127946;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "841"
+// },
+{
   "name": "basketball_player",
   "unicode": "26f9",
   "shortname": ":basketball_player:",
   "code_decimal": "&#9977;",
   "category": "activity",
   "emoji_order": "854"
-}, {
-  "name": "basketball_player_tone1",
-  "unicode": "26f9-1f3fb",
-  "shortname": ":basketball_player_tone1:",
-  "code_decimal": "&#9977;&#127995;",
-  "category": "activity",
-  "emoji_order": "855"
-}, {
-  "name": "basketball_player_tone2",
-  "unicode": "26f9-1f3fc",
-  "shortname": ":basketball_player_tone2:",
-  "code_decimal": "&#9977;&#127996;",
-  "category": "activity",
-  "emoji_order": "856"
-}, {
-  "name": "basketball_player_tone3",
-  "unicode": "26f9-1f3fd",
-  "shortname": ":basketball_player_tone3:",
-  "code_decimal": "&#9977;&#127997;",
-  "category": "activity",
-  "emoji_order": "857"
-}, {
-  "name": "basketball_player_tone4",
-  "unicode": "26f9-1f3fe",
-  "shortname": ":basketball_player_tone4:",
-  "code_decimal": "&#9977;&#127998;",
-  "category": "activity",
-  "emoji_order": "858"
-}, {
-  "name": "basketball_player_tone5",
-  "unicode": "26f9-1f3ff",
-  "shortname": ":basketball_player_tone5:",
-  "code_decimal": "&#9977;&#127999;",
-  "category": "activity",
-  "emoji_order": "859"
-}, {
+},
+// {
+//   "name": "basketball_player_tone1",
+//   "unicode": "26f9-1f3fb",
+//   "shortname": ":basketball_player_tone1:",
+//   "code_decimal": "&#9977;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "855"
+// },
+// {
+//   "name": "basketball_player_tone2",
+//   "unicode": "26f9-1f3fc",
+//   "shortname": ":basketball_player_tone2:",
+//   "code_decimal": "&#9977;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "856"
+// },
+// {
+//   "name": "basketball_player_tone3",
+//   "unicode": "26f9-1f3fd",
+//   "shortname": ":basketball_player_tone3:",
+//   "code_decimal": "&#9977;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "857"
+// },
+// {
+//   "name": "basketball_player_tone4",
+//   "unicode": "26f9-1f3fe",
+//   "shortname": ":basketball_player_tone4:",
+//   "code_decimal": "&#9977;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "858"
+// },
+// {
+//   "name": "basketball_player_tone5",
+//   "unicode": "26f9-1f3ff",
+//   "shortname": ":basketball_player_tone5:",
+//   "code_decimal": "&#9977;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "859"
+// },
+{
   "name": "lifter",
   "unicode": "1f3cb",
   "shortname": ":lifter:",
   "code_decimal": "&#127947;",
   "category": "activity",
   "emoji_order": "872"
-}, {
-  "name": "lifter_tone1",
-  "unicode": "1f3cb-1f3fb",
-  "shortname": ":lifter_tone1:",
-  "code_decimal": "&#127947;&#127995;",
-  "category": "activity",
-  "emoji_order": "873"
-}, {
-  "name": "lifter_tone2",
-  "unicode": "1f3cb-1f3fc",
-  "shortname": ":lifter_tone2:",
-  "code_decimal": "&#127947;&#127996;",
-  "category": "activity",
-  "emoji_order": "874"
-}, {
-  "name": "lifter_tone3",
-  "unicode": "1f3cb-1f3fd",
-  "shortname": ":lifter_tone3:",
-  "code_decimal": "&#127947;&#127997;",
-  "category": "activity",
-  "emoji_order": "875"
-}, {
-  "name": "lifter_tone4",
-  "unicode": "1f3cb-1f3fe",
-  "shortname": ":lifter_tone4:",
-  "code_decimal": "&#127947;&#127998;",
-  "category": "activity",
-  "emoji_order": "876"
-}, {
-  "name": "lifter_tone5",
-  "unicode": "1f3cb-1f3ff",
-  "shortname": ":lifter_tone5:",
-  "code_decimal": "&#127947;&#127999;",
-  "category": "activity",
-  "emoji_order": "877"
-}, {
+},
+// {
+//   "name": "lifter_tone1",
+//   "unicode": "1f3cb-1f3fb",
+//   "shortname": ":lifter_tone1:",
+//   "code_decimal": "&#127947;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "873"
+// },
+// {
+//   "name": "lifter_tone2",
+//   "unicode": "1f3cb-1f3fc",
+//   "shortname": ":lifter_tone2:",
+//   "code_decimal": "&#127947;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "874"
+// },
+// {
+//   "name": "lifter_tone3",
+//   "unicode": "1f3cb-1f3fd",
+//   "shortname": ":lifter_tone3:",
+//   "code_decimal": "&#127947;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "875"
+// },
+// {
+//   "name": "lifter_tone4",
+//   "unicode": "1f3cb-1f3fe",
+//   "shortname": ":lifter_tone4:",
+//   "code_decimal": "&#127947;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "876"
+// },
+// {
+//   "name": "lifter_tone5",
+//   "unicode": "1f3cb-1f3ff",
+//   "shortname": ":lifter_tone5:",
+//   "code_decimal": "&#127947;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "877"
+// },
+{
   "name": "bicyclist",
   "unicode": "1f6b4",
   "shortname": ":bicyclist:",
   "code_decimal": "&#128692;",
   "category": "activity",
   "emoji_order": "890"
-}, {
-  "name": "bicyclist_tone1",
-  "unicode": "1f6b4-1f3fb",
-  "shortname": ":bicyclist_tone1:",
-  "code_decimal": "&#128692;&#127995;",
-  "category": "activity",
-  "emoji_order": "891"
-}, {
-  "name": "bicyclist_tone2",
-  "unicode": "1f6b4-1f3fc",
-  "shortname": ":bicyclist_tone2:",
-  "code_decimal": "&#128692;&#127996;",
-  "category": "activity",
-  "emoji_order": "892"
-}, {
-  "name": "bicyclist_tone3",
-  "unicode": "1f6b4-1f3fd",
-  "shortname": ":bicyclist_tone3:",
-  "code_decimal": "&#128692;&#127997;",
-  "category": "activity",
-  "emoji_order": "893"
-}, {
-  "name": "bicyclist_tone4",
-  "unicode": "1f6b4-1f3fe",
-  "shortname": ":bicyclist_tone4:",
-  "code_decimal": "&#128692;&#127998;",
-  "category": "activity",
-  "emoji_order": "894"
-}, {
-  "name": "bicyclist_tone5",
-  "unicode": "1f6b4-1f3ff",
-  "shortname": ":bicyclist_tone5:",
-  "code_decimal": "&#128692;&#127999;",
-  "category": "activity",
-  "emoji_order": "895"
-}, {
+},
+// {
+//   "name": "bicyclist_tone1",
+//   "unicode": "1f6b4-1f3fb",
+//   "shortname": ":bicyclist_tone1:",
+//   "code_decimal": "&#128692;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "891"
+// },
+// {
+//   "name": "bicyclist_tone2",
+//   "unicode": "1f6b4-1f3fc",
+//   "shortname": ":bicyclist_tone2:",
+//   "code_decimal": "&#128692;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "892"
+// },
+// {
+//   "name": "bicyclist_tone3",
+//   "unicode": "1f6b4-1f3fd",
+//   "shortname": ":bicyclist_tone3:",
+//   "code_decimal": "&#128692;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "893"
+// },
+// {
+//   "name": "bicyclist_tone4",
+//   "unicode": "1f6b4-1f3fe",
+//   "shortname": ":bicyclist_tone4:",
+//   "code_decimal": "&#128692;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "894"
+// },
+// {
+//   "name": "bicyclist_tone5",
+//   "unicode": "1f6b4-1f3ff",
+//   "shortname": ":bicyclist_tone5:",
+//   "code_decimal": "&#128692;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "895"
+// },
+{
   "name": "mountain_bicyclist",
   "unicode": "1f6b5",
   "shortname": ":mountain_bicyclist:",
   "code_decimal": "&#128693;",
   "category": "activity",
   "emoji_order": "908"
-}, {
-  "name": "mountain_bicyclist_tone1",
-  "unicode": "1f6b5-1f3fb",
-  "shortname": ":mountain_bicyclist_tone1:",
-  "code_decimal": "&#128693;&#127995;",
-  "category": "activity",
-  "emoji_order": "909"
-}, {
-  "name": "mountain_bicyclist_tone2",
-  "unicode": "1f6b5-1f3fc",
-  "shortname": ":mountain_bicyclist_tone2:",
-  "code_decimal": "&#128693;&#127996;",
-  "category": "activity",
-  "emoji_order": "910"
-}, {
-  "name": "mountain_bicyclist_tone3",
-  "unicode": "1f6b5-1f3fd",
-  "shortname": ":mountain_bicyclist_tone3:",
-  "code_decimal": "&#128693;&#127997;",
-  "category": "activity",
-  "emoji_order": "911"
-}, {
-  "name": "mountain_bicyclist_tone4",
-  "unicode": "1f6b5-1f3fe",
-  "shortname": ":mountain_bicyclist_tone4:",
-  "code_decimal": "&#128693;&#127998;",
-  "category": "activity",
-  "emoji_order": "912"
-}, {
-  "name": "mountain_bicyclist_tone5",
-  "unicode": "1f6b5-1f3ff",
-  "shortname": ":mountain_bicyclist_tone5:",
-  "code_decimal": "&#128693;&#127999;",
-  "category": "activity",
-  "emoji_order": "913"
-}, {
+},
+// {
+//   "name": "mountain_bicyclist_tone1",
+//   "unicode": "1f6b5-1f3fb",
+//   "shortname": ":mountain_bicyclist_tone1:",
+//   "code_decimal": "&#128693;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "909"
+// },
+// {
+//   "name": "mountain_bicyclist_tone2",
+//   "unicode": "1f6b5-1f3fc",
+//   "shortname": ":mountain_bicyclist_tone2:",
+//   "code_decimal": "&#128693;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "910"
+// },
+// {
+//   "name": "mountain_bicyclist_tone3",
+//   "unicode": "1f6b5-1f3fd",
+//   "shortname": ":mountain_bicyclist_tone3:",
+//   "code_decimal": "&#128693;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "911"
+// },
+// {
+//   "name": "mountain_bicyclist_tone4",
+//   "unicode": "1f6b5-1f3fe",
+//   "shortname": ":mountain_bicyclist_tone4:",
+//   "code_decimal": "&#128693;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "912"
+// },
+// {
+//   "name": "mountain_bicyclist_tone5",
+//   "unicode": "1f6b5-1f3ff",
+//   "shortname": ":mountain_bicyclist_tone5:",
+//   "code_decimal": "&#128693;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "913"
+// },
+{
   "name": "race_car",
   "unicode": "1f3ce",
   "shortname": ":race_car:",
@@ -2736,210 +3006,240 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#129336;",
   "category": "activity",
   "emoji_order": "928"
-}, {
-  "name": "cartwheel_tone1",
-  "unicode": "1f938-1f3fb",
-  "shortname": ":cartwheel_tone1:",
-  "code_decimal": "&#129336;&#127995;",
-  "category": "activity",
-  "emoji_order": "929"
-}, {
-  "name": "cartwheel_tone2",
-  "unicode": "1f938-1f3fc",
-  "shortname": ":cartwheel_tone2:",
-  "code_decimal": "&#129336;&#127996;",
-  "category": "activity",
-  "emoji_order": "930"
-}, {
-  "name": "cartwheel_tone3",
-  "unicode": "1f938-1f3fd",
-  "shortname": ":cartwheel_tone3:",
-  "code_decimal": "&#129336;&#127997;",
-  "category": "activity",
-  "emoji_order": "931"
-}, {
-  "name": "cartwheel_tone4",
-  "unicode": "1f938-1f3fe",
-  "shortname": ":cartwheel_tone4:",
-  "code_decimal": "&#129336;&#127998;",
-  "category": "activity",
-  "emoji_order": "932"
-}, {
-  "name": "cartwheel_tone5",
-  "unicode": "1f938-1f3ff",
-  "shortname": ":cartwheel_tone5:",
-  "code_decimal": "&#129336;&#127999;",
-  "category": "activity",
-  "emoji_order": "933"
-}, {
+},
+// {
+//   "name": "cartwheel_tone1",
+//   "unicode": "1f938-1f3fb",
+//   "shortname": ":cartwheel_tone1:",
+//   "code_decimal": "&#129336;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "929"
+// },
+// {
+//   "name": "cartwheel_tone2",
+//   "unicode": "1f938-1f3fc",
+//   "shortname": ":cartwheel_tone2:",
+//   "code_decimal": "&#129336;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "930"
+// },
+// {
+//   "name": "cartwheel_tone3",
+//   "unicode": "1f938-1f3fd",
+//   "shortname": ":cartwheel_tone3:",
+//   "code_decimal": "&#129336;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "931"
+// },
+// {
+//   "name": "cartwheel_tone4",
+//   "unicode": "1f938-1f3fe",
+//   "shortname": ":cartwheel_tone4:",
+//   "code_decimal": "&#129336;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "932"
+// },
+// {
+//   "name": "cartwheel_tone5",
+//   "unicode": "1f938-1f3ff",
+//   "shortname": ":cartwheel_tone5:",
+//   "code_decimal": "&#129336;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "933"
+// },
+{
   "name": "wrestlers",
   "unicode": "1f93c",
   "shortname": ":wrestlers:",
   "code_decimal": "&#129340;",
   "category": "activity",
   "emoji_order": "946"
-}, {
-  "name": "wrestlers_tone1",
-  "unicode": "1f93c-1f3fb",
-  "shortname": ":wrestlers_tone1:",
-  "code_decimal": "&#129340;&#127995;",
-  "category": "activity",
-  "emoji_order": "947"
-}, {
-  "name": "wrestlers_tone2",
-  "unicode": "1f93c-1f3fc",
-  "shortname": ":wrestlers_tone2:",
-  "code_decimal": "&#129340;&#127996;",
-  "category": "activity",
-  "emoji_order": "948"
-}, {
-  "name": "wrestlers_tone3",
-  "unicode": "1f93c-1f3fd",
-  "shortname": ":wrestlers_tone3:",
-  "code_decimal": "&#129340;&#127997;",
-  "category": "activity",
-  "emoji_order": "949"
-}, {
-  "name": "wrestlers_tone4",
-  "unicode": "1f93c-1f3fe",
-  "shortname": ":wrestlers_tone4:",
-  "code_decimal": "&#129340;&#127998;",
-  "category": "activity",
-  "emoji_order": "950"
-}, {
-  "name": "wrestlers_tone5",
-  "unicode": "1f93c-1f3ff",
-  "shortname": ":wrestlers_tone5:",
-  "code_decimal": "&#129340;&#127999;",
-  "category": "activity",
-  "emoji_order": "951"
-}, {
+},
+// {
+//   "name": "wrestlers_tone1",
+//   "unicode": "1f93c-1f3fb",
+//   "shortname": ":wrestlers_tone1:",
+//   "code_decimal": "&#129340;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "947"
+// },
+// {
+//   "name": "wrestlers_tone2",
+//   "unicode": "1f93c-1f3fc",
+//   "shortname": ":wrestlers_tone2:",
+//   "code_decimal": "&#129340;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "948"
+// },
+// {
+//   "name": "wrestlers_tone3",
+//   "unicode": "1f93c-1f3fd",
+//   "shortname": ":wrestlers_tone3:",
+//   "code_decimal": "&#129340;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "949"
+// },
+// {
+//   "name": "wrestlers_tone4",
+//   "unicode": "1f93c-1f3fe",
+//   "shortname": ":wrestlers_tone4:",
+//   "code_decimal": "&#129340;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "950"
+// },
+// {
+//   "name": "wrestlers_tone5",
+//   "unicode": "1f93c-1f3ff",
+//   "shortname": ":wrestlers_tone5:",
+//   "code_decimal": "&#129340;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "951"
+// },
+{
   "name": "water_polo",
   "unicode": "1f93d",
   "shortname": ":water_polo:",
   "code_decimal": "&#129341;",
   "category": "activity",
   "emoji_order": "964"
-}, {
-  "name": "water_polo_tone1",
-  "unicode": "1f93d-1f3fb",
-  "shortname": ":water_polo_tone1:",
-  "code_decimal": "&#129341;&#127995;",
-  "category": "activity",
-  "emoji_order": "965"
-}, {
-  "name": "water_polo_tone2",
-  "unicode": "1f93d-1f3fc",
-  "shortname": ":water_polo_tone2:",
-  "code_decimal": "&#129341;&#127996;",
-  "category": "activity",
-  "emoji_order": "966"
-}, {
-  "name": "water_polo_tone3",
-  "unicode": "1f93d-1f3fd",
-  "shortname": ":water_polo_tone3:",
-  "code_decimal": "&#129341;&#127997;",
-  "category": "activity",
-  "emoji_order": "967"
-}, {
-  "name": "water_polo_tone4",
-  "unicode": "1f93d-1f3fe",
-  "shortname": ":water_polo_tone4:",
-  "code_decimal": "&#129341;&#127998;",
-  "category": "activity",
-  "emoji_order": "968"
-}, {
-  "name": "water_polo_tone5",
-  "unicode": "1f93d-1f3ff",
-  "shortname": ":water_polo_tone5:",
-  "code_decimal": "&#129341;&#127999;",
-  "category": "activity",
-  "emoji_order": "969"
-}, {
+},
+// {
+//   "name": "water_polo_tone1",
+//   "unicode": "1f93d-1f3fb",
+//   "shortname": ":water_polo_tone1:",
+//   "code_decimal": "&#129341;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "965"
+// },
+// {
+//   "name": "water_polo_tone2",
+//   "unicode": "1f93d-1f3fc",
+//   "shortname": ":water_polo_tone2:",
+//   "code_decimal": "&#129341;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "966"
+// },
+// {
+//   "name": "water_polo_tone3",
+//   "unicode": "1f93d-1f3fd",
+//   "shortname": ":water_polo_tone3:",
+//   "code_decimal": "&#129341;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "967"
+// },
+// {
+//   "name": "water_polo_tone4",
+//   "unicode": "1f93d-1f3fe",
+//   "shortname": ":water_polo_tone4:",
+//   "code_decimal": "&#129341;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "968"
+// },
+// {
+//   "name": "water_polo_tone5",
+//   "unicode": "1f93d-1f3ff",
+//   "shortname": ":water_polo_tone5:",
+//   "code_decimal": "&#129341;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "969"
+// },
+{
   "name": "handball",
   "unicode": "1f93e",
   "shortname": ":handball:",
   "code_decimal": "&#129342;",
   "category": "activity",
   "emoji_order": "982"
-}, {
-  "name": "handball_tone1",
-  "unicode": "1f93e-1f3fb",
-  "shortname": ":handball_tone1:",
-  "code_decimal": "&#129342;&#127995;",
-  "category": "activity",
-  "emoji_order": "983"
-}, {
-  "name": "handball_tone2",
-  "unicode": "1f93e-1f3fc",
-  "shortname": ":handball_tone2:",
-  "code_decimal": "&#129342;&#127996;",
-  "category": "activity",
-  "emoji_order": "984"
-}, {
-  "name": "handball_tone3",
-  "unicode": "1f93e-1f3fd",
-  "shortname": ":handball_tone3:",
-  "code_decimal": "&#129342;&#127997;",
-  "category": "activity",
-  "emoji_order": "985"
-}, {
-  "name": "handball_tone4",
-  "unicode": "1f93e-1f3fe",
-  "shortname": ":handball_tone4:",
-  "code_decimal": "&#129342;&#127998;",
-  "category": "activity",
-  "emoji_order": "986"
-}, {
-  "name": "handball_tone5",
-  "unicode": "1f93e-1f3ff",
-  "shortname": ":handball_tone5:",
-  "code_decimal": "&#129342;&#127999;",
-  "category": "activity",
-  "emoji_order": "987"
-}, {
+},
+// {
+//   "name": "handball_tone1",
+//   "unicode": "1f93e-1f3fb",
+//   "shortname": ":handball_tone1:",
+//   "code_decimal": "&#129342;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "983"
+// },
+// {
+//   "name": "handball_tone2",
+//   "unicode": "1f93e-1f3fc",
+//   "shortname": ":handball_tone2:",
+//   "code_decimal": "&#129342;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "984"
+// },
+// {
+//   "name": "handball_tone3",
+//   "unicode": "1f93e-1f3fd",
+//   "shortname": ":handball_tone3:",
+//   "code_decimal": "&#129342;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "985"
+// },
+// {
+//   "name": "handball_tone4",
+//   "unicode": "1f93e-1f3fe",
+//   "shortname": ":handball_tone4:",
+//   "code_decimal": "&#129342;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "986"
+// },
+// {
+//   "name": "handball_tone5",
+//   "unicode": "1f93e-1f3ff",
+//   "shortname": ":handball_tone5:",
+//   "code_decimal": "&#129342;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "987"
+// },
+{
   "name": "juggling",
   "unicode": "1f939",
   "shortname": ":juggling:",
   "code_decimal": "&#129337;",
   "category": "activity",
   "emoji_order": "1000"
-}, {
-  "name": "juggling_tone1",
-  "unicode": "1f939-1f3fb",
-  "shortname": ":juggling_tone1:",
-  "code_decimal": "&#129337;&#127995;",
-  "category": "activity",
-  "emoji_order": "1001"
-}, {
-  "name": "juggling_tone2",
-  "unicode": "1f939-1f3fc",
-  "shortname": ":juggling_tone2:",
-  "code_decimal": "&#129337;&#127996;",
-  "category": "activity",
-  "emoji_order": "1002"
-}, {
-  "name": "juggling_tone3",
-  "unicode": "1f939-1f3fd",
-  "shortname": ":juggling_tone3:",
-  "code_decimal": "&#129337;&#127997;",
-  "category": "activity",
-  "emoji_order": "1003"
-}, {
-  "name": "juggling_tone4",
-  "unicode": "1f939-1f3fe",
-  "shortname": ":juggling_tone4:",
-  "code_decimal": "&#129337;&#127998;",
-  "category": "activity",
-  "emoji_order": "1004"
-}, {
-  "name": "juggling_tone5",
-  "unicode": "1f939-1f3ff",
-  "shortname": ":juggling_tone5:",
-  "code_decimal": "&#129337;&#127999;",
-  "category": "activity",
-  "emoji_order": "1005"
-}, {
+},
+// {
+//   "name": "juggling_tone1",
+//   "unicode": "1f939-1f3fb",
+//   "shortname": ":juggling_tone1:",
+//   "code_decimal": "&#129337;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "1001"
+// },
+// {
+//   "name": "juggling_tone2",
+//   "unicode": "1f939-1f3fc",
+//   "shortname": ":juggling_tone2:",
+//   "code_decimal": "&#129337;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "1002"
+// },
+// {
+//   "name": "juggling_tone3",
+//   "unicode": "1f939-1f3fd",
+//   "shortname": ":juggling_tone3:",
+//   "code_decimal": "&#129337;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "1003"
+// },
+// {
+//   "name": "juggling_tone4",
+//   "unicode": "1f939-1f3fe",
+//   "shortname": ":juggling_tone4:",
+//   "code_decimal": "&#129337;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "1004"
+// },
+// {
+//   "name": "juggling_tone5",
+//   "unicode": "1f939-1f3ff",
+//   "shortname": ":juggling_tone5:",
+//   "code_decimal": "&#129337;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "1005"
+// },
+{
   "name": "couple",
   "unicode": "1f46b",
   "shortname": ":couple:",
@@ -3023,1386 +3323,1584 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#128170;",
   "category": "people",
   "emoji_order": "1080"
-}, {
-  "name": "muscle_tone1",
-  "unicode": "1f4aa-1f3fb",
-  "shortname": ":muscle_tone1:",
-  "code_decimal": "&#128170;&#127995;",
-  "category": "people",
-  "emoji_order": "1081"
-}, {
-  "name": "muscle_tone2",
-  "unicode": "1f4aa-1f3fc",
-  "shortname": ":muscle_tone2:",
-  "code_decimal": "&#128170;&#127996;",
-  "category": "people",
-  "emoji_order": "1082"
-}, {
-  "name": "muscle_tone3",
-  "unicode": "1f4aa-1f3fd",
-  "shortname": ":muscle_tone3:",
-  "code_decimal": "&#128170;&#127997;",
-  "category": "people",
-  "emoji_order": "1083"
-}, {
-  "name": "muscle_tone4",
-  "unicode": "1f4aa-1f3fe",
-  "shortname": ":muscle_tone4:",
-  "code_decimal": "&#128170;&#127998;",
-  "category": "people",
-  "emoji_order": "1084"
-}, {
-  "name": "muscle_tone5",
-  "unicode": "1f4aa-1f3ff",
-  "shortname": ":muscle_tone5:",
-  "code_decimal": "&#128170;&#127999;",
-  "category": "people",
-  "emoji_order": "1085"
-}, {
+},
+// {
+//   "name": "muscle_tone1",
+//   "unicode": "1f4aa-1f3fb",
+//   "shortname": ":muscle_tone1:",
+//   "code_decimal": "&#128170;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1081"
+// },
+// {
+//   "name": "muscle_tone2",
+//   "unicode": "1f4aa-1f3fc",
+//   "shortname": ":muscle_tone2:",
+//   "code_decimal": "&#128170;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1082"
+// },
+// {
+//   "name": "muscle_tone3",
+//   "unicode": "1f4aa-1f3fd",
+//   "shortname": ":muscle_tone3:",
+//   "code_decimal": "&#128170;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1083"
+// },
+// {
+//   "name": "muscle_tone4",
+//   "unicode": "1f4aa-1f3fe",
+//   "shortname": ":muscle_tone4:",
+//   "code_decimal": "&#128170;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1084"
+// },
+// {
+//   "name": "muscle_tone5",
+//   "unicode": "1f4aa-1f3ff",
+//   "shortname": ":muscle_tone5:",
+//   "code_decimal": "&#128170;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1085"
+// },
+{
   "name": "selfie",
   "unicode": "1f933",
   "shortname": ":selfie:",
   "code_decimal": "&#129331;",
   "category": "people",
   "emoji_order": "1086"
-}, {
-  "name": "selfie_tone1",
-  "unicode": "1f933-1f3fb",
-  "shortname": ":selfie_tone1:",
-  "code_decimal": "&#129331;&#127995;",
-  "category": "people",
-  "emoji_order": "1087"
-}, {
-  "name": "selfie_tone2",
-  "unicode": "1f933-1f3fc",
-  "shortname": ":selfie_tone2:",
-  "code_decimal": "&#129331;&#127996;",
-  "category": "people",
-  "emoji_order": "1088"
-}, {
-  "name": "selfie_tone3",
-  "unicode": "1f933-1f3fd",
-  "shortname": ":selfie_tone3:",
-  "code_decimal": "&#129331;&#127997;",
-  "category": "people",
-  "emoji_order": "1089"
-}, {
-  "name": "selfie_tone4",
-  "unicode": "1f933-1f3fe",
-  "shortname": ":selfie_tone4:",
-  "code_decimal": "&#129331;&#127998;",
-  "category": "people",
-  "emoji_order": "1090"
-}, {
-  "name": "selfie_tone5",
-  "unicode": "1f933-1f3ff",
-  "shortname": ":selfie_tone5:",
-  "code_decimal": "&#129331;&#127999;",
-  "category": "people",
-  "emoji_order": "1091"
-}, {
+},
+// {
+//   "name": "selfie_tone1",
+//   "unicode": "1f933-1f3fb",
+//   "shortname": ":selfie_tone1:",
+//   "code_decimal": "&#129331;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1087"
+// },
+// {
+//   "name": "selfie_tone2",
+//   "unicode": "1f933-1f3fc",
+//   "shortname": ":selfie_tone2:",
+//   "code_decimal": "&#129331;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1088"
+// },
+// {
+//   "name": "selfie_tone3",
+//   "unicode": "1f933-1f3fd",
+//   "shortname": ":selfie_tone3:",
+//   "code_decimal": "&#129331;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1089"
+// },
+// {
+//   "name": "selfie_tone4",
+//   "unicode": "1f933-1f3fe",
+//   "shortname": ":selfie_tone4:",
+//   "code_decimal": "&#129331;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1090"
+// },
+// {
+//   "name": "selfie_tone5",
+//   "unicode": "1f933-1f3ff",
+//   "shortname": ":selfie_tone5:",
+//   "code_decimal": "&#129331;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1091"
+// },
+{
   "name": "point_left",
   "unicode": "1f448",
   "shortname": ":point_left:",
   "code_decimal": "&#128072;",
   "category": "people",
   "emoji_order": "1092"
-}, {
-  "name": "point_left_tone1",
-  "unicode": "1f448-1f3fb",
-  "shortname": ":point_left_tone1:",
-  "code_decimal": "&#128072;&#127995;",
-  "category": "people",
-  "emoji_order": "1093"
-}, {
-  "name": "point_left_tone2",
-  "unicode": "1f448-1f3fc",
-  "shortname": ":point_left_tone2:",
-  "code_decimal": "&#128072;&#127996;",
-  "category": "people",
-  "emoji_order": "1094"
-}, {
-  "name": "point_left_tone3",
-  "unicode": "1f448-1f3fd",
-  "shortname": ":point_left_tone3:",
-  "code_decimal": "&#128072;&#127997;",
-  "category": "people",
-  "emoji_order": "1095"
-}, {
-  "name": "point_left_tone4",
-  "unicode": "1f448-1f3fe",
-  "shortname": ":point_left_tone4:",
-  "code_decimal": "&#128072;&#127998;",
-  "category": "people",
-  "emoji_order": "1096"
-}, {
-  "name": "point_left_tone5",
-  "unicode": "1f448-1f3ff",
-  "shortname": ":point_left_tone5:",
-  "code_decimal": "&#128072;&#127999;",
-  "category": "people",
-  "emoji_order": "1097"
-}, {
+},
+// {
+//   "name": "point_left_tone1",
+//   "unicode": "1f448-1f3fb",
+//   "shortname": ":point_left_tone1:",
+//   "code_decimal": "&#128072;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1093"
+// },
+// {
+//   "name": "point_left_tone2",
+//   "unicode": "1f448-1f3fc",
+//   "shortname": ":point_left_tone2:",
+//   "code_decimal": "&#128072;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1094"
+// },
+// {
+//   "name": "point_left_tone3",
+//   "unicode": "1f448-1f3fd",
+//   "shortname": ":point_left_tone3:",
+//   "code_decimal": "&#128072;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1095"
+// },
+// {
+//   "name": "point_left_tone4",
+//   "unicode": "1f448-1f3fe",
+//   "shortname": ":point_left_tone4:",
+//   "code_decimal": "&#128072;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1096"
+// },
+// {
+//   "name": "point_left_tone5",
+//   "unicode": "1f448-1f3ff",
+//   "shortname": ":point_left_tone5:",
+//   "code_decimal": "&#128072;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1097"
+// },
+{
   "name": "point_right",
   "unicode": "1f449",
   "shortname": ":point_right:",
   "code_decimal": "&#128073;",
   "category": "people",
   "emoji_order": "1098"
-}, {
-  "name": "point_right_tone1",
-  "unicode": "1f449-1f3fb",
-  "shortname": ":point_right_tone1:",
-  "code_decimal": "&#128073;&#127995;",
-  "category": "people",
-  "emoji_order": "1099"
-}, {
-  "name": "point_right_tone2",
-  "unicode": "1f449-1f3fc",
-  "shortname": ":point_right_tone2:",
-  "code_decimal": "&#128073;&#127996;",
-  "category": "people",
-  "emoji_order": "1100"
-}, {
-  "name": "point_right_tone3",
-  "unicode": "1f449-1f3fd",
-  "shortname": ":point_right_tone3:",
-  "code_decimal": "&#128073;&#127997;",
-  "category": "people",
-  "emoji_order": "1101"
-}, {
-  "name": "point_right_tone4",
-  "unicode": "1f449-1f3fe",
-  "shortname": ":point_right_tone4:",
-  "code_decimal": "&#128073;&#127998;",
-  "category": "people",
-  "emoji_order": "1102"
-}, {
-  "name": "point_right_tone5",
-  "unicode": "1f449-1f3ff",
-  "shortname": ":point_right_tone5:",
-  "code_decimal": "&#128073;&#127999;",
-  "category": "people",
-  "emoji_order": "1103"
-}, {
+},
+// {
+//   "name": "point_right_tone1",
+//   "unicode": "1f449-1f3fb",
+//   "shortname": ":point_right_tone1:",
+//   "code_decimal": "&#128073;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1099"
+// },
+// {
+//   "name": "point_right_tone2",
+//   "unicode": "1f449-1f3fc",
+//   "shortname": ":point_right_tone2:",
+//   "code_decimal": "&#128073;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1100"
+// },
+// {
+//   "name": "point_right_tone3",
+//   "unicode": "1f449-1f3fd",
+//   "shortname": ":point_right_tone3:",
+//   "code_decimal": "&#128073;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1101"
+// },
+// {
+//   "name": "point_right_tone4",
+//   "unicode": "1f449-1f3fe",
+//   "shortname": ":point_right_tone4:",
+//   "code_decimal": "&#128073;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1102"
+// },
+// {
+//   "name": "point_right_tone5",
+//   "unicode": "1f449-1f3ff",
+//   "shortname": ":point_right_tone5:",
+//   "code_decimal": "&#128073;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1103"
+// },
+{
   "name": "point_up",
   "unicode": "261d",
   "shortname": ":point_up:",
   "code_decimal": "&#9757;",
   "category": "people",
   "emoji_order": "1104"
-}, {
-  "name": "point_up_tone1",
-  "unicode": "261d-1f3fb",
-  "shortname": ":point_up_tone1:",
-  "code_decimal": "&#9757;&#127995;",
-  "category": "people",
-  "emoji_order": "1105"
-}, {
-  "name": "point_up_tone2",
-  "unicode": "261d-1f3fc",
-  "shortname": ":point_up_tone2:",
-  "code_decimal": "&#9757;&#127996;",
-  "category": "people",
-  "emoji_order": "1106"
-}, {
-  "name": "point_up_tone3",
-  "unicode": "261d-1f3fd",
-  "shortname": ":point_up_tone3:",
-  "code_decimal": "&#9757;&#127997;",
-  "category": "people",
-  "emoji_order": "1107"
-}, {
-  "name": "point_up_tone4",
-  "unicode": "261d-1f3fe",
-  "shortname": ":point_up_tone4:",
-  "code_decimal": "&#9757;&#127998;",
-  "category": "people",
-  "emoji_order": "1108"
-}, {
-  "name": "point_up_tone5",
-  "unicode": "261d-1f3ff",
-  "shortname": ":point_up_tone5:",
-  "code_decimal": "&#9757;&#127999;",
-  "category": "people",
-  "emoji_order": "1109"
-}, {
+},
+// {
+//   "name": "point_up_tone1",
+//   "unicode": "261d-1f3fb",
+//   "shortname": ":point_up_tone1:",
+//   "code_decimal": "&#9757;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1105"
+// },
+// {
+//   "name": "point_up_tone2",
+//   "unicode": "261d-1f3fc",
+//   "shortname": ":point_up_tone2:",
+//   "code_decimal": "&#9757;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1106"
+// },
+// {
+//   "name": "point_up_tone3",
+//   "unicode": "261d-1f3fd",
+//   "shortname": ":point_up_tone3:",
+//   "code_decimal": "&#9757;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1107"
+// },
+// {
+//   "name": "point_up_tone4",
+//   "unicode": "261d-1f3fe",
+//   "shortname": ":point_up_tone4:",
+//   "code_decimal": "&#9757;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1108"
+// },
+// {
+//   "name": "point_up_tone5",
+//   "unicode": "261d-1f3ff",
+//   "shortname": ":point_up_tone5:",
+//   "code_decimal": "&#9757;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1109"
+// },
+{
   "name": "point_up_2",
   "unicode": "1f446",
   "shortname": ":point_up_2:",
   "code_decimal": "&#128070;",
   "category": "people",
   "emoji_order": "1110"
-}, {
-  "name": "point_up_2_tone1",
-  "unicode": "1f446-1f3fb",
-  "shortname": ":point_up_2_tone1:",
-  "code_decimal": "&#128070;&#127995;",
-  "category": "people",
-  "emoji_order": "1111"
-}, {
-  "name": "point_up_2_tone2",
-  "unicode": "1f446-1f3fc",
-  "shortname": ":point_up_2_tone2:",
-  "code_decimal": "&#128070;&#127996;",
-  "category": "people",
-  "emoji_order": "1112"
-}, {
-  "name": "point_up_2_tone3",
-  "unicode": "1f446-1f3fd",
-  "shortname": ":point_up_2_tone3:",
-  "code_decimal": "&#128070;&#127997;",
-  "category": "people",
-  "emoji_order": "1113"
-}, {
-  "name": "point_up_2_tone4",
-  "unicode": "1f446-1f3fe",
-  "shortname": ":point_up_2_tone4:",
-  "code_decimal": "&#128070;&#127998;",
-  "category": "people",
-  "emoji_order": "1114"
-}, {
-  "name": "point_up_2_tone5",
-  "unicode": "1f446-1f3ff",
-  "shortname": ":point_up_2_tone5:",
-  "code_decimal": "&#128070;&#127999;",
-  "category": "people",
-  "emoji_order": "1115"
-}, {
+},
+// {
+//   "name": "point_up_2_tone1",
+//   "unicode": "1f446-1f3fb",
+//   "shortname": ":point_up_2_tone1:",
+//   "code_decimal": "&#128070;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1111"
+// },
+// {
+//   "name": "point_up_2_tone2",
+//   "unicode": "1f446-1f3fc",
+//   "shortname": ":point_up_2_tone2:",
+//   "code_decimal": "&#128070;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1112"
+// },
+// {
+//   "name": "point_up_2_tone3",
+//   "unicode": "1f446-1f3fd",
+//   "shortname": ":point_up_2_tone3:",
+//   "code_decimal": "&#128070;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1113"
+// },
+// {
+//   "name": "point_up_2_tone4",
+//   "unicode": "1f446-1f3fe",
+//   "shortname": ":point_up_2_tone4:",
+//   "code_decimal": "&#128070;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1114"
+// },
+// {
+//   "name": "point_up_2_tone5",
+//   "unicode": "1f446-1f3ff",
+//   "shortname": ":point_up_2_tone5:",
+//   "code_decimal": "&#128070;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1115"
+// },
+{
   "name": "middle_finger",
   "unicode": "1f595",
   "shortname": ":middle_finger:",
   "code_decimal": "&#128405;",
   "category": "people",
   "emoji_order": "1116"
-}, {
-  "name": "middle_finger_tone1",
-  "unicode": "1f595-1f3fb",
-  "shortname": ":middle_finger_tone1:",
-  "code_decimal": "&#128405;&#127995;",
-  "category": "people",
-  "emoji_order": "1117"
-}, {
-  "name": "middle_finger_tone2",
-  "unicode": "1f595-1f3fc",
-  "shortname": ":middle_finger_tone2:",
-  "code_decimal": "&#128405;&#127996;",
-  "category": "people",
-  "emoji_order": "1118"
-}, {
-  "name": "middle_finger_tone3",
-  "unicode": "1f595-1f3fd",
-  "shortname": ":middle_finger_tone3:",
-  "code_decimal": "&#128405;&#127997;",
-  "category": "people",
-  "emoji_order": "1119"
-}, {
-  "name": "middle_finger_tone4",
-  "unicode": "1f595-1f3fe",
-  "shortname": ":middle_finger_tone4:",
-  "code_decimal": "&#128405;&#127998;",
-  "category": "people",
-  "emoji_order": "1120"
-}, {
-  "name": "middle_finger_tone5",
-  "unicode": "1f595-1f3ff",
-  "shortname": ":middle_finger_tone5:",
-  "code_decimal": "&#128405;&#127999;",
-  "category": "people",
-  "emoji_order": "1121"
-}, {
+},
+// {
+//   "name": "middle_finger_tone1",
+//   "unicode": "1f595-1f3fb",
+//   "shortname": ":middle_finger_tone1:",
+//   "code_decimal": "&#128405;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1117"
+// },
+// {
+//   "name": "middle_finger_tone2",
+//   "unicode": "1f595-1f3fc",
+//   "shortname": ":middle_finger_tone2:",
+//   "code_decimal": "&#128405;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1118"
+// },
+// {
+//   "name": "middle_finger_tone3",
+//   "unicode": "1f595-1f3fd",
+//   "shortname": ":middle_finger_tone3:",
+//   "code_decimal": "&#128405;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1119"
+// },
+// {
+//   "name": "middle_finger_tone4",
+//   "unicode": "1f595-1f3fe",
+//   "shortname": ":middle_finger_tone4:",
+//   "code_decimal": "&#128405;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1120"
+// },
+// {
+//   "name": "middle_finger_tone5",
+//   "unicode": "1f595-1f3ff",
+//   "shortname": ":middle_finger_tone5:",
+//   "code_decimal": "&#128405;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1121"
+// },
+{
   "name": "point_down",
   "unicode": "1f447",
   "shortname": ":point_down:",
   "code_decimal": "&#128071;",
   "category": "people",
   "emoji_order": "1122"
-}, {
-  "name": "point_down_tone1",
-  "unicode": "1f447-1f3fb",
-  "shortname": ":point_down_tone1:",
-  "code_decimal": "&#128071;&#127995;",
-  "category": "people",
-  "emoji_order": "1123"
-}, {
-  "name": "point_down_tone2",
-  "unicode": "1f447-1f3fc",
-  "shortname": ":point_down_tone2:",
-  "code_decimal": "&#128071;&#127996;",
-  "category": "people",
-  "emoji_order": "1124"
-}, {
-  "name": "point_down_tone3",
-  "unicode": "1f447-1f3fd",
-  "shortname": ":point_down_tone3:",
-  "code_decimal": "&#128071;&#127997;",
-  "category": "people",
-  "emoji_order": "1125"
-}, {
-  "name": "point_down_tone4",
-  "unicode": "1f447-1f3fe",
-  "shortname": ":point_down_tone4:",
-  "code_decimal": "&#128071;&#127998;",
-  "category": "people",
-  "emoji_order": "1126"
-}, {
-  "name": "point_down_tone5",
-  "unicode": "1f447-1f3ff",
-  "shortname": ":point_down_tone5:",
-  "code_decimal": "&#128071;&#127999;",
-  "category": "people",
-  "emoji_order": "1127"
-}, {
+},
+// {
+//   "name": "point_down_tone1",
+//   "unicode": "1f447-1f3fb",
+//   "shortname": ":point_down_tone1:",
+//   "code_decimal": "&#128071;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1123"
+// },
+// {
+//   "name": "point_down_tone2",
+//   "unicode": "1f447-1f3fc",
+//   "shortname": ":point_down_tone2:",
+//   "code_decimal": "&#128071;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1124"
+// },
+// {
+//   "name": "point_down_tone3",
+//   "unicode": "1f447-1f3fd",
+//   "shortname": ":point_down_tone3:",
+//   "code_decimal": "&#128071;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1125"
+// },
+// {
+//   "name": "point_down_tone4",
+//   "unicode": "1f447-1f3fe",
+//   "shortname": ":point_down_tone4:",
+//   "code_decimal": "&#128071;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1126"
+// },
+// {
+//   "name": "point_down_tone5",
+//   "unicode": "1f447-1f3ff",
+//   "shortname": ":point_down_tone5:",
+//   "code_decimal": "&#128071;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1127"
+// },
+{
   "name": "v",
   "unicode": "270c",
   "shortname": ":v:",
   "code_decimal": "&#9996;",
   "category": "people",
   "emoji_order": "1128"
-}, {
-  "name": "v_tone1",
-  "unicode": "270c-1f3fb",
-  "shortname": ":v_tone1:",
-  "code_decimal": "&#9996;&#127995;",
-  "category": "people",
-  "emoji_order": "1129"
-}, {
-  "name": "v_tone2",
-  "unicode": "270c-1f3fc",
-  "shortname": ":v_tone2:",
-  "code_decimal": "&#9996;&#127996;",
-  "category": "people",
-  "emoji_order": "1130"
-}, {
-  "name": "v_tone3",
-  "unicode": "270c-1f3fd",
-  "shortname": ":v_tone3:",
-  "code_decimal": "&#9996;&#127997;",
-  "category": "people",
-  "emoji_order": "1131"
-}, {
-  "name": "v_tone4",
-  "unicode": "270c-1f3fe",
-  "shortname": ":v_tone4:",
-  "code_decimal": "&#9996;&#127998;",
-  "category": "people",
-  "emoji_order": "1132"
-}, {
-  "name": "v_tone5",
-  "unicode": "270c-1f3ff",
-  "shortname": ":v_tone5:",
-  "code_decimal": "&#9996;&#127999;",
-  "category": "people",
-  "emoji_order": "1133"
-}, {
+},
+// {
+//   "name": "v_tone1",
+//   "unicode": "270c-1f3fb",
+//   "shortname": ":v_tone1:",
+//   "code_decimal": "&#9996;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1129"
+// },
+// {
+//   "name": "v_tone2",
+//   "unicode": "270c-1f3fc",
+//   "shortname": ":v_tone2:",
+//   "code_decimal": "&#9996;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1130"
+// },
+// {
+//   "name": "v_tone3",
+//   "unicode": "270c-1f3fd",
+//   "shortname": ":v_tone3:",
+//   "code_decimal": "&#9996;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1131"
+// },
+// {
+//   "name": "v_tone4",
+//   "unicode": "270c-1f3fe",
+//   "shortname": ":v_tone4:",
+//   "code_decimal": "&#9996;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1132"
+// },
+// {
+//   "name": "v_tone5",
+//   "unicode": "270c-1f3ff",
+//   "shortname": ":v_tone5:",
+//   "code_decimal": "&#9996;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1133"
+// },
+{
   "name": "fingers_crossed",
   "unicode": "1f91e",
   "shortname": ":fingers_crossed:",
   "code_decimal": "&#129310;",
   "category": "people",
   "emoji_order": "1134"
-}, {
-  "name": "fingers_crossed_tone1",
-  "unicode": "1f91e-1f3fb",
-  "shortname": ":fingers_crossed_tone1:",
-  "code_decimal": "&#129310;&#127995;",
-  "category": "people",
-  "emoji_order": "1135"
-}, {
-  "name": "fingers_crossed_tone2",
-  "unicode": "1f91e-1f3fc",
-  "shortname": ":fingers_crossed_tone2:",
-  "code_decimal": "&#129310;&#127996;",
-  "category": "people",
-  "emoji_order": "1136"
-}, {
-  "name": "fingers_crossed_tone3",
-  "unicode": "1f91e-1f3fd",
-  "shortname": ":fingers_crossed_tone3:",
-  "code_decimal": "&#129310;&#127997;",
-  "category": "people",
-  "emoji_order": "1137"
-}, {
-  "name": "fingers_crossed_tone4",
-  "unicode": "1f91e-1f3fe",
-  "shortname": ":fingers_crossed_tone4:",
-  "code_decimal": "&#129310;&#127998;",
-  "category": "people",
-  "emoji_order": "1138"
-}, {
-  "name": "fingers_crossed_tone5",
-  "unicode": "1f91e-1f3ff",
-  "shortname": ":fingers_crossed_tone5:",
-  "code_decimal": "&#129310;&#127999;",
-  "category": "people",
-  "emoji_order": "1139"
-}, {
+},
+// {
+//   "name": "fingers_crossed_tone1",
+//   "unicode": "1f91e-1f3fb",
+//   "shortname": ":fingers_crossed_tone1:",
+//   "code_decimal": "&#129310;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1135"
+// },
+// {
+//   "name": "fingers_crossed_tone2",
+//   "unicode": "1f91e-1f3fc",
+//   "shortname": ":fingers_crossed_tone2:",
+//   "code_decimal": "&#129310;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1136"
+// },
+// {
+//   "name": "fingers_crossed_tone3",
+//   "unicode": "1f91e-1f3fd",
+//   "shortname": ":fingers_crossed_tone3:",
+//   "code_decimal": "&#129310;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1137"
+// },
+// {
+//   "name": "fingers_crossed_tone4",
+//   "unicode": "1f91e-1f3fe",
+//   "shortname": ":fingers_crossed_tone4:",
+//   "code_decimal": "&#129310;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1138"
+// },
+// {
+//   "name": "fingers_crossed_tone5",
+//   "unicode": "1f91e-1f3ff",
+//   "shortname": ":fingers_crossed_tone5:",
+//   "code_decimal": "&#129310;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1139"
+// },
+{
   "name": "vulcan",
   "unicode": "1f596",
   "shortname": ":vulcan:",
   "code_decimal": "&#128406;",
   "category": "people",
   "emoji_order": "1140"
-}, {
-  "name": "vulcan_tone1",
-  "unicode": "1f596-1f3fb",
-  "shortname": ":vulcan_tone1:",
-  "code_decimal": "&#128406;&#127995;",
-  "category": "people",
-  "emoji_order": "1141"
-}, {
-  "name": "vulcan_tone2",
-  "unicode": "1f596-1f3fc",
-  "shortname": ":vulcan_tone2:",
-  "code_decimal": "&#128406;&#127996;",
-  "category": "people",
-  "emoji_order": "1142"
-}, {
-  "name": "vulcan_tone3",
-  "unicode": "1f596-1f3fd",
-  "shortname": ":vulcan_tone3:",
-  "code_decimal": "&#128406;&#127997;",
-  "category": "people",
-  "emoji_order": "1143"
-}, {
-  "name": "vulcan_tone4",
-  "unicode": "1f596-1f3fe",
-  "shortname": ":vulcan_tone4:",
-  "code_decimal": "&#128406;&#127998;",
-  "category": "people",
-  "emoji_order": "1144"
-}, {
-  "name": "vulcan_tone5",
-  "unicode": "1f596-1f3ff",
-  "shortname": ":vulcan_tone5:",
-  "code_decimal": "&#128406;&#127999;",
-  "category": "people",
-  "emoji_order": "1145"
-}, {
+},
+// {
+//   "name": "vulcan_tone1",
+//   "unicode": "1f596-1f3fb",
+//   "shortname": ":vulcan_tone1:",
+//   "code_decimal": "&#128406;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1141"
+// },
+// {
+//   "name": "vulcan_tone2",
+//   "unicode": "1f596-1f3fc",
+//   "shortname": ":vulcan_tone2:",
+//   "code_decimal": "&#128406;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1142"
+// },
+// {
+//   "name": "vulcan_tone3",
+//   "unicode": "1f596-1f3fd",
+//   "shortname": ":vulcan_tone3:",
+//   "code_decimal": "&#128406;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1143"
+// },
+// {
+//   "name": "vulcan_tone4",
+//   "unicode": "1f596-1f3fe",
+//   "shortname": ":vulcan_tone4:",
+//   "code_decimal": "&#128406;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1144"
+// },
+// {
+//   "name": "vulcan_tone5",
+//   "unicode": "1f596-1f3ff",
+//   "shortname": ":vulcan_tone5:",
+//   "code_decimal": "&#128406;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1145"
+// },
+{
   "name": "metal",
   "unicode": "1f918",
   "shortname": ":metal:",
   "code_decimal": "&#129304;",
   "category": "people",
   "emoji_order": "1146"
-}, {
-  "name": "metal_tone1",
-  "unicode": "1f918-1f3fb",
-  "shortname": ":metal_tone1:",
-  "code_decimal": "&#129304;&#127995;",
-  "category": "people",
-  "emoji_order": "1147"
-}, {
-  "name": "metal_tone2",
-  "unicode": "1f918-1f3fc",
-  "shortname": ":metal_tone2:",
-  "code_decimal": "&#129304;&#127996;",
-  "category": "people",
-  "emoji_order": "1148"
-}, {
-  "name": "metal_tone3",
-  "unicode": "1f918-1f3fd",
-  "shortname": ":metal_tone3:",
-  "code_decimal": "&#129304;&#127997;",
-  "category": "people",
-  "emoji_order": "1149"
-}, {
-  "name": "metal_tone4",
-  "unicode": "1f918-1f3fe",
-  "shortname": ":metal_tone4:",
-  "code_decimal": "&#129304;&#127998;",
-  "category": "people",
-  "emoji_order": "1150"
-}, {
-  "name": "metal_tone5",
-  "unicode": "1f918-1f3ff",
-  "shortname": ":metal_tone5:",
-  "code_decimal": "&#129304;&#127999;",
-  "category": "people",
-  "emoji_order": "1151"
-}, {
+},
+// {
+//   "name": "metal_tone1",
+//   "unicode": "1f918-1f3fb",
+//   "shortname": ":metal_tone1:",
+//   "code_decimal": "&#129304;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1147"
+// },
+// {
+//   "name": "metal_tone2",
+//   "unicode": "1f918-1f3fc",
+//   "shortname": ":metal_tone2:",
+//   "code_decimal": "&#129304;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1148"
+// },
+// {
+//   "name": "metal_tone3",
+//   "unicode": "1f918-1f3fd",
+//   "shortname": ":metal_tone3:",
+//   "code_decimal": "&#129304;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1149"
+// },
+// {
+//   "name": "metal_tone4",
+//   "unicode": "1f918-1f3fe",
+//   "shortname": ":metal_tone4:",
+//   "code_decimal": "&#129304;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1150"
+// },
+// {
+//   "name": "metal_tone5",
+//   "unicode": "1f918-1f3ff",
+//   "shortname": ":metal_tone5:",
+//   "code_decimal": "&#129304;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1151"
+// },
+{
   "name": "call_me",
   "unicode": "1f919",
   "shortname": ":call_me:",
   "code_decimal": "&#129305;",
   "category": "people",
   "emoji_order": "1152"
-}, {
-  "name": "call_me_tone1",
-  "unicode": "1f919-1f3fb",
-  "shortname": ":call_me_tone1:",
-  "code_decimal": "&#129305;&#127995;",
-  "category": "people",
-  "emoji_order": "1153"
-}, {
-  "name": "call_me_tone2",
-  "unicode": "1f919-1f3fc",
-  "shortname": ":call_me_tone2:",
-  "code_decimal": "&#129305;&#127996;",
-  "category": "people",
-  "emoji_order": "1154"
-}, {
-  "name": "call_me_tone3",
-  "unicode": "1f919-1f3fd",
-  "shortname": ":call_me_tone3:",
-  "code_decimal": "&#129305;&#127997;",
-  "category": "people",
-  "emoji_order": "1155"
-}, {
-  "name": "call_me_tone4",
-  "unicode": "1f919-1f3fe",
-  "shortname": ":call_me_tone4:",
-  "code_decimal": "&#129305;&#127998;",
-  "category": "people",
-  "emoji_order": "1156"
-}, {
-  "name": "call_me_tone5",
-  "unicode": "1f919-1f3ff",
-  "shortname": ":call_me_tone5:",
-  "code_decimal": "&#129305;&#127999;",
-  "category": "people",
-  "emoji_order": "1157"
-}, {
+},
+// {
+//   "name": "call_me_tone1",
+//   "unicode": "1f919-1f3fb",
+//   "shortname": ":call_me_tone1:",
+//   "code_decimal": "&#129305;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1153"
+// },
+// {
+//   "name": "call_me_tone2",
+//   "unicode": "1f919-1f3fc",
+//   "shortname": ":call_me_tone2:",
+//   "code_decimal": "&#129305;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1154"
+// },
+// {
+//   "name": "call_me_tone3",
+//   "unicode": "1f919-1f3fd",
+//   "shortname": ":call_me_tone3:",
+//   "code_decimal": "&#129305;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1155"
+// },
+// {
+//   "name": "call_me_tone4",
+//   "unicode": "1f919-1f3fe",
+//   "shortname": ":call_me_tone4:",
+//   "code_decimal": "&#129305;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1156"
+// },
+// {
+//   "name": "call_me_tone5",
+//   "unicode": "1f919-1f3ff",
+//   "shortname": ":call_me_tone5:",
+//   "code_decimal": "&#129305;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1157"
+// },
+{
   "name": "hand_splayed",
   "unicode": "1f590",
   "shortname": ":hand_splayed:",
   "code_decimal": "&#128400;",
   "category": "people",
   "emoji_order": "1158"
-}, {
-  "name": "hand_splayed_tone1",
-  "unicode": "1f590-1f3fb",
-  "shortname": ":hand_splayed_tone1:",
-  "code_decimal": "&#128400;&#127995;",
-  "category": "people",
-  "emoji_order": "1159"
-}, {
-  "name": "hand_splayed_tone2",
-  "unicode": "1f590-1f3fc",
-  "shortname": ":hand_splayed_tone2:",
-  "code_decimal": "&#128400;&#127996;",
-  "category": "people",
-  "emoji_order": "1160"
-}, {
-  "name": "hand_splayed_tone3",
-  "unicode": "1f590-1f3fd",
-  "shortname": ":hand_splayed_tone3:",
-  "code_decimal": "&#128400;&#127997;",
-  "category": "people",
-  "emoji_order": "1161"
-}, {
-  "name": "hand_splayed_tone4",
-  "unicode": "1f590-1f3fe",
-  "shortname": ":hand_splayed_tone4:",
-  "code_decimal": "&#128400;&#127998;",
-  "category": "people",
-  "emoji_order": "1162"
-}, {
-  "name": "hand_splayed_tone5",
-  "unicode": "1f590-1f3ff",
-  "shortname": ":hand_splayed_tone5:",
-  "code_decimal": "&#128400;&#127999;",
-  "category": "people",
-  "emoji_order": "1163"
-}, {
+},
+// {
+//   "name": "hand_splayed_tone1",
+//   "unicode": "1f590-1f3fb",
+//   "shortname": ":hand_splayed_tone1:",
+//   "code_decimal": "&#128400;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1159"
+// },
+// {
+//   "name": "hand_splayed_tone2",
+//   "unicode": "1f590-1f3fc",
+//   "shortname": ":hand_splayed_tone2:",
+//   "code_decimal": "&#128400;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1160"
+// },
+// {
+//   "name": "hand_splayed_tone3",
+//   "unicode": "1f590-1f3fd",
+//   "shortname": ":hand_splayed_tone3:",
+//   "code_decimal": "&#128400;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1161"
+// },
+// {
+//   "name": "hand_splayed_tone4",
+//   "unicode": "1f590-1f3fe",
+//   "shortname": ":hand_splayed_tone4:",
+//   "code_decimal": "&#128400;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1162"
+// },
+// {
+//   "name": "hand_splayed_tone5",
+//   "unicode": "1f590-1f3ff",
+//   "shortname": ":hand_splayed_tone5:",
+//   "code_decimal": "&#128400;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1163"
+// },
+{
   "name": "raised_hand",
   "unicode": "270b",
   "shortname": ":raised_hand:",
   "code_decimal": "&#9995;",
   "category": "people",
   "emoji_order": "1164"
-}, {
-  "name": "raised_hand_tone1",
-  "unicode": "270b-1f3fb",
-  "shortname": ":raised_hand_tone1:",
-  "code_decimal": "&#9995;&#127995;",
-  "category": "people",
-  "emoji_order": "1165"
-}, {
-  "name": "raised_hand_tone2",
-  "unicode": "270b-1f3fc",
-  "shortname": ":raised_hand_tone2:",
-  "code_decimal": "&#9995;&#127996;",
-  "category": "people",
-  "emoji_order": "1166"
-}, {
-  "name": "raised_hand_tone3",
-  "unicode": "270b-1f3fd",
-  "shortname": ":raised_hand_tone3:",
-  "code_decimal": "&#9995;&#127997;",
-  "category": "people",
-  "emoji_order": "1167"
-}, {
-  "name": "raised_hand_tone4",
-  "unicode": "270b-1f3fe",
-  "shortname": ":raised_hand_tone4:",
-  "code_decimal": "&#9995;&#127998;",
-  "category": "people",
-  "emoji_order": "1168"
-}, {
-  "name": "raised_hand_tone5",
-  "unicode": "270b-1f3ff",
-  "shortname": ":raised_hand_tone5:",
-  "code_decimal": "&#9995;&#127999;",
-  "category": "people",
-  "emoji_order": "1169"
-}, {
+},
+// {
+//   "name": "raised_hand_tone1",
+//   "unicode": "270b-1f3fb",
+//   "shortname": ":raised_hand_tone1:",
+//   "code_decimal": "&#9995;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1165"
+// },
+// {
+//   "name": "raised_hand_tone2",
+//   "unicode": "270b-1f3fc",
+//   "shortname": ":raised_hand_tone2:",
+//   "code_decimal": "&#9995;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1166"
+// },
+// {
+//   "name": "raised_hand_tone3",
+//   "unicode": "270b-1f3fd",
+//   "shortname": ":raised_hand_tone3:",
+//   "code_decimal": "&#9995;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1167"
+// },
+// {
+//   "name": "raised_hand_tone4",
+//   "unicode": "270b-1f3fe",
+//   "shortname": ":raised_hand_tone4:",
+//   "code_decimal": "&#9995;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1168"
+// },
+// {
+//   "name": "raised_hand_tone5",
+//   "unicode": "270b-1f3ff",
+//   "shortname": ":raised_hand_tone5:",
+//   "code_decimal": "&#9995;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1169"
+// },
+{
   "name": "ok_hand",
   "unicode": "1f44c",
   "shortname": ":ok_hand:",
   "code_decimal": "&#128076;",
   "category": "people",
   "emoji_order": "1170"
-}, {
-  "name": "ok_hand_tone1",
-  "unicode": "1f44c-1f3fb",
-  "shortname": ":ok_hand_tone1:",
-  "code_decimal": "&#128076;&#127995;",
-  "category": "people",
-  "emoji_order": "1171"
-}, {
-  "name": "ok_hand_tone2",
-  "unicode": "1f44c-1f3fc",
-  "shortname": ":ok_hand_tone2:",
-  "code_decimal": "&#128076;&#127996;",
-  "category": "people",
-  "emoji_order": "1172"
-}, {
-  "name": "ok_hand_tone3",
-  "unicode": "1f44c-1f3fd",
-  "shortname": ":ok_hand_tone3:",
-  "code_decimal": "&#128076;&#127997;",
-  "category": "people",
-  "emoji_order": "1173"
-}, {
-  "name": "ok_hand_tone4",
-  "unicode": "1f44c-1f3fe",
-  "shortname": ":ok_hand_tone4:",
-  "code_decimal": "&#128076;&#127998;",
-  "category": "people",
-  "emoji_order": "1174"
-}, {
-  "name": "ok_hand_tone5",
-  "unicode": "1f44c-1f3ff",
-  "shortname": ":ok_hand_tone5:",
-  "code_decimal": "&#128076;&#127999;",
-  "category": "people",
-  "emoji_order": "1175"
-}, {
+},
+// {
+//   "name": "ok_hand_tone1",
+//   "unicode": "1f44c-1f3fb",
+//   "shortname": ":ok_hand_tone1:",
+//   "code_decimal": "&#128076;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1171"
+// },
+// {
+//   "name": "ok_hand_tone2",
+//   "unicode": "1f44c-1f3fc",
+//   "shortname": ":ok_hand_tone2:",
+//   "code_decimal": "&#128076;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1172"
+// },
+// {
+//   "name": "ok_hand_tone3",
+//   "unicode": "1f44c-1f3fd",
+//   "shortname": ":ok_hand_tone3:",
+//   "code_decimal": "&#128076;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1173"
+// },
+// {
+//   "name": "ok_hand_tone4",
+//   "unicode": "1f44c-1f3fe",
+//   "shortname": ":ok_hand_tone4:",
+//   "code_decimal": "&#128076;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1174"
+// },
+// {
+//   "name": "ok_hand_tone5",
+//   "unicode": "1f44c-1f3ff",
+//   "shortname": ":ok_hand_tone5:",
+//   "code_decimal": "&#128076;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1175"
+// },
+{
   "name": "thumbsup",
   "unicode": "1f44d",
   "shortname": ":thumbsup:",
   "code_decimal": "&#128077;",
   "category": "people",
   "emoji_order": "1176"
-}, {
-  "name": "thumbsup_tone1",
-  "unicode": "1f44d-1f3fb",
-  "shortname": ":thumbsup_tone1:",
-  "code_decimal": "&#128077;&#127995;",
-  "category": "people",
-  "emoji_order": "1177"
-}, {
-  "name": "thumbsup_tone2",
-  "unicode": "1f44d-1f3fc",
-  "shortname": ":thumbsup_tone2:",
-  "code_decimal": "&#128077;&#127996;",
-  "category": "people",
-  "emoji_order": "1178"
-}, {
-  "name": "thumbsup_tone3",
-  "unicode": "1f44d-1f3fd",
-  "shortname": ":thumbsup_tone3:",
-  "code_decimal": "&#128077;&#127997;",
-  "category": "people",
-  "emoji_order": "1179"
-}, {
-  "name": "thumbsup_tone4",
-  "unicode": "1f44d-1f3fe",
-  "shortname": ":thumbsup_tone4:",
-  "code_decimal": "&#128077;&#127998;",
-  "category": "people",
-  "emoji_order": "1180"
-}, {
-  "name": "thumbsup_tone5",
-  "unicode": "1f44d-1f3ff",
-  "shortname": ":thumbsup_tone5:",
-  "code_decimal": "&#128077;&#127999;",
-  "category": "people",
-  "emoji_order": "1181"
-}, {
+},
+// {
+//   "name": "thumbsup_tone1",
+//   "unicode": "1f44d-1f3fb",
+//   "shortname": ":thumbsup_tone1:",
+//   "code_decimal": "&#128077;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1177"
+// },
+// {
+//   "name": "thumbsup_tone2",
+//   "unicode": "1f44d-1f3fc",
+//   "shortname": ":thumbsup_tone2:",
+//   "code_decimal": "&#128077;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1178"
+// },
+// {
+//   "name": "thumbsup_tone3",
+//   "unicode": "1f44d-1f3fd",
+//   "shortname": ":thumbsup_tone3:",
+//   "code_decimal": "&#128077;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1179"
+// },
+// {
+//   "name": "thumbsup_tone4",
+//   "unicode": "1f44d-1f3fe",
+//   "shortname": ":thumbsup_tone4:",
+//   "code_decimal": "&#128077;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1180"
+// },
+// {
+//   "name": "thumbsup_tone5",
+//   "unicode": "1f44d-1f3ff",
+//   "shortname": ":thumbsup_tone5:",
+//   "code_decimal": "&#128077;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1181"
+// },
+{
   "name": "thumbsdown",
   "unicode": "1f44e",
   "shortname": ":thumbsdown:",
   "code_decimal": "&#128078;",
   "category": "people",
   "emoji_order": "1182"
-}, {
-  "name": "thumbsdown_tone1",
-  "unicode": "1f44e-1f3fb",
-  "shortname": ":thumbsdown_tone1:",
-  "code_decimal": "&#128078;&#127995;",
-  "category": "people",
-  "emoji_order": "1183"
-}, {
-  "name": "thumbsdown_tone2",
-  "unicode": "1f44e-1f3fc",
-  "shortname": ":thumbsdown_tone2:",
-  "code_decimal": "&#128078;&#127996;",
-  "category": "people",
-  "emoji_order": "1184"
-}, {
-  "name": "thumbsdown_tone3",
-  "unicode": "1f44e-1f3fd",
-  "shortname": ":thumbsdown_tone3:",
-  "code_decimal": "&#128078;&#127997;",
-  "category": "people",
-  "emoji_order": "1185"
-}, {
-  "name": "thumbsdown_tone4",
-  "unicode": "1f44e-1f3fe",
-  "shortname": ":thumbsdown_tone4:",
-  "code_decimal": "&#128078;&#127998;",
-  "category": "people",
-  "emoji_order": "1186"
-}, {
-  "name": "thumbsdown_tone5",
-  "unicode": "1f44e-1f3ff",
-  "shortname": ":thumbsdown_tone5:",
-  "code_decimal": "&#128078;&#127999;",
-  "category": "people",
-  "emoji_order": "1187"
-}, {
+},
+// {
+//   "name": "thumbsdown_tone1",
+//   "unicode": "1f44e-1f3fb",
+//   "shortname": ":thumbsdown_tone1:",
+//   "code_decimal": "&#128078;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1183"
+// },
+// {
+//   "name": "thumbsdown_tone2",
+//   "unicode": "1f44e-1f3fc",
+//   "shortname": ":thumbsdown_tone2:",
+//   "code_decimal": "&#128078;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1184"
+// },
+// {
+//   "name": "thumbsdown_tone3",
+//   "unicode": "1f44e-1f3fd",
+//   "shortname": ":thumbsdown_tone3:",
+//   "code_decimal": "&#128078;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1185"
+// },
+// {
+//   "name": "thumbsdown_tone4",
+//   "unicode": "1f44e-1f3fe",
+//   "shortname": ":thumbsdown_tone4:",
+//   "code_decimal": "&#128078;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1186"
+// },
+// {
+//   "name": "thumbsdown_tone5",
+//   "unicode": "1f44e-1f3ff",
+//   "shortname": ":thumbsdown_tone5:",
+//   "code_decimal": "&#128078;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1187"
+// },
+{
   "name": "fist",
   "unicode": "270a",
   "shortname": ":fist:",
   "code_decimal": "&#9994;",
   "category": "people",
   "emoji_order": "1188"
-}, {
-  "name": "fist_tone1",
-  "unicode": "270a-1f3fb",
-  "shortname": ":fist_tone1:",
-  "code_decimal": "&#9994;&#127995;",
-  "category": "people",
-  "emoji_order": "1189"
-}, {
-  "name": "fist_tone2",
-  "unicode": "270a-1f3fc",
-  "shortname": ":fist_tone2:",
-  "code_decimal": "&#9994;&#127996;",
-  "category": "people",
-  "emoji_order": "1190"
-}, {
-  "name": "fist_tone3",
-  "unicode": "270a-1f3fd",
-  "shortname": ":fist_tone3:",
-  "code_decimal": "&#9994;&#127997;",
-  "category": "people",
-  "emoji_order": "1191"
-}, {
-  "name": "fist_tone4",
-  "unicode": "270a-1f3fe",
-  "shortname": ":fist_tone4:",
-  "code_decimal": "&#9994;&#127998;",
-  "category": "people",
-  "emoji_order": "1192"
-}, {
-  "name": "fist_tone5",
-  "unicode": "270a-1f3ff",
-  "shortname": ":fist_tone5:",
-  "code_decimal": "&#9994;&#127999;",
-  "category": "people",
-  "emoji_order": "1193"
-}, {
+},
+// {
+//   "name": "fist_tone1",
+//   "unicode": "270a-1f3fb",
+//   "shortname": ":fist_tone1:",
+//   "code_decimal": "&#9994;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1189"
+// },
+// {
+//   "name": "fist_tone2",
+//   "unicode": "270a-1f3fc",
+//   "shortname": ":fist_tone2:",
+//   "code_decimal": "&#9994;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1190"
+// },
+// {
+//   "name": "fist_tone3",
+//   "unicode": "270a-1f3fd",
+//   "shortname": ":fist_tone3:",
+//   "code_decimal": "&#9994;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1191"
+// },
+// {
+//   "name": "fist_tone4",
+//   "unicode": "270a-1f3fe",
+//   "shortname": ":fist_tone4:",
+//   "code_decimal": "&#9994;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1192"
+// },
+// {
+//   "name": "fist_tone5",
+//   "unicode": "270a-1f3ff",
+//   "shortname": ":fist_tone5:",
+//   "code_decimal": "&#9994;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1193"
+// },
+{
   "name": "punch",
   "unicode": "1f44a",
   "shortname": ":punch:",
   "code_decimal": "&#128074;",
   "category": "people",
   "emoji_order": "1194"
-}, {
-  "name": "punch_tone1",
-  "unicode": "1f44a-1f3fb",
-  "shortname": ":punch_tone1:",
-  "code_decimal": "&#128074;&#127995;",
-  "category": "people",
-  "emoji_order": "1195"
-}, {
-  "name": "punch_tone2",
-  "unicode": "1f44a-1f3fc",
-  "shortname": ":punch_tone2:",
-  "code_decimal": "&#128074;&#127996;",
-  "category": "people",
-  "emoji_order": "1196"
-}, {
-  "name": "punch_tone3",
-  "unicode": "1f44a-1f3fd",
-  "shortname": ":punch_tone3:",
-  "code_decimal": "&#128074;&#127997;",
-  "category": "people",
-  "emoji_order": "1197"
-}, {
-  "name": "punch_tone4",
-  "unicode": "1f44a-1f3fe",
-  "shortname": ":punch_tone4:",
-  "code_decimal": "&#128074;&#127998;",
-  "category": "people",
-  "emoji_order": "1198"
-}, {
-  "name": "punch_tone5",
-  "unicode": "1f44a-1f3ff",
-  "shortname": ":punch_tone5:",
-  "code_decimal": "&#128074;&#127999;",
-  "category": "people",
-  "emoji_order": "1199"
-}, {
+},
+// {
+//   "name": "punch_tone1",
+//   "unicode": "1f44a-1f3fb",
+//   "shortname": ":punch_tone1:",
+//   "code_decimal": "&#128074;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1195"
+// },
+// {
+//   "name": "punch_tone2",
+//   "unicode": "1f44a-1f3fc",
+//   "shortname": ":punch_tone2:",
+//   "code_decimal": "&#128074;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1196"
+// },
+// {
+//   "name": "punch_tone3",
+//   "unicode": "1f44a-1f3fd",
+//   "shortname": ":punch_tone3:",
+//   "code_decimal": "&#128074;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1197"
+// },
+// {
+//   "name": "punch_tone4",
+//   "unicode": "1f44a-1f3fe",
+//   "shortname": ":punch_tone4:",
+//   "code_decimal": "&#128074;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1198"
+// },
+// {
+//   "name": "punch_tone5",
+//   "unicode": "1f44a-1f3ff",
+//   "shortname": ":punch_tone5:",
+//   "code_decimal": "&#128074;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1199"
+// },
+{
   "name": "left_facing_fist",
   "unicode": "1f91b",
   "shortname": ":left_facing_fist:",
   "code_decimal": "&#129307;",
   "category": "people",
   "emoji_order": "1200"
-}, {
-  "name": "left_facing_fist_tone1",
-  "unicode": "1f91b-1f3fb",
-  "shortname": ":left_facing_fist_tone1:",
-  "code_decimal": "&#129307;&#127995;",
-  "category": "people",
-  "emoji_order": "1201"
-}, {
-  "name": "left_facing_fist_tone2",
-  "unicode": "1f91b-1f3fc",
-  "shortname": ":left_facing_fist_tone2:",
-  "code_decimal": "&#129307;&#127996;",
-  "category": "people",
-  "emoji_order": "1202"
-}, {
-  "name": "left_facing_fist_tone3",
-  "unicode": "1f91b-1f3fd",
-  "shortname": ":left_facing_fist_tone3:",
-  "code_decimal": "&#129307;&#127997;",
-  "category": "people",
-  "emoji_order": "1203"
-}, {
-  "name": "left_facing_fist_tone4",
-  "unicode": "1f91b-1f3fe",
-  "shortname": ":left_facing_fist_tone4:",
-  "code_decimal": "&#129307;&#127998;",
-  "category": "people",
-  "emoji_order": "1204"
-}, {
-  "name": "left_facing_fist_tone5",
-  "unicode": "1f91b-1f3ff",
-  "shortname": ":left_facing_fist_tone5:",
-  "code_decimal": "&#129307;&#127999;",
-  "category": "people",
-  "emoji_order": "1205"
-}, {
+},
+// {
+//   "name": "left_facing_fist_tone1",
+//   "unicode": "1f91b-1f3fb",
+//   "shortname": ":left_facing_fist_tone1:",
+//   "code_decimal": "&#129307;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1201"
+// },
+// {
+//   "name": "left_facing_fist_tone2",
+//   "unicode": "1f91b-1f3fc",
+//   "shortname": ":left_facing_fist_tone2:",
+//   "code_decimal": "&#129307;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1202"
+// },
+// {
+//   "name": "left_facing_fist_tone3",
+//   "unicode": "1f91b-1f3fd",
+//   "shortname": ":left_facing_fist_tone3:",
+//   "code_decimal": "&#129307;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1203"
+// },
+// {
+//   "name": "left_facing_fist_tone4",
+//   "unicode": "1f91b-1f3fe",
+//   "shortname": ":left_facing_fist_tone4:",
+//   "code_decimal": "&#129307;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1204"
+// },
+// {
+//   "name": "left_facing_fist_tone5",
+//   "unicode": "1f91b-1f3ff",
+//   "shortname": ":left_facing_fist_tone5:",
+//   "code_decimal": "&#129307;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1205"
+// },
+{
   "name": "right_facing_fist",
   "unicode": "1f91c",
   "shortname": ":right_facing_fist:",
   "code_decimal": "&#129308;",
   "category": "people",
   "emoji_order": "1206"
-}, {
-  "name": "right_facing_fist_tone1",
-  "unicode": "1f91c-1f3fb",
-  "shortname": ":right_facing_fist_tone1:",
-  "code_decimal": "&#129308;&#127995;",
-  "category": "people",
-  "emoji_order": "1207"
-}, {
-  "name": "right_facing_fist_tone2",
-  "unicode": "1f91c-1f3fc",
-  "shortname": ":right_facing_fist_tone2:",
-  "code_decimal": "&#129308;&#127996;",
-  "category": "people",
-  "emoji_order": "1208"
-}, {
-  "name": "right_facing_fist_tone3",
-  "unicode": "1f91c-1f3fd",
-  "shortname": ":right_facing_fist_tone3:",
-  "code_decimal": "&#129308;&#127997;",
-  "category": "people",
-  "emoji_order": "1209"
-}, {
-  "name": "right_facing_fist_tone4",
-  "unicode": "1f91c-1f3fe",
-  "shortname": ":right_facing_fist_tone4:",
-  "code_decimal": "&#129308;&#127998;",
-  "category": "people",
-  "emoji_order": "1210"
-}, {
-  "name": "right_facing_fist_tone5",
-  "unicode": "1f91c-1f3ff",
-  "shortname": ":right_facing_fist_tone5:",
-  "code_decimal": "&#129308;&#127999;",
-  "category": "people",
-  "emoji_order": "1211"
-}, {
+},
+// {
+//   "name": "right_facing_fist_tone1",
+//   "unicode": "1f91c-1f3fb",
+//   "shortname": ":right_facing_fist_tone1:",
+//   "code_decimal": "&#129308;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1207"
+// },
+// {
+//   "name": "right_facing_fist_tone2",
+//   "unicode": "1f91c-1f3fc",
+//   "shortname": ":right_facing_fist_tone2:",
+//   "code_decimal": "&#129308;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1208"
+// },
+// {
+//   "name": "right_facing_fist_tone3",
+//   "unicode": "1f91c-1f3fd",
+//   "shortname": ":right_facing_fist_tone3:",
+//   "code_decimal": "&#129308;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1209"
+// },
+// {
+//   "name": "right_facing_fist_tone4",
+//   "unicode": "1f91c-1f3fe",
+//   "shortname": ":right_facing_fist_tone4:",
+//   "code_decimal": "&#129308;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1210"
+// },
+// {
+//   "name": "right_facing_fist_tone5",
+//   "unicode": "1f91c-1f3ff",
+//   "shortname": ":right_facing_fist_tone5:",
+//   "code_decimal": "&#129308;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1211"
+// },
+{
   "name": "raised_back_of_hand",
   "unicode": "1f91a",
   "shortname": ":raised_back_of_hand:",
   "code_decimal": "&#129306;",
   "category": "people",
   "emoji_order": "1212"
-}, {
-  "name": "raised_back_of_hand_tone1",
-  "unicode": "1f91a-1f3fb",
-  "shortname": ":raised_back_of_hand_tone1:",
-  "code_decimal": "&#129306;&#127995;",
-  "category": "people",
-  "emoji_order": "1213"
-}, {
-  "name": "raised_back_of_hand_tone2",
-  "unicode": "1f91a-1f3fc",
-  "shortname": ":raised_back_of_hand_tone2:",
-  "code_decimal": "&#129306;&#127996;",
-  "category": "people",
-  "emoji_order": "1214"
-}, {
-  "name": "raised_back_of_hand_tone3",
-  "unicode": "1f91a-1f3fd",
-  "shortname": ":raised_back_of_hand_tone3:",
-  "code_decimal": "&#129306;&#127997;",
-  "category": "people",
-  "emoji_order": "1215"
-}, {
-  "name": "raised_back_of_hand_tone4",
-  "unicode": "1f91a-1f3fe",
-  "shortname": ":raised_back_of_hand_tone4:",
-  "code_decimal": "&#129306;&#127998;",
-  "category": "people",
-  "emoji_order": "1216"
-}, {
-  "name": "raised_back_of_hand_tone5",
-  "unicode": "1f91a-1f3ff",
-  "shortname": ":raised_back_of_hand_tone5:",
-  "code_decimal": "&#129306;&#127999;",
-  "category": "people",
-  "emoji_order": "1217"
-}, {
+},
+// {
+//   "name": "raised_back_of_hand_tone1",
+//   "unicode": "1f91a-1f3fb",
+//   "shortname": ":raised_back_of_hand_tone1:",
+//   "code_decimal": "&#129306;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1213"
+// },
+// {
+//   "name": "raised_back_of_hand_tone2",
+//   "unicode": "1f91a-1f3fc",
+//   "shortname": ":raised_back_of_hand_tone2:",
+//   "code_decimal": "&#129306;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1214"
+// },
+// {
+//   "name": "raised_back_of_hand_tone3",
+//   "unicode": "1f91a-1f3fd",
+//   "shortname": ":raised_back_of_hand_tone3:",
+//   "code_decimal": "&#129306;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1215"
+// },
+// {
+//   "name": "raised_back_of_hand_tone4",
+//   "unicode": "1f91a-1f3fe",
+//   "shortname": ":raised_back_of_hand_tone4:",
+//   "code_decimal": "&#129306;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1216"
+// },
+// {
+//   "name": "raised_back_of_hand_tone5",
+//   "unicode": "1f91a-1f3ff",
+//   "shortname": ":raised_back_of_hand_tone5:",
+//   "code_decimal": "&#129306;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1217"
+// },
+{
   "name": "wave",
   "unicode": "1f44b",
   "shortname": ":wave:",
   "code_decimal": "&#128075;",
   "category": "people",
   "emoji_order": "1218"
-}, {
-  "name": "wave_tone1",
-  "unicode": "1f44b-1f3fb",
-  "shortname": ":wave_tone1:",
-  "code_decimal": "&#128075;&#127995;",
-  "category": "people",
-  "emoji_order": "1219"
-}, {
-  "name": "wave_tone2",
-  "unicode": "1f44b-1f3fc",
-  "shortname": ":wave_tone2:",
-  "code_decimal": "&#128075;&#127996;",
-  "category": "people",
-  "emoji_order": "1220"
-}, {
-  "name": "wave_tone3",
-  "unicode": "1f44b-1f3fd",
-  "shortname": ":wave_tone3:",
-  "code_decimal": "&#128075;&#127997;",
-  "category": "people",
-  "emoji_order": "1221"
-}, {
-  "name": "wave_tone4",
-  "unicode": "1f44b-1f3fe",
-  "shortname": ":wave_tone4:",
-  "code_decimal": "&#128075;&#127998;",
-  "category": "people",
-  "emoji_order": "1222"
-}, {
-  "name": "wave_tone5",
-  "unicode": "1f44b-1f3ff",
-  "shortname": ":wave_tone5:",
-  "code_decimal": "&#128075;&#127999;",
-  "category": "people",
-  "emoji_order": "1223"
-}, {
+},
+// {
+//   "name": "wave_tone1",
+//   "unicode": "1f44b-1f3fb",
+//   "shortname": ":wave_tone1:",
+//   "code_decimal": "&#128075;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1219"
+// },
+// {
+//   "name": "wave_tone2",
+//   "unicode": "1f44b-1f3fc",
+//   "shortname": ":wave_tone2:",
+//   "code_decimal": "&#128075;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1220"
+// },
+// {
+//   "name": "wave_tone3",
+//   "unicode": "1f44b-1f3fd",
+//   "shortname": ":wave_tone3:",
+//   "code_decimal": "&#128075;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1221"
+// },
+// {
+//   "name": "wave_tone4",
+//   "unicode": "1f44b-1f3fe",
+//   "shortname": ":wave_tone4:",
+//   "code_decimal": "&#128075;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1222"
+// },
+// {
+//   "name": "wave_tone5",
+//   "unicode": "1f44b-1f3ff",
+//   "shortname": ":wave_tone5:",
+//   "code_decimal": "&#128075;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1223"
+// },
+{
   "name": "clap",
   "unicode": "1f44f",
   "shortname": ":clap:",
   "code_decimal": "&#128079;",
   "category": "people",
   "emoji_order": "1224"
-}, {
-  "name": "clap_tone1",
-  "unicode": "1f44f-1f3fb",
-  "shortname": ":clap_tone1:",
-  "code_decimal": "&#128079;&#127995;",
-  "category": "people",
-  "emoji_order": "1225"
-}, {
-  "name": "clap_tone2",
-  "unicode": "1f44f-1f3fc",
-  "shortname": ":clap_tone2:",
-  "code_decimal": "&#128079;&#127996;",
-  "category": "people",
-  "emoji_order": "1226"
-}, {
-  "name": "clap_tone3",
-  "unicode": "1f44f-1f3fd",
-  "shortname": ":clap_tone3:",
-  "code_decimal": "&#128079;&#127997;",
-  "category": "people",
-  "emoji_order": "1227"
-}, {
-  "name": "clap_tone4",
-  "unicode": "1f44f-1f3fe",
-  "shortname": ":clap_tone4:",
-  "code_decimal": "&#128079;&#127998;",
-  "category": "people",
-  "emoji_order": "1228"
-}, {
-  "name": "clap_tone5",
-  "unicode": "1f44f-1f3ff",
-  "shortname": ":clap_tone5:",
-  "code_decimal": "&#128079;&#127999;",
-  "category": "people",
-  "emoji_order": "1229"
-}, {
+},
+// {
+//   "name": "clap_tone1",
+//   "unicode": "1f44f-1f3fb",
+//   "shortname": ":clap_tone1:",
+//   "code_decimal": "&#128079;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1225"
+// },
+// {
+//   "name": "clap_tone2",
+//   "unicode": "1f44f-1f3fc",
+//   "shortname": ":clap_tone2:",
+//   "code_decimal": "&#128079;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1226"
+// },
+// {
+//   "name": "clap_tone3",
+//   "unicode": "1f44f-1f3fd",
+//   "shortname": ":clap_tone3:",
+//   "code_decimal": "&#128079;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1227"
+// },
+// {
+//   "name": "clap_tone4",
+//   "unicode": "1f44f-1f3fe",
+//   "shortname": ":clap_tone4:",
+//   "code_decimal": "&#128079;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1228"
+// },
+// {
+//   "name": "clap_tone5",
+//   "unicode": "1f44f-1f3ff",
+//   "shortname": ":clap_tone5:",
+//   "code_decimal": "&#128079;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1229"
+// },
+{
   "name": "writing_hand",
   "unicode": "270d",
   "shortname": ":writing_hand:",
   "code_decimal": "&#9997;",
   "category": "people",
   "emoji_order": "1230"
-}, {
-  "name": "writing_hand_tone1",
-  "unicode": "270d-1f3fb",
-  "shortname": ":writing_hand_tone1:",
-  "code_decimal": "&#9997;&#127995;",
-  "category": "people",
-  "emoji_order": "1231"
-}, {
-  "name": "writing_hand_tone2",
-  "unicode": "270d-1f3fc",
-  "shortname": ":writing_hand_tone2:",
-  "code_decimal": "&#9997;&#127996;",
-  "category": "people",
-  "emoji_order": "1232"
-}, {
-  "name": "writing_hand_tone3",
-  "unicode": "270d-1f3fd",
-  "shortname": ":writing_hand_tone3:",
-  "code_decimal": "&#9997;&#127997;",
-  "category": "people",
-  "emoji_order": "1233"
-}, {
-  "name": "writing_hand_tone4",
-  "unicode": "270d-1f3fe",
-  "shortname": ":writing_hand_tone4:",
-  "code_decimal": "&#9997;&#127998;",
-  "category": "people",
-  "emoji_order": "1234"
-}, {
-  "name": "writing_hand_tone5",
-  "unicode": "270d-1f3ff",
-  "shortname": ":writing_hand_tone5:",
-  "code_decimal": "&#9997;&#127999;",
-  "category": "people",
-  "emoji_order": "1235"
-}, {
+},
+// {
+//   "name": "writing_hand_tone1",
+//   "unicode": "270d-1f3fb",
+//   "shortname": ":writing_hand_tone1:",
+//   "code_decimal": "&#9997;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1231"
+// },
+// {
+//   "name": "writing_hand_tone2",
+//   "unicode": "270d-1f3fc",
+//   "shortname": ":writing_hand_tone2:",
+//   "code_decimal": "&#9997;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1232"
+// },
+// {
+//   "name": "writing_hand_tone3",
+//   "unicode": "270d-1f3fd",
+//   "shortname": ":writing_hand_tone3:",
+//   "code_decimal": "&#9997;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1233"
+// },
+// {
+//   "name": "writing_hand_tone4",
+//   "unicode": "270d-1f3fe",
+//   "shortname": ":writing_hand_tone4:",
+//   "code_decimal": "&#9997;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1234"
+// },
+// {
+//   "name": "writing_hand_tone5",
+//   "unicode": "270d-1f3ff",
+//   "shortname": ":writing_hand_tone5:",
+//   "code_decimal": "&#9997;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1235"
+// },
+{
   "name": "open_hands",
   "unicode": "1f450",
   "shortname": ":open_hands:",
   "code_decimal": "&#128080;",
   "category": "people",
   "emoji_order": "1236"
-}, {
-  "name": "open_hands_tone1",
-  "unicode": "1f450-1f3fb",
-  "shortname": ":open_hands_tone1:",
-  "code_decimal": "&#128080;&#127995;",
-  "category": "people",
-  "emoji_order": "1237"
-}, {
-  "name": "open_hands_tone2",
-  "unicode": "1f450-1f3fc",
-  "shortname": ":open_hands_tone2:",
-  "code_decimal": "&#128080;&#127996;",
-  "category": "people",
-  "emoji_order": "1238"
-}, {
-  "name": "open_hands_tone3",
-  "unicode": "1f450-1f3fd",
-  "shortname": ":open_hands_tone3:",
-  "code_decimal": "&#128080;&#127997;",
-  "category": "people",
-  "emoji_order": "1239"
-}, {
-  "name": "open_hands_tone4",
-  "unicode": "1f450-1f3fe",
-  "shortname": ":open_hands_tone4:",
-  "code_decimal": "&#128080;&#127998;",
-  "category": "people",
-  "emoji_order": "1240"
-}, {
-  "name": "open_hands_tone5",
-  "unicode": "1f450-1f3ff",
-  "shortname": ":open_hands_tone5:",
-  "code_decimal": "&#128080;&#127999;",
-  "category": "people",
-  "emoji_order": "1241"
-}, {
+},
+// {
+//   "name": "open_hands_tone1",
+//   "unicode": "1f450-1f3fb",
+//   "shortname": ":open_hands_tone1:",
+//   "code_decimal": "&#128080;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1237"
+// },
+// {
+//   "name": "open_hands_tone2",
+//   "unicode": "1f450-1f3fc",
+//   "shortname": ":open_hands_tone2:",
+//   "code_decimal": "&#128080;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1238"
+// },
+// {
+//   "name": "open_hands_tone3",
+//   "unicode": "1f450-1f3fd",
+//   "shortname": ":open_hands_tone3:",
+//   "code_decimal": "&#128080;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1239"
+// },
+// {
+//   "name": "open_hands_tone4",
+//   "unicode": "1f450-1f3fe",
+//   "shortname": ":open_hands_tone4:",
+//   "code_decimal": "&#128080;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1240"
+// },
+// {
+//   "name": "open_hands_tone5",
+//   "unicode": "1f450-1f3ff",
+//   "shortname": ":open_hands_tone5:",
+//   "code_decimal": "&#128080;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1241"
+// },
+{
   "name": "raised_hands",
   "unicode": "1f64c",
   "shortname": ":raised_hands:",
   "code_decimal": "&#128588;",
   "category": "people",
   "emoji_order": "1242"
-}, {
-  "name": "raised_hands_tone1",
-  "unicode": "1f64c-1f3fb",
-  "shortname": ":raised_hands_tone1:",
-  "code_decimal": "&#128588;&#127995;",
-  "category": "people",
-  "emoji_order": "1243"
-}, {
-  "name": "raised_hands_tone2",
-  "unicode": "1f64c-1f3fc",
-  "shortname": ":raised_hands_tone2:",
-  "code_decimal": "&#128588;&#127996;",
-  "category": "people",
-  "emoji_order": "1244"
-}, {
-  "name": "raised_hands_tone3",
-  "unicode": "1f64c-1f3fd",
-  "shortname": ":raised_hands_tone3:",
-  "code_decimal": "&#128588;&#127997;",
-  "category": "people",
-  "emoji_order": "1245"
-}, {
-  "name": "raised_hands_tone4",
-  "unicode": "1f64c-1f3fe",
-  "shortname": ":raised_hands_tone4:",
-  "code_decimal": "&#128588;&#127998;",
-  "category": "people",
-  "emoji_order": "1246"
-}, {
-  "name": "raised_hands_tone5",
-  "unicode": "1f64c-1f3ff",
-  "shortname": ":raised_hands_tone5:",
-  "code_decimal": "&#128588;&#127999;",
-  "category": "people",
-  "emoji_order": "1247"
-}, {
+},
+// {
+//   "name": "raised_hands_tone1",
+//   "unicode": "1f64c-1f3fb",
+//   "shortname": ":raised_hands_tone1:",
+//   "code_decimal": "&#128588;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1243"
+// },
+// {
+//   "name": "raised_hands_tone2",
+//   "unicode": "1f64c-1f3fc",
+//   "shortname": ":raised_hands_tone2:",
+//   "code_decimal": "&#128588;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1244"
+// },
+// {
+//   "name": "raised_hands_tone3",
+//   "unicode": "1f64c-1f3fd",
+//   "shortname": ":raised_hands_tone3:",
+//   "code_decimal": "&#128588;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1245"
+// },
+// {
+//   "name": "raised_hands_tone4",
+//   "unicode": "1f64c-1f3fe",
+//   "shortname": ":raised_hands_tone4:",
+//   "code_decimal": "&#128588;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1246"
+// },
+// {
+//   "name": "raised_hands_tone5",
+//   "unicode": "1f64c-1f3ff",
+//   "shortname": ":raised_hands_tone5:",
+//   "code_decimal": "&#128588;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1247"
+// },
+{
   "name": "pray",
   "unicode": "1f64f",
   "shortname": ":pray:",
   "code_decimal": "&#128591;",
   "category": "people",
   "emoji_order": "1248"
-}, {
-  "name": "pray_tone1",
-  "unicode": "1f64f-1f3fb",
-  "shortname": ":pray_tone1:",
-  "code_decimal": "&#128591;&#127995;",
-  "category": "people",
-  "emoji_order": "1249"
-}, {
-  "name": "pray_tone2",
-  "unicode": "1f64f-1f3fc",
-  "shortname": ":pray_tone2:",
-  "code_decimal": "&#128591;&#127996;",
-  "category": "people",
-  "emoji_order": "1250"
-}, {
-  "name": "pray_tone3",
-  "unicode": "1f64f-1f3fd",
-  "shortname": ":pray_tone3:",
-  "code_decimal": "&#128591;&#127997;",
-  "category": "people",
-  "emoji_order": "1251"
-}, {
-  "name": "pray_tone4",
-  "unicode": "1f64f-1f3fe",
-  "shortname": ":pray_tone4:",
-  "code_decimal": "&#128591;&#127998;",
-  "category": "people",
-  "emoji_order": "1252"
-}, {
-  "name": "pray_tone5",
-  "unicode": "1f64f-1f3ff",
-  "shortname": ":pray_tone5:",
-  "code_decimal": "&#128591;&#127999;",
-  "category": "people",
-  "emoji_order": "1253"
-}, {
+},
+// {
+//   "name": "pray_tone1",
+//   "unicode": "1f64f-1f3fb",
+//   "shortname": ":pray_tone1:",
+//   "code_decimal": "&#128591;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1249"
+// },
+// {
+//   "name": "pray_tone2",
+//   "unicode": "1f64f-1f3fc",
+//   "shortname": ":pray_tone2:",
+//   "code_decimal": "&#128591;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1250"
+// },
+// {
+//   "name": "pray_tone3",
+//   "unicode": "1f64f-1f3fd",
+//   "shortname": ":pray_tone3:",
+//   "code_decimal": "&#128591;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1251"
+// },
+// {
+//   "name": "pray_tone4",
+//   "unicode": "1f64f-1f3fe",
+//   "shortname": ":pray_tone4:",
+//   "code_decimal": "&#128591;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1252"
+// },
+// {
+//   "name": "pray_tone5",
+//   "unicode": "1f64f-1f3ff",
+//   "shortname": ":pray_tone5:",
+//   "code_decimal": "&#128591;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1253"
+// },
+{
   "name": "handshake",
   "unicode": "1f91d",
   "shortname": ":handshake:",
   "code_decimal": "&#129309;",
   "category": "people",
   "emoji_order": "1254"
-}, {
-  "name": "handshake_tone1",
-  "unicode": "1f91d-1f3fb",
-  "shortname": ":handshake_tone1:",
-  "code_decimal": "&#129309;&#127995;",
-  "category": "people",
-  "emoji_order": "1255"
-}, {
-  "name": "handshake_tone2",
-  "unicode": "1f91d-1f3fc",
-  "shortname": ":handshake_tone2:",
-  "code_decimal": "&#129309;&#127996;",
-  "category": "people",
-  "emoji_order": "1256"
-}, {
-  "name": "handshake_tone3",
-  "unicode": "1f91d-1f3fd",
-  "shortname": ":handshake_tone3:",
-  "code_decimal": "&#129309;&#127997;",
-  "category": "people",
-  "emoji_order": "1257"
-}, {
-  "name": "handshake_tone4",
-  "unicode": "1f91d-1f3fe",
-  "shortname": ":handshake_tone4:",
-  "code_decimal": "&#129309;&#127998;",
-  "category": "people",
-  "emoji_order": "1258"
-}, {
-  "name": "handshake_tone5",
-  "unicode": "1f91d-1f3ff",
-  "shortname": ":handshake_tone5:",
-  "code_decimal": "&#129309;&#127999;",
-  "category": "people",
-  "emoji_order": "1259"
-}, {
+},
+// {
+//   "name": "handshake_tone1",
+//   "unicode": "1f91d-1f3fb",
+//   "shortname": ":handshake_tone1:",
+//   "code_decimal": "&#129309;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1255"
+// },
+// {
+//   "name": "handshake_tone2",
+//   "unicode": "1f91d-1f3fc",
+//   "shortname": ":handshake_tone2:",
+//   "code_decimal": "&#129309;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1256"
+// },
+// {
+//   "name": "handshake_tone3",
+//   "unicode": "1f91d-1f3fd",
+//   "shortname": ":handshake_tone3:",
+//   "code_decimal": "&#129309;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1257"
+// },
+// {
+//   "name": "handshake_tone4",
+//   "unicode": "1f91d-1f3fe",
+//   "shortname": ":handshake_tone4:",
+//   "code_decimal": "&#129309;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1258"
+// },
+// {
+//   "name": "handshake_tone5",
+//   "unicode": "1f91d-1f3ff",
+//   "shortname": ":handshake_tone5:",
+//   "code_decimal": "&#129309;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1259"
+// },
+{
   "name": "nail_care",
   "unicode": "1f485",
   "shortname": ":nail_care:",
   "code_decimal": "&#128133;",
   "category": "people",
   "emoji_order": "1260"
-}, {
-  "name": "nail_care_tone1",
-  "unicode": "1f485-1f3fb",
-  "shortname": ":nail_care_tone1:",
-  "code_decimal": "&#128133;&#127995;",
-  "category": "people",
-  "emoji_order": "1261"
-}, {
-  "name": "nail_care_tone2",
-  "unicode": "1f485-1f3fc",
-  "shortname": ":nail_care_tone2:",
-  "code_decimal": "&#128133;&#127996;",
-  "category": "people",
-  "emoji_order": "1262"
-}, {
-  "name": "nail_care_tone3",
-  "unicode": "1f485-1f3fd",
-  "shortname": ":nail_care_tone3:",
-  "code_decimal": "&#128133;&#127997;",
-  "category": "people",
-  "emoji_order": "1263"
-}, {
-  "name": "nail_care_tone4",
-  "unicode": "1f485-1f3fe",
-  "shortname": ":nail_care_tone4:",
-  "code_decimal": "&#128133;&#127998;",
-  "category": "people",
-  "emoji_order": "1264"
-}, {
-  "name": "nail_care_tone5",
-  "unicode": "1f485-1f3ff",
-  "shortname": ":nail_care_tone5:",
-  "code_decimal": "&#128133;&#127999;",
-  "category": "people",
-  "emoji_order": "1265"
-}, {
+},
+// {
+//   "name": "nail_care_tone1",
+//   "unicode": "1f485-1f3fb",
+//   "shortname": ":nail_care_tone1:",
+//   "code_decimal": "&#128133;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1261"
+// },
+// {
+//   "name": "nail_care_tone2",
+//   "unicode": "1f485-1f3fc",
+//   "shortname": ":nail_care_tone2:",
+//   "code_decimal": "&#128133;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1262"
+// },
+// {
+//   "name": "nail_care_tone3",
+//   "unicode": "1f485-1f3fd",
+//   "shortname": ":nail_care_tone3:",
+//   "code_decimal": "&#128133;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1263"
+// },
+// {
+//   "name": "nail_care_tone4",
+//   "unicode": "1f485-1f3fe",
+//   "shortname": ":nail_care_tone4:",
+//   "code_decimal": "&#128133;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1264"
+// },
+// {
+//   "name": "nail_care_tone5",
+//   "unicode": "1f485-1f3ff",
+//   "shortname": ":nail_care_tone5:",
+//   "code_decimal": "&#128133;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1265"
+// },
+{
   "name": "ear",
   "unicode": "1f442",
   "shortname": ":ear:",
   "code_decimal": "&#128066;",
   "category": "people",
   "emoji_order": "1266"
-}, {
-  "name": "ear_tone1",
-  "unicode": "1f442-1f3fb",
-  "shortname": ":ear_tone1:",
-  "code_decimal": "&#128066;&#127995;",
-  "category": "people",
-  "emoji_order": "1267"
-}, {
-  "name": "ear_tone2",
-  "unicode": "1f442-1f3fc",
-  "shortname": ":ear_tone2:",
-  "code_decimal": "&#128066;&#127996;",
-  "category": "people",
-  "emoji_order": "1268"
-}, {
-  "name": "ear_tone3",
-  "unicode": "1f442-1f3fd",
-  "shortname": ":ear_tone3:",
-  "code_decimal": "&#128066;&#127997;",
-  "category": "people",
-  "emoji_order": "1269"
-}, {
-  "name": "ear_tone4",
-  "unicode": "1f442-1f3fe",
-  "shortname": ":ear_tone4:",
-  "code_decimal": "&#128066;&#127998;",
-  "category": "people",
-  "emoji_order": "1270"
-}, {
-  "name": "ear_tone5",
-  "unicode": "1f442-1f3ff",
-  "shortname": ":ear_tone5:",
-  "code_decimal": "&#128066;&#127999;",
-  "category": "people",
-  "emoji_order": "1271"
-}, {
+},
+// {
+//   "name": "ear_tone1",
+//   "unicode": "1f442-1f3fb",
+//   "shortname": ":ear_tone1:",
+//   "code_decimal": "&#128066;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1267"
+// },
+// {
+//   "name": "ear_tone2",
+//   "unicode": "1f442-1f3fc",
+//   "shortname": ":ear_tone2:",
+//   "code_decimal": "&#128066;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1268"
+// },
+// {
+//   "name": "ear_tone3",
+//   "unicode": "1f442-1f3fd",
+//   "shortname": ":ear_tone3:",
+//   "code_decimal": "&#128066;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1269"
+// },
+// {
+//   "name": "ear_tone4",
+//   "unicode": "1f442-1f3fe",
+//   "shortname": ":ear_tone4:",
+//   "code_decimal": "&#128066;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1270"
+// },
+// {
+//   "name": "ear_tone5",
+//   "unicode": "1f442-1f3ff",
+//   "shortname": ":ear_tone5:",
+//   "code_decimal": "&#128066;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1271"
+// },
+{
   "name": "nose",
   "unicode": "1f443",
   "shortname": ":nose:",
   "code_decimal": "&#128067;",
   "category": "people",
   "emoji_order": "1272"
-}, {
-  "name": "nose_tone1",
-  "unicode": "1f443-1f3fb",
-  "shortname": ":nose_tone1:",
-  "code_decimal": "&#128067;&#127995;",
-  "category": "people",
-  "emoji_order": "1273"
-}, {
-  "name": "nose_tone2",
-  "unicode": "1f443-1f3fc",
-  "shortname": ":nose_tone2:",
-  "code_decimal": "&#128067;&#127996;",
-  "category": "people",
-  "emoji_order": "1274"
-}, {
-  "name": "nose_tone3",
-  "unicode": "1f443-1f3fd",
-  "shortname": ":nose_tone3:",
-  "code_decimal": "&#128067;&#127997;",
-  "category": "people",
-  "emoji_order": "1275"
-}, {
-  "name": "nose_tone4",
-  "unicode": "1f443-1f3fe",
-  "shortname": ":nose_tone4:",
-  "code_decimal": "&#128067;&#127998;",
-  "category": "people",
-  "emoji_order": "1276"
-}, {
-  "name": "nose_tone5",
-  "unicode": "1f443-1f3ff",
-  "shortname": ":nose_tone5:",
-  "code_decimal": "&#128067;&#127999;",
-  "category": "people",
-  "emoji_order": "1277"
-}, {
+},
+// {
+//   "name": "nose_tone1",
+//   "unicode": "1f443-1f3fb",
+//   "shortname": ":nose_tone1:",
+//   "code_decimal": "&#128067;&#127995;",
+//   "category": "people",
+//   "emoji_order": "1273"
+// },
+// {
+//   "name": "nose_tone2",
+//   "unicode": "1f443-1f3fc",
+//   "shortname": ":nose_tone2:",
+//   "code_decimal": "&#128067;&#127996;",
+//   "category": "people",
+//   "emoji_order": "1274"
+// },
+// {
+//   "name": "nose_tone3",
+//   "unicode": "1f443-1f3fd",
+//   "shortname": ":nose_tone3:",
+//   "code_decimal": "&#128067;&#127997;",
+//   "category": "people",
+//   "emoji_order": "1275"
+// },
+// {
+//   "name": "nose_tone4",
+//   "unicode": "1f443-1f3fe",
+//   "shortname": ":nose_tone4:",
+//   "code_decimal": "&#128067;&#127998;",
+//   "category": "people",
+//   "emoji_order": "1276"
+// },
+// {
+//   "name": "nose_tone5",
+//   "unicode": "1f443-1f3ff",
+//   "shortname": ":nose_tone5:",
+//   "code_decimal": "&#128067;&#127999;",
+//   "category": "people",
+//   "emoji_order": "1277"
+// },
+{
   "name": "footprints",
   "unicode": "1f463",
   "shortname": ":footprints:",
@@ -7132,42 +7630,48 @@ var emojiList = exports.emojiList = [{
   "code_decimal": "&#128704;",
   "category": "activity",
   "emoji_order": "1673"
-}, {
-  "name": "bath_tone1",
-  "unicode": "1f6c0-1f3fb",
-  "shortname": ":bath_tone1:",
-  "code_decimal": "&#128704;&#127995;",
-  "category": "activity",
-  "emoji_order": "1674"
-}, {
-  "name": "bath_tone2",
-  "unicode": "1f6c0-1f3fc",
-  "shortname": ":bath_tone2:",
-  "code_decimal": "&#128704;&#127996;",
-  "category": "activity",
-  "emoji_order": "1675"
-}, {
-  "name": "bath_tone3",
-  "unicode": "1f6c0-1f3fd",
-  "shortname": ":bath_tone3:",
-  "code_decimal": "&#128704;&#127997;",
-  "category": "activity",
-  "emoji_order": "1676"
-}, {
-  "name": "bath_tone4",
-  "unicode": "1f6c0-1f3fe",
-  "shortname": ":bath_tone4:",
-  "code_decimal": "&#128704;&#127998;",
-  "category": "activity",
-  "emoji_order": "1677"
-}, {
-  "name": "bath_tone5",
-  "unicode": "1f6c0-1f3ff",
-  "shortname": ":bath_tone5:",
-  "code_decimal": "&#128704;&#127999;",
-  "category": "activity",
-  "emoji_order": "1678"
-}, {
+},
+// {
+//   "name": "bath_tone1",
+//   "unicode": "1f6c0-1f3fb",
+//   "shortname": ":bath_tone1:",
+//   "code_decimal": "&#128704;&#127995;",
+//   "category": "activity",
+//   "emoji_order": "1674"
+// },
+// {
+//   "name": "bath_tone2",
+//   "unicode": "1f6c0-1f3fc",
+//   "shortname": ":bath_tone2:",
+//   "code_decimal": "&#128704;&#127996;",
+//   "category": "activity",
+//   "emoji_order": "1675"
+// },
+// {
+//   "name": "bath_tone3",
+//   "unicode": "1f6c0-1f3fd",
+//   "shortname": ":bath_tone3:",
+//   "code_decimal": "&#128704;&#127997;",
+//   "category": "activity",
+//   "emoji_order": "1676"
+// },
+// {
+//   "name": "bath_tone4",
+//   "unicode": "1f6c0-1f3fe",
+//   "shortname": ":bath_tone4:",
+//   "code_decimal": "&#128704;&#127998;",
+//   "category": "activity",
+//   "emoji_order": "1677"
+// },
+// {
+//   "name": "bath_tone5",
+//   "unicode": "1f6c0-1f3ff",
+//   "shortname": ":bath_tone5:",
+//   "code_decimal": "&#128704;&#127999;",
+//   "category": "activity",
+//   "emoji_order": "1678"
+// },
+{
   "name": "bathtub",
   "unicode": "1f6c1",
   "shortname": ":bathtub:",
@@ -13646,7 +14150,7 @@ var ShortNameEmoji = function () {
                 return a.emoji_order - b.emoji_order;
             });
 
-            if (this.query.length < 3 || emojis.length == 0) {
+            if (this.query.length < 2 || emojis.length == 0) {
                 this.container.style.display = "none";
                 return;
             }
@@ -13711,7 +14215,10 @@ var ShortNameEmoji = function () {
             };
 
             emojis.forEach(function (emoji, i) {
-                var li = e('li', {}, e('button', { type: "button" }, e("span", { className: "ico", innerHTML: emoji.code_decimal }), e('span', { className: "matched" }, _this.query), e('span', { className: "unmatched" }, emoji.shortname.slice(_this.query.length + 1))));
+                var li = e('li', {}, e('button', { type: "button" }, e("span", { className: "ico", innerHTML: emoji.code_decimal }), e('span', { className: "unmatched" }, emoji.shortname)
+                // e('span', {className: "matched"}, this.query),
+                // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
+                ));
                 _this.container.appendChild(li);
                 buttons[i] = li.firstChild;
                 // Events will be GC-ed with button on each re-render:
@@ -13882,7 +14389,7 @@ function fn_showEmojiPalatte(quill) {
     panel.id = "tab-panel";
     ele_emoji_area.appendChild(panel);
 
-    var emojiType = [{ 'type': 'people', 'icon_code_decimal': '&#128515;' }, { 'type': 'nature', 'icon_code_decimal': '&#128051;' }, { 'type': 'food', 'icon_code_decimal': '&#127826;' }, { 'type': 'symbols', 'icon_code_decimal': '&#10084;' }, { 'type': 'activity', 'icon_code_decimal': '&#127943;' }, { 'type': 'objects', 'icon_code_decimal': '&#127881;' }, { 'type': 'flags', 'icon_code_decimal': '&#127480;&#127468;' }];
+    var emojiType = [{ 'type': 'people', 'content': '<div class="i-people"></div>' }, { 'type': 'nature', 'content': '<div class="i-nature"></div>' }, { 'type': 'food', 'content': '<div class="i-food"></div>' }, { 'type': 'symbols', 'content': '<div class="i-symbols"></div>' }, { 'type': 'activity', 'content': '<div class="i-activity"></div>' }, { 'type': 'travel', 'content': '<div class="i-travel"></div>' }, { 'type': 'objects', 'content': '<div class="i-objects"></div>' }, { 'type': 'flags', 'content': '<div class="i-flags"></div>' }];
 
     var tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
@@ -13901,7 +14408,7 @@ function fn_showEmojiPalatte(quill) {
         var tabElement = document.createElement('li');
         tabElement.classList.add('emoji-tab');
         tabElement.classList.add('filter-' + emojiType.type);
-        var tabValue = emojiType.icon_code_decimal;
+        var tabValue = emojiType.content;
         tabElement.innerHTML = tabValue;
         tabElement.dataset.filter = emojiType.type;
         tabElementHolder.appendChild(tabElement);

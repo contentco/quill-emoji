@@ -120,7 +120,7 @@ class ShortNameEmoji {
           return a.emoji_order - b.emoji_order;
         });
         
-        if (this.query.length < 3 || emojis.length == 0){
+        if (this.query.length < 2 || emojis.length == 0){
             this.container.style.display = "none";
             return;
         }
@@ -184,8 +184,9 @@ class ShortNameEmoji {
             const li =  e('li', {},
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
-                        e('span', {className: "matched"}, this.query),
-                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
+                        e('span', {className: "unmatched"}, emoji.shortname)
+                        // e('span', {className: "matched"}, this.query),
+                        // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
                         ));
             this.container.appendChild(li);
             buttons[i] = li.firstChild;

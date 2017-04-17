@@ -70,13 +70,14 @@ function fn_showEmojiPalatte(quill) {
     ele_emoji_area.appendChild(panel);
 
     var emojiType = [
-                        {'type':'people','icon_code_decimal':'&#128515;'},
-                        {'type':'nature','icon_code_decimal':'&#128051;'},
-                        {'type':'food','icon_code_decimal':'&#127826;'},
-                        {'type':'symbols','icon_code_decimal':'&#10084;'},
-                        {'type':'activity','icon_code_decimal':'&#127943;'},
-                        {'type':'objects','icon_code_decimal':'&#127881;'},
-                        {'type':'flags','icon_code_decimal':'&#127480;&#127468;'}
+                        {'type':'people','content':'<div class="i-people"></div>'},
+                        {'type':'nature','content':'<div class="i-nature"></div>'},
+                        {'type':'food','content':'<div class="i-food"></div>'},
+                        {'type':'symbols','content':'<div class="i-symbols"></div>'},
+                        {'type':'activity','content':'<div class="i-activity"></div>'},
+                        {'type':'travel','content':'<div class="i-travel"></div>'},
+                        {'type':'objects','content':'<div class="i-objects"></div>'},
+                        {'type':'flags','content':'<div class="i-flags"></div>'}
                     ];
 
     let tabElementHolder = document.createElement('ul');
@@ -98,7 +99,7 @@ function fn_showEmojiPalatte(quill) {
         let tabElement = document.createElement('li');
         tabElement.classList.add('emoji-tab');
         tabElement.classList.add('filter-'+emojiType.type);
-        let tabValue = emojiType.icon_code_decimal;
+        let tabValue = emojiType.content;
         tabElement.innerHTML = tabValue;
         tabElement.dataset.filter = emojiType.type;
         tabElementHolder.appendChild(tabElement);
