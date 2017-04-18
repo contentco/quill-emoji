@@ -14053,8 +14053,8 @@ var ShortNameEmoji = function () {
             keys: ["shortname"]
         };
         this.emojiList = _emojiList.emojiList;
+        this.selectionIndex = 0;
         this.fuse = new _fuse2.default(this.emojiList, this.fuseOptions);
-
         this.quill = quill;
         this.onClose = props.onClose;
         this.onOpen = props.onOpen;
@@ -14121,6 +14121,7 @@ var ShortNameEmoji = function () {
     }, {
         key: 'handleArrow',
         value: function handleArrow() {
+            console.log('handle arrow', this);
             if (!this.open) return true;
             this.buttons[0].classList.remove('emoji-active');
             this.buttons[0].focus();
@@ -14174,14 +14175,27 @@ var ShortNameEmoji = function () {
             if (event) {
                 if (event.key === "Enter" || event.keyCode === 13) {
                     event.preventDefault();
+                    // event.stopImmediatePropagation();
                     // this.close(emojis[0]);
-                    // this.close(emojis[0]);
-                    this.enterEmoji(emojis[0]);
-                    this.enterEmoji(emojis[0]);
+                    this.enterEmoji(emojis[this.selectionIndex]);
+                    this.selectionIndex = 0;
+                    // this.enterEmoji(emojis[0]);
                     //this.close(null);
                     this.container.style.display = "none";
                     return;
-                };
+                } else if (event.key === 'Tab' || event.keyCode === 9) {
+                    event.preventDefault();
+                    // event.stopPropagation();
+                    // event.stopImmediatePropagation();
+
+                    this.buttons[this.selectionIndex].classList.remove('emoji-active');
+                    // Update index
+                    this.selectionIndex = Math.min(this.buttons.length - 1, this.selectionIndex + 1);
+
+                    this.buttons[Math.min(this.buttons.length - 1, this.selectionIndex)].focus();
+                    this.buttons[this.selectionIndex].classList.add('emoji-active');
+                    return;
+                }
             }
             if (event) {
                 return;
@@ -14195,6 +14209,7 @@ var ShortNameEmoji = function () {
 
             var handler = function handler(i, emoji) {
                 return function (event) {
+                    console.log('handler called');
                     if (event.key === "ArrowRight" || event.keyCode === 39) {
                         event.preventDefault();
                         buttons[Math.min(buttons.length - 1, i + 1)].focus();
@@ -14209,6 +14224,7 @@ var ShortNameEmoji = function () {
                         buttons[Math.max(0, i - 1)].focus();
                     } else if (event.key === "Enter" || event.keyCode === 13 || event.key === " " || event.keyCode === 32 || event.key === "Tab" || event.keyCode === 9) {
                         event.preventDefault();
+                        console.log('enter, space or tab called');
                         _this.close(emoji);
                     }
                 };
@@ -14264,7 +14280,7 @@ var ShortNameEmoji = function () {
     }, {
         key: 'enterEmoji',
         value: function enterEmoji(value) {
-
+            console.log('close', value);
             if (value) {
                 var name = value.name,
                     unicode = value.unicode,

@@ -26,8 +26,8 @@ class ShortNameEmoji {
             ]
         };
         this.emojiList  = emojiList;
+        this.selectionIndex = 0;
         this.fuse       = new Fuse(this.emojiList, this.fuseOptions);
-        
         this.quill      = quill;
         this.onClose    = props.onClose;
         this.onOpen     = props.onOpen;
@@ -50,7 +50,7 @@ class ShortNameEmoji {
                 whiteSpace = true;
             }
             return whiteSpace;
-        }
+        };
 
         quill.keyboard.addBinding({
             // TODO: Once Quill supports using event.key (#1091) use that instead of shift-2
@@ -93,6 +93,7 @@ class ShortNameEmoji {
     }
 
     handleArrow() {
+        console.log('handle arrow', this);
         if (!this.open) return true;
         this.buttons[0].classList.remove('emoji-active');
         this.buttons[0].focus();
@@ -139,14 +140,28 @@ class ShortNameEmoji {
         if (event) {
             if (event.key === "Enter" || event.keyCode === 13) {
                 event.preventDefault();
+                // event.stopImmediatePropagation();
                 // this.close(emojis[0]);
-                // this.close(emojis[0]);
-                this.enterEmoji(emojis[0]);
-                this.enterEmoji(emojis[0]);
+                this.enterEmoji(emojis[this.selectionIndex]);
+                this.selectionIndex = 0;
+                // this.enterEmoji(emojis[0]);
                 //this.close(null);
                 this.container.style.display = "none";
                 return;
-            };       
+            } else if (event.key === 'Tab' || event.keyCode === 9) {
+                event.preventDefault();
+                // event.stopPropagation();
+                // event.stopImmediatePropagation();
+
+                this.buttons[this.selectionIndex].classList.remove('emoji-active');
+                // Update index
+                this.selectionIndex = Math.min(this.buttons.length - 1, this.selectionIndex + 1);
+
+                this.buttons[Math.min(this.buttons.length - 1, this.selectionIndex)].focus();
+                this.buttons[this.selectionIndex].classList.add('emoji-active');
+                return;
+
+            }
         }
         if (event) {return;};
         while (this.container.firstChild){
@@ -157,6 +172,7 @@ class ShortNameEmoji {
         this.buttons = buttons;
         
         const handler = (i, emoji) => event => {
+            console.log('handler called');
             if (event.key === "ArrowRight" || event.keyCode === 39) {
                 event.preventDefault();
                 buttons[Math.min(buttons.length - 1, i + 1)].focus();
@@ -176,6 +192,7 @@ class ShortNameEmoji {
                        || event.key === " " || event.keyCode === 32
                        || event.key === "Tab" || event.keyCode === 9) {
                 event.preventDefault();
+                console.log('enter, space or tab called');
                 this.close(emoji);
             }    
         };
@@ -219,7 +236,7 @@ class ShortNameEmoji {
         this.onClose && this.onClose(value);
     }
     enterEmoji(value){
-        
+        console.log('close',value);
         if (value) {
             const {name, unicode, shortname,code_decimal} = value;
             let emoji_icon_html = e("span", {className: "ico", innerHTML: ' '+code_decimal+' ' });
