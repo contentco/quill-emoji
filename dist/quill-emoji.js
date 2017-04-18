@@ -14013,6 +14013,8 @@ exports.shortNameEmoji = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 var _fuse = __webpack_require__(1);
 
 var _fuse2 = _interopRequireDefault(_fuse);
@@ -14023,6 +14025,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Delta = Quill.import('delta');
 var e = function e(tag, attrs) {
     for (var _len = arguments.length, children = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
         children[_key - 2] = arguments[_key];
@@ -14038,6 +14045,57 @@ var e = function e(tag, attrs) {
     });
     return elem;
 };
+var Inline = Quill.import('blots/inline');
+
+var EmojiBlot = function (_Inline) {
+    _inherits(EmojiBlot, _Inline);
+
+    function EmojiBlot() {
+        _classCallCheck(this, EmojiBlot);
+
+        return _possibleConstructorReturn(this, (EmojiBlot.__proto__ || Object.getPrototypeOf(EmojiBlot)).apply(this, arguments));
+    }
+
+    _createClass(EmojiBlot, [{
+        key: 'format',
+        value: function format(name, value) {
+            if (name === "emoji" && value) {
+                this.domNode.dataset.unicode = value;
+            } else {
+                _get(EmojiBlot.prototype.__proto__ || Object.getPrototypeOf(EmojiBlot.prototype), 'format', this).call(this, name, value);
+            }
+        }
+    }, {
+        key: 'formats',
+        value: function formats() {
+            var formats = _get(EmojiBlot.prototype.__proto__ || Object.getPrototypeOf(EmojiBlot.prototype), 'formats', this).call(this);
+            formats['emoji'] = EmojiBlot.formats(this.domNode);
+            return formats;
+        }
+    }], [{
+        key: 'create',
+        value: function create(unicode) {
+            var node = _get(EmojiBlot.__proto__ || Object.getPrototypeOf(EmojiBlot), 'create', this).call(this);
+            node.dataset.unicode = unicode;
+            return node;
+        }
+    }, {
+        key: 'formats',
+        value: function formats(node) {
+            return node.dataset.unicode;
+        }
+    }]);
+
+    return EmojiBlot;
+}(Inline);
+
+EmojiBlot.blotName = "emoji";
+EmojiBlot.tagName = "SPAN";
+EmojiBlot.className = "emoji";
+
+Quill.register({
+    'formats/emoji': EmojiBlot
+});
 
 var ShortNameEmoji = function () {
     function ShortNameEmoji(quill, props) {
@@ -14122,6 +14180,7 @@ var ShortNameEmoji = function () {
         key: 'handleArrow',
         value: function handleArrow() {
             if (!this.open) return true;
+            //this.buttons[0].focus();
             this.buttons[0].classList.remove('emoji-active');
             this.buttons[0].focus();
             if (this.buttons.length > 1) {
@@ -14150,7 +14209,7 @@ var ShortNameEmoji = function () {
                 return a.emoji_order - b.emoji_order;
             });
 
-            if (this.query.length < 2 || emojis.length == 0) {
+            if (this.query.length < 3 || emojis.length == 0) {
                 this.container.style.display = "none";
                 return;
             }
@@ -14169,16 +14228,11 @@ var ShortNameEmoji = function () {
     }, {
         key: 'renderCompletions',
         value: function renderCompletions(emojis) {
-            var _this = this;
+            var _this2 = this;
 
             if (event) {
                 if (event.key === "Enter" || event.keyCode === 13) {
-                    event.preventDefault();
-                    // this.close(emojis[0]);
-                    // this.close(emojis[0]);
                     this.enterEmoji(emojis[0]);
-                    this.enterEmoji(emojis[0]);
-                    //this.close(null);
                     this.container.style.display = "none";
                     return;
                 };
@@ -14187,7 +14241,6 @@ var ShortNameEmoji = function () {
                 return;
             };
             while (this.container.firstChild) {
-
                 this.container.removeChild(this.container.firstChild);
             }
             var buttons = Array(emojis.length);
@@ -14209,28 +14262,25 @@ var ShortNameEmoji = function () {
                         buttons[Math.max(0, i - 1)].focus();
                     } else if (event.key === "Enter" || event.keyCode === 13 || event.key === " " || event.keyCode === 32 || event.key === "Tab" || event.keyCode === 9) {
                         event.preventDefault();
-                        _this.close(emoji);
+                        _this2.close(emoji);
                     }
                 };
             };
 
             emojis.forEach(function (emoji, i) {
-                var li = e('li', {}, e('button', { type: "button" }, e("span", { className: "ico", innerHTML: emoji.code_decimal }), e('span', { className: "unmatched" }, emoji.shortname)
-                // e('span', {className: "matched"}, this.query),
-                // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
-                ));
-                _this.container.appendChild(li);
+                var li = e('li', {}, e('button', { type: "button" }, e("span", { className: "ico", innerHTML: emoji.code_decimal }), e('span', { className: "matched" }, _this2.query), e('span', { className: "unmatched" }, emoji.shortname.slice(_this2.query.length + 1))));
+                _this2.container.appendChild(li);
                 buttons[i] = li.firstChild;
                 // Events will be GC-ed with button on each re-render:
                 buttons[i].addEventListener('keydown', handler(i, emoji));
                 buttons[i].addEventListener("mousedown", function () {
-                    return _this.close(emoji);
+                    return _this2.close(emoji);
                 });
                 buttons[i].addEventListener("focus", function () {
-                    return _this.focusedButton = i;
+                    return _this2.focusedButton = i;
                 });
                 buttons[i].addEventListener("unfocus", function () {
-                    return _this.focusedButton = null;
+                    return _this2.focusedButton = null;
                 });
             });
             this.container.style.display = "block";
@@ -14264,7 +14314,6 @@ var ShortNameEmoji = function () {
     }, {
         key: 'enterEmoji',
         value: function enterEmoji(value) {
-
             if (value) {
                 var name = value.name,
                     unicode = value.unicode,
@@ -14273,11 +14322,22 @@ var ShortNameEmoji = function () {
 
                 var emoji_icon_html = e("span", { className: "ico", innerHTML: ' ' + code_decimal + ' ' });
                 var emoji_icon = emoji_icon_html.innerHTML;
-                this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
-                this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
-                if (this.quill.getSelection()) this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
-                this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.SILENT);
+                var delta = new Delta();
+                var currentText = this.quill.getSelection();
+                var ops = [];
+                if (this.atIndex > 0) {
+                    var endRetain = currentText.index - this.query.length;
+                    if (endRetain > 2) {
+                        endRetain = endRetain - 2;
+                    };
+                    ops.push({ retain: endRetain });
+                };
+                ops = ops.concat([{ delete: this.query.length + 1 }, { insert: emoji_icon, attributes: { emoji: true } }, { delete: 1 }]);
+                quill.updateContents({
+                    ops: ops
+                });
             }
+
             this.quill.blur();
             this.open = false;
             this.onClose && this.onClose(value);

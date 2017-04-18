@@ -1,5 +1,7 @@
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/emojiList.js';
+
+const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
     Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
@@ -10,7 +12,38 @@ const e = (tag, attrs, ...children) => {
     });
     return elem;
 };
+const Inline = Quill.import('blots/inline');
+class EmojiBlot extends Inline {
+    static create(unicode) {
+        const node = super.create();
+        node.dataset.unicode = unicode;
+        return node;
+    }
+    static formats(node) {
+        return node.dataset.unicode;
+    }
+    format(name, value) {
+        if (name === "emoji" && value) {
+            this.domNode.dataset.unicode = value;
+        } else {
+            super.format(name, value);
+        }
+    }
 
+    formats() {
+        const formats = super.formats();
+        formats['emoji'] = EmojiBlot.formats(this.domNode);
+        return formats;
+    }
+} 
+
+EmojiBlot.blotName = "emoji";
+EmojiBlot.tagName = "SPAN";
+EmojiBlot.className = "emoji";
+
+Quill.register({
+    'formats/emoji': EmojiBlot
+});
 
 class ShortNameEmoji {
     constructor(quill, props) {
@@ -94,6 +127,7 @@ class ShortNameEmoji {
 
     handleArrow() {
         if (!this.open) return true;
+        //this.buttons[0].focus();
         this.buttons[0].classList.remove('emoji-active');
         this.buttons[0].focus();
         if (this.buttons.length > 1) {
@@ -120,7 +154,7 @@ class ShortNameEmoji {
           return a.emoji_order - b.emoji_order;
         });
         
-        if (this.query.length < 2 || emojis.length == 0){
+        if (this.query.length < 3 || emojis.length == 0){
             this.container.style.display = "none";
             return;
         }
@@ -131,26 +165,20 @@ class ShortNameEmoji {
     }
 
     maybeUnfocus() {
-        if (this.container.querySelector("*:focus")) return;
-        this.close(null);
+      if (this.container.querySelector("*:focus")) return;
+      this.close(null);
     }
 
     renderCompletions(emojis) {
         if (event) {
             if (event.key === "Enter" || event.keyCode === 13) {
-                event.preventDefault();
-                // this.close(emojis[0]);
-                // this.close(emojis[0]);
                 this.enterEmoji(emojis[0]);
-                this.enterEmoji(emojis[0]);
-                //this.close(null);
                 this.container.style.display = "none";
                 return;
             };       
         }
         if (event) {return;};
         while (this.container.firstChild){
-
             this.container.removeChild(this.container.firstChild);
         } 
         const buttons = Array(emojis.length);
@@ -184,9 +212,8 @@ class ShortNameEmoji {
             const li =  e('li', {},
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
-                        e('span', {className: "unmatched"}, emoji.shortname)
-                        // e('span', {className: "matched"}, this.query),
-                        // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
+                        e('span', {className: "matched"}, this.query),
+                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
                         ));
             this.container.appendChild(li);
             buttons[i] = li.firstChild;
@@ -219,16 +246,30 @@ class ShortNameEmoji {
         this.onClose && this.onClose(value);
     }
     enterEmoji(value){
-        
         if (value) {
             const {name, unicode, shortname,code_decimal} = value;
             let emoji_icon_html = e("span", {className: "ico", innerHTML: ' '+code_decimal+' ' });
             let emoji_icon = emoji_icon_html.innerHTML;
-            this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
-            this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
-            if(this.quill.getSelection()) this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
-            this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.SILENT);
+            let delta = new Delta();
+            let currentText = this.quill.getSelection();
+            let ops = [];
+            if (this.atIndex > 0) {
+                let endRetain = currentText.index - this.query.length;
+            if (endRetain > 2) {
+                endRetain = endRetain - 2;
+            };
+            ops.push({ retain: endRetain});
+            };
+            ops = ops.concat([
+                        {delete: this.query.length + 1},
+                        {insert: emoji_icon,attributes: { emoji: true }},
+                        {delete: 1},
+                      ]);
+                      quill.updateContents({
+                        ops: ops
+                      });
         }
+
         this.quill.blur();
         this.open = false;
         this.onClose && this.onClose(value);
