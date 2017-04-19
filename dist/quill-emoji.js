@@ -14306,13 +14306,13 @@ var ShortNameEmoji = function () {
             this.container.style.display = "block";
             //emoji palette on top
             if (this.quill.container.classList.contains('top-emoji')) {
+                var x = this.container.querySelectorAll("li");
+                var i = void 0;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = 'block';
+                }
                 if (this.container.offsetHeight > 0) {
                     this.container.style.top = '-' + this.container.offsetHeight + "px";
-                    var x = this.container.querySelectorAll("li");
-                    var i = void 0;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = 'block';
-                    }
                 }
             }
 

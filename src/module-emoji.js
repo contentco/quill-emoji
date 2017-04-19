@@ -251,13 +251,14 @@ class ShortNameEmoji {
         this.container.style.display = "block"; 
         //emoji palette on top
         if (this.quill.container.classList.contains('top-emoji')) {
-            if (this.container.offsetHeight > 0) {
-                this.container.style.top = '-' + this.container.offsetHeight + "px";
-                let x = this.container.querySelectorAll("li");
+            let x = this.container.querySelectorAll("li");
                 let i;
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = 'block';
                 }
+            if (this.container.offsetHeight > 0) {
+                this.container.style.top = '-' + this.container.offsetHeight + "px";
+                
             }
         }
 
