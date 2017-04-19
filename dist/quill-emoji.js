@@ -14168,7 +14168,14 @@ var ShortNameEmoji = function () {
             this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
 
             this.atIndex = range.index;
-            this.container.style.left = atSignBounds.left + "px";
+
+            var paletteMaxPos = atSignBounds.left + 250;
+            if (paletteMaxPos > this.quill.container.offsetWidth) {
+                this.container.style.left = atSignBounds.left - 250 + "px";
+            } else {
+                this.container.style.left = atSignBounds.left + "px";
+            }
+
             this.container.style.top = atSignBounds.top + atSignBounds.height + "px", this.open = true;
 
             this.quill.on('text-change', this.onTextChange);
@@ -14308,6 +14315,7 @@ var ShortNameEmoji = function () {
                     }
                 }
             }
+
             buttons[0].classList.add('emoji-active');
         }
     }, {

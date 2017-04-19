@@ -115,7 +115,16 @@ class ShortNameEmoji {
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
         
         this.atIndex = range.index;
-        this.container.style.left = atSignBounds.left + "px";
+
+        let paletteMaxPos = atSignBounds.left + 250;
+        if (paletteMaxPos > this.quill.container.offsetWidth) {
+            this.container.style.left = (atSignBounds.left - 250)+ "px";
+        }
+        else{
+            this.container.style.left = atSignBounds.left + "px";
+        }
+
+        
         this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
@@ -251,6 +260,7 @@ class ShortNameEmoji {
                 }
             }
         }
+
         buttons[0].classList.add('emoji-active');
     }
 
