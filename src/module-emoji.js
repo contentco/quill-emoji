@@ -127,7 +127,6 @@ class ShortNameEmoji {
 
     handleArrow() {
         if (!this.open) return true;
-        //this.buttons[0].focus();
         this.buttons[0].classList.remove('emoji-active');
         this.buttons[0].focus();
         if (this.buttons.length > 1) {
@@ -239,7 +238,19 @@ class ShortNameEmoji {
             buttons[i].addEventListener("focus", () => this.focusedButton = i);
             buttons[i].addEventListener("unfocus", () => this.focusedButton = null);
         });
-        this.container.style.display = "block";
+        
+        this.container.style.display = "block"; 
+        //emoji palette on top
+        if (this.quill.container.classList.contains('top-emoji')) {
+            if (this.container.offsetHeight > 0) {
+                this.container.style.top = '-' + this.container.offsetHeight + "px";
+                let x = this.container.querySelectorAll("li");
+                let i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = 'block';
+                }
+            }
+        }
         buttons[0].classList.add('emoji-active');
     }
 

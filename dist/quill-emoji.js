@@ -14180,7 +14180,6 @@ var ShortNameEmoji = function () {
         key: 'handleArrow',
         value: function handleArrow() {
             if (!this.open) return true;
-            //this.buttons[0].focus();
             this.buttons[0].classList.remove('emoji-active');
             this.buttons[0].focus();
             if (this.buttons.length > 1) {
@@ -14296,7 +14295,19 @@ var ShortNameEmoji = function () {
                     return _this2.focusedButton = null;
                 });
             });
+
             this.container.style.display = "block";
+            //emoji palette on top
+            if (this.quill.container.classList.contains('top-emoji')) {
+                if (this.container.offsetHeight > 0) {
+                    this.container.style.top = '-' + this.container.offsetHeight + "px";
+                    var x = this.container.querySelectorAll("li");
+                    var i = void 0;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = 'block';
+                    }
+                }
+            }
             buttons[0].classList.add('emoji-active');
         }
     }, {
@@ -14450,9 +14461,14 @@ function fn_showEmojiPalatte(quill) {
     var atSignBounds = quill.getBounds(range.index);
 
     quill.container.appendChild(ele_emoji_area);
-
+    var paletteMaxPos = atSignBounds.left + 250; //palette max width is 250
     ele_emoji_area.id = 'emoji-palette';
-    ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px", ele_emoji_area.style.left = atSignBounds.left + "px";
+    ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px";
+    if (paletteMaxPos > quill.container.offsetWidth) {
+        ele_emoji_area.style.left = atSignBounds.left - 250 + "px";
+    } else {
+        ele_emoji_area.style.left = atSignBounds.left + "px";
+    }
 
     var tabToolbar = document.createElement('div');
     tabToolbar.id = "tab-toolbar";
