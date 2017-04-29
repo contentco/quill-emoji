@@ -1,7 +1,7 @@
 # Quill Emoji Selector
 Module extension for [Quill.js](https://github.com/quilljs/quill) that handles emojis in the toolbar. Through this extension, you can add emojis through the toolbar at the top, or by typing the emoji code.
 
-
+![Screenshot](/demo/screenshot.png)
 
 To add an emoji via emoji code, type ``:`` followed by the first few letters, and an autocomplete menu will appear. You can then select or ``tab`` to the preferred emoji.
 
