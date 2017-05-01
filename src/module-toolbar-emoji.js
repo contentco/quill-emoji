@@ -1,5 +1,5 @@
-import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/emojiList.js';
+// import Fuse from '../node_modules/fuse.js';
+// import {emojiList} from '../src/emojiList.js';
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
@@ -180,4 +180,4 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji as toolbarEmoji};
+//export { ToolbarEmoji as toolbarEmoji};
