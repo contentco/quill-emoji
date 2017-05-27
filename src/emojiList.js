@@ -1,4 +1,4 @@
-let emojiList = [
+export let emojiList = [
   {
     "name": "100",
     "unicode": "1f4af",

@@ -233,9 +233,6 @@ class ShortNameEmoji {
         };
 
         emojis.forEach((emoji, i) => {
-            console.log('this.query', this);
-            console.log('emoji', emoji);
-            console.log('i', i);
             const li =  e('li', {},
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
