@@ -37,9 +37,9 @@ class EmojiBlot extends Inline {
     }
 } 
 
-EmojiBlot.blotName = "emoji";
-EmojiBlot.tagName = "SPAN";
-EmojiBlot.className = "emoji";
+// EmojiBlot.blotName = "emoji";
+// EmojiBlot.tagName = "SPAN";
+// EmojiBlot.className = "emoji";
 
 Quill.register({
     'formats/emoji': EmojiBlot
@@ -236,8 +236,9 @@ class ShortNameEmoji {
             const li =  e('li', {},
                         e('button', {type: "button"},
                         e("span", {className: "ico", innerHTML: emoji.code_decimal }),
-                        e('span', {className: "matched"}, this.query),
-                        e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
+                        // e('span', {className: "matched"}, this.query),
+                        // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
+                        e('span', {className: "unmatched"}, emoji.shortname),
                         ));
             this.container.appendChild(li);
             buttons[i] = li.firstChild;

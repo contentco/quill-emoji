@@ -1,7 +1,7 @@
 @import 'core/variables'; /* sass-loader doesnt like absolute imports*/
 
 body {
-    background: $white;
+  background: $white;
 }
 #quill-editor {
     position: relative;
