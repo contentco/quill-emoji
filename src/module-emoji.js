@@ -115,7 +115,16 @@ class ShortNameEmoji {
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
         
         this.atIndex = range.index;
-        this.container.style.left = atSignBounds.left + "px";
+
+        let paletteMaxPos = atSignBounds.left + 250;
+        if (paletteMaxPos > this.quill.container.offsetWidth) {
+            this.container.style.left = (atSignBounds.left - 250)+ "px";
+        }
+        else{
+            this.container.style.left = atSignBounds.left + "px";
+        }
+
+        
         this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
@@ -127,7 +136,6 @@ class ShortNameEmoji {
 
     handleArrow() {
         if (!this.open) return true;
-        //this.buttons[0].focus();
         this.buttons[0].classList.remove('emoji-active');
         this.buttons[0].focus();
         if (this.buttons.length > 1) {
@@ -243,7 +251,21 @@ class ShortNameEmoji {
             buttons[i].addEventListener("focus", () => this.focusedButton = i);
             buttons[i].addEventListener("unfocus", () => this.focusedButton = null);
         });
-        this.container.style.display = "block";
+        
+        this.container.style.display = "block"; 
+        //emoji palette on top
+        if (this.quill.container.classList.contains('top-emoji')) {
+            let x = this.container.querySelectorAll("li");
+                let i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = 'block';
+                }
+            if (this.container.offsetHeight > 0) {
+                this.container.style.top = '-' + this.container.offsetHeight + "px";
+                
+            }
+        }
+
         buttons[0].classList.add('emoji-active');
     }
 

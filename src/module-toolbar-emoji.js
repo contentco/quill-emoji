@@ -1,5 +1,5 @@
-import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/emojiList.js';
+// import Fuse from '../node_modules/fuse.js';
+// import {emojiList} from '../src/emojiList.js';
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
@@ -55,10 +55,16 @@ function fn_showEmojiPalatte(quill) {
     const atSignBounds = quill.getBounds(range.index);
 
     quill.container.appendChild(ele_emoji_area);
-
+    let paletteMaxPos = atSignBounds.left + 250;//palette max width is 250
     ele_emoji_area.id = 'emoji-palette';
-    ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px",
-    ele_emoji_area.style.left = atSignBounds.left + "px";
+    ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px";
+    if (paletteMaxPos > quill.container.offsetWidth) {
+        ele_emoji_area.style.left = (atSignBounds.left - 250)+ "px";
+    }
+    else{
+        ele_emoji_area.style.left = atSignBounds.left + "px";
+    }
+    
 
     let tabToolbar = document.createElement('div');
     tabToolbar.id="tab-toolbar";
@@ -174,4 +180,4 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
 }
 
 Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji as toolbarEmoji};
+//export { ToolbarEmoji as toolbarEmoji};

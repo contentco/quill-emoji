@@ -6,16 +6,6 @@
         <link rel="stylesheet" type="text/css" href="../dist/quill-emoji.css">
     </head>
     <body>
-      <div class="container">
-        <div class="row"  style="margin:20px 0px;">
-          <div class="col-md-6">
-            <textarea id="output_delta" style="width:100%;min-height:300px;"></textarea>
-          </div>
-          <div class="col-md-6">
-            <textarea id="output_html" style="width:100%;min-height:300px;"></textarea>
-          </div>
-        </div>
-      </div>
     	<div class="container" style="position:relative;">
           <div id="quill-editor"></div>
       </div>
@@ -50,8 +40,7 @@
   		        placeholder: 'Compose an epic...',
   		        theme: 'snow',
 		      });
-  setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
-  setInterval( function() { document.getElementById("output_html").value=quill.root.innerHTML }, 500);
+      
         </script>
     </body>
 </html>
