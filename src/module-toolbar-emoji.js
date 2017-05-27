@@ -70,20 +70,20 @@ function fn_showEmojiPalatte(quill) {
     ele_emoji_area.appendChild(panel);
 
     var emojiType = [
-                        {'type':'people','content':'<div class="i-people"></div>'},
-                        {'type':'nature','content':'<div class="i-nature"></div>'},
-                        {'type':'food','content':'<div class="i-food"></div>'},
-                        {'type':'symbols','content':'<div class="i-symbols"></div>'},
-                        {'type':'activity','content':'<div class="i-activity"></div>'},
-                        {'type':'travel','content':'<div class="i-travel"></div>'},
-                        {'type':'objects','content':'<div class="i-objects"></div>'},
-                        {'type':'flags','content':'<div class="i-flags"></div>'}
-                    ];
+        {'type':'p','name':'people','content':'<div class="i-people"></div>'},
+        {'type':'n','name':'nature','content':'<div class="i-nature"></div>'},
+        {'type':'d','name':'food','content':'<div class="i-food"></div>'},
+        {'type':'s','name':'symbols','content':'<div class="i-symbols"></div>'},
+        {'type':'a','name':'activity','content':'<div class="i-activity"></div>'},
+        {'type':'t','name':'travel','content':'<div class="i-travel"></div>'},
+        {'type':'o','name':'objects','content':'<div class="i-objects"></div>'},
+        {'type':'f','name':'flags','content':'<div class="i-flags"></div>'}
+    ];
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
     
-    if (document.getElementById('emoji-close-div') == null) {
+    if (document.getElementById('emoji-close-div') === null) {
         let closeDiv = document.createElement('div');
         closeDiv.id = 'emoji-close-div';
         closeDiv.addEventListener("click", fn_close, false);
@@ -98,13 +98,13 @@ function fn_showEmojiPalatte(quill) {
         //add tab bar
         let tabElement = document.createElement('li');
         tabElement.classList.add('emoji-tab');
-        tabElement.classList.add('filter-'+emojiType.type);
+        tabElement.classList.add('filter-'+emojiType.name);
         let tabValue = emojiType.content;
         tabElement.innerHTML = tabValue;
         tabElement.dataset.filter = emojiType.type;
         tabElementHolder.appendChild(tabElement);
         
-        let emojiFilter = document.querySelector('.filter-'+emojiType.type);
+        let emojiFilter = document.querySelector('.filter-'+emojiType.name);
         emojiFilter.addEventListener('click',function(){ 
             let tab = document.querySelector('.active');
             if (tab) {
@@ -118,7 +118,7 @@ function fn_showEmojiPalatte(quill) {
 }
 
 function fn_emojiPanelInit(panel,quill){
-    fn_emojiElementsToPanel('people',panel,quill);
+    fn_emojiElementsToPanel('p', panel, quill);
     document.querySelector('.filter-people').classList.add('active');
 }
 
