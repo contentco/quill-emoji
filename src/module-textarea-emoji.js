@@ -12,7 +12,7 @@ class TextAreaEmoji {
         this.container.addEventListener('click', this.checkEmojiBoxExist.bind(this),false);
     }
     checkEmojiBoxExist(){
-        let elementExists = document.getElementById("emoji-palette");
+        let elementExists = document.getElementById("textarea-emoji");
         if (elementExists) {
             elementExists.remove();
         }
