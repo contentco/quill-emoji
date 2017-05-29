@@ -4,12 +4,10 @@
         <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../dist/quill-emoji.css">
     </head>
-    <body>
-       <div class="container" style="position:relative;">
+    <body><div class="container" style="position:relative;">
             <h2>Editor</h2>
-            <div id="quill-editor" style="height: 200px;"></div>
+            <div id="quill-editor" style="height: 50px;"></div>
         </div>
-        
         <div class="container">
             <h2>Debug</h2>
             <div style="margin:20px 0px; display:flex;">
@@ -20,9 +18,8 @@
                     style="width:100%; min-height:300px; border: 1px solid lightgray; flex-basis:50%;"></textarea>
             </div>
         </div>
-
-
         <script src="../node_modules/quill/dist/quill.js"></script>
+        <script src="../node_modules/fuse.js/src/fuse.js"></script>
         <script src="../dist/quill-emoji.js"></script>
         <script type="text/javascript">
           var toolbarOptions = {
@@ -46,9 +43,10 @@
           }
           var quill = new Quill('#quill-editor', {
               modules: {
-                    toolbar: toolbarOptions,
+                    toolbar: false,
                     toolbar_emoji: true,
                     short_name_emoji: true,
+                    textarea_emoji:true
               },
               placeholder: 'Compose an epic...',
               theme: 'snow',

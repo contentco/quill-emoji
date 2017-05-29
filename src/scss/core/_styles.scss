@@ -155,7 +155,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-height: 200px;
+    max-height: 220px;
     overflow-y: scroll;
     padding: 2px;
     background: $white;
@@ -195,6 +195,26 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.textarea-emoji-control{
+  width: 25px;
+  height: 25px;
+  right:4px;
+  top:10px;
+}
+#textarea-emoji {
+  position: absolute;
+  right:0px;
+  max-width: 250px;
+  z-index: 999;
+  border: 1px solid #66afe9;
+  box-shadow: 0 5px 10px rgba(0,0,0,.12);
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+.ql-editor{
+  padding-right:26px;
 }
 
 .i-activity {
