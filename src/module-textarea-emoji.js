@@ -47,17 +47,11 @@ class TextAreaEmoji {
             else{
                 document.getElementById('emoji-close-div').style.display = "block";
             }
-
-             //panel
             let panel = document.createElement('div');
             panel.id="tab-panel";
             ele_emoji_area.appendChild(panel);
-
             let innerQuill = this.quill;
-
-            emojiType.forEach(function(emojiType) {
-                // console.log(emojiType);
-                // console.info('quill',innerQuill);
+            emojiType.map(function(emojiType) {
                 let tabElement = document.createElement('li');
                 tabElement.classList.add('emoji-tab');
                 tabElement.classList.add('filter-'+emojiType.name);
@@ -65,7 +59,6 @@ class TextAreaEmoji {
                 tabElement.innerHTML = tabValue;
                 tabElement.dataset.filter = emojiType.type;
                 tabElementHolder.appendChild(tabElement);
-                
                 let emojiFilter = document.querySelector('.filter-'+emojiType.name);
                 emojiFilter.addEventListener('click',function(){ 
                     let tab = document.querySelector('.active');
@@ -73,7 +66,6 @@ class TextAreaEmoji {
                         tab.classList.remove('active');
                     };
                     emojiFilter.classList.toggle('active');
-                    //fn_updateEmojiContainer(emojiFilter,panel,quill);
                      while (panel.firstChild) {
                         panel.removeChild(panel.firstChild);
                     }
@@ -82,42 +74,11 @@ class TextAreaEmoji {
                 })
             });
             
-
-            // emojiType.map(function(emojiType) {
-            //     //add tab bar
-            //     //console.log('bla',emojiType);
-            //     let tabElement = document.createElement('li');
-            //     tabElement.classList.add('emoji-tab');
-            //     tabElement.classList.add('filter-'+emojiType.name);
-            //     let tabValue = emojiType.content;
-            //     tabElement.innerHTML = tabValue;
-            //     tabElement.dataset.filter = emojiType.type;
-            //     tabElementHolder.appendChild(tabElement);
-                
-            //     let emojiFilter = document.querySelector('.filter-'+emojiType.name);
-            //     console.log('iph',emojiType);
-            //     // emojiFilter.addEventListener('click',function(){ 
-            //     //     let tab = document.querySelector('.active');
-            //     //     if (tab) {
-            //     //         tab.classList.remove('active');
-            //     //     };
-            //     //     emojiFilter.classList.toggle('active');
-            //     //     //fn_updateEmojiContainer(emojiFilter,panel,quill);
-            //     //      while (panel.firstChild) {
-            //     //         panel.removeChild(panel.firstChild);
-            //     //     }
-            //     //     let type = emojiFilter.dataset.filter;
-            //     //     console.log('polar',this.quill);return;
-            //     //     fn_emojiElementsToPanel(type,panel,this.quill);
-            //     //})
-            // });
-
             let windowHeight = window.innerHeight;
             let editorPos = this.quill.container.getBoundingClientRect().top;
             if (editorPos > windowHeight/3) {
                 ele_emoji_area.style.top   = '-250px';
             }
-            //console.log('here',this.quill);
             fn_emojiPanelInit(panel,this.quill);
         }
     }
@@ -134,82 +95,12 @@ function fn_updateRange(quill){
     return range;
 }
 
-function fn_showEmojiPalatte() {
-    //console.log(this.quill);
-    var quill = this.quill;
-    let ele_emoji_area = document.createElement('div');
-    ele_emoji_area.id = 'textarea-emoji';
-    quill.container.appendChild(ele_emoji_area);
-    let tabToolbar = document.createElement('div');
-    tabToolbar.id="tab-toolbar";
-    ele_emoji_area.appendChild(tabToolbar);
-
-    //panel
-    let panel = document.createElement('div');
-    panel.id="tab-panel";
-    ele_emoji_area.appendChild(panel);
-
-    var emojiType = [
-        {'type':'p','name':'people','content':'<div class="i-people"></div>'},
-        {'type':'n','name':'nature','content':'<div class="i-nature"></div>'},
-        {'type':'d','name':'food','content':'<div class="i-food"></div>'},
-        {'type':'s','name':'symbols','content':'<div class="i-symbols"></div>'},
-        {'type':'a','name':'activity','content':'<div class="i-activity"></div>'},
-        {'type':'t','name':'travel','content':'<div class="i-travel"></div>'},
-        {'type':'o','name':'objects','content':'<div class="i-objects"></div>'},
-        {'type':'f','name':'flags','content':'<div class="i-flags"></div>'}
-    ];
-
-    let tabElementHolder = document.createElement('ul');
-    tabToolbar.appendChild(tabElementHolder);
-    
-    if (document.getElementById('emoji-close-div') === null) {
-        let closeDiv = document.createElement('div');
-        closeDiv.id = 'emoji-close-div';
-        closeDiv.addEventListener("click", fn_close, false);
-        document.getElementsByTagName('body')[0].appendChild(closeDiv); 
-    }
-    else{
-        document.getElementById('emoji-close-div').style.display = "block";
-    }
-
-    emojiType.map(function(emojiType) {
-        //add tab bar
-        let tabElement = document.createElement('li');
-        tabElement.classList.add('emoji-tab');
-        tabElement.classList.add('filter-'+emojiType.name);
-        let tabValue = emojiType.content;
-        tabElement.innerHTML = tabValue;
-        tabElement.dataset.filter = emojiType.type;
-        tabElementHolder.appendChild(tabElement);
-        
-        let emojiFilter = document.querySelector('.filter-'+emojiType.name);
-        emojiFilter.addEventListener('click',function(){ 
-            let tab = document.querySelector('.active');
-            if (tab) {
-                tab.classList.remove('active');
-            };
-            emojiFilter.classList.toggle('active');
-            //console.log('here',this.quill);return;
-            //fn_updateEmojiContainer(emojiFilter,panel,this.quill);
-        })
-    });
-
-    let windowHeight = window.innerHeight;
-    let editorPos = quill.container.getBoundingClientRect().top;
-    if (editorPos > windowHeight/3) {
-        ele_emoji_area.style.top   = '-250px';
-    }
-    fn_emojiPanelInit(panel,this.quill);
-}
-
 function fn_emojiPanelInit(panel,quill){
     fn_emojiElementsToPanel('p', panel, quill);
     document.querySelector('.filter-people').classList.add('active');
 }
 
 function fn_emojiElementsToPanel(type,panel,quill){
-    //console.log('quill is',quill);
     let fuseOptions = {
                     shouldSort: true,
                     matchAllTokens: true,
@@ -251,14 +142,6 @@ function fn_emojiElementsToPanel(type,panel,quill){
         };
     });
 }
-
-// function fn_updateEmojiContainer(emojiFilter,panel,quill){ 
-//     while (panel.firstChild) {
-//         panel.removeChild(panel.firstChild);
-//     }
-//     let type = emojiFilter.dataset.filter;
-//     fn_emojiElementsToPanel(type,panel,quill);
-// }
 
 Quill.register('modules/textarea_emoji', TextAreaEmoji);
 export { TextAreaEmoji as textAreaEmoji};
