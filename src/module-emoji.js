@@ -257,9 +257,11 @@ class ShortNameEmoji {
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = 'block';
                 }
-            if (this.container.offsetHeight > 0) {
+            
+            let windowHeight = window.innerHeight;
+            let editorPos = this.quill.container.getBoundingClientRect().top;
+            if (editorPos > windowHeight/3 && this.container.offsetHeight > 0) {
                 this.container.style.top = '-' + this.container.offsetHeight + "px";
-                
             }
         }
 
@@ -305,7 +307,7 @@ class ShortNameEmoji {
                     {insert: emoji_icon,attributes: { emoji: true }},
                     {delete: 1},
                   ]);
-            quill.updateContents({
+            this.quill.updateContents({
                 ops: ops
             });
         }
