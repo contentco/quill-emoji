@@ -1,6 +1,6 @@
 {
   "name": "quill-emoji",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Quill Extension for Emoji Selection",
   "main": "webpack.config.js",
   "devDependencies": {
@@ -30,7 +30,7 @@
     "quill",
     "editor"
   ],
-  "author": "Ye Min Htut",
+  "author": "contentco",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/contentco/quill-emoji/issues"
