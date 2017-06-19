@@ -23,6 +23,8 @@ class ImageBlot extends Embed {
     node.dataset.unicode = value.unicode;
     node.classList.add("ap");
     node.classList.add("ap-"+value.name);
+    //console.log(value);
+    //let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value+'.png';
     node.setAttribute('alt', value.shortname);
     node.setAttribute('src', dataUrl);
     return node;
@@ -31,7 +33,8 @@ class ImageBlot extends Embed {
   static value(node) {
     return {
       alt: node.getAttribute('alt'),
-      url: node.getAttribute('src')
+      url: node.getAttribute('src'),
+      class: node.getAttribute('class')
     };
   }
 }

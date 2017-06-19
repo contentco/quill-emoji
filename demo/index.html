@@ -63,6 +63,15 @@
               placeholder: 'Compose an epic...',
               theme: 'snow',
           });
+          
+          var ops = [];
+          ops = ops.concat([
+                          {insert: {"bolt":{name:'wink'}}},
+                        ]);
+                  
+          quill.updateContents({
+            ops: ops
+          });
         setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
         setInterval( function() { document.getElementById("output_html").value=quill.root.innerHTML }, 500);
 
