@@ -38,6 +38,8 @@
   "homepage": "https://github.com/contentco/quill-emoji#readme",
   "dependencies": {
     "babel": "^6.23.0",
+    "emoji-data-css": "^1.0.1",
+    "emojione-assets": "^3.0.0",
     "fuse.js": "^2.7.4",
     "preact": "^7.2.1",
     "quill": "^1.2.4"

@@ -1,6 +1,86 @@
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/emojiList.js';
 
+const Delta = Quill.import('delta');
+const e = (tag, attrs, ...children) => {
+    const elem = document.createElement(tag);
+    Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
+    children.forEach(child => {
+        if (typeof child === "string")
+            child = document.createTextNode(child);
+        elem.appendChild(child);
+    });
+    return elem;
+};
+
+const Embed = Quill.import('blots/embed');
+
+class ImageBlot extends Embed {
+  static create(value) {
+    let node = super.create();
+    let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
+    node.classList.add("emoji");
+    node.dataset.unicode = value.unicode;
+    node.classList.add("ap");
+    node.classList.add("ap-"+value.name);
+    node.setAttribute('alt', value.shortname);
+    node.setAttribute('src', dataUrl);
+    return node;
+  }
+
+  static value(node) {
+    return {
+      alt: node.getAttribute('alt'),
+      url: node.getAttribute('src')
+    };
+  }
+}
+
+// class LinkBlot extends Inline {
+//   static create(value) {
+//     let node = super.create();
+//     // Sanitize url value if desired
+//     node.setAttribute('href', value);
+//     node.classList.add("emojione");
+//     node.classList.add("emojione-"+unicode);
+//     // Okay to set other non-format related attributes
+//     // These are invisible to Parchment so must be static
+//     node.setAttribute('target', '_blank');
+//     return node;
+//   }
+
+//   static formats(node) {
+//     // We will only be called with a node already
+//     // determined to be a Link blot, so we do
+//     // not need to check ourselves
+//     return node.getAttribute('href');
+//   }
+// }
+
+// LinkBlot.blotName = 'cco';
+// LinkBlot.tagName = 'a';
+
+ImageBlot.blotName = 'bolt';
+ImageBlot.tagName = 'img';
+
+// EmojiBlot.blotName = "emoji";
+// EmojiBlot.tagName = "a";
+// EmojiBlot.className = "emojione";
+
+
+// Quill.register({
+//     'formats/emoji': EmojiBlot
+// });
+
+Quill.register({
+    'formats/bolt': ImageBlot
+});
+
+// Quill.register({
+//     'formats/cco': LinkBlot
+// });
+
+
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
@@ -157,15 +237,64 @@ function fn_emojiElementsToPanel(type,panel,quill){
         span.appendChild(t);
         span.classList.add('bem');
         span.classList.add('bem-' + emoji.name);
+        span.classList.add('ap');
+        span.classList.add('ap-'+emoji.name);
         let output = ''+emoji.code_decimal+'';
         span.innerHTML = output + ' ';
+        //span.innerHTML = ' ';
         panel.appendChild(span);
         
         let customButton = document.querySelector('.bem-' + emoji.name);
         if (customButton) {
             customButton.addEventListener('click', function() {
-                quill.insertText(range.index, customButton.innerHTML);
-                quill.setSelection(range.index + customButton.innerHTML.length, 0);
+                let emoji_icon_html = e("span", {className: "ico", innerHTML: ''+emoji.code_decimal+' ' });
+                let emoji_icon = emoji_icon_html.innerHTML;
+                console.log(emoji_icon);
+
+                // quill.insertText(range.index, emoji.shortname, "emoji", emoji.unicode);
+                
+
+                //const index = (quill.getSelection() || {}).index || quill.getLength();
+                // let dataUrl = 'https://twemoji.maxcdn.com/16x16/'+emoji.unicode+'.png';
+                quill.insertEmbed(range.index, 'bolt', emoji);
+                //quill.insertText(index,emoji_icon, 'cco', emoji.unicode);
+                //quill.insertText(range.index, emoji_icon);
+                //console.log('cursor',range.index + emoji_icon.length + 1);
+                //quill.setSelection(range.index + emoji.shortname.length + 1, 0);
+                //console.log(quill);
+                //twemoji.parse(quill.container);
+                //range.index = range.index + emoji.shortname.length;
+
+                //quill.focus();
+                //quill.getBounds(10);
+                fn_close();
+
+
+                // quill.on('editor-change', function(delta, oldDelta, source) {
+                //     console.log(delta);
+                //   if (source == 'api') {
+                //     console.log("An API call triggered this change.");
+                //   } else if (source == 'user') {
+                //     console.log("A user action triggered this change.");
+                //   }
+                // });               
+                // let ops = [];
+                // console.log(Delta);
+                // quill.setContents([
+                //   { insert: 'Hello ' },
+                //   { insert: emoji_icon, attributes: { emoji: true } },
+                //   { insert: ' ' },
+                //   { insert: '\n' }
+                // ]);
+                //quill.insertText(range.index, emoji_icon);
+                //quill.insertText(5, 'test', "separator", emoji.unicode);
+                //quill.insertText(range.index, emoji_icon, "emoji", emoji.unicode);
+                //quill.insertEmbed(10, 'image', 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/10/briefs/684/assignments/773/attachments/canvas.png',emoji,emoji.unicode);
+                // let temp = range.index + customButton.innerHTML.length;
+                // console.log('hi there',temp);
+                
+                //console.log(quill.getSelection());
+                //console.log('select',quill.getSelection());
                 range.index = range.index + customButton.innerHTML.length;
             });
         };
