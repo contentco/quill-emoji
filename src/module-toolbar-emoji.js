@@ -15,7 +15,7 @@ const e = (tag, attrs, ...children) => {
 
 const Embed = Quill.import('blots/embed');
 
-class ImageBlot extends Embed {
+class EmojiBlot extends Embed {
   static create(value) {
     let node = super.create();
     let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
@@ -23,7 +23,7 @@ class ImageBlot extends Embed {
     node.dataset.unicode = value.unicode;
     node.classList.add("ap");
     node.classList.add("ap-"+value.name);
-    //console.log(value);
+    console.log(value);
     //let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value+'.png';
     node.setAttribute('alt', value.shortname);
     node.setAttribute('src', dataUrl);
@@ -41,11 +41,11 @@ class ImageBlot extends Embed {
 
 
 
-ImageBlot.blotName = 'bolt';
-ImageBlot.tagName = 'img';
+EmojiBlot.blotName = 'bolt';
+EmojiBlot.tagName = 'img';
 
 Quill.register({
-    'formats/bolt': ImageBlot
+    'formats/bolt': EmojiBlot
 });
 
 
