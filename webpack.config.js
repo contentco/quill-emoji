@@ -16,7 +16,8 @@ const config = {
       port: 9000
     },
     module: {
-        rules: [{
+        rules: [
+        {
             test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 use: [{
@@ -27,7 +28,7 @@ const config = {
                 }, {
                     loader: 'sass-loader',
                 }]
-            })
+            }),
         },
         {
             test: /\.js$/,
@@ -41,6 +42,10 @@ const config = {
                     presets: [['es2015', {modules: false}],]
                 }
             }
+        },
+         { 
+            test: /\.png$/, 
+            loader: "file-loader" 
         }
         ]
     },

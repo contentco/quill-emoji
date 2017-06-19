@@ -3,8 +3,6 @@
         <meta charset="utf-8">
         <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../dist/quill-emoji.css">
-        <link rel="stylesheet" type="text/css" href="../node_modules/emojione-assets/sprites/emojione-sprite-32.css">
-        <link rel="stylesheet" type="text/css" href="../node_modules/emoji-data-css/files/ap-20-emoji.css">
         <style type="text/css">
           .ap{
             font-size: 0px;
@@ -16,12 +14,7 @@
         </style>
     </head>
     <body>
-        <!-- <div class="container">
-          <span class="emojione emojione-32-nature _1f433"></span>
-          <span class="emojione emojione-32-people _1f600"></span>
-          <span class="ap ap-joy"></span>
-          <img src="../node_modules/emojione-assets/png/32/1f923.png">
-        </div> -->
+        
         <div class="container" style="position:relative;">
             <h2>Editor</h2>
             <div id="quill-editor" style="max-height: 300px;"></div>
@@ -40,9 +33,6 @@
         <script src="../node_modules/quill/dist/quill.js"></script>
         <script src="../node_modules/fuse.js/src/fuse.js"></script>
         <script src="../dist/quill-emoji.js"></script>
-        <!-- // <script src="../src/emojiList.js"></script>
-        // <script src="../src/module-toolbar-emoji.js"></script>
-        // <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script> -->
         <script type="text/javascript">
           var toolbarOptions = {
             container: [
@@ -68,17 +58,11 @@
                     toolbar: toolbarOptions,
                     toolbar_emoji: true,
                     // short_name_emoji: true,
-                    // textarea_emoji:true
+                    textarea_emoji:true
               },
               placeholder: 'Compose an epic...',
               theme: 'snow',
           });
-          var str = '<img alt="😀" src="https://twemoji.maxcdn.com/2/72x72/1f600.png">';
-          //quill.clipboard.dangerouslyPasteHTML(str);
-
-          //console.log()
-          // twemoji.parse(document.body);
-          //setInterval( function() { twemoji.parse(document.body);}, 500);
         setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
         setInterval( function() { document.getElementById("output_html").value=quill.root.innerHTML }, 500);
 

@@ -10,6 +10,7 @@
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
     "uglifyjs-webpack-plugin": "^0.4.3",
@@ -39,7 +40,6 @@
   "dependencies": {
     "babel": "^6.23.0",
     "emoji-data-css": "^1.0.1",
-    "emojione-assets": "^3.0.0",
     "fuse.js": "^2.7.4",
     "preact": "^7.2.1",
     "quill": "^1.2.4"
