@@ -16,27 +16,70 @@ const e = (tag, attrs, ...children) => {
 const Embed = Quill.import('blots/embed');
 
 class EmojiBlot extends Embed {
-  static create(value) {
-    let node = super.create();
-    let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
-    node.classList.add("emoji");
-    node.dataset.unicode = value.unicode;
-    node.classList.add("ap");
-    node.classList.add("ap-"+value.name);
-    console.log(value);
-    //let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value+'.png';
-    node.setAttribute('alt', value.shortname);
-    node.setAttribute('src', dataUrl);
-    return node;
-  }
+  // static create(value,cssClass) {
+  //   console.log(value);
+  //   console.log(cssClass);
+  //   let node = super.create();
+  //   // let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+emoji.unicode+'.png';
+  //   // node.classList.add("emoji");
+  //   // node.dataset.unicode = value.unicode;
+  //   // node.classList.add("ap");
+  //   // node.classList.add("ap-"+value.name);
+  //   // console.log(value);
+  //   // //let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value+'.png';
+  //   // node.setAttribute('alt', value.shortname);
+  //   // node.setAttribute('src', dataUrl);
+  //   return node;
+  // }
 
-  static value(node) {
-    return {
-      alt: node.getAttribute('alt'),
-      url: node.getAttribute('src'),
-      class: node.getAttribute('class')
-    };
-  }
+  // static value(node) {
+  //   return {
+  //     src: node.getAttribute('src'),
+  //     class: node.getAttribute('class')
+  //   };
+  // }
+    static create(value) {
+        let node = super.create();
+        if (typeof value === 'object') {
+            node.classList.add("emoji");
+            console.log('obj');
+            let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value.unicode+'.png';
+            node.setAttribute('src',dataUrl);
+        }
+        else if(typeof value === 'string'){
+            node.setAttribute('src',value);
+        }
+        return node;
+      }
+
+    static formats(node) {
+        // We still need to report unregistered src formats
+        let format = {};
+        if (node.hasAttribute('class')) {
+          format.class = node.getAttribute('class');
+        }
+        if (node.hasAttribute('alt')) {
+          format.width = node.getAttribute('alt');
+        }
+        return format;
+    }
+
+    static value(node) {
+        return node.getAttribute('src');
+    }
+
+    format(name, value) {
+
+        if (name === 'class' || name === 'alt') {
+          if (value) {
+            this.domNode.setAttribute(name, value);
+          } else {
+            this.domNode.removeAttribute(name, value);
+          }
+        } else {
+          super.format(name, value);
+        }
+    } 
 }
 
 

@@ -8,7 +8,7 @@
             font-size: 0px;
           }
           .emoji{
-            /*height:16px;*/
+            height:20px;
             margin-bottom: -5px;
           }
         </style>
@@ -33,6 +33,8 @@
         <script src="../node_modules/quill/dist/quill.js"></script>
         <script src="../node_modules/fuse.js/src/fuse.js"></script>
         <script src="../dist/quill-emoji.js"></script>
+        <!--<script src="../src/emojiList.js"></script>
+        <script src="../src/module-toolbar-emoji.js"></script>-->
         <script type="text/javascript">
           var toolbarOptions = {
             container: [
@@ -58,20 +60,22 @@
                     toolbar: toolbarOptions,
                     toolbar_emoji: true,
                     // short_name_emoji: true,
-                    textarea_emoji:true
+                    //textarea_emoji:true
               },
               placeholder: 'Compose an epic...',
               theme: 'snow',
           });
           
-          var ops = [];
-          ops = ops.concat([
-                          {insert: {"bolt":{name:'wink'}}},
-                        ]);
+          // var ops = [];
+          // ops = ops.concat([
+          //                 {insert: {"bolt":{name:'wink'}}},
+          //               ]);
                   
-          quill.updateContents({
-            ops: ops
-          });
+          // quill.updateContents({
+          //   ops: ops
+          // });
+        var content = '<p><img src="https://twemoji.maxcdn.com/36x36/1f60b.png" class="emoji"><img src="https://twemoji.maxcdn.com/36x36/1f607.png" class="emoji"></p><p><br></p><p><img src="https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/17/assignments/28/attachments/28-1497887064874.png"></p>';
+        quill.pasteHTML(content);
         setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
         setInterval( function() { document.getElementById("output_html").value=quill.root.innerHTML }, 500);
 
