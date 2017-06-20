@@ -1,6 +1,75 @@
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/emojiList.js';
 
+const Delta = Quill.import('delta');
+const e = (tag, attrs, ...children) => {
+    const elem = document.createElement(tag);
+    Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
+    children.forEach(child => {
+        if (typeof child === "string")
+            child = document.createTextNode(child);
+        elem.appendChild(child);
+    });
+    return elem;
+};
+
+const Embed = Quill.import('blots/embed');
+
+class EmojiBlotTwo extends Embed {
+    static create(value) {
+        let node = super.create();
+        if (typeof value === 'object') {
+            node.classList.add("emoji");
+            node.classList.add("ap");
+            node.classList.add("ap-"+value.name);
+            let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
+            node.setAttribute('src',dataUrl);
+        }
+        else if(typeof value === 'string'){
+            node.setAttribute('src',value);
+        }
+        return node;
+      }
+
+    static formats(node) {
+        // We still need to report unregistered src formats
+        let format = {};
+        if (node.hasAttribute('class')) {
+          format.class = node.getAttribute('class');
+        }
+        if (node.hasAttribute('alt')) {
+          format.width = node.getAttribute('alt');
+        }
+        return format;
+    }
+
+    static value(node) {
+        return node.getAttribute('src');
+    }
+
+    format(name, value) {
+
+        if (name === 'class' || name === 'alt') {
+          if (value) {
+            this.domNode.setAttribute(name, value);
+          } else {
+            this.domNode.removeAttribute(name, value);
+          }
+        } else {
+          super.format(name, value);
+        }
+    } 
+}
+
+
+
+EmojiBlotTwo.blotName = 'boltTwo';
+EmojiBlotTwo.tagName = 'img';
+
+Quill.register({
+    'formats/boltTwo': EmojiBlotTwo
+});
+
 class TextAreaEmoji {
     constructor(quill){
         this.quill = quill;
@@ -128,6 +197,8 @@ function fn_emojiElementsToPanel(type,panel,quill){
         span.appendChild(t);
         span.classList.add('bem');
         span.classList.add('bem-' + emoji.name);
+        span.classList.add('ap');
+        span.classList.add('ap-'+emoji.name);
         let output = ''+emoji.code_decimal+'';
         span.innerHTML = output + ' ';
         panel.appendChild(span);
@@ -135,9 +206,11 @@ function fn_emojiElementsToPanel(type,panel,quill){
         let customButton = document.querySelector('.bem-' + emoji.name);
         if (customButton) {
             customButton.addEventListener('click', function() {
-                quill.insertText(range.index, customButton.innerHTML);
-                quill.setSelection(range.index + customButton.innerHTML.length, 0);
-                range.index = range.index + customButton.innerHTML.length;
+                // quill.insertText(range.index, customButton.innerHTML);
+                // quill.setSelection(range.index + customButton.innerHTML.length, 0);
+                // range.index = range.index + customButton.innerHTML.length;
+                quill.insertEmbed(range.index, 'boltTwo', emoji);
+                fn_close();
             });
         };
     });
