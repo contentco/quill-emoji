@@ -145,7 +145,7 @@ class TextAreaEmoji {
             
             let windowHeight = window.innerHeight;
             let editorPos = this.quill.container.getBoundingClientRect().top;
-            if (editorPos > windowHeight/3) {
+            if (editorPos > windowHeight/2) {
                 ele_emoji_area.style.top   = '-250px';
             }
             fn_emojiPanelInit(panel,this.quill);
