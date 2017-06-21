@@ -45,7 +45,7 @@ body {
     color: black;
 }
 .completions > li > button > * {
-    vertical-align: "middle";
+    vertical-align: middle;
 }
 .emoji_completions {
     list-style: none;
@@ -73,7 +73,7 @@ body {
 
 .emoji_completions > li > button {
     box-sizing: border-box;
-    padding: 3px 2px 2px;
+    padding: 3px 2px 6px;
     margin: 0;
     display: block;
     width: 100%;
@@ -100,7 +100,7 @@ body {
             font-weight: bold;
 }
 .emoji_completions > li > button > * {
-            vertical-align: "middle";
+            vertical-align: middle;
 }
 
 .ico {

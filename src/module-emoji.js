@@ -1,5 +1,6 @@
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/emojiList.js';
+
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
@@ -201,7 +202,7 @@ class ShortNameEmoji {
         emojis.forEach((emoji, i) => {
             const li =  e('li', {},
                         e('button', {type: "button"},
-                        e("span", {className: "ico", innerHTML: emoji.code_decimal }),
+                        e("span", {className: "emoji ap ap-"+emoji.name, innerHTML: emoji.code_decimal }),
                         // e('span', {className: "matched"}, this.query),
                         // e('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
                         e('span', {className: "unmatched"}, emoji.shortname),
