@@ -1,6 +1,5 @@
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/emojiList.js';
-
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
@@ -12,39 +11,6 @@ const e = (tag, attrs, ...children) => {
     });
     return elem;
 };
-const Inline = Quill.import('blots/inline');
-class EmojiBlot extends Inline {
-    static create(unicode) {
-        const node = super.create();
-        node.dataset.unicode = unicode;
-        return node;
-    }
-    static formats(node) {
-        return node.dataset.unicode;
-    }
-    format(name, value) {
-        if (name === "emoji" && value) {
-            this.domNode.dataset.unicode = value;
-        } else {
-            super.format(name, value);
-        }
-    }
-
-    formats() {
-        const formats = super.formats();
-        formats['emoji'] = EmojiBlot.formats(this.domNode);
-        return formats;
-    }
-} 
-
-// EmojiBlot.blotName = "emoji";
-// EmojiBlot.tagName = "SPAN";
-// EmojiBlot.className = "emoji";
-
-Quill.register({
-    'formats/emoji': EmojiBlot
-});
-
 class ShortNameEmoji {
     constructor(quill, props) {
         this.fuseOptions = {
@@ -276,12 +242,8 @@ class ShortNameEmoji {
         this.quill.off('text-change', this.onTextChange);
         if (value) {
             const {name, unicode, shortname,code_decimal} = value;
-            let emoji_icon_html = e("span", {className: "ico", innerHTML: ' '+code_decimal+' ' });
-            let emoji_icon = emoji_icon_html.innerHTML;
             this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
-            this.quill.insertText(this.atIndex, emoji_icon, "emoji", unicode, Quill.sources.USER);
-            this.quill.insertText(this.atIndex + emoji_icon.length, " ", 'emoji', false, Quill.sources.USER);
-            this.quill.setSelection(this.atIndex + emoji_icon.length, 0, Quill.sources.SILENT);
+            this.quill.insertEmbed(this.atIndex, 'bolt', value);
         }
         this.quill.focus();
         this.open = false;
@@ -304,7 +266,7 @@ class ShortNameEmoji {
             };
             ops = ops.concat([
                     {delete: this.query.length + 1},
-                    {insert: emoji_icon,attributes: { emoji: true }},
+                    {"insert":{"bolt":"https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png"},"attributes":{"class":"emoji ap ap-"+value.name+""}},
                     {delete: 1},
                   ]);
             this.quill.updateContents({

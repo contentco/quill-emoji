@@ -22,7 +22,6 @@ class EmojiBlot extends Embed {
             node.classList.add("emoji");
             node.classList.add("ap");
             node.classList.add("ap-"+value.name);
-            //let dataUrl = 'https://twemoji.maxcdn.com/36x36/'+value.unicode+'.png';
             let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
             node.setAttribute('src',dataUrl);
         }
