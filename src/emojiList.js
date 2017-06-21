@@ -3688,14 +3688,14 @@ export let emojiList = [
     "category": "s",
     "emoji_order": "1541"
   },
-  {
-    "name": "map",
-    "unicode": "1f5fa",
-    "shortname": ":map:",
-    "code_decimal": "&#128506;",
-    "category": "o",
-    "emoji_order": "1542"
-  },
+  // {
+  //   "name": "map",
+  //   "unicode": "1f5fa",
+  //   "shortname": ":map:",
+  //   "code_decimal": "&#128506;",
+  //   "category": "o",
+  //   "emoji_order": "1542"
+  // },
   {
     "name": "japan",
     "unicode": "1f5fe",
@@ -5880,14 +5880,14 @@ export let emojiList = [
     "category": "s",
     "emoji_order": "1825"
   },
-  {
-    "name": "microphone2",
-    "unicode": "1f399",
-    "shortname": ":microphone2:",
-    "code_decimal": "&#127897;",
-    "category": "o",
-    "emoji_order": "1826"
-  },
+  // {
+  //   "name": "microphone2",
+  //   "unicode": "1f399",
+  //   "shortname": ":microphone2:",
+  //   "code_decimal": "&#127897;",
+  //   "category": "o",
+  //   "emoji_order": "1826"
+  // },
   {
     "name": "level_slider",
     "unicode": "1f39a",
@@ -6048,14 +6048,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1846"
   },
-  {
-    "name": "desktop",
-    "unicode": "1f5a5",
-    "shortname": ":desktop:",
-    "code_decimal": "&#128421;",
-    "category": "o",
-    "emoji_order": "1847"
-  },
+  // {
+  //   "name": "desktop",
+  //   "unicode": "1f5a5",
+  //   "shortname": ":desktop:",
+  //   "code_decimal": "&#128421;",
+  //   "category": "o",
+  //   "emoji_order": "1847"
+  // },
   {
     "name": "printer",
     "unicode": "1f5a8",
@@ -6072,14 +6072,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1849"
   },
-  {
-    "name": "mouse_three_button",
-    "unicode": "1f5b1",
-    "shortname": ":mouse_three_button:",
-    "code_decimal": "&#128433;",
-    "category": "o",
-    "emoji_order": "1850"
-  },
+  // {
+  //   "name": "mouse_three_button",
+  //   "unicode": "1f5b1",
+  //   "shortname": ":mouse_three_button:",
+  //   "code_decimal": "&#128433;",
+  //   "category": "o",
+  //   "emoji_order": "1850"
+  // },
   {
     "name": "trackball",
     "unicode": "1f5b2",
@@ -6136,14 +6136,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1857"
   },
-  {
-    "name": "projector",
-    "unicode": "1f4fd",
-    "shortname": ":projector:",
-    "code_decimal": "&#128253;",
-    "category": "o",
-    "emoji_order": "1858"
-  },
+  // {
+  //   "name": "projector",
+  //   "unicode": "1f4fd",
+  //   "shortname": ":projector:",
+  //   "code_decimal": "&#128253;",
+  //   "category": "o",
+  //   "emoji_order": "1858"
+  // },
   {
     "name": "clapper",
     "unicode": "1f3ac",
@@ -6368,14 +6368,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1886"
   },
-  {
-    "name": "newspaper2",
-    "unicode": "1f5de",
-    "shortname": ":newspaper2:",
-    "code_decimal": "&#128478;",
-    "category": "o",
-    "emoji_order": "1887"
-  },
+  // {
+  //   "name": "newspaper2",
+  //   "unicode": "1f5de",
+  //   "shortname": ":newspaper2:",
+  //   "code_decimal": "&#128478;",
+  //   "category": "o",
+  //   "emoji_order": "1887"
+  // },
   {
     "name": "bookmark_tabs",
     "unicode": "1f4d1",
@@ -6480,14 +6480,14 @@ export let emojiList = [
     "category": "s",
     "emoji_order": "1900"
   },
-  {
-    "name": "envelope",
-    "unicode": "2709",
-    "shortname": ":envelope:",
-    "code_decimal": "&#9993;",
-    "category": "o",
-    "emoji_order": "1901"
-  },
+  // {
+  //   "name": "envelope",
+  //   "unicode": "2709",
+  //   "shortname": ":envelope:",
+  //   "code_decimal": "&#9993;",
+  //   "category": "o",
+  //   "emoji_order": "1901"
+  // },
   {
     "name": "e-mail",
     "unicode": "1f4e7",
@@ -6632,14 +6632,14 @@ export let emojiList = [
   //   "category": "o",
   //   "emoji_order": "1919"
   // },
-  {
-    "name": "pencil",
-    "unicode": "1f4dd",
-    "shortname": ":pencil:",
-    "code_decimal": "&#128221;",
-    "category": "o",
-    "emoji_order": "1920"
-  },
+  // {
+  //   "name": "pencil",
+  //   "unicode": "1f4dd",
+  //   "shortname": ":pencil:",
+  //   "code_decimal": "&#128221;",
+  //   "category": "o",
+  //   "emoji_order": "1920"
+  // },
   {
     "name": "briefcase",
     "unicode": "1f4bc",
@@ -6664,14 +6664,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1923"
   },
-  {
-    "name": "dividers",
-    "unicode": "1f5c2",
-    "shortname": ":dividers:",
-    "code_decimal": "&#128450;",
-    "category": "o",
-    "emoji_order": "1924"
-  },
+  // {
+  //   "name": "dividers",
+  //   "unicode": "1f5c2",
+  //   "shortname": ":dividers:",
+  //   "code_decimal": "&#128450;",
+  //   "category": "o",
+  //   "emoji_order": "1924"
+  // },
   {
     "name": "date",
     "unicode": "1f4c5",
@@ -6688,22 +6688,22 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1926"
   },
-  {
-    "name": "notepad_spiral",
-    "unicode": "1f5d2",
-    "shortname": ":notepad_spiral:",
-    "code_decimal": "&#128466;",
-    "category": "o",
-    "emoji_order": "1927"
-  },
-  {
-    "name": "calendar_spiral",
-    "unicode": "1f5d3",
-    "shortname": ":calendar_spiral:",
-    "code_decimal": "&#128467;",
-    "category": "o",
-    "emoji_order": "1928"
-  },
+  // {
+  //   "name": "notepad_spiral",
+  //   "unicode": "1f5d2",
+  //   "shortname": ":notepad_spiral:",
+  //   "code_decimal": "&#128466;",
+  //   "category": "o",
+  //   "emoji_order": "1927"
+  // },
+  // {
+  //   "name": "calendar_spiral",
+  //   "unicode": "1f5d3",
+  //   "shortname": ":calendar_spiral:",
+  //   "code_decimal": "&#128467;",
+  //   "category": "o",
+  //   "emoji_order": "1928"
+  // },
   {
     "name": "card_index",
     "unicode": "1f4c7",
@@ -6768,14 +6768,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1936"
   },
-  {
-    "name": "paperclips",
-    "unicode": "1f587",
-    "shortname": ":paperclips:",
-    "code_decimal": "&#128391;",
-    "category": "o",
-    "emoji_order": "1937"
-  },
+  // {
+  //   "name": "paperclips",
+  //   "unicode": "1f587",
+  //   "shortname": ":paperclips:",
+  //   "code_decimal": "&#128391;",
+  //   "category": "o",
+  //   "emoji_order": "1937"
+  // },
   {
     "name": "straight_ruler",
     "unicode": "1f4cf",
@@ -6800,14 +6800,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1940"
   },
-  {
-    "name": "card_box",
-    "unicode": "1f5c3",
-    "shortname": ":card_box:",
-    "code_decimal": "&#128451;",
-    "category": "o",
-    "emoji_order": "1941"
-  },
+  // {
+  //   "name": "card_box",
+  //   "unicode": "1f5c3",
+  //   "shortname": ":card_box:",
+  //   "code_decimal": "&#128451;",
+  //   "category": "o",
+  //   "emoji_order": "1941"
+  // },
   {
     "name": "file_cabinet",
     "unicode": "1f5c4",
@@ -6864,14 +6864,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1948"
   },
-  {
-    "name": "key2",
-    "unicode": "1f5dd",
-    "shortname": ":key2:",
-    "code_decimal": "&#128477;",
-    "category": "o",
-    "emoji_order": "1949"
-  },
+  // {
+  //   "name": "key2",
+  //   "unicode": "1f5dd",
+  //   "shortname": ":key2:",
+  //   "code_decimal": "&#128477;",
+  //   "category": "o",
+  //   "emoji_order": "1949"
+  // },
   {
     "name": "hammer",
     "unicode": "1f528",
@@ -6888,30 +6888,30 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1951"
   },
-  {
-    "name": "hammer_pick",
-    "unicode": "2692",
-    "shortname": ":hammer_pick:",
-    "code_decimal": "&#9874;",
-    "category": "o",
-    "emoji_order": "1952"
-  },
-  {
-    "name": "tools",
-    "unicode": "1f6e0",
-    "shortname": ":tools:",
-    "code_decimal": "&#128736;",
-    "category": "o",
-    "emoji_order": "1953"
-  },
-  {
-    "name": "dagger",
-    "unicode": "1f5e1",
-    "shortname": ":dagger:",
-    "code_decimal": "&#128481;",
-    "category": "o",
-    "emoji_order": "1954"
-  },
+  // {
+  //   "name": "hammer_pick",
+  //   "unicode": "2692",
+  //   "shortname": ":hammer_pick:",
+  //   "code_decimal": "&#9874;",
+  //   "category": "o",
+  //   "emoji_order": "1952"
+  // },
+  // {
+  //   "name": "tools",
+  //   "unicode": "1f6e0",
+  //   "shortname": ":tools:",
+  //   "code_decimal": "&#128736;",
+  //   "category": "o",
+  //   "emoji_order": "1953"
+  // },
+  // {
+  //   "name": "dagger",
+  //   "unicode": "1f5e1",
+  //   "shortname": ":dagger:",
+  //   "code_decimal": "&#128481;",
+  //   "category": "o",
+  //   "emoji_order": "1954"
+  // },
   {
     "name": "crossed_swords",
     "unicode": "2694",
@@ -7040,14 +7040,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1970"
   },
-  {
-    "name": "urn",
-    "unicode": "26b1",
-    "shortname": ":urn:",
-    "code_decimal": "&#9905;",
-    "category": "o",
-    "emoji_order": "1971"
-  },
+  // {
+  //   "name": "urn",
+  //   "unicode": "26b1",
+  //   "shortname": ":urn:",
+  //   "code_decimal": "&#9905;",
+  //   "category": "o",
+  //   "emoji_order": "1971"
+  // },
   {
     "name": "moyai",
     "unicode": "1f5ff",
@@ -7056,14 +7056,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1972"
   },
-  {
-    "name": "oil",
-    "unicode": "1f6e2",
-    "shortname": ":oil:",
-    "code_decimal": "&#128738;",
-    "category": "o",
-    "emoji_order": "1973"
-  },
+  // {
+  //   "name": "oil",
+  //   "unicode": "1f6e2",
+  //   "shortname": ":oil:",
+  //   "code_decimal": "&#128738;",
+  //   "category": "o",
+  //   "emoji_order": "1973"
+  // },
   {
     "name": "crystal_ball",
     "unicode": "1f52e",
@@ -7072,14 +7072,14 @@ export let emojiList = [
     "category": "o",
     "emoji_order": "1974"
   },
-  {
-    "name": "shopping_cart",
-    "unicode": "1f6d2",
-    "shortname": ":shopping_cart:",
-    "code_decimal": "&#128722;",
-    "category": "o",
-    "emoji_order": "1975"
-  },
+  // {
+  //   "name": "shopping_cart",
+  //   "unicode": "1f6d2",
+  //   "shortname": ":shopping_cart:",
+  //   "code_decimal": "&#128722;",
+  //   "category": "o",
+  //   "emoji_order": "1975"
+  // },
   {
     "name": "atm",
     "unicode": "1f3e7",
@@ -7768,38 +7768,38 @@ export let emojiList = [
     "category": "s",
     "emoji_order": "2061"
   },
-  {
-    "name": "pause_button",
-    "unicode": "23f8",
-    "shortname": ":pause_button:",
-    "code_decimal": "&#9208;",
-    "category": "s",
-    "emoji_order": "2062"
-  },
-  {
-    "name": "stop_button",
-    "unicode": "23f9",
-    "shortname": ":stop_button:",
-    "code_decimal": "&#9209;",
-    "category": "s",
-    "emoji_order": "2063"
-  },
-  {
-    "name": "record_button",
-    "unicode": "23fa",
-    "shortname": ":record_button:",
-    "code_decimal": "&#9210;",
-    "category": "s",
-    "emoji_order": "2064"
-  },
-  {
-    "name": "eject",
-    "unicode": "23cf",
-    "shortname": ":eject:",
-    "code_decimal": "&#9167;",
-    "category": "s",
-    "emoji_order": "2065"
-  },
+  // {
+  //   "name": "pause_button",
+  //   "unicode": "23f8",
+  //   "shortname": ":pause_button:",
+  //   "code_decimal": "&#9208;",
+  //   "category": "s",
+  //   "emoji_order": "2062"
+  // },
+  // {
+  //   "name": "stop_button",
+  //   "unicode": "23f9",
+  //   "shortname": ":stop_button:",
+  //   "code_decimal": "&#9209;",
+  //   "category": "s",
+  //   "emoji_order": "2063"
+  // },
+  // {
+  //   "name": "record_button",
+  //   "unicode": "23fa",
+  //   "shortname": ":record_button:",
+  //   "code_decimal": "&#9210;",
+  //   "category": "s",
+  //   "emoji_order": "2064"
+  // },
+  // {
+  //   "name": "eject",
+  //   "unicode": "23cf",
+  //   "shortname": ":eject:",
+  //   "code_decimal": "&#9167;",
+  //   "category": "s",
+  //   "emoji_order": "2065"
+  // },
   {
     "name": "cinema",
     "unicode": "1f3a6",
