@@ -227,7 +227,7 @@ class ShortNameEmoji {
             
             let windowHeight = window.innerHeight;
             let editorPos = this.quill.container.getBoundingClientRect().top;
-            if (editorPos > windowHeight/3 && this.container.offsetHeight > 0) {
+            if (editorPos > windowHeight/2 && this.container.offsetHeight > 0) {
                 this.container.style.top = '-' + this.container.offsetHeight + "px";
             }
         }
