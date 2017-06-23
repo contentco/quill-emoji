@@ -19,7 +19,7 @@
             <h2>Editor</h2>
             <div id="quill-editor" style="max-height: 300px;"></div>
         </div>
-        &#128506; &#128421;
+        
         <div class="container">
             <h2>Debug</h2>
             <div style="margin:20px 0px; display:flex;">
@@ -67,7 +67,7 @@
               placeholder: 'Compose an epic...',
               theme: 'snow',
           });
-        var content = '<p><img class="emoji ap ap-yum" src="https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png"><img class="emoji ap ap-thinking_face" src="https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png"></p><p></p>';
+        var content = '<p><img class="emoji ap ap-yum" src="data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="><img class="emoji ap ap-thinking_face" src="data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="></p><p></p>';
         quill.pasteHTML(content);
         setInterval( function() { document.getElementById("output_delta").value=JSON.stringify(quill.editor.getDelta()) }, 500);
         setInterval( function() { document.getElementById("output_html").value=quill.root.innerHTML }, 500);

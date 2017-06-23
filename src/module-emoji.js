@@ -267,7 +267,7 @@ class ShortNameEmoji {
             };
             ops = ops.concat([
                     {delete: this.query.length + 1},
-                    {"insert":{"bolt":"https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png"},"attributes":{"class":"emoji ap ap-"+value.name+""}},
+                    {"insert":{"bolt":"data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="},"attributes":{"class":"emoji ap ap-"+value.name+""}},
                     {delete: 1},
                   ]);
             this.quill.updateContents({

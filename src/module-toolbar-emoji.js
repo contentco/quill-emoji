@@ -22,7 +22,7 @@ class EmojiBlot extends Embed {
             node.classList.add("emoji");
             node.classList.add("ap");
             node.classList.add("ap-"+value.name);
-            let dataUrl = 'https://boltmedia-test.s3-ap-southeast-1.amazonaws.com/orgs/2/briefs/2/assignments/4/attachments/emoji.png';
+            let dataUrl = 'data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=';
             node.setAttribute('src',dataUrl);
         }
         else if(typeof value === 'string'){
