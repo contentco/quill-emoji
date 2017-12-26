@@ -1,5 +1,5 @@
 import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/emojiList.js';
+import {emojiList} from '../src/n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -58,7 +58,7 @@ class EmojiBlotTwo extends Embed {
         } else {
           super.format(name, value);
         }
-    } 
+    }
 }
 
 
@@ -106,12 +106,12 @@ class TextAreaEmoji {
 
             let tabElementHolder = document.createElement('ul');
             tabToolbar.appendChild(tabElementHolder);
-            
+
             if (document.getElementById('emoji-close-div') === null) {
                 let closeDiv = document.createElement('div');
                 closeDiv.id = 'emoji-close-div';
                 closeDiv.addEventListener("click", fn_close, false);
-                document.getElementsByTagName('body')[0].appendChild(closeDiv); 
+                document.getElementsByTagName('body')[0].appendChild(closeDiv);
             }
             else{
                 document.getElementById('emoji-close-div').style.display = "block";
@@ -129,7 +129,7 @@ class TextAreaEmoji {
                 tabElement.dataset.filter = emojiType.type;
                 tabElementHolder.appendChild(tabElement);
                 let emojiFilter = document.querySelector('.filter-'+emojiType.name);
-                emojiFilter.addEventListener('click',function(){ 
+                emojiFilter.addEventListener('click',function(){
                     let tab = document.querySelector('.active');
                     if (tab) {
                         tab.classList.remove('active');
@@ -142,7 +142,7 @@ class TextAreaEmoji {
                     fn_emojiElementsToPanel(type,panel,innerQuill);
                 })
             });
-            
+
             let windowHeight = window.innerHeight;
             let editorPos = this.quill.container.getBoundingClientRect().top;
             if (editorPos > windowHeight/2) {
@@ -187,7 +187,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
     result.sort(function (a, b) {
       return a.emoji_order - b.emoji_order;
     });
-    
+
     quill.focus();
     let range = fn_updateRange(quill);
 
@@ -202,7 +202,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
         let output = ''+emoji.code_decimal+'';
         span.innerHTML = output + ' ';
         panel.appendChild(span);
-        
+
         let customButton = document.querySelector('.bem-' + emoji.name);
         if (customButton) {
             customButton.addEventListener('click', function() {

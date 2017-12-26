@@ -5,10 +5,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 // const autoprefixer = requre('autoprefixer');
 
 const config = {
-    entry: './src/quill-emoji.js',
+    entry: './src/n-quill-emoji.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'quill-emoji.js'
+        filename: 'n-quill-emoji.js'
     },
     devServer: {
       contentBase: path.join(__dirname, "dist"),
@@ -24,7 +24,7 @@ const config = {
                     loader: 'css-loader',
                     options: {
                         minimize: true || {/* CSSNano Options */}
-                    } 
+                    }
                 }, {
                     loader: 'sass-loader',
                 }]
@@ -43,14 +43,14 @@ const config = {
                 }
             }
         },
-         { 
-            test: /\.png$/, 
-            loader: "file-loader" 
+         {
+            test: /\.png$/,
+            loader: "file-loader"
         }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('quill-emoji.css'),
+        new ExtractTextPlugin('n-quill-emoji.css'),
         new UglifyJSPlugin({
             compress: {
                 warnings: false,

@@ -1,8 +1,8 @@
 {
-  "name": "quill-emoji",
-  "version": "0.0.9",
+  "name": "n-quill-emoji",
+  "version": "0.2.0",
   "description": "Quill Extension for Emoji Selection",
-  "main": "webpack.config.js",
+  "main": "dist/n-quill-emoji.js",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
@@ -11,8 +11,9 @@
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.2",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
+    "style-loader": "0.13.0",
+    "sass-loader": "^6.0.6",
+    "node-sass": "^4.6.0",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"

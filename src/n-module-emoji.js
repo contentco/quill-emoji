@@ -1,5 +1,5 @@
 import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/emojiList.js';
+import {emojiList} from '../src/n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -27,7 +27,7 @@ class ShortNameEmoji {
         };
         this.emojiList  = emojiList;
         this.fuse       = new Fuse(this.emojiList, this.fuseOptions);
-        
+
         this.quill      = quill;
         this.onClose    = props.onClose;
         this.onOpen     = props.onOpen;
@@ -74,13 +74,13 @@ class ShortNameEmoji {
 
     onAtKey(range, context) {
         if (this.open) return true;
-        if (range.length > 0) 
+        if (range.length > 0)
             this.quill.deleteText(range.index, range.length, Quill.sources.USER);
-        
+
         this.quill.insertText(range.index, ":", "emoji", Quill.sources.USER);
         const atSignBounds = this.quill.getBounds(range.index);
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
-        
+
         this.atIndex = range.index;
 
         let paletteMaxPos = atSignBounds.left + 250;
@@ -91,7 +91,7 @@ class ShortNameEmoji {
             this.container.style.left = atSignBounds.left + "px";
         }
 
-        
+
         this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
         this.open = true;
 
@@ -121,14 +121,14 @@ class ShortNameEmoji {
             this.close(null);
             return;
         }
-        
+
         this.query = this.query.trim();
 
         let emojis = this.fuse.search(this.query);
         emojis.sort(function (a, b) {
           return a.emoji_order - b.emoji_order;
         });
-        
+
         if (this.query.length < 3 || emojis.length == 0){
             this.container.style.display = "none";
             return;
@@ -156,20 +156,20 @@ class ShortNameEmoji {
                 this.buttons[0].classList.remove('emoji-active');
                 this.buttons[1].focus();
                 return;
-            }      
+            }
         }
         if (event) {return;};
         while (this.container.firstChild){
             this.container.removeChild(this.container.firstChild);
-        } 
+        }
         const buttons = Array(emojis.length);
         this.buttons = buttons;
-        
+
         const handler = (i, emoji) => event => {
             if (event.key === "ArrowRight" || event.keyCode === 39) {
                 event.preventDefault();
                 buttons[Math.min(buttons.length - 1, i + 1)].focus();
-            } 
+            }
             else if (event.key === 'Tab' || event.keyCode === 9) {
                 event.preventDefault();
                 if ((i + 1) == buttons.length) {
@@ -181,7 +181,7 @@ class ShortNameEmoji {
             else if (event.key === "ArrowLeft" || event.keyCode === 37) {
                 event.preventDefault();
                 buttons[Math.max(0, i - 1)].focus();
-            } 
+            }
             else if (event.key === "ArrowDown" || event.keyCode === 40) {
                 event.preventDefault();
                 buttons[Math.min(buttons.length - 1, i + 1)].focus();
@@ -189,14 +189,14 @@ class ShortNameEmoji {
             else if (event.key === "ArrowUp" || event.keyCode === 38) {
                 event.preventDefault();
                 buttons[Math.max(0, i - 1)].focus();
-            } 
+            }
             else if (event.key === "Enter" || event.keyCode === 13
                        || event.key === " " || event.keyCode === 32
                        || event.key === "Tab" || event.keyCode === 9) {
                 event.preventDefault();
                 this.quill.enable();
                 this.close(emoji);
-            }    
+            }
         };
 
         emojis.forEach((emoji, i) => {
@@ -215,8 +215,8 @@ class ShortNameEmoji {
             buttons[i].addEventListener("focus", () => this.focusedButton = i);
             buttons[i].addEventListener("unfocus", () => this.focusedButton = null);
         });
-        
-        this.container.style.display = "block"; 
+
+        this.container.style.display = "block";
         //emoji palette on top
         if (this.quill.container.classList.contains('top-emoji')) {
             let x = this.container.querySelectorAll("li");
@@ -224,7 +224,7 @@ class ShortNameEmoji {
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = 'block';
                 }
-            
+
             let windowHeight = window.innerHeight;
             let editorPos = this.quill.container.getBoundingClientRect().top;
             if (editorPos > windowHeight/2 && this.container.offsetHeight > 0) {
