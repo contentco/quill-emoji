@@ -1,3 +1,4 @@
+import Quill from 'quill';
 import Fuse from '../node_modules/fuse.js';
 import {emojiList} from '../src/n-emoji-list.js';
 
