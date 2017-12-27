@@ -1,6 +1,6 @@
 import Quill from 'quill';
-import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/n-emoji-list.js';
+import Fuse from 'fuse.js';
+import { emojiList } from './n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -67,9 +67,7 @@ class EmojiBlot extends Embed {
 EmojiBlot.blotName = 'bolt';
 EmojiBlot.tagName = 'img';
 
-Quill.register({
-    'formats/bolt': EmojiBlot
-});
+// Quill.register({'formats/bolt': EmojiBlot});
 
 
 class ToolbarEmoji {
@@ -254,5 +252,5 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
     fn_emojiElementsToPanel(type,panel,quill);
 }
 
-Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji as toolbarEmoji};
+// Quill.register('modules/toolbar_emoji', ToolbarEmoji);
+export { ToolbarEmoji, EmojiBlot };

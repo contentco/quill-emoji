@@ -1,6 +1,6 @@
 import Quill from 'quill';
-import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/n-emoji-list.js';
+import Fuse from 'fuse.js';
+import { emojiList } from './n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -281,5 +281,5 @@ class ShortNameEmoji {
         this.onClose && this.onClose(value);
     }
 }
-Quill.register('modules/short_name_emoji', ShortNameEmoji);
-export { ShortNameEmoji as shortNameEmoji};
+// Quill.register('modules/short_name_emoji', ShortNameEmoji);
+export { ShortNameEmoji };

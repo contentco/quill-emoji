@@ -1,14 +1,18 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-
+let webpack = require('webpack');
 // const autoprefixer = requre('autoprefixer');
+// require('quill');
+// const Quill = require('quill');
 
 const config = {
     entry: './src/n-quill-emoji.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'n-quill-emoji.js'
+        filename: 'n-quill-emoji.js',
+        library: "n-quill-emoji",
+        libraryTarget: "umd"
     },
     devServer: {
       contentBase: path.join(__dirname, "dist"),
@@ -46,7 +50,13 @@ const config = {
          {
             test: /\.png$/,
             loader: "file-loader"
-        }
+        },
+        {
+            test: require.resolve('quill'),
+            // 此loader配置项的目标是NPM中的jquery
+            loader: 'expose?$!expose?quill',
+            // 先把jQuery对象声明成为全局变量`jQuery`，再通过管道进一步又声明成为全局变量`$`
+        },
         ]
     },
     plugins: [
@@ -68,6 +78,10 @@ const config = {
                 comments: false
             }
         }),
+        new webpack.ProvidePlugin({
+            quill: 'quill',
+            Quill: 'quill',
+        })
     ]
 };
 
