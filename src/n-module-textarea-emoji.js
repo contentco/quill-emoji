@@ -67,7 +67,7 @@ class EmojiBlotTwo extends Embed {
 EmojiBlotTwo.blotName = 'boltTwo';
 EmojiBlotTwo.tagName = 'img';
 
-Quill.register({'formats/boltTwo': EmojiBlotTwo});
+// Quill.register({'formats/boltTwo': EmojiBlotTwo});
 
 class TextAreaEmoji {
     constructor(quill){
