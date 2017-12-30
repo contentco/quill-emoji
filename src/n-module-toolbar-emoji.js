@@ -1,6 +1,6 @@
 import Quill from 'quill';
 import Fuse from 'fuse.js';
-import { emojiList } from './n-emoji-list.js';
+import emojiList from './n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -13,62 +13,6 @@ const e = (tag, attrs, ...children) => {
     });
     return elem;
 };
-
-const Embed = Quill.import('blots/embed');
-
-class EmojiBlot extends Embed {
-    static create(value) {
-        let node = super.create();
-        if (typeof value === 'object') {
-            node.classList.add("emoji");
-            node.classList.add("ap");
-            node.classList.add("ap-"+value.name);
-            let dataUrl = 'data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=';
-            node.setAttribute('src',dataUrl);
-        }
-        else if(typeof value === 'string'){
-            node.setAttribute('src',value);
-        }
-        return node;
-      }
-
-    static formats(node) {
-        // We still need to report unregistered src formats
-        let format = {};
-        if (node.hasAttribute('class')) {
-          format.class = node.getAttribute('class');
-        }
-        if (node.hasAttribute('alt')) {
-          format.width = node.getAttribute('alt');
-        }
-        return format;
-    }
-
-    static value(node) {
-        return node.getAttribute('src');
-    }
-
-    format(name, value) {
-
-        if (name === 'class' || name === 'alt') {
-          if (value) {
-            this.domNode.setAttribute(name, value);
-          } else {
-            this.domNode.removeAttribute(name, value);
-          }
-        } else {
-          super.format(name, value);
-        }
-    }
-}
-
-
-
-EmojiBlot.blotName = 'bolt';
-EmojiBlot.tagName = 'img';
-
-// Quill.register({'formats/bolt': EmojiBlot});
-
 
 class ToolbarEmoji {
     constructor(quill){
@@ -252,5 +196,6 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
     fn_emojiElementsToPanel(type,panel,quill);
 }
 
-// Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji, EmojiBlot };
+Quill.register({'modules/toolbar_emoji': ToolbarEmoji}, true);
+
+export default ToolbarEmoji;
