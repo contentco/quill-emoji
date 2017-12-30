@@ -1,8 +1,8 @@
 {
   "name": "n-quill-emoji",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Quill Extension for Emoji Selection",
-  "main": "dist/n-quill-emoji.js",
+  "main": "src/n-quill-emoji.js",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
@@ -43,6 +43,6 @@
     "emoji-data-css": "^1.0.1",
     "fuse.js": "^2.7.4",
     "preact": "^7.2.1",
-    "quill": "^1.2.4"
+    "quill": "^1.3.4"
   }
 }
