@@ -283,6 +283,8 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
     background-image: url(../sheet_apple_20.png);
     background-repeat: no-repeat;
     text-indent: -999px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .ap-copyright {
