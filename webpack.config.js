@@ -3,11 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
-    entry: './src/n-quill-emoji.js',
+    entry: './src/quill-emoji.js',
     output: {
-        filename: 'n-quill-emoji.js',
+        filename: 'quill-emoji.js',
         path: path.resolve(__dirname, 'dist'),
-        library: "nQuillEmoji",
+        library: "QuillEmoji",
         libraryTarget: "umd"
     },
     externals: {
@@ -53,7 +53,7 @@ const config = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('n-quill-emoji.css'),
+        new ExtractTextPlugin('quill-emoji.css'),
         new UglifyJSPlugin({
             compress: {
                 warnings: false,
