@@ -1,4 +1,4 @@
-@import 'core/variables'; /* sass-loader doesnt like absolute imports*/
+@import './variables';
 
 #quill-editor {
     position: relative;

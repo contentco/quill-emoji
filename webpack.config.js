@@ -1,5 +1,4 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
@@ -13,26 +12,8 @@ const config = {
     externals: {
         quill: 'Quill',
     },
-    devServer: {
-      contentBase: path.join(__dirname, "dist"),
-      compress: true,
-      port: 9000
-    },
     module: {
         rules: [
-            {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    use: [{
-                        loader: 'css-loader',
-                        options: {
-                            minimize: true || {/* CSSNano Options */}
-                        }
-                    }, {
-                        loader: 'sass-loader',
-                    }]
-                }),
-            },
             {
                 test: /\.js$/,
                 include: [
@@ -45,15 +26,10 @@ const config = {
                         presets: [['env', {modules: false}],]
                     }
                 }
-            },
-            {
-                test: /\.png$/,
-                loader: "file-loader"
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('quill-emoji.css'),
         new UglifyJSPlugin({
             compress: {
                 warnings: false,
