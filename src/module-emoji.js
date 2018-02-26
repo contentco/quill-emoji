@@ -21,7 +21,7 @@ class ShortNameEmoji {
             location: 0,
             distance: 100,
             maxPatternLength: 32,
-            minMatchCharLength: 3,
+            minMatchCharLength: 1,
             keys: [
                 "shortname"
             ]
@@ -136,12 +136,12 @@ class ShortNameEmoji {
           return a.emoji_order - b.emoji_order;
         });
 
-        if (this.query.length < 3 || emojis.length == 0){
+        if (this.query.length < this.fuseOptions.minMatchCharLength || emojis.length == 0){
             this.container.style.display = "none";
             return;
         }
-        if (emojis.length > 50) { //return only 50
-            emojis = emojis.slice(0, 40);
+        if (emojis.length > 15) { //return only 15
+            emojis = emojis.slice(0, 15);
         };
         this.renderCompletions(emojis);
     }
