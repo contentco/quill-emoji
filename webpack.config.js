@@ -9,6 +9,7 @@ const config = {
         library: "QuillEmoji",
         libraryTarget: "umd"
     },
+    mode: "production",
     externals: {
         quill: 'Quill',
     },
