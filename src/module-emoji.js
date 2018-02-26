@@ -54,8 +54,14 @@ class ShortNameEmoji {
         }
 
         quill.keyboard.addBinding({
-            // TODO: Once Quill supports using event.key (#1091) use that instead of shift-2
-            key: 186,  // 2
+            // TODO: Once Quill supports using event.key change this to ":"
+            key: 190,  // ".", which is ":" together with [Shift]
+            shiftKey: true,
+        }, this.onAtKey.bind(this));
+
+        quill.keyboard.addBinding({
+            // TODO: Once Quill supports using event.key change this to ":"
+            key: 186,  // ":" instead of 190 in Safari. Since it's the same key it doesn't matter if we register both.
             shiftKey: true,
         }, this.onAtKey.bind(this));
 
