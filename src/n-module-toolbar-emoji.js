@@ -1,5 +1,6 @@
-import Fuse from '../node_modules/fuse.js';
-import {emojiList} from '../src/emojiList.js';
+import Quill from 'quill';
+import Fuse from 'fuse.js';
+import emojiList from './n-emoji-list.js';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
@@ -13,73 +14,15 @@ const e = (tag, attrs, ...children) => {
     return elem;
 };
 
-const Embed = Quill.import('blots/embed');
-
-class EmojiBlot extends Embed {
-    static create(value) {
-        let node = super.create();
-        if (typeof value === 'object') {
-            node.classList.add("emoji");
-            node.classList.add("ap");
-            node.classList.add("ap-"+value.name);
-            let dataUrl = 'data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=';
-            node.setAttribute('src',dataUrl);
-        }
-        else if(typeof value === 'string'){
-            node.setAttribute('src',value);
-        }
-        return node;
-      }
-
-    static formats(node) {
-        // We still need to report unregistered src formats
-        let format = {};
-        if (node.hasAttribute('class')) {
-          format.class = node.getAttribute('class');
-        }
-        if (node.hasAttribute('alt')) {
-          format.width = node.getAttribute('alt');
-        }
-        return format;
-    }
-
-    static value(node) {
-        return node.getAttribute('src');
-    }
-
-    format(name, value) {
-
-        if (name === 'class' || name === 'alt') {
-          if (value) {
-            this.domNode.setAttribute(name, value);
-          } else {
-            this.domNode.removeAttribute(name, value);
-          }
-        } else {
-          super.format(name, value);
-        }
-    } 
-}
-
-
-
-EmojiBlot.blotName = 'bolt';
-EmojiBlot.tagName = 'img';
-
-Quill.register({
-    'formats/bolt': EmojiBlot
-});
-
-
 class ToolbarEmoji {
     constructor(quill){
         this.quill = quill;
         this.toolbar = quill.getModule('toolbar');
         if (typeof this.toolbar != 'undefined')
             this.toolbar.addHandler('emoji', this.checkPalatteExist);
-        
+
         var emojiBtns = document.getElementsByClassName('ql-emoji');
-        if (emojiBtns) { 
+        if (emojiBtns) {
             [].slice.call( emojiBtns ).forEach(function ( emojiBtn ) {
                 emojiBtn.innerHTML = '<svg viewbox="0 0 18 18"><circle class="ql-fill" cx="7" cy="7" r="1"></circle><circle class="ql-fill" cx="11" cy="7" r="1"></circle><path class="ql-stroke" d="M7,10a2,2,0,0,0,4,0H7Z"></path><circle class="ql-stroke" cx="9" cy="9" r="6"></circle></svg>';
             });
@@ -95,7 +38,7 @@ class ToolbarEmoji {
                 fn_updateRange(quill);
             }
         });
-    }  
+    }
 }
 
 function fn_close(){
@@ -135,7 +78,7 @@ function fn_showEmojiPalatte(quill) {
     else{
         ele_emoji_area.style.left = atSignBounds.left + "px";
     }
-    
+
 
     let tabToolbar = document.createElement('div');
     tabToolbar.id="tab-toolbar";
@@ -159,18 +102,18 @@ function fn_showEmojiPalatte(quill) {
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
-    
+
     if (document.getElementById('emoji-close-div') === null) {
         let closeDiv = document.createElement('div');
         closeDiv.id = 'emoji-close-div';
         closeDiv.addEventListener("click", fn_close, false);
-        document.getElementsByTagName('body')[0].appendChild(closeDiv); 
+        document.getElementsByTagName('body')[0].appendChild(closeDiv);
     }
     else{
         document.getElementById('emoji-close-div').style.display = "block";
     }
-    
-    
+
+
     emojiType.map(function(emojiType) {
         //add tab bar
         let tabElement = document.createElement('li');
@@ -180,9 +123,9 @@ function fn_showEmojiPalatte(quill) {
         tabElement.innerHTML = tabValue;
         tabElement.dataset.filter = emojiType.type;
         tabElementHolder.appendChild(tabElement);
-        
+
         let emojiFilter = document.querySelector('.filter-'+emojiType.name);
-        emojiFilter.addEventListener('click',function(){ 
+        emojiFilter.addEventListener('click',function(){
             let tab = document.querySelector('.active');
             if (tab) {
                 tab.classList.remove('active');
@@ -217,7 +160,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
     result.sort(function (a, b) {
       return a.emoji_order - b.emoji_order;
     });
-    
+
     quill.focus();
     let range = fn_updateRange(quill);
 
@@ -232,7 +175,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
         let output = ''+emoji.code_decimal+'';
         span.innerHTML = output + ' ';
         panel.appendChild(span);
-        
+
         let customButton = document.querySelector('.bem-' + emoji.name);
         if (customButton) {
             customButton.addEventListener('click', function() {
@@ -245,7 +188,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
     });
 }
 
-function fn_updateEmojiContainer(emojiFilter,panel,quill){ 
+function fn_updateEmojiContainer(emojiFilter,panel,quill){
     while (panel.firstChild) {
         panel.removeChild(panel.firstChild);
     }
@@ -253,5 +196,6 @@ function fn_updateEmojiContainer(emojiFilter,panel,quill){
     fn_emojiElementsToPanel(type,panel,quill);
 }
 
-Quill.register('modules/toolbar_emoji', ToolbarEmoji);
-export { ToolbarEmoji as toolbarEmoji};
+Quill.register({'modules/toolbar_emoji': ToolbarEmoji}, true);
+
+export default ToolbarEmoji;

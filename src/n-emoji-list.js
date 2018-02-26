@@ -1,4 +1,4 @@
-export let emojiList = [
+let emojiList = [
   {
     "name": "100",
     "unicode": "1f4af",
@@ -9592,9 +9592,9 @@ export let emojiList = [
     "category": "f",
     "emoji_order": "2295"
   },
- 
- 
- 
+
+
+
   {
     "name": "flag-im",
     "unicode": "1f1ee-1f1f2",
@@ -10315,8 +10315,8 @@ export let emojiList = [
     "category": "f",
     "emoji_order": "2385"
   },
- 
- 
+
+
 
   {
     "name": "flag-sb",
@@ -10710,7 +10710,7 @@ export let emojiList = [
     "category": "f",
     "emoji_order": "2435"
   },
- 
+
   {
     "name": "flag-vu",
     "unicode": "1f1fb-1f1fa",
@@ -10783,4 +10783,6 @@ export let emojiList = [
     "category": "f",
     "emoji_order": "2444"
   }
-]
+];
+
+export default emojiList;

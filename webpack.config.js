@@ -2,13 +2,16 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-// const autoprefixer = requre('autoprefixer');
-
 const config = {
-    entry: './src/quill-emoji.js',
+    entry: './src/n-quill-emoji.js',
     output: {
+        filename: 'n-quill-emoji.js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'quill-emoji.js'
+        library: "nQuillEmoji",
+        libraryTarget: "umd"
+    },
+    externals: {
+        quill: 'Quill',
     },
     devServer: {
       contentBase: path.join(__dirname, "dist"),
@@ -17,40 +20,40 @@ const config = {
     },
     module: {
         rules: [
-        {
-            test: /\.scss$/,
-            use: ExtractTextPlugin.extract({
-                use: [{
-                    loader: 'css-loader',
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: [{
+                        loader: 'css-loader',
+                        options: {
+                            minimize: true || {/* CSSNano Options */}
+                        }
+                    }, {
+                        loader: 'sass-loader',
+                    }]
+                }),
+            },
+            {
+                test: /\.js$/,
+                include: [
+                    path.resolve(__dirname, "src/")
+                ],
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
                     options: {
-                        minimize: true || {/* CSSNano Options */}
-                    } 
-                }, {
-                    loader: 'sass-loader',
-                }]
-            }),
-        },
-        {
-            test: /\.js$/,
-            include: [
-                path.resolve(__dirname, "src/")
-            ],
-            exclude: /(node_modules)/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: [['es2015', {modules: false}],]
+                        presets: [['es2015', {modules: false}],]
+                    }
                 }
+            },
+            {
+                test: /\.png$/,
+                loader: "file-loader"
             }
-        },
-         { 
-            test: /\.png$/, 
-            loader: "file-loader" 
-        }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('quill-emoji.css'),
+        new ExtractTextPlugin('n-quill-emoji.css'),
         new UglifyJSPlugin({
             compress: {
                 warnings: false,
@@ -67,7 +70,7 @@ const config = {
             output: {
                 comments: false
             }
-        }),
+        })
     ]
 };
 
