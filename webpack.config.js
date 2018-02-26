@@ -31,9 +31,9 @@ const config = {
     },
     plugins: [
         new UglifyJSPlugin({
+          uglifyOptions: {
             compress: {
                 warnings: false,
-                screw_ie8: true,
                 conditionals: true,
                 unused: true,
                 comparisons: true,
@@ -46,6 +46,7 @@ const config = {
             output: {
                 comments: false
             }
+          }
         })
     ]
 };

@@ -1,4 +1,3 @@
-/* sass-loader doesnt like absolute imports*/
 #quill-editor {
   position: relative;
 }
