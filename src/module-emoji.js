@@ -97,7 +97,7 @@ class ShortNameEmoji extends Module {
     this.buttons[0].focus();
     if (this.buttons.length > 1) {
       this.buttons[1].focus();
-    };
+    }
   }
 
   update() {
@@ -119,13 +119,13 @@ class ShortNameEmoji extends Module {
       return a.emoji_order - b.emoji_order;
     });
 
-    if (this.query.length < this.options.fuse.minMatchCharLength || emojis.length == 0){
+    if (this.query.length < this.options.fuse.minMatchCharLength || emojis.length === 0){
       this.container.style.display = "none";
       return;
     }
     if (emojis.length > 15) { //return only 15
       emojis = emojis.slice(0, 15);
-    };
+    }
     this.renderCompletions(emojis);
   }
 
@@ -148,7 +148,7 @@ class ShortNameEmoji extends Module {
         return;
       }
     }
-    if (event) {return;};
+    if (event) {return;}
     while (this.container.firstChild){
       this.container.removeChild(this.container.firstChild);
     }
@@ -162,10 +162,10 @@ class ShortNameEmoji extends Module {
       }
       else if (event.key === 'Tab' || event.keyCode === 9) {
         event.preventDefault();
-        if ((i + 1) == buttons.length) {
+        if ((i + 1) === buttons.length) {
           buttons[0].focus();
           return;
-        };
+        }
         buttons[Math.min(buttons.length - 1, i + 1)].focus();
       }
       else if (event.key === "ArrowLeft" || event.keyCode === 37) {
@@ -197,7 +197,7 @@ class ShortNameEmoji extends Module {
           makeElement("span", {className: "emoji ap ap-" + emoji.name, innerHTML: emoji.code_decimal }),
           //makeElement('span', {className: "matched"}, this.query),
           //makeElement('span', {className: "unmatched"}, emoji.shortname.slice(this.query.length+1))
-          makeElement('span', {className: "unmatched"}, emoji.shortname),
+          makeElement('span', {className: "unmatched"}, emoji.shortname)
         )
       );
       this.container.appendChild(li);
@@ -256,9 +256,9 @@ class ShortNameEmoji extends Module {
         let endRetain = currentText.index - this.query.length;
         if (endRetain > 2) {
           endRetain = endRetain - 2;
-        };
+        }
         ops.push({ retain: endRetain});
-      };
+      }
       ops = ops.concat([
         { delete: this.query.length + 1},
         {

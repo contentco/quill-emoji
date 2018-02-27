@@ -11,7 +11,7 @@ class ToolbarEmoji extends Module {
     
     this.quill = quill;
     this.toolbar = quill.getModule('toolbar');
-    if (typeof this.toolbar != 'undefined')
+    if (typeof this.toolbar !== 'undefined')
       this.toolbar.addHandler('emoji', this.checkPalatteExist);
 
     var emojiBtns = document.getElementsByClassName('ql-emoji');
@@ -19,14 +19,14 @@ class ToolbarEmoji extends Module {
       [].slice.call( emojiBtns ).forEach(function ( emojiBtn ) {
         emojiBtn.innerHTML = '<svg viewbox="0 0 18 18"><circle class="ql-fill" cx="7" cy="7" r="1"></circle><circle class="ql-fill" cx="11" cy="7" r="1"></circle><path class="ql-stroke" d="M7,10a2,2,0,0,0,4,0H7Z"></path><circle class="ql-stroke" cx="9" cy="9" r="6"></circle></svg>';
       });
-    };
+    }
   }
 
   checkPalatteExist() {
     let quill = this.quill;
     fn_checkDialogOpen(quill);
     this.quill.on('text-change', function(delta, oldDelta, source) {
-      if (source == 'user') {
+      if (source === 'user') {
         fn_close();
         fn_updateRange(quill);
       }
@@ -37,7 +37,7 @@ class ToolbarEmoji extends Module {
 function fn_close(){
   let ele_emoji_plate = document.getElementById('emoji-palette');
   document.getElementById('emoji-close-div').style.display = "none";
-  if (ele_emoji_plate) {ele_emoji_plate.remove()};
+  if (ele_emoji_plate) {ele_emoji_plate.remove()}
 }
 
 function fn_checkDialogOpen(quill){
@@ -122,7 +122,7 @@ function fn_showEmojiPalatte(quill) {
       let tab = document.querySelector('.active');
       if (tab) {
         tab.classList.remove('active');
-      };
+      }
       emojiFilter.classList.toggle('active');
       fn_updateEmojiContainer(emojiFilter,panel,quill);
     })
@@ -177,7 +177,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
         quill.insertEmbed(range.index, 'emoji', emoji);
         fn_close();
       });
-    };
+    }
   });
 }
 
