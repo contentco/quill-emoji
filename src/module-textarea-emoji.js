@@ -3,19 +3,12 @@ import Fuse from 'fuse.js';
 import emojiList from './emoji-list.js';
 
 const Delta = Quill.import('delta');
-const e = (tag, attrs, ...children) => {
-    const elem = document.createElement(tag);
-    Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
-    children.forEach(child => {
-        if (typeof child === "string")
-            child = document.createTextNode(child);
-        elem.appendChild(child);
-    });
-    return elem;
-};
+const Module = Quill.import('core/module');
 
-class TextAreaEmoji {
-    constructor(quill){
+class TextAreaEmoji extends Module {  
+    constructor(quill, options){
+        super(quill, options);
+      
         this.quill = quill;
         this.container  = document.createElement('div');
         this.container.classList.add('textarea-emoji-control');
@@ -24,6 +17,7 @@ class TextAreaEmoji {
         this.quill.container.appendChild(this.container);
         this.container.addEventListener('click', this.checkEmojiBoxExist.bind(this),false);
     }
+  
     checkEmojiBoxExist(){
         let elementExists = document.getElementById("textarea-emoji");
         if (elementExists) {
@@ -153,13 +147,11 @@ function fn_emojiElementsToPanel(type,panel,quill){
                 // quill.insertText(range.index, customButton.innerHTML);
                 // quill.setSelection(range.index + customButton.innerHTML.length, 0);
                 // range.index = range.index + customButton.innerHTML.length;
-                quill.insertEmbed(range.index, 'boltTwo', emoji);
+                quill.insertEmbed(range.index, 'emoji', emoji);
                 fn_close();
             });
         };
     });
 }
-
-Quill.register({'modules/textarea_emoji': TextAreaEmoji}, true);
 
 export default TextAreaEmoji;

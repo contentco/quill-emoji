@@ -49,11 +49,7 @@ class EmojiBlot extends Embed {
     }
 }
 
-
-
-EmojiBlot.blotName = 'bolt';
+EmojiBlot.blotName = 'emoji';
 EmojiBlot.tagName = 'img';
-
-Quill.register({'formats/bolt': EmojiBlot}, true);
 
 export default EmojiBlot;

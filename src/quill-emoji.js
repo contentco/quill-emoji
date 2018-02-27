@@ -1,5 +1,15 @@
-export { default as emojiBlot } from './formats-blot';
-export { default as emojiBlotTwo } from './formats-blot-two';
-export { default as shortNameEmoji } from './module-emoji';
-export { default as toolbarEmoji } from './module-toolbar-emoji';
-export { default as textAreaEmoji } from './module-textarea-emoji';
+import Quill from 'quill';
+
+import EmojiBlot from './format-emoji-blot';
+import ShortNameEmoji from './module-emoji';
+import ToolbarEmoji from './module-toolbar-emoji';
+import TextAreaEmoji from './module-textarea-emoji';
+
+Quill.register({
+  'formats/emoji': EmojiBlot,
+  'modules/emoji-shortname': ShortNameEmoji,
+  'modules/emoji-toolbar': ToolbarEmoji,
+  'modules/emoji-textarea': TextAreaEmoji
+}, true);
+
+export default { EmojiBlot, ShortNameEmoji, ToolbarEmoji, TextAreaEmoji };
