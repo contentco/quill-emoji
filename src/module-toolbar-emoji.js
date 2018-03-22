@@ -64,11 +64,11 @@ class EmojiBlot extends Embed {
 
 
 
-EmojiBlot.blotName = 'bolt';
+EmojiBlot.blotName = 'blot';
 EmojiBlot.tagName = 'img';
 
 Quill.register({
-    'formats/bolt': EmojiBlot
+    'formats/blot': EmojiBlot
 });
 
 
@@ -100,13 +100,13 @@ class ToolbarEmoji {
 }
 
 function fn_close(){
-    let ele_emoji_plate = document.getElementById('emoji-palette');
-    document.getElementById('emoji-close-div').style.display = "none";
+    let ele_emoji_plate = document.getElementById('qe-plt');
+    document.getElementById('qe-wrapper').style.display = "none";
     if (ele_emoji_plate) {ele_emoji_plate.remove()};
 }
 
 function fn_checkDialogOpen(quill){
-    let elementExists = document.getElementById("emoji-palette");
+    let elementExists = document.getElementById("qe-plt");
     if (elementExists) {
         elementExists.remove();
     }
@@ -128,7 +128,7 @@ function fn_showEmojiPalatte(quill) {
 
     quill.container.appendChild(ele_emoji_area);
     let paletteMaxPos = atSignBounds.left + 250;//palette max width is 250
-    ele_emoji_area.id = 'emoji-palette';
+    ele_emoji_area.id = 'qe-plt';
     ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px";
     if (paletteMaxPos > quill.container.offsetWidth) {
         ele_emoji_area.style.left = (atSignBounds.left - 250)+ "px";
@@ -139,36 +139,36 @@ function fn_showEmojiPalatte(quill) {
     
 
     let tabToolbar = document.createElement('div');
-    tabToolbar.id="tab-toolbar";
+    tabToolbar.id="qe-plt__toolbar";
     ele_emoji_area.appendChild(tabToolbar);
 
     //panel
     let panel = document.createElement('div');
-    panel.id="tab-panel";
+    panel.id="qe-plt__panel";
     ele_emoji_area.appendChild(panel);
 
     var emojiType = [
-        {'type':'p','name':'people','content':'<div class="i-people"></div>'},
-        {'type':'n','name':'nature','content':'<div class="i-nature"></div>'},
-        {'type':'d','name':'food','content':'<div class="i-food"></div>'},
-        {'type':'s','name':'symbols','content':'<div class="i-symbols"></div>'},
-        {'type':'a','name':'activity','content':'<div class="i-activity"></div>'},
-        {'type':'t','name':'travel','content':'<div class="i-travel"></div>'},
-        {'type':'o','name':'objects','content':'<div class="i-objects"></div>'},
-        {'type':'f','name':'flags','content':'<div class="i-flags"></div>'}
+        {'type':'p','name':'people','content':'<div class="qe-plt__tab qe-plt__tab--people"></div>'},
+        {'type':'n','name':'nature','content':'<div class="qe-plt__tab qe-plt__tab--nature"></div>'},
+        {'type':'d','name':'food','content':'<div class="qe-plt__tab qe-plt__tab--food"></div>'},
+        {'type':'s','name':'symbols','content':'<div class="qe-plt__tab qe-plt__tab--symbols"></div>'},
+        {'type':'a','name':'activity','content':'<div class="qe-plt__tab qe-plt__tab--activity"></div>'},
+        {'type':'t','name':'travel','content':'<div class="qe-plt__tab qe-plt__tab--travel"></div>'},
+        {'type':'o','name':'objects','content':'<div class="qe-plt__tab qe-plt__tab--objects"></div>'},
+        {'type':'f','name':'flags','content':'<div class="qe-plt__tab qe-plt__tab--flags"></div>'}
     ];
 
     let tabElementHolder = document.createElement('ul');
     tabToolbar.appendChild(tabElementHolder);
     
-    if (document.getElementById('emoji-close-div') === null) {
+    if (document.getElementById('qe-wrapper') === null) {
         let closeDiv = document.createElement('div');
-        closeDiv.id = 'emoji-close-div';
+        closeDiv.id = 'qe-wrapper';
         closeDiv.addEventListener("click", fn_close, false);
         document.getElementsByTagName('body')[0].appendChild(closeDiv); 
     }
     else{
-        document.getElementById('emoji-close-div').style.display = "block";
+        document.getElementById('qe-wrapper').style.display = "block";
     }
     
     
@@ -239,7 +239,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
             customButton.addEventListener('click', function() {
                 let emoji_icon_html = e("span", {className: "ico", innerHTML: ''+emoji.code_decimal+' ' });
                 let emoji_icon = emoji_icon_html.innerHTML;
-                quill.insertEmbed(range.index, 'bolt', emoji);
+                quill.insertEmbed(range.index, 'blot', emoji);
                 fn_close();
             });
         };

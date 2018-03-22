@@ -32,7 +32,7 @@ class ShortNameEmoji {
         this.onClose    = props.onClose;
         this.onOpen     = props.onOpen;
         this.container  = document.createElement('ul');
-        this.container.classList.add('emoji_completions');
+        this.container.classList.add('qe-completions');
         this.quill.container.appendChild(this.container);
         this.container.style.position   = "absolute";
         this.container.style.display    = "none";
@@ -103,7 +103,7 @@ class ShortNameEmoji {
 
     handleArrow() {
         if (!this.open) return true;
-        this.buttons[0].classList.remove('emoji-active');
+        this.buttons[0].classList.remove('active');
         this.buttons[0].focus();
         if (this.buttons.length > 1) {
             this.buttons[1].focus();
@@ -153,7 +153,7 @@ class ShortNameEmoji {
             }
             else if (event.key === 'Tab' || event.keyCode === 9) {
                 this.quill.disable();
-                this.buttons[0].classList.remove('emoji-active');
+                this.buttons[0].classList.remove('active');
                 this.buttons[1].focus();
                 return;
             }      
@@ -232,7 +232,7 @@ class ShortNameEmoji {
             }
         }
 
-        buttons[0].classList.add('emoji-active');
+        buttons[0].classList.add('active');
     }
 
     close(value) {
@@ -244,7 +244,7 @@ class ShortNameEmoji {
         if (value) {
             const {name, unicode, shortname,code_decimal} = value;
             this.quill.deleteText(this.atIndex, this.query.length + 1, Quill.sources.USER);
-            this.quill.insertEmbed(this.atIndex, 'bolt', value);
+            this.quill.insertEmbed(this.atIndex, 'blot', value);
         }
         this.quill.focus();
         this.open = false;
@@ -269,7 +269,7 @@ class ShortNameEmoji {
                     {delete: this.query.length + 1},
                     {"insert": 
                         {
-                            "bolt":"data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
+                            "blot":"data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
                         },
                         "attributes":
                             {
