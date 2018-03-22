@@ -95,14 +95,14 @@ class TextAreaEmoji {
             ele_emoji_area.appendChild(tabToolbar);
 
             var emojiType = [
-                {'type':'p','name':'people','content':'<div class="ap ap-smiley"></div>'},
-                {'type':'n','name':'nature','content':'<div class="ap ap-herb"></div>'},
-                {'type':'d','name':'food','content':'<div class="ap ap-birthday"></div>'},
-                {'type':'s','name':'symbols','content':'<div class="ap ap-heart"></div>'},
-                {'type':'a','name':'activity','content':'<div class="ap ap-soccer"></div>'},
-                {'type':'t','name':'travel','content':'<div class="ap ap-airplane"></div>'},
-                {'type':'o','name':'objects','content':'<div class="ap ap-bulb"></div>'},
-                {'type':'f','name':'flags','content':'<div class="ap ap-flag-sg"></div>'}
+                {'type':'p','name':'people','content':'<div class="i-people"></div>'},
+                {'type':'n','name':'nature','content':'<div class="i-nature"></div>'},
+                {'type':'d','name':'food','content':'<div class="i-food"></div>'},
+                {'type':'s','name':'symbols','content':'<div class="i-symbols"></div>'},
+                {'type':'a','name':'activity','content':'<div class="i-activity"></div>'},
+                {'type':'t','name':'travel','content':'<div class="i-travel"></div>'},
+                {'type':'o','name':'objects','content':'<div class="i-objects"></div>'},
+                {'type':'f','name':'flags','content':'<div class="i-flags"></div>'}
             ];
 
             let tabElementHolder = document.createElement('ul');
