@@ -49,20 +49,20 @@
               [{ 'direction': 'rtl' }],
               [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
               [{ 'color': [] }, { 'background': [] }], 
-              [{ 'font': [] }],
-              [{ 'align': [] }],
-              ['clean'],     
+              // [{ 'font': [] }],
+              // [{ 'align': [] }],
+              // ['clean'],     
               ['emoji'],
-              ['link', 'image', 'video']         
+              // ['link', 'image', 'video']         
             ],
             handlers: {'emoji': function() {}}
           }
           var quill = new Quill('#quill-editor', {
               modules: {
                     toolbar: toolbarOptions,
-                    //toolbar_emoji: false,
+                    toolbar_emoji: true,
                     short_name_emoji: true,
-                    textarea_emoji:true
+                    // textarea_emoji:true
               },
               placeholder: 'Compose an epic...',
               theme: 'snow',

@@ -267,7 +267,16 @@ class ShortNameEmoji {
             };
             ops = ops.concat([
                     {delete: this.query.length + 1},
-                    {"insert":{"bolt":"data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="},"attributes":{"class":"emoji ap ap-"+value.name+""}},
+                    {"insert": 
+                        {
+                            "bolt":"data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
+                        },
+                        "attributes":
+                            {
+                                "class":"emoji ap ap-"+value.name+"",
+                                "crossOrigin":"Anonymous"
+                            }
+                    },
                     {delete: 1},
                   ]);
             this.quill.updateContents({

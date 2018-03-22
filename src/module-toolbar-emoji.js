@@ -24,6 +24,7 @@ class EmojiBlot extends Embed {
             node.classList.add("ap-"+value.name);
             let dataUrl = 'data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=';
             node.setAttribute('src',dataUrl);
+            node.setAttribute("crossOrigin","Anonymous");
         }
         else if(typeof value === 'string'){
             node.setAttribute('src',value);
