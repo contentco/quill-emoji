@@ -3,15 +3,6 @@
         <meta charset="utf-8">
         <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../dist/quill-emoji.css">
-        <style type="text/css">
-          .ap{
-            font-size: 0px;
-          }
-          .emoji{
-            height:20px;
-            margin-bottom: -5px;
-          }
-        </style>
     </head>
     <body>
         
@@ -49,20 +40,20 @@
               [{ 'direction': 'rtl' }],
               [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
               [{ 'color': [] }, { 'background': [] }], 
-              [{ 'font': [] }],
-              [{ 'align': [] }],
-              ['clean'],     
+              // [{ 'font': [] }],
+              // [{ 'align': [] }],
+              // ['clean'],     
               ['emoji'],
-              ['link', 'image', 'video']         
+              // ['link', 'image', 'video']         
             ],
             handlers: {'emoji': function() {}}
           }
           var quill = new Quill('#quill-editor', {
               modules: {
                     toolbar: toolbarOptions,
-                    //toolbar_emoji: false,
+                    toolbar_emoji: true,
                     short_name_emoji: true,
-                    textarea_emoji:true
+                    // textarea_emoji:true
               },
               placeholder: 'Compose an epic...',
               theme: 'snow',
