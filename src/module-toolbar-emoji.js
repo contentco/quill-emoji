@@ -1,13 +1,13 @@
 import Fuse from 'fuse.js';
 import {emojiList} from './emojiList.js';
-import Quill from 'quill';
+// import Quill from 'quill';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {
     const elem = document.createElement(tag);
     Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
     children.forEach(child => {
-        if (typeof child === "string")
+        if (typeof child === 'string')
             child = document.createTextNode(child);
         elem.appendChild(child);
     });
@@ -20,12 +20,12 @@ class EmojiBlot extends Embed {
     static create(value) {
         let node = super.create();
         if (typeof value === 'object') {
-            node.classList.add("emoji");
-            node.classList.add("ap");
-            node.classList.add("ap-"+value.name);
+            node.classList.add('emoji');
+            node.classList.add('ap');
+            node.classList.add('ap-'+value.name);
             let dataUrl = 'data:image/png;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=';
             node.setAttribute('src',dataUrl);
-            node.setAttribute("crossOrigin","Anonymous");
+            node.setAttribute('crossOrigin','Anonymous');
         }
         else if(typeof value === 'string'){
             node.setAttribute('src',value);
@@ -140,12 +140,12 @@ function fn_showEmojiPalatte(quill) {
     
 
     let tabToolbar = document.createElement('div');
-    tabToolbar.id="qe-plt__toolbar";
+    tabToolbar.id='qe-plt__toolbar';
     ele_emoji_area.appendChild(tabToolbar);
 
     //panel
     let panel = document.createElement('div');
-    panel.id="qe-plt__panel";
+    panel.id='qe-plt__panel';
     ele_emoji_area.appendChild(panel);
 
     var emojiType = [
@@ -165,11 +165,11 @@ function fn_showEmojiPalatte(quill) {
     if (document.getElementById('qe-wrapper') === null) {
         let closeDiv = document.createElement('div');
         closeDiv.id = 'qe-wrapper';
-        closeDiv.addEventListener("click", fn_close, false);
+        closeDiv.addEventListener('click', fn_close, false);
         document.getElementsByTagName('body')[0].appendChild(closeDiv); 
     }
     else{
-        document.getElementById('qe-wrapper').style.display = "block";
+        document.getElementById('qe-wrapper').style.display = 'block';
     }
     
     
@@ -211,7 +211,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
                     maxPatternLength: 32,
                     minMatchCharLength: 3,
                     keys: [
-                        "category"
+                        'category'
                     ]
                 };
     let fuse = new Fuse(emojiList, fuseOptions);
@@ -238,7 +238,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
         let customButton = document.querySelector('.bem-' + emoji.name);
         if (customButton) {
             customButton.addEventListener('click', function() {
-                let emoji_icon_html = e("span", {className: "ico", innerHTML: ''+emoji.code_decimal+' ' });
+                let emoji_icon_html = e('span', {className: 'ico', innerHTML: ''+emoji.code_decimal+' ' });
                 let emoji_icon = emoji_icon_html.innerHTML;
                 quill.insertEmbed(range.index, 'blot', emoji);
                 fn_close();

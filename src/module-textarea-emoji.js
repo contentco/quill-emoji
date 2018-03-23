@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js';
 import {emojiList} from './emojiList.js';
-import Quill from 'quill';
+// import Quill from 'quill';
 
 const Delta = Quill.import('delta');
 const e = (tag, attrs, ...children) => {

@@ -67,7 +67,7 @@
 
     button {
       box-sizing: border-box;
-      padding: 3px 2px 6px;
+      padding: 5px;
       margin: 0;
       display: block;
       width: 100%;
@@ -93,8 +93,17 @@
         color: $white;
       }
 
+      > .emoji {
+        margin-bottom: 0;
+      }
+
       > .matched {
         font-weight: bold;
+        margin: 0 4px;
+      }
+
+      > .unmatched {
+        margin: 0 4px;
       }
 
       > * {
