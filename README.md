@@ -13,8 +13,7 @@ To add an emoji via emoji code, type ``:`` followed by the first few letters, an
 ## Installation
 
 ```sh
-bower install quill-emoji
-npm install quill-emoji
+yarn add quill-emoji
 ```
 
 ## Usage

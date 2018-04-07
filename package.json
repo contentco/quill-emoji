@@ -1,25 +1,21 @@
 {
   "name": "quill-emoji",
-  "version": "0.0.9",
+  "version": "0.3.2",
   "description": "Quill Extension for Emoji Selection",
-  "main": "webpack.config.js",
+  "main": "src/quill-emoji.js",
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^7.1.3",
     "babel-preset-env": "^1.5.1",
-    "babel-preset-es2015": "^6.24.1",
-    "css-loader": "^0.27.3",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.2",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
-    "uglifyjs-webpack-plugin": "^0.4.3",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "node-sass": "^4.6.0",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
   },
   "scripts": {
-    "test": "npm test",
-    "build": "webpack"
+    "build": "npm run js-compile && npm run css-compile",
+    "js-compile": "webpack",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --output dist/ src/scss/"
   },
   "repository": {
     "type": "git",
@@ -38,10 +34,29 @@
   },
   "homepage": "https://github.com/contentco/quill-emoji#readme",
   "dependencies": {
-    "babel": "^6.23.0",
     "emoji-data-css": "^1.0.1",
-    "fuse.js": "^2.7.4",
-    "preact": "^7.2.1",
-    "quill": "^1.2.4"
+    "fuse.js": "^3.2.0"
+  },
+  "peerDependencies": {
+    "quill": "^1.3.5"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "rules": {
+      "eqeqeq": [ 2, "allow-null" ],
+      "no-unused-vars": [1, {"vars": "local", "args": "none"}],
+      "no-console": 0
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
   }
 }

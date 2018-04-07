@@ -1,4 +1,15 @@
-import css from './scss/base.scss';
-import shortNameEmoji from './module-emoji';
-import toolbarEmoji from './module-toolbar-emoji';
-import textAreaEmoji from './module-textarea-emoji';
+import Quill from 'quill';
+
+import EmojiBlot from './format-emoji-blot';
+import ShortNameEmoji from './module-emoji';
+import ToolbarEmoji from './module-toolbar-emoji';
+import TextAreaEmoji from './module-textarea-emoji';
+
+Quill.register({
+  'formats/emoji': EmojiBlot,
+  'modules/emoji-shortname': ShortNameEmoji,
+  'modules/emoji-toolbar': ToolbarEmoji,
+  'modules/emoji-textarea': TextAreaEmoji
+}, true);
+
+export default { EmojiBlot, ShortNameEmoji, ToolbarEmoji, TextAreaEmoji };

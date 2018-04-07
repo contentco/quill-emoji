@@ -1,4 +1,4 @@
-@import 'core/variables'; /* sass-loader doesnt like absolute imports*/
+@import './variables';
 
 #quill-editor {
     position: relative;
@@ -285,6 +285,7 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
     text-indent: -999px;
     padding-left: 20px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .ap-copyright {
