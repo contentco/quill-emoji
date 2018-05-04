@@ -3,7 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
-  entry: './src/quill-emoji.js',
+  entry: './index.js',
   output: {
     filename: 'quill-emoji.js',
     path: path.resolve(__dirname, 'dist'),
