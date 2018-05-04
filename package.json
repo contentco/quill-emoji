@@ -1,6 +1,6 @@
 {
   "name": "quill-emoji",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Quill Extension for Emoji Selection",
   "main": "src/quill-emoji.js",
   "devDependencies": {
@@ -9,13 +9,16 @@
     "babel-preset-env": "^1.5.1",
     "node-sass": "^4.6.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.9"
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.9",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.1",
+    "css-loader": "^0.28.11"
   },
   "scripts": {
-    "build": "npm run js-compile && npm run css-compile",
-    "js-compile": "webpack",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --output dist/ src/scss/"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -50,8 +53,17 @@
       }
     },
     "rules": {
-      "eqeqeq": [ 2, "allow-null" ],
-      "no-unused-vars": [1, {"vars": "local", "args": "none"}],
+      "eqeqeq": [
+        2,
+        "allow-null"
+      ],
+      "no-unused-vars": [
+        1,
+        {
+          "vars": "local",
+          "args": "none"
+        }
+      ],
       "no-console": 0
     },
     "env": {

@@ -1,5 +1,6 @@
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
   entry: './src/quill-emoji.js',
@@ -13,22 +14,42 @@ const config = {
   externals: {
     quill: 'Quill',
   },
+  devtool: 'source-map',
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        include: [
-          path.resolve(__dirname, "src/")
-        ],
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [['env', {modules: false}],]
-          }
+    rules: [{
+      test: /\.js$/,
+      include: [
+        path.resolve(__dirname, "src/")
+      ],
+      exclude: /(node_modules)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [['env', {modules: false}],]
         }
       }
-    ]
+    }, {
+      test: /\.scss$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: {
+            minimize: true
+          }
+        },
+        "resolve-url-loader",
+        "sass-loader"
+      ]
+    }, {
+      test: /\.png$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name]-[hash].[ext]'
+        }
+      }
+    }]
   },
   plugins: [
     new UglifyJSPlugin({
@@ -48,6 +69,10 @@ const config = {
           comments: false
         }
       }
+    }),
+    new MiniCssExtractPlugin({
+      filename: "quill-emoji.css",
+      chunkFilename: "[id].css"
     })
   ]
 };

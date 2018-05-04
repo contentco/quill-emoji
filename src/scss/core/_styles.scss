@@ -280,7 +280,7 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
     display: inline-block;
     height: 20px;
     width: 20px;
-    background-image: url(../sheet_apple_20.png);
+    background-image: url("./../../src/sheet_apple_20.png");
     background-repeat: no-repeat;
     text-indent: -999px;
     padding-left: 20px;
@@ -5497,8 +5497,3 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
 .ap-telephone{
   background-position: -20px -100px;
 }
-
-
-
-
-
