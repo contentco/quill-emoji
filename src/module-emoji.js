@@ -82,8 +82,8 @@ class ShortNameEmoji extends Module {
     }
 
 
-    this.container.style.top = atSignBounds.top + atSignBounds.height + "px",
-      this.open = true;
+    this.container.style.top = atSignBounds.top + atSignBounds.height + "px";
+    this.open = true;
 
     this.quill.on('text-change', this.onTextChange);
     this.quill.once('selection-change', this.onSelectionChange);
@@ -92,7 +92,9 @@ class ShortNameEmoji extends Module {
   }
 
   handleArrow() {
-    if (!this.open) return true;
+    if (!this.open) {
+        return true;
+    }
     this.buttons[0].classList.remove('emoji-active');
     this.buttons[0].focus();
     if (this.buttons.length > 1) {
@@ -155,7 +157,8 @@ class ShortNameEmoji extends Module {
     const buttons = Array(emojis.length);
     this.buttons = buttons;
 
-    const handler = (i, emoji) => event => {
+    const handler = function(i, emoji, _this) {
+      var event = this;
       if (event.key === "ArrowRight" || event.keyCode === 39) {
         event.preventDefault();
         buttons[Math.min(buttons.length - 1, i + 1)].focus();
@@ -189,7 +192,7 @@ class ShortNameEmoji extends Module {
       }
     };
 
-    emojis.forEach((emoji, i) => {
+    emojis.forEach(function(emoji, i) {
       const li = makeElement(
         'li', {},
         makeElement(
@@ -203,7 +206,7 @@ class ShortNameEmoji extends Module {
       this.container.appendChild(li);
       buttons[i] = li.firstChild;
       // Events will be GC-ed with button on each re-render:
-      buttons[i].addEventListener('keydown', handler(i, emoji));
+      buttons[i].addEventListener('keydown', handler(i, emoji, this));
       buttons[i].addEventListener("mousedown", () => this.close(emoji));
       buttons[i].addEventListener("focus", () => this.focusedButton = i);
       buttons[i].addEventListener("unfocus", () => this.focusedButton = null);
@@ -243,7 +246,7 @@ class ShortNameEmoji extends Module {
     this.open = false;
     this.onClose && this.onClose(value);
   }
-  
+
   enterEmoji(value){
     if (value) {
       const {name, unicode, shortname,code_decimal} = value;
@@ -295,8 +298,8 @@ ShortNameEmoji.DEFAULTS = {
 
 function makeElement(tag, attrs, ...children) {
   const elem = document.createElement(tag);
-  Object.keys(attrs).forEach(key => elem[key] = attrs[key]);
-  children.forEach(child => {
+  Object.keys(attrs).forEach(function(key) {elem[key] = attrs[key]});
+  children.forEach(function(child) {
     if (typeof child === "string")
       child = document.createTextNode(child);
     elem.appendChild(child);

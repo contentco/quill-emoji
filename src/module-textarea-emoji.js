@@ -5,10 +5,10 @@ import emojiList from './emoji-list.js';
 const Delta = Quill.import('delta');
 const Module = Quill.import('core/module');
 
-class TextAreaEmoji extends Module {  
+class TextAreaEmoji extends Module {
     constructor(quill, options){
         super(quill, options);
-      
+
         this.quill = quill;
         this.container  = document.createElement('div');
         this.container.classList.add('textarea-emoji-control');
@@ -17,7 +17,7 @@ class TextAreaEmoji extends Module {
         this.quill.container.appendChild(this.container);
         this.container.addEventListener('click', this.checkEmojiBoxExist.bind(this),false);
     }
-  
+
     checkEmojiBoxExist(){
         let elementExists = document.getElementById("textarea-emoji");
         if (elementExists) {
@@ -113,17 +113,17 @@ function fn_emojiPanelInit(panel,quill){
 
 function fn_emojiElementsToPanel(type,panel,quill){
     let fuseOptions = {
-                    shouldSort: true,
-                    matchAllTokens: true,
-                    threshold: 0.3,
-                    location: 0,
-                    distance: 100,
-                    maxPatternLength: 32,
-                    minMatchCharLength: 3,
-                    keys: [
-                        "category"
-                    ]
-                };
+        shouldSort: true,
+        matchAllTokens: true,
+        threshold: 0.3,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 3,
+        keys: [
+            "category"
+        ]
+    };
     let fuse = new Fuse(emojiList, fuseOptions);
     let result = fuse.search(type);
     result.sort(function (a, b) {
