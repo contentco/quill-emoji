@@ -8,7 +8,7 @@ const Module = Quill.import('core/module');
 class ToolbarEmoji extends Module {
   constructor(quill, options) {
     super(quill, options);
-    
+
     this.quill = quill;
     this.toolbar = quill.getModule('toolbar');
     if (typeof this.toolbar !== 'undefined')
