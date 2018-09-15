@@ -313,15 +313,22 @@ button.ql-table[value="append-col"]::after {
   margin-bottom: -5px;
 }
 
+/*
+    Emoji styles & image sheets sourced from: https://github.com/markygriff/Website.git
+    TODO: Update with a more contemporary sprite and css
+
+*/
 .ap {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background-image: url(../sheet_apple_20.png);
+  background-image: url("../sheet_apple_64.png");
+  background-size: 820px;
   background-repeat: no-repeat;
   text-indent: -999px;
-  padding-left: 20px;
   box-sizing: border-box;
+  font-size: 20px;
+  line-height: 25px;
   overflow: hidden;
 }
 
@@ -2767,14 +2774,6 @@ button.ql-table[value="append-col"]::after {
 
 .ap-hankey {
   background-position: -400px -320px;
-}
-
-.ap-thumbsup {
-  background-position: -300px -80px;
-}
-
-.ap-thumbsdown {
-  background-position: -300px -200px;
 }
 
 .ap-muscle {
@@ -5527,14 +5526,6 @@ button.ql-table[value="append-col"]::after {
 
 .ap-woman-kiss-woman {
   background-position: -780px -400px;
-}
-
-.ap-beach_umbrella {
-  background-position: -40px -620px;
-}
-
-.ap-telephone {
-  background-position: -20px -100px;
 }
 
 /*# sourceMappingURL=quill-emoji.css.map */
