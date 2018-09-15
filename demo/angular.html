@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Quill Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.1/quill.snow.css">
+        <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.1/quill.bubble.css">
+
+        <style>
+            ng-quill-editor.ng-invalid .ql-container {
+                border: 1px dashed red;
+            }
+            .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="14"]::before {
+                content: '14';
+            }
+            .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16"]::before {
+                content: '16';
+            }
+            .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18"]::before {
+                content: '18';
+            }
+        </style>
+
+        <!-- Scripts -->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdn.quilljs.com/1.3.1/quill.js"></script>
+        <script type="text/javascript" src="./ng-quill.js"></script>
+        <script src="../dist/quill-emoji.js"></script>
+        <script>
+          // declare a module and load quillModule
+          var myAppModule = angular.module('quillTest', ['ngQuill'])
+          myAppModule.config(['ngQuillConfigProvider', function (ngQuillConfigProvider) {
+            ngQuillConfigProvider.set(null, null, 'custom placeholder')
+          }])
+          myAppModule.controller('AppCtrl', [
+            '$scope',
+            '$timeout',
+            function ($scope, $timeout) {
+              $scope.title = 'Quill works'
+              $scope.model = ''
+              $scope.modelJSON = [
+                { insert: 'Hello ' },
+                { insert: 'World!', attributes: { bold: true } },
+                { insert: '\n' }
+              ]
+              $scope.modelText = 'Hello World'
+              $scope.readOnly = false
+              $scope.test = ''
+              $scope.customOptions = [{
+                import: 'attributors/style/size',
+                whitelist: ['14', '16', '18', 'small', 'large', 'huge']
+              }]
+              $scope.customTag = [{
+                  import: 'blots/block',
+                  toRegister: {key: 'tagName', value: 'DIV'}
+              }]
+              $scope.customModules = {
+                toolbar: [
+                  [
+                    {'size': [false, '14', '16', '18']},
+                    'emoji'
+                  ],
+                ],
+                "emoji-toolbar": true,
+                "emoji-shortname": true,
+                "emoji-textarea": true
+              }
+              $timeout(function () {
+                $scope.title += ' awsome!!!'
+              }, 2000)
+              $scope.editorCreated = function (editor) {
+                console.log(editor)
+              }
+              $scope.contentChanged = function (editor, html, text, content, delta, oldDelta, source) {
+                console.log('editor: ', editor, 'html: ', html, 'text:', text, 'content:', content, 'delta: ', delta, 'oldDelta:', oldDelta, 'source:', source)
+              }
+              $scope.selectionChanged = function (editor, range, oldRange, source) {
+                console.log('editor: ', editor, 'range: ', range, 'oldRange:', oldRange, 'source:', source)
+              }
+            }
+          ])
+        </script>
+    </head>
+    <body ng-app="quillTest" ng-controller="AppCtrl">
+<!--         <h3>Default editor + Callbacks/Outputs in JS console</h3>
+        <pre><code>{{title}}</code></pre>
+        <ng-quill-editor bounds="self" ng-model="title" placeholder="override default placeholder" on-editor-created="editorCreated(editor)" on-content-changed="contentChanged(editor, html, text, content)" on-selection-changed="selectionChanged(editor, range, oldRange, source)"></ng-quill-editor>
+
+        <h3>Default editor + Callbacks/Outputs in JS console and empty init model + Object-Format</h3>
+        <pre><code>{{modelJSON}}</code></pre>
+        <ng-quill-editor format="object" custom-options="customTag" ng-model="modelJSON" placeholder="override default placeholder" on-editor-created="editorCreated(editor)" on-content-changed="contentChanged(editor, html, text, content)" on-selection-changed="selectionChanged(editor, range, oldRange, source)"></ng-quill-editor>
+
+        <h3>Bubble editor + Text-format</h3>
+        <pre><code>{{modelText}}</code></pre>
+        <ng-quill-editor format="text" theme="bubble" ng-model="modelText"></ng-quill-editor>
+
+        <h3>Editor without toolbar + required and ngModule</h3>
+        <button ng-click="readOnly = !readOnly;">toggle readOnly</button>
+        readonly: {{readOnly}}
+        <form name="form">
+            <ng-quill-editor ng-model="title" read-only="readOnly" required="true" max-length="5" min-length="2" modules="{toolbar: false}"></ng-quill-editor>
+            form invalid?: {{form.$invalid}}
+        </form>
+ -->
+<!--         <h3>ng-quill - custom toolbar</h3>
+        <ng-quill-editor
+            ng-model="title"
+            placeholder=" "
+        >
+            <ng-quill-toolbar>
+                <div id="ng-quill-toolbar">
+                    <span class="ql-formats">
+                        <button class="ql-bold" ng-attr-title="{{'Bold'}}"></button>
+                    </span>
+                    <span class="ql-formats">
+                        <select class="ql-align" ng-attr-title="{{'Aligment'}}">
+                            <option selected></option>
+                            <option value="center"></option>
+                            <option value="right"></option>
+                            <option value="justify"></option>
+                        </select>
+                        <select class="ql-align">
+                            <option selected></option>
+                            <option value="center"></option>
+                            <option value="right"></option>
+                            <option value="justify"></option>
+                        </select>
+                    </span>
+                </div>
+            </ng-quill-toolbar>
+        </ng-quill-editor> -->
+
+        <h3>Custom font sizes</h3>
+        <ng-quill-editor ng-model="title" custom-options="customOptions" modules="customModules"></ng-quill-editor>
+
+    </body>
+</html>

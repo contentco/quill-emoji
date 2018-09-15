@@ -1,6 +1,6 @@
-import Quill from 'quill';
+// import Quill from 'quill';
 
-const Embed = Quill.import('blots/embed');
+const Embed = window.Quill.import('blots/embed');
 
 class EmojiBlot extends Embed {
     static create(value) {

@@ -6,6 +6,7 @@ const config = {
   output: {
     filename: 'quill-emoji.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: path.resolve(__dirname, 'dist') + '/',
     library: "QuillEmoji",
     libraryTarget: "umd"
   },
@@ -15,6 +16,35 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        include: /src/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+          // {
+          //   loader: 'image-webpack-loader',
+          //   options: {
+          //     progressive: true,
+          //     optimizationLevel: 7,
+          //     interlaced: false,
+          //     pngquant: {
+          //       quality: '80-90',
+          //       speed: 4,
+          //     },
+          //   },
+          // },
+        ],
+      },
       {
         test: /\.js$/,
         include: [
