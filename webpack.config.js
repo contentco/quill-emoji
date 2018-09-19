@@ -1,12 +1,13 @@
 const path = require('path');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const config = {
   entry: './src/quill-emoji.js',
   output: {
     filename: 'quill-emoji.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '../dist/',
     library: "QuillEmoji",
     libraryTarget: "umd"
   },
@@ -25,30 +26,28 @@ const config = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
+          'resolve-url-loader',
+          { 
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              sourceMapContents: false
+            }
+          },
         ],
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif)$/i,
         include: /src/,
         use: [
           {
-            loader: 'file-loader'
-          },
-          // {
-          //   loader: 'image-webpack-loader',
-          //   options: {
-          //     progressive: true,
-          //     optimizationLevel: 7,
-          //     interlaced: false,
-          //     pngquant: {
-          //       quality: '80-90',
-          //       speed: 4,
-          //     },
-          //   },
-          // },
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
         ],
       },
       {
@@ -60,32 +59,41 @@ const config = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['env', {modules: false}],]
+            presets: [['@babel/preset-env', { modules: false }]]
           }
         }
       }
     ]
   },
-  plugins: [
-    new UglifyJSPlugin({
-      uglifyOptions: {
-        compress: {
-          warnings: false,
-          conditionals: true,
-          unused: true,
-          comparisons: true,
-          sequences: true,
-          dead_code: true,
-          evaluate: true,
-          join_vars: true,
-          if_return: true
-        },
-        output: {
-          comments: false
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          compress: {
+            warnings: false,
+            conditionals: true,
+            unused: true,
+            comparisons: true,
+            sequences: true,
+            dead_code: true,
+            evaluate: true,
+            join_vars: true,
+            if_return: true
+          },
+          output: {
+            comments: false
+          }
         }
-      }
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'quill-emoji.css',
+      chunkFilename: '[id].css',
     })
-  ]
+  ],
 };
 
 module.exports = config;
