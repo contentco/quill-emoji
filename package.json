@@ -18,7 +18,7 @@
     "webpack-cli": "^2.0.9"
   },
   "scripts": {
-    "build": "npm run js-compile && npm run css-compile",
+    "build": "webpack",
     "js-compile": "webpack",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --output dist/ src/scss/"
   },

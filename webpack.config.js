@@ -6,13 +6,19 @@ const config = {
   output: {
     filename: 'quill-emoji.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: path.resolve(__dirname, 'dist') + '/',
+    publicPath: '../dist/',
     library: "QuillEmoji",
     libraryTarget: "umd"
   },
+  target: "web",
   mode: "production",
   externals: {
-    quill: 'Quill',
+    quill: {
+      commonjs: 'quill',
+      commonjs2: 'quill',
+      amd: 'quill',
+      root: 'Quill'
+    }
   },
   module: {
     rules: [
@@ -29,7 +35,7 @@ const config = {
         include: /src/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'file-loader'
           },
           // {
           //   loader: 'image-webpack-loader',
