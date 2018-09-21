@@ -38,6 +38,10 @@ const quill = new Quill(editor, {
   }
 });
 ```
+### Samples
+[Classic HTML/JS](demo/index.html)
+[AngularJS](demo/angular.html) using [ng-quill](https://github.com/KillerCodeMonkey/ng-quill)
+
 ### Options
 See [emoji-list.js](src/emoji-list.js) for emoji list example
 
