@@ -21,19 +21,62 @@ yarn add quill-emoji
 
 ```javascript
 const toolbarOptions = {
-                        container: [
-                            ['bold', 'italic', 'underline', 'strike'],
-                            ['emoji'],   
-                        ],
-                        handlers: {'emoji': function() {}}
-                        }
+  container: [
+    ['bold', 'italic', 'underline', 'strike'],
+    ['emoji'],   
+  ],
+  handlers: {'emoji': function() {}}
+}
 const quill = new Quill(editor, {
+  // ...
+  modules: {
     // ...
-    modules: {
-        // ...
-        toolbar: toolbarOptions,
-        toolbar_emoji: true,
+    toolbar: toolbarOptions,
+    "emoji-toolbar": true,
+    "emoji-textarea": true,
+    "emoji-shortname": true,
+  }
+});
+```
+### Options
+See [emoji-list.js](blob/master/src/emoji-list.js) for emoji list example
+
+Sample options
+```javascript
+// Custom emoji-list
+const emojiList = [ /* emojiList */ ];
+
+// MDI emojicon instead of default icon
+const emojiIcon = '<svg class="i" viewBox="0 0 24 24"><use href="#emoticon-happy"></use></svg>';
+
+const quill = new Quill(editor, {
+  // ...
+  modules: {
+    // ...
+    "emoji-shortname": {
+      emojiList: emojiList,
+      fuse: {
+        shouldSort: true,
+        threshold: 0.1,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          "shortname"
+        ]
+      },
+      onOpen: function() { /* ... */ },
+      onClose: function(emojiListItem) { /* ... */ }
+    },
+    "emoji-toolbar": {
+      buttonIcon: emojiIcon
+    },
+    "emoji-textarea": {
+      buttonIcon: emojiIcon
     }
+            
+  }
 });
 ```
 
