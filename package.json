@@ -1,6 +1,6 @@
 {
   "name": "quill-emoji",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Quill Extension for Emoji Selection",
   "main": "src/quill-emoji.js",
   "devDependencies": {
