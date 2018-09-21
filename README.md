@@ -39,7 +39,7 @@ const quill = new Quill(editor, {
 });
 ```
 ### Options
-See [emoji-list.js](blob/master/src/emoji-list.js) for emoji list example
+See [emoji-list.js](src/emoji-list.js) for emoji list example
 
 #### Sample options
 ```javascript
