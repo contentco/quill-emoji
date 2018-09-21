@@ -41,7 +41,7 @@ const quill = new Quill(editor, {
 ### Options
 See [emoji-list.js](blob/master/src/emoji-list.js) for emoji list example
 
-Sample options
+#### Sample options
 ```javascript
 // Custom emoji-list
 const emojiList = [ /* emojiList */ ];
