@@ -84,6 +84,29 @@ const quill = new Quill(editor, {
 });
 ```
 
+### Custom Emoji Blot
+If you need to display the emojis in a different way, you can customize the [emoji blot](src/format-emoji-blot.js) by creating a new blot or extending the default emoji blot.
+
+#### New emoji blot
+```javascript
+import Quill from 'quill';
+
+const Embed = Quill.import('blots/embed');
+
+class EmojiBlot extends Embed {
+    // Customized version of src/format-emoji-blot.js
+    // ...
+}
+
+EmojiBlot.blotName = 'emoji';
+EmojiBlot.tagName = 'span';
+
+Quill.register({
+    'formats/emoji': EmojiBlot
+}, true);
+```
+
 ## Contributing
 
 Please check out our [contributing guidelines](CONTRIBUTING.md).
+)
