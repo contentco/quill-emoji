@@ -1,9 +1,9 @@
-// import Quill from 'quill';
+import Quill from 'quill';
 import Fuse from 'fuse.js';
 import emojiList from './emoji-list.js';
 
-const Delta = window.Quill.import('delta');
-const Module = window.Quill.import('core/module');
+const Delta = Quill.import('delta');
+const Module = Quill.import('core/module');
 
 class TextAreaEmoji extends Module {  
     constructor(quill, options){
