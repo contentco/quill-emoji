@@ -68,14 +68,19 @@ class TextAreaEmoji extends Module {
                 tabElementHolder.appendChild(tabElement);
                 let emojiFilter = document.querySelector('.filter-'+emojiType.name);
                 emojiFilter.addEventListener('click',function(){
-                    let tab = document.querySelector('.active');
+                    const emojiContainer = document.getElementById("textarea-emoji");
+                    const tab = emojiContainer && emojiContainer.querySelector('.active');
+                    
                     if (tab) {
                         tab.classList.remove('active');
                     }
+
                     emojiFilter.classList.toggle('active');
-                     while (panel.firstChild) {
+                    
+                    while (panel.firstChild) {
                         panel.removeChild(panel.firstChild);
                     }
+
                     let type = emojiFilter.dataset.filter;
                     fn_emojiElementsToPanel(type,panel,innerQuill);
                 })
