@@ -48,6 +48,11 @@ class ShortNameEmoji extends Module {
     }, this.triggerPicker.bind(this));
 
     quill.keyboard.addBinding({
+      key: 59,  // gecko based browsers (firefox) use 59 as the keycode for semicolon, which makes a colon character when combined with shift
+      shiftKey: true,
+    }, this.triggerPicker.bind(this));
+
+    quill.keyboard.addBinding({
       key: 39,  // ArrowRight
       collapsed: true,
       format: ["emoji-shortname"]
