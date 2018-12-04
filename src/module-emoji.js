@@ -37,12 +37,6 @@ class ShortNameEmoji extends Module {
 
     quill.keyboard.addBinding({
       // TODO: Once Quill supports using event.key change this to ":"
-      key: 190,  // ".", which is ":" together with [Shift]
-      shiftKey: true,
-    }, this.triggerPicker.bind(this));
-
-    quill.keyboard.addBinding({
-      // TODO: Once Quill supports using event.key change this to ":"
       key: 186,  // ":" instead of 190 in Safari. Since it's the same key it doesn't matter if we register both.
       shiftKey: true,
     }, this.triggerPicker.bind(this));
@@ -54,14 +48,12 @@ class ShortNameEmoji extends Module {
 
     quill.keyboard.addBinding({
       key: 39,  // ArrowRight
-      collapsed: true,
-      format: ["emoji-shortname"]
+      collapsed: true
     }, this.handleArrow.bind(this));
 
     quill.keyboard.addBinding({
       key: 40,  // ArrowRight
-      collapsed: true,
-      format: ["emoji-shortname"]
+      collapsed: true
     }, this.handleArrow.bind(this));
     // TODO: Add keybindings for Enter (13) and Tab (9) directly on the quill editor
   }
