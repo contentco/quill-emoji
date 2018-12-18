@@ -277,6 +277,6 @@ button.ql-table[value="append-col"]::after { content: "COLS+"; }
 }
 
 .ql-emojiblot {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
+  vertical-align: text-top;
 }
