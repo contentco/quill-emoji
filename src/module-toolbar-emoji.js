@@ -179,6 +179,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
         let emoji_icon_html =makeElement("span", {className: "ico", innerHTML: ''+emoji.code_decimal+' ' });
         let emoji_icon = emoji_icon_html.innerHTML;
         quill.insertEmbed(range.index, 'emoji', emoji);
+        setTimeout(() => quill.setSelection(range.index + 1), 0);
         fn_close();
       });
     }
