@@ -39,14 +39,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "3"
   },
-  // {
-  //   "name": "rolling_on_the_floor_laughing",
-  //   "unicode": "1f923",
-  //   "shortname": ":rolling_on_the_floor_laughing:",
-  //   "code_decimal": "&#129315;",
-  //   "category": "p",
-  //   "emoji_order": "4"
-  // },
+  /* ///@todo not found on image{
+    "name": "rolling_on_the_floor_laughing",
+    "unicode": "1f923",
+    "shortname": ":rofl:",
+    "code_decimal": "&#129315;",
+    "category": "p",
+    "emoji_order": "4"
+  },*/
   {
     "name": "smiley",
     "unicode": "1f603",
@@ -319,14 +319,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "39"
   },
-  // {
-  //   "name": "drooling_face",
-  //   "unicode": "1f924",
-  //   "shortname": ":drooling_face:",
-  //   "code_decimal": "&#129316;",
-  //   "category": "p",
-  //   "emoji_order": "40"
-  // },
+  /*{ //@todo not found on image
+    "name": "drooling_face",
+    "unicode": "1f924",
+    "shortname": ":drooling_face:",
+    "code_decimal": "&#129316;",
+    "category": "p",
+    "emoji_order": "40"
+  },*/
   {
     "name": "unamused",
     "unicode": "1f612",
@@ -367,14 +367,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "45"
   },
-  // {
-  //   "name": "money_mouth",
-  //   "unicode": "1f911",
-  //   "shortname": ":money_mouth:",
-  //   "code_decimal": "&#129297;",
-  //   "category": "p",
-  //   "emoji_order": "46"
-  // },
+  {
+    "name": "money_mouth_face",
+    "unicode": "1f911",
+    "shortname": ":money_mouth:",
+    "code_decimal": "&#129297;",
+    "category": "p",
+    "emoji_order": "46"
+  },
   {
     "name": "astonished",
     "unicode": "1f632",
@@ -383,14 +383,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "47"
   },
-  // {
-  //   "name": "slight_frown",
-  //   "unicode": "1f641",
-  //   "shortname": ":slight_frown:",
-  //   "code_decimal": "&#128577;",
-  //   "category": "p",
-  //   "emoji_order": "49"
-  // },
+  {
+    "name": "slightly_frowning_face",
+    "unicode": "1f641",
+    "shortname": ":slight_frown:",
+    "code_decimal": "&#128577;",
+    "category": "p",
+    "emoji_order": "49"
+  },
   {
     "name": "confounded",
     "unicode": "1f616",
@@ -535,30 +535,30 @@ let emojiList = [
     "category": "p",
     "emoji_order": "67"
   },
-  // {
-  //   "name": "face_with_cowboy_hat",
-  //   "unicode": "1f920",
-  //   "shortname": ":cowboy:",
-  //   "code_decimal": "&#129312;",
-  //   "category": "p",
-  //   "emoji_order": "68"
-  // },
-  // {
-  //   "name": "clown_face",
-  //   "unicode": "1f921",
-  //   "shortname": ":clown:",
-  //   "code_decimal": "&#129313;",
-  //   "category": "p",
-  //   "emoji_order": "69"
-  // },
-  // {
-  //   "name": "lying_face",
-  //   "unicode": "1f925",
-  //   "shortname": ":lying_face:",
-  //   "code_decimal": "&#129317;",
-  //   "category": "p",
-  //   "emoji_order": "70"
-  // },
+  /*{ //@todo not found on image
+    "name": "face_with_cowboy_hat",
+    "unicode": "1f920",
+    "shortname": ":cowboy:",
+    "code_decimal": "&#129312;",
+    "category": "p",
+    "emoji_order": "68"
+  },*/
+  /*{ //@todo not found on image
+    "name": "clown_face",
+    "unicode": "1f921",
+    "shortname": ":clown:",
+    "code_decimal": "&#129313;",
+    "category": "p",
+    "emoji_order": "69"
+  },*/
+  /*{ //@todo not founf on image
+    "name": "lying_face",
+    "unicode": "1f925",
+    "shortname": ":lying_face:",
+    "code_decimal": "&#129317;",
+    "category": "p",
+    "emoji_order": "70"
+  },*/
   {
     "name": "mask",
     "unicode": "1f637",
@@ -567,38 +567,38 @@ let emojiList = [
     "category": "p",
     "emoji_order": "71"
   },
-  // {
-  //   "name": "thermometer_face",
-  //   "unicode": "1f912",
-  //   "shortname": ":thermometer_face:",
-  //   "code_decimal": "&#129298;",
-  //   "category": "p",
-  //   "emoji_order": "72"
-  // },
-  // {
-  //   "name": "head_bandage",
-  //   "unicode": "1f915",
-  //   "shortname": ":head_bandage:",
-  //   "code_decimal": "&#129301;",
-  //   "category": "p",
-  //   "emoji_order": "73"
-  // },
-  // {
-  //   "name": "nauseated_face",
-  //   "unicode": "1f922",
-  //   "shortname": ":nauseated_face:",
-  //   "code_decimal": "&#129314;",
-  //   "category": "p",
-  //   "emoji_order": "74"
-  // },
-  // {
-  //   "name": "sneezing_face",
-  //   "unicode": "1f927",
-  //   "shortname": ":sneezing_face:",
-  //   "code_decimal": "&#129319;",
-  //   "category": "p",
-  //   "emoji_order": "75"
-  // },
+  {
+    "name": "face_with_thermometer",
+    "unicode": "1f912",
+    "shortname": ":thermometer_face:",
+    "code_decimal": "&#129298;",
+    "category": "p",
+    "emoji_order": "72"
+  },
+  {
+    "name": "face_with_head_bandage",
+    "unicode": "1f915",
+    "shortname": ":head_bandage:",
+    "code_decimal": "&#129301;",
+    "category": "p",
+    "emoji_order": "73"
+  },
+  /*{ //@todo not found on image
+    "name": "nauseated_face",
+    "unicode": "1f922",
+    "shortname": ":nauseated_face:",
+    "code_decimal": "&#129314;",
+    "category": "p",
+    "emoji_order": "74"
+  },*/
+  /*{ //@todo not found on image
+    "name": "sneezing_face",
+    "unicode": "1f927",
+    "shortname": ":sneezing_face:",
+    "code_decimal": "&#129319;",
+    "category": "p",
+    "emoji_order": "75"
+  },*/
   {
     "name": "smiling_imp",
     "unicode": "1f608",
@@ -671,22 +671,22 @@ let emojiList = [
     "category": "a",
     "emoji_order": "84"
   },
-  // {
-  //   "name": "robot",
-  //   "unicode": "1f916",
-  //   "shortname": ":robot:",
-  //   "code_decimal": "&#129302;",
-  //   "category": "p",
-  //   "emoji_order": "85"
-  // },
-  // {
-  //   "name": "poop",
-  //   "unicode": "1f4a9",
-  //   "shortname": ":poop:",
-  //   "code_decimal": "&#128169;",
-  //   "category": "p",
-  //   "emoji_order": "86"
-  // },
+  {
+    "name": "robot_face",
+    "unicode": "1f916",
+    "shortname": ":robot:",
+    "code_decimal": "&#129302;",
+    "category": "p",
+    "emoji_order": "85"
+  },
+  {
+    "name": "hankey",
+    "unicode": "1f4a9",
+    "shortname": ":poop:",
+    "code_decimal": "&#128169;",
+    "category": "p",
+    "emoji_order": "86"
+  },
   {
     "name": "smiley_cat",
     "unicode": "1f63a",
@@ -855,14 +855,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "339"
   },
-  // {
-  //   "name": "spy",
-  //   "unicode": "1f575",
-  //   "shortname": ":spy:",
-  //   "code_decimal": "&#128373;",
-  //   "category": "p",
-  //   "emoji_order": "357"
-  // },
+  {
+    "name": "sleuth_or_spy",
+    "unicode": "1f575",
+    "shortname": ":spy:",
+    "code_decimal": "&#128373;",
+    "category": "p",
+    "emoji_order": "357"
+  },
   {
     "name": "guardsman",
     "unicode": "1f482",
@@ -903,14 +903,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "447"
   },
-  // {
-  //   "name": "mrs_claus",
-  //   "unicode": "1f936",
-  //   "shortname": ":mrs_claus:",
-  //   "code_decimal": "&#129334;",
-  //   "category": "p",
-  //   "emoji_order": "453"
-  // },
+  /*{ //@todo not found on image
+    "name": "mrs_claus",
+    "unicode": "1f936",
+    "shortname": ":mrs_claus:",
+    "code_decimal": "&#129334;",
+    "category": "p",
+    "emoji_order": "453"
+  },*/
   {
     "name": "princess",
     "unicode": "1f478",
@@ -919,14 +919,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "459"
   },
-  // {
-  //   "name": "prince",
-  //   "unicode": "1f934",
-  //   "shortname": ":prince:",
-  //   "code_decimal": "&#129332;",
-  //   "category": "p",
-  //   "emoji_order": "465"
-  // },
+  /*{ //@todo not found on image
+    "name": "prince",
+    "unicode": "1f934",
+    "shortname": ":prince:",
+    "code_decimal": "&#129332;",
+    "category": "p",
+    "emoji_order": "465"
+  },*/
   {
     "name": "bride_with_veil",
     "unicode": "1f470",
@@ -935,22 +935,22 @@ let emojiList = [
     "category": "p",
     "emoji_order": "471"
   },
-  // {
-  //   "name": "man_in_tuxedo",
-  //   "unicode": "1f935",
-  //   "shortname": ":man_in_tuxedo:",
-  //   "code_decimal": "&#129333;",
-  //   "category": "p",
-  //   "emoji_order": "477"
-  // },
-  // {
-  //   "name": "pregnant_woman",
-  //   "unicode": "1f930",
-  //   "shortname": ":pregnant_woman:",
-  //   "code_decimal": "&#129328;",
-  //   "category": "p",
-  //   "emoji_order": "483"
-  // },
+  /*{ //@todo not found on image
+    "name": "man_in_tuxedo",
+    "unicode": "1f935",
+    "shortname": ":man_in_tuxedo:",
+    "code_decimal": "&#129333;",
+    "category": "p",
+    "emoji_order": "477"
+  },*/
+  /*{ //@todo not found on image
+    "name": "pregnant_woman",
+    "unicode": "1f930",
+    "shortname": ":pregnant_woman:",
+    "code_decimal": "&#129328;",
+    "category": "p",
+    "emoji_order": "483"
+  },*/
   {
     "name": "man_with_gua_pi_mao",
     "unicode": "1f472",
@@ -1015,22 +1015,22 @@ let emojiList = [
     "category": "p",
     "emoji_order": "603"
   },
-  // {
-  //   "name": "face_palm",
-  //   "unicode": "1f926",
-  //   "shortname": ":face_palm:",
-  //   "code_decimal": "&#129318;",
-  //   "category": "p",
-  //   "emoji_order": "621"
-  // },
-  // {
-  //   "name": "shrug",
-  //   "unicode": "1f937",
-  //   "shortname": ":shrug:",
-  //   "code_decimal": "&#129335;",
-  //   "category": "p",
-  //   "emoji_order": "639"
-  // },
+  /*{ //@todo not found on image
+    "name": "face_palm",
+    "unicode": "1f926",
+    "shortname": ":face_palm:",
+    "code_decimal": "&#129318;",
+    "category": "p",
+    "emoji_order": "621"
+  },*/
+  /*{ //@todo not found on image
+    "name": "shrug",
+    "unicode": "1f937",
+    "shortname": ":shrug:",
+    "code_decimal": "&#129335;",
+    "category": "p",
+    "emoji_order": "639"
+  },*/
   {
     "name": "massage",
     "unicode": "1f486",
@@ -1071,14 +1071,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "729"
   },
-  // {
-  //   "name": "man_dancing",
-  //   "unicode": "1f57a",
-  //   "shortname": ":man_dancing:",
-  //   "code_decimal": "&#128378;",
-  //   "category": "p",
-  //   "emoji_order": "735"
-  // },
+  /*{ //@todo not found on image
+    "name": "man_dancing",
+    "unicode": "1f57a",
+    "shortname": ":man_dancing:",
+    "code_decimal": "&#128378;",
+    "category": "p",
+    "emoji_order": "735"
+  },*/
   {
     "name": "dancers",
     "unicode": "1f46f",
@@ -1087,30 +1087,30 @@ let emojiList = [
     "category": "p",
     "emoji_order": "741"
   },
-  // {
-  //   "name": "levitate",
-  //   "unicode": "1f574",
-  //   "shortname": ":levitate:",
-  //   "code_decimal": "&#128372;",
-  //   "category": "a",
-  //   "emoji_order": "759"
-  // },
-  // {
-  //   "name": "speaking_head",
-  //   "unicode": "1f5e3",
-  //   "shortname": ":speaking_head:",
-  //   "code_decimal": "&#128483;",
-  //   "category": "p",
-  //   "emoji_order": "765"
-  // },
-  // {
-  //   "name": "bust_in_silhouette",
-  //   "unicode": "1f464",
-  //   "shortname": ":bust_in_silhouette:",
-  //   "code_decimal": "&#128100;",
-  //   "category": "p",
-  //   "emoji_order": "766"
-  // },
+  {
+    "name": "man_in_business_suit_levitating",
+    "unicode": "1f574",
+    "shortname": ":levitate:",
+    "code_decimal": "&#128372;",
+    "category": "a",
+    "emoji_order": "759"
+  },
+  {
+    "name": "speaking_head_in_silhouette",
+    "unicode": "1f5e3",
+    "shortname": ":speaking_head:",
+    "code_decimal": "&#128483;",
+    "category": "p",
+    "emoji_order": "765"
+  },
+  {
+    "name": "bust_in_silhouette",
+    "unicode": "1f464",
+    "shortname": ":bust_in_silhouette:",
+    "code_decimal": "&#128100;",
+    "category": "p",
+    "emoji_order": "766"
+  },
   {
     "name": "busts_in_silhouette",
     "unicode": "1f465",
@@ -1119,14 +1119,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "767"
   },
-  // {
-  //   "name": "fencer",
-  //   "unicode": "1f93a",
-  //   "shortname": ":fencer:",
-  //   "code_decimal": "&#129338;",
-  //   "category": "a",
-  //   "emoji_order": "768"
-  // },
+  /*{ //@todo not found on image
+    "name": "fencer",
+    "unicode": "1f93a",
+    "shortname": ":fencer:",
+    "code_decimal": "&#129338;",
+    "category": "a",
+    "emoji_order": "768"
+  },*/
   {
     "name": "horse_racing",
     "unicode": "1f3c7",
@@ -1183,22 +1183,22 @@ let emojiList = [
     "category": "a",
     "emoji_order": "836"
   },
-  // {
-  //   "name": "basketball_player",
-  //   "unicode": "26f9",
-  //   "shortname": ":basketball_player:",
-  //   "code_decimal": "&#9977;",
-  //   "category": "a",
-  //   "emoji_order": "854"
-  // },
-  // {
-  //   "name": "lifter",
-  //   "unicode": "1f3cb",
-  //   "shortname": ":lifter:",
-  //   "code_decimal": "&#127947;",
-  //   "category": "a",
-  //   "emoji_order": "872"
-  // },
+  {
+    "name": "person_with_ball",
+    "unicode": "26f9",
+    "shortname": ":basketball_player:",
+    "code_decimal": "&#9977;",
+    "category": "a",
+    "emoji_order": "854"
+  },
+  {
+    "name": "weight_lifter",
+    "unicode": "1f3cb",
+    "shortname": ":lifter:",
+    "code_decimal": "&#127947;",
+    "category": "a",
+    "emoji_order": "872"
+  },
   {
     "name": "bicyclist",
     "unicode": "1f6b4",
@@ -1215,62 +1215,62 @@ let emojiList = [
     "category": "a",
     "emoji_order": "908"
   },
-  // {
-  //   "name": "race_car",
-  //   "unicode": "1f3ce",
-  //   "shortname": ":race_car:",
-  //   "code_decimal": "&#127950;",
-  //   "category": "t",
-  //   "emoji_order": "926"
-  // },
-  // {
-  //   "name": "motorcycle",
-  //   "unicode": "1f3cd",
-  //   "shortname": ":motorcycle:",
-  //   "code_decimal": "&#127949;",
-  //   "category": "t",
-  //   "emoji_order": "927"
-  // },
-  // {
-  //   "name": "cartwheel",
-  //   "unicode": "1f938",
-  //   "shortname": ":cartwheel:",
-  //   "code_decimal": "&#129336;",
-  //   "category": "a",
-  //   "emoji_order": "928"
-  // },
-  // {
-  //   "name": "wrestlers",
-  //   "unicode": "1f93c",
-  //   "shortname": ":wrestlers:",
-  //   "code_decimal": "&#129340;",
-  //   "category": "a",
-  //   "emoji_order": "946"
-  // },
-  // {
-  //   "name": "water_polo",
-  //   "unicode": "1f93d",
-  //   "shortname": ":water_polo:",
-  //   "code_decimal": "&#129341;",
-  //   "category": "a",
-  //   "emoji_order": "964"
-  // },
-  // {
-  //   "name": "handball",
-  //   "unicode": "1f93e",
-  //   "shortname": ":handball:",
-  //   "code_decimal": "&#129342;",
-  //   "category": "a",
-  //   "emoji_order": "982"
-  // },
-  // {
-  //   "name": "juggling",
-  //   "unicode": "1f939",
-  //   "shortname": ":juggling:",
-  //   "code_decimal": "&#129337;",
-  //   "category": "a",
-  //   "emoji_order": "1000"
-  // },
+  {
+    "name": "racing_car",
+    "unicode": "1f3ce",
+    "shortname": ":race_car:",
+    "code_decimal": "&#127950;",
+    "category": "t",
+    "emoji_order": "926"
+  },
+  {
+    "name": "racing_motorcycle",
+    "unicode": "1f3cd",
+    "shortname": ":motorcycle:",
+    "code_decimal": "&#127949;",
+    "category": "t",
+    "emoji_order": "927"
+  },
+  /*{ //@todo not found on image
+    "name": "cartwheel",
+    "unicode": "1f938",
+    "shortname": ":cartwheel:",
+    "code_decimal": "&#129336;",
+    "category": "a",
+    "emoji_order": "928"
+  },*/
+  /*{ //@todo not found on image
+    "name": "wrestlers",
+    "unicode": "1f93c",
+    "shortname": ":wrestlers:",
+    "code_decimal": "&#129340;",
+    "category": "a",
+    "emoji_order": "946"
+  },*/
+  /*{ //@todo not found on image
+    "name": "water_polo",
+    "unicode": "1f93d",
+    "shortname": ":water_polo:",
+    "code_decimal": "&#129341;",
+    "category": "a",
+    "emoji_order": "964"
+  },*/
+  /*{ //@todo not found on image
+    "name": "handball",
+    "unicode": "1f93e",
+    "shortname": ":handball:",
+    "code_decimal": "&#129342;",
+    "category": "a",
+    "emoji_order": "982"
+  },*/
+  /*{ //@todo not found on image
+    "name": "juggling",
+    "unicode": "1f939",
+    "shortname": ":juggling:",
+    "code_decimal": "&#129337;",
+    "category": "a",
+    "emoji_order": "1000"
+  },*/
   {
     "name": "couple",
     "unicode": "1f46b",
@@ -1328,14 +1328,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1080"
   },
-  // {
-  //   "name": "selfie",
-  //   "unicode": "1f933",
-  //   "shortname": ":selfie:",
-  //   "code_decimal": "&#129331;",
-  //   "category": "p",
-  //   "emoji_order": "1086"
-  // },
+  /*{ //@todo not found on image
+    "name": "selfie",
+    "unicode": "1f933",
+    "shortname": ":selfie:",
+    "code_decimal": "&#129331;",
+    "category": "p",
+    "emoji_order": "1086"
+  },*/
   {
     "name": "point_left",
     "unicode": "1f448",
@@ -1392,54 +1392,54 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1128"
   },
-  // {
-  //   "name": "fingers_crossed",
-  //   "unicode": "1f91e",
-  //   "shortname": ":fingers_crossed:",
-  //   "code_decimal": "&#129310;",
-  //   "category": "p",
-  //   "emoji_order": "1134"
-  // },
-  // {
-  //   "name": "vulcan",
-  //   "unicode": "1f596",
-  //   "shortname": ":vulcan:",
-  //   "code_decimal": "&#128406;",
-  //   "category": "p",
-  //   "emoji_order": "1140"
-  // },
-  // {
-  //   "name": "metal",
-  //   "unicode": "1f918",
-  //   "shortname": ":metal:",
-  //   "code_decimal": "&#129304;",
-  //   "category": "p",
-  //   "emoji_order": "1146"
-  // },
-  // {
-  //   "name": "call_me",
-  //   "unicode": "1f919",
-  //   "shortname": ":call_me:",
-  //   "code_decimal": "&#129305;",
-  //   "category": "p",
-  //   "emoji_order": "1152"
-  // },
-  // {
-  //   "name": "hand_splayed",
-  //   "unicode": "1f590",
-  //   "shortname": ":hand_splayed:",
-  //   "code_decimal": "&#128400;",
-  //   "category": "p",
-  //   "emoji_order": "1158"
-  // },
-  // {
-  //   "name": "raised_hand",
-  //   "unicode": "270b",
-  //   "shortname": ":raised_hand:",
-  //   "code_decimal": "&#9995;",
-  //   "category": "p",
-  //   "emoji_order": "1164"
-  // },
+  /*{ //@todo not found on image
+    "name": "fingers_crossed",
+    "unicode": "1f91e",
+    "shortname": ":fingers_crossed:",
+    "code_decimal": "&#129310;",
+    "category": "p",
+    "emoji_order": "1134"
+  },*/
+  /*{ //@todo not found on image
+    "name": "vulcan",
+    "unicode": "1f596",
+    "shortname": ":vulcan:",
+    "code_decimal": "&#128406;",
+    "category": "p",
+    "emoji_order": "1140"
+  },*/
+  {
+    "name": "the_horns",
+    "unicode": "1f918",
+    "shortname": ":metal_tone2:",
+    "code_decimal": "&#129304;",
+    "category": "p",
+    "emoji_order": "1146"
+  },
+  /*{ //@todo not found on image
+    "name": "call_me",
+    "unicode": "1f919",
+    "shortname": ":call_me:",
+    "code_decimal": "&#129305;",
+    "category": "p",
+    "emoji_order": "1152"
+  },*/
+  {
+    "name": "raised_hand_with_fingers_splayed",
+    "unicode": "1f590",
+    "shortname": ":hand_splayed:",
+    "code_decimal": "&#128400;",
+    "category": "p",
+    "emoji_order": "1158"
+  },
+  /*{ //@todo not found on image
+    "name": "raised_hand",
+    "unicode": "270b",
+    "shortname": ":raised_hand:",
+    "code_decimal": "&#9995;",
+    "category": "p",
+    "emoji_order": "1164"
+  },*/
   {
     "name": "ok_hand",
     "unicode": "1f44c",
@@ -1472,38 +1472,38 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1188"
   },
-  // {
-  //   "name": "punch",
-  //   "unicode": "1f44a",
-  //   "shortname": ":punch:",
-  //   "code_decimal": "&#128074;",
-  //   "category": "p",
-  //   "emoji_order": "1194"
-  // },
-  // {
-  //   "name": "left_facing_fist",
-  //   "unicode": "1f91b",
-  //   "shortname": ":left_facing_fist:",
-  //   "code_decimal": "&#129307;",
-  //   "category": "p",
-  //   "emoji_order": "1200"
-  // },
-  // {
-  //   "name": "right_facing_fist",
-  //   "unicode": "1f91c",
-  //   "shortname": ":right_facing_fist:",
-  //   "code_decimal": "&#129308;",
-  //   "category": "p",
-  //   "emoji_order": "1206"
-  // },
-  // {
-  //   "name": "raised_back_of_hand",
-  //   "unicode": "1f91a",
-  //   "shortname": ":raised_back_of_hand:",
-  //   "code_decimal": "&#129306;",
-  //   "category": "p",
-  //   "emoji_order": "1212"
-  // },
+  {
+    "name": "facepunch",
+    "unicode": "1f44a",
+    "shortname": ":punch:",
+    "code_decimal": "&#128074;",
+    "category": "p",
+    "emoji_order": "1194"
+  },
+  /*{ //@todo not found on image
+    "name": "left_facing_fist",
+    "unicode": "1f91b",
+    "shortname": ":left_facing_fist:",
+    "code_decimal": "&#129307;",
+    "category": "p",
+    "emoji_order": "1200"
+  },*/
+  /*{ //@todo not found on image
+    "name": "right_facing_fist",
+    "unicode": "1f91c",
+    "shortname": ":right_facing_fist:",
+    "code_decimal": "&#129308;",
+    "category": "p",
+    "emoji_order": "1206"
+  },*/
+  /*{ //@todo not found on image
+    "name": "raised_back_of_hand",
+    "unicode": "1f91a",
+    "shortname": ":raised_back_of_hand:",
+    "code_decimal": "&#129306;",
+    "category": "p",
+    "emoji_order": "1212"
+  },*/
   {
     "name": "wave",
     "unicode": "1f44b",
@@ -1552,14 +1552,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1248"
   },
-  // {
-  //   "name": "handshake",
-  //   "unicode": "1f91d",
-  //   "shortname": ":handshake:",
-  //   "code_decimal": "&#129309;",
-  //   "category": "p",
-  //   "emoji_order": "1254"
-  // },
+  /*{ //@todo not found on image
+    "name": "handshake",
+    "unicode": "1f91d",
+    "shortname": ":handshake:",
+    "code_decimal": "&#129309;",
+    "category": "p",
+    "emoji_order": "1254"
+  },*/
   {
     "name": "nail_care",
     "unicode": "1f485",
@@ -1720,14 +1720,14 @@ let emojiList = [
     "category": "s",
     "emoji_order": "1295"
   },
-  {
+  /*{ //@todo not found on image
     "name": "black_heart",
     "unicode": "1f5a4",
     "shortname": ":black_heart:",
     "code_decimal": "&#128420;",
     "category": "s",
     "emoji_order": "1296"
-  },
+  },*/
   {
     "name": "gift_heart",
     "unicode": "1f49d",
@@ -1833,7 +1833,7 @@ let emojiList = [
     "emoji_order": "1309"
   },
   {
-    "name": "speech_left",
+    "name": "left_speech_bubble",
     "unicode": "1f5e8",
     "shortname": ":speech_left:",
     "code_decimal": "&#128488;",
@@ -1841,7 +1841,7 @@ let emojiList = [
     "emoji_order": "1310"
   },
   {
-    "name": "anger_right",
+    "name": "right_anger_bubble",
     "unicode": "1f5ef",
     "shortname": ":anger_right:",
     "code_decimal": "&#128495;",
@@ -2048,14 +2048,14 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1336"
   },
-  // {
-  //   "name": "helmet_with_cross",
-  //   "unicode": "26d1",
-  //   "shortname": ":helmet_with_cross:",
-  //   "code_decimal": "&#9937;",
-  //   "category": "p",
-  //   "emoji_order": "1337"
-  // },
+  {
+    "name": "helmet_with_white_cross",
+    "unicode": "26d1",
+    "shortname": ":helmet_with_cross:",
+    "code_decimal": "&#9937;",
+    "category": "p",
+    "emoji_order": "1337"
+  },
   {
     "name": "prayer_beads",
     "unicode": "1f4ff",
@@ -2104,14 +2104,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1343"
   },
-  // {
-  //   "name": "gorilla",
-  //   "unicode": "1f98d",
-  //   "shortname": ":gorilla:",
-  //   "code_decimal": "&#129421;",
-  //   "category": "n",
-  //   "emoji_order": "1344"
-  // },
+  /*{ //@todo not found on image
+    "name": "gorilla",
+    "unicode": "1f98d",
+    "shortname": ":gorilla:",
+    "code_decimal": "&#129421;",
+    "category": "n",
+    "emoji_order": "1344"
+  },*/
   {
     "name": "dog",
     "unicode": "1f436",
@@ -2144,14 +2144,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1348"
   },
-  // {
-  //   "name": "fox",
-  //   "unicode": "1f98a",
-  //   "shortname": ":fox:",
-  //   "code_decimal": "&#129418;",
-  //   "category": "n",
-  //   "emoji_order": "1349"
-  // },
+  /*{ //@todo not found on image
+    "name": "fox",
+    "unicode": "1f98a",
+    "shortname": ":fox:",
+    "code_decimal": "&#129418;",
+    "category": "n",
+    "emoji_order": "1349"
+  },*/
   {
     "name": "cat",
     "unicode": "1f431",
@@ -2216,22 +2216,22 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1357"
   },
-  // {
-  //   "name": "deer",
-  //   "unicode": "1f98c",
-  //   "shortname": ":deer:",
-  //   "code_decimal": "&#129420;",
-  //   "category": "n",
-  //   "emoji_order": "1358"
-  // },
-  // {
-  //   "name": "unicorn",
-  //   "unicode": "1f984",
-  //   "shortname": ":unicorn:",
-  //   "code_decimal": "&#129412;",
-  //   "category": "n",
-  //   "emoji_order": "1359"
-  // },
+  /*{ //@todo not found on image
+    "name": "deer",
+    "unicode": "1f98c",
+    "shortname": ":deer:",
+    "code_decimal": "&#129420;",
+    "category": "n",
+    "emoji_order": "1358"
+  },*/
+  {
+    "name": "unicorn_face",
+    "unicode": "1f984",
+    "shortname": ":unicorn:",
+    "code_decimal": "&#129412;",
+    "category": "n",
+    "emoji_order": "1359"
+  },
   {
     "name": "cow",
     "unicode": "1f42e",
@@ -2344,14 +2344,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1373"
   },
-  // {
-  //   "name": "rhino",
-  //   "unicode": "1f98f",
-  //   "shortname": ":rhino:",
-  //   "code_decimal": "&#129423;",
-  //   "category": "n",
-  //   "emoji_order": "1374"
-  // },
+  /*{ //@todo not found on image
+    "name": "rhino",
+    "unicode": "1f98f",
+    "shortname": ":rhino:",
+    "code_decimal": "&#129423;",
+    "category": "n",
+    "emoji_order": "1374"
+  },*/
   {
     "name": "mouse",
     "unicode": "1f42d",
@@ -2408,14 +2408,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1381"
   },
-  // {
-  //   "name": "bat",
-  //   "unicode": "1f987",
-  //   "shortname": ":bat:",
-  //   "code_decimal": "&#129415;",
-  //   "category": "n",
-  //   "emoji_order": "1382"
-  // },
+  /*{ //@todo not found on image
+    "name": "bat",
+    "unicode": "1f987",
+    "shortname": ":bat:",
+    "code_decimal": "&#129415;",
+    "category": "n",
+    "emoji_order": "1382"
+  },*/
   {
     "name": "bear",
     "unicode": "1f43b",
@@ -2512,38 +2512,38 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1394"
   },
-  // {
-  //   "name": "dove",
-  //   "unicode": "1f54a",
-  //   "shortname": ":dove:",
-  //   "code_decimal": "&#128330;",
-  //   "category": "n",
-  //   "emoji_order": "1395"
-  // },
-  // {
-  //   "name": "eagle",
-  //   "unicode": "1f985",
-  //   "shortname": ":eagle:",
-  //   "code_decimal": "&#129413;",
-  //   "category": "n",
-  //   "emoji_order": "1396"
-  // },
-  // {
-  //   "name": "duck",
-  //   "unicode": "1f986",
-  //   "shortname": ":duck:",
-  //   "code_decimal": "&#129414;",
-  //   "category": "n",
-  //   "emoji_order": "1397"
-  // },
-  // {
-  //   "name": "owl",
-  //   "unicode": "1f989",
-  //   "shortname": ":owl:",
-  //   "code_decimal": "&#129417;",
-  //   "category": "n",
-  //   "emoji_order": "1398"
-  // },
+  {
+    "name": "dove_of_peace",
+    "unicode": "1f54a",
+    "shortname": ":dove:",
+    "code_decimal": "&#128330;",
+    "category": "n",
+    "emoji_order": "1395"
+  },
+  /*{ //@todo not found on image
+    "name": "eagle",
+    "unicode": "1f985",
+    "shortname": ":eagle:",
+    "code_decimal": "&#129413;",
+    "category": "n",
+    "emoji_order": "1396"
+  },*/
+  /*{ //@todo not found on image
+    "name": "duck",
+    "unicode": "1f986",
+    "shortname": ":duck:",
+    "code_decimal": "&#129414;",
+    "category": "n",
+    "emoji_order": "1397"
+  },*/
+  /*{ //@todo not found on image
+    "name": "owl",
+    "unicode": "1f989",
+    "shortname": ":owl:",
+    "code_decimal": "&#129417;",
+    "category": "n",
+    "emoji_order": "1398"
+  },*/
   {
     "name": "frog",
     "unicode": "1f438",
@@ -2568,14 +2568,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1401"
   },
-  // {
-  //   "name": "lizard",
-  //   "unicode": "1f98e",
-  //   "shortname": ":lizard:",
-  //   "code_decimal": "&#129422;",
-  //   "category": "n",
-  //   "emoji_order": "1402"
-  // },
+  /*{ //@todo not found on image
+    "name": "lizard",
+    "unicode": "1f98e",
+    "shortname": ":lizard:",
+    "code_decimal": "&#129422;",
+    "category": "n",
+    "emoji_order": "1402"
+  },*/
   {
     "name": "snake",
     "unicode": "1f40d",
@@ -2648,14 +2648,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1411"
   },
-  // {
-  //   "name": "shark",
-  //   "unicode": "1f988",
-  //   "shortname": ":shark:",
-  //   "code_decimal": "&#129416;",
-  //   "category": "n",
-  //   "emoji_order": "1412"
-  // },
+  /*{ //@todo not found on image
+    "name": "shark",
+    "unicode": "1f988",
+    "shortname": ":shark:",
+    "code_decimal": "&#129416;",
+    "category": "n",
+    "emoji_order": "1412"
+  },*/
   {
     "name": "octopus",
     "unicode": "1f419",
@@ -2680,30 +2680,30 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1415"
   },
-  // {
-  //   "name": "shrimp",
-  //   "unicode": "1f990",
-  //   "shortname": ":shrimp:",
-  //   "code_decimal": "&#129424;",
-  //   "category": "n",
-  //   "emoji_order": "1416"
-  // },
-  // {
-  //   "name": "squid",
-  //   "unicode": "1f991",
-  //   "shortname": ":squid:",
-  //   "code_decimal": "&#129425;",
-  //   "category": "n",
-  //   "emoji_order": "1417"
-  // },
-  // {
-  //   "name": "butterfly",
-  //   "unicode": "1f98b",
-  //   "shortname": ":butterfly:",
-  //   "code_decimal": "&#129419;",
-  //   "category": "n",
-  //   "emoji_order": "1418"
-  // },
+  /*{ //@todo not found on image
+    "name": "shrimp",
+    "unicode": "1f990",
+    "shortname": ":shrimp:",
+    "code_decimal": "&#129424;",
+    "category": "n",
+    "emoji_order": "1416"
+  },*/
+  /*{ //@todo not found on image
+    "name": "squid",
+    "unicode": "1f991",
+    "shortname": ":squid:",
+    "code_decimal": "&#129425;",
+    "category": "n",
+    "emoji_order": "1417"
+  },*/
+  /*{ //@todo not found on image
+    "name": "butterfly",
+    "unicode": "1f98b",
+    "shortname": ":butterfly:",
+    "code_decimal": "&#129419;",
+    "category": "n",
+    "emoji_order": "1418"
+  },*/
   {
     "name": "snail",
     "unicode": "1f40c",
@@ -2808,14 +2808,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1431"
   },
-  // {
-  //   "name": "wilted_rose",
-  //   "unicode": "1f940",
-  //   "shortname": ":wilted_rose:",
-  //   "code_decimal": "&#129344;",
-  //   "category": "n",
-  //   "emoji_order": "1432"
-  // },
+  /*{ //@todo not found on image
+    "name": "wilted_rose",
+    "unicode": "1f940",
+    "shortname": ":wilted_rose:",
+    "code_decimal": "&#129344;",
+    "category": "n",
+    "emoji_order": "1432"
+  },*/
   {
     "name": "hibiscus",
     "unicode": "1f33a",
@@ -3048,14 +3048,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1461"
   },
-  // {
-  //   "name": "kiwi",
-  //   "unicode": "1f95d",
-  //   "shortname": ":kiwi:",
-  //   "code_decimal": "&#129373;",
-  //   "category": "d",
-  //   "emoji_order": "1462"
-  // },
+  /*{ //@todo not found on image
+    "name": "kiwi",
+    "unicode": "1f95d",
+    "shortname": ":kiwi:",
+    "code_decimal": "&#129373;",
+    "category": "d",
+    "emoji_order": "1462"
+  },*/
   {
     "name": "tomato",
     "unicode": "1f345",
@@ -3064,14 +3064,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1463"
   },
-  // {
-  //   "name": "avocado",
-  //   "unicode": "1f951",
-  //   "shortname": ":avocado:",
-  //   "code_decimal": "&#129361;",
-  //   "category": "d",
-  //   "emoji_order": "1464"
-  // },
+  /*{ //@todo not found on image
+    "name": "avocado",
+    "unicode": "1f951",
+    "shortname": ":avocado:",
+    "code_decimal": "&#129361;",
+    "category": "d",
+    "emoji_order": "1464"
+  },*/
   {
     "name": "eggplant",
     "unicode": "1f346",
@@ -3080,22 +3080,22 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1465"
   },
-  // {
-  //   "name": "potato",
-  //   "unicode": "1f954",
-  //   "shortname": ":potato:",
-  //   "code_decimal": "&#129364;",
-  //   "category": "d",
-  //   "emoji_order": "1466"
-  // },
-  // {
-  //   "name": "carrot",
-  //   "unicode": "1f955",
-  //   "shortname": ":carrot:",
-  //   "code_decimal": "&#129365;",
-  //   "category": "d",
-  //   "emoji_order": "1467"
-  // },
+  /*{ //@todo not found on image
+    "name": "potato",
+    "unicode": "1f954",
+    "shortname": ":potato:",
+    "code_decimal": "&#129364;",
+    "category": "d",
+    "emoji_order": "1466"
+  },*/
+  /*{ //@todo not found on image
+    "name": "carrot",
+    "unicode": "1f955",
+    "shortname": ":carrot:",
+    "code_decimal": "&#129365;",
+    "category": "d",
+    "emoji_order": "1467"
+  },*/
   {
     "name": "corn",
     "unicode": "1f33d",
@@ -3112,14 +3112,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1469"
   },
-  // {
-  //   "name": "cucumber",
-  //   "unicode": "1f952",
-  //   "shortname": ":cucumber:",
-  //   "code_decimal": "&#129362;",
-  //   "category": "d",
-  //   "emoji_order": "1470"
-  // },
+  /*{ //@todo not found on image
+    "name": "cucumber",
+    "unicode": "1f952",
+    "shortname": ":cucumber:",
+    "code_decimal": "&#129362;",
+    "category": "d",
+    "emoji_order": "1470"
+  },*/
   {
     "name": "mushroom",
     "unicode": "1f344",
@@ -3128,22 +3128,22 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1471"
   },
-  // {
-  //   "name": "peanuts",
-  //   "unicode": "1f95c",
-  //   "shortname": ":peanuts:",
-  //   "code_decimal": "&#129372;",
-  //   "category": "d",
-  //   "emoji_order": "1472"
-  // },
-  // {
-  //   "name": "chestnut",
-  //   "unicode": "1f330",
-  //   "shortname": ":chestnut:",
-  //   "code_decimal": "&#127792;",
-  //   "category": "n",
-  //   "emoji_order": "1473"
-  // },
+  /*{ //@todo not found on image
+    "name": "peanuts",
+    "unicode": "1f95c",
+    "shortname": ":peanuts:",
+    "code_decimal": "&#129372;",
+    "category": "d",
+    "emoji_order": "1472"
+  },*/
+  {
+    "name": "chestnut",
+    "unicode": "1f330",
+    "shortname": ":chestnut:",
+    "code_decimal": "&#127792;",
+    "category": "n",
+    "emoji_order": "1473"
+  },
   {
     "name": "bread",
     "unicode": "1f35e",
@@ -3152,38 +3152,38 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1474"
   },
-  // {
-  //   "name": "croissant",
-  //   "unicode": "1f950",
-  //   "shortname": ":croissant:",
-  //   "code_decimal": "&#129360;",
-  //   "category": "d",
-  //   "emoji_order": "1475"
-  // },
-  // {
-  //   "name": "french_bread",
-  //   "unicode": "1f956",
-  //   "shortname": ":french_bread:",
-  //   "code_decimal": "&#129366;",
-  //   "category": "d",
-  //   "emoji_order": "1476"
-  // },
-  // {
-  //   "name": "pancakes",
-  //   "unicode": "1f95e",
-  //   "shortname": ":pancakes:",
-  //   "code_decimal": "&#129374;",
-  //   "category": "d",
-  //   "emoji_order": "1477"
-  // },
-  // {
-  //   "name": "cheese",
-  //   "unicode": "1f9c0",
-  //   "shortname": ":cheese:",
-  //   "code_decimal": "&#129472;",
-  //   "category": "d",
-  //   "emoji_order": "1478"
-  // },
+  /*{ //@todo not found on image
+    "name": "croissant",
+    "unicode": "1f950",
+    "shortname": ":croissant:",
+    "code_decimal": "&#129360;",
+    "category": "d",
+    "emoji_order": "1475"
+  },*/
+  /*{ //@todo not found on image
+    "name": "french_bread",
+    "unicode": "1f956",
+    "shortname": ":french_bread:",
+    "code_decimal": "&#129366;",
+    "category": "d",
+    "emoji_order": "1476"
+  },*/
+  /*{ //@todo not found on image
+    "name": "pancakes",
+    "unicode": "1f95e",
+    "shortname": ":pancakes:",
+    "code_decimal": "&#129374;",
+    "category": "d",
+    "emoji_order": "1477"
+  },*/
+  {
+    "name": "cheese_wedge",
+    "unicode": "1f9c0",
+    "shortname": ":cheese:",
+    "code_decimal": "&#129472;",
+    "category": "d",
+    "emoji_order": "1478"
+  },
   {
     "name": "meat_on_bone",
     "unicode": "1f356",
@@ -3200,14 +3200,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1480"
   },
-  // {
-  //   "name": "bacon",
-  //   "unicode": "1f953",
-  //   "shortname": ":bacon:",
-  //   "code_decimal": "&#129363;",
-  //   "category": "d",
-  //   "emoji_order": "1481"
-  // },
+  /*{ //@todo not found on image
+    "name": "bacon",
+    "unicode": "1f953",
+    "shortname": ":bacon:",
+    "code_decimal": "&#129363;",
+    "category": "d",
+    "emoji_order": "1481"
+  },*/
   {
     "name": "hamburger",
     "unicode": "1f354",
@@ -3256,14 +3256,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1487"
   },
-  // {
-  //   "name": "stuffed_flatbread",
-  //   "unicode": "1f959",
-  //   "shortname": ":stuffed_flatbread:",
-  //   "code_decimal": "&#129369;",
-  //   "category": "d",
-  //   "emoji_order": "1488"
-  // },
+  /*{ //@todo not found on image
+    "name": "stuffed_flatbread",
+    "unicode": "1f959",
+    "shortname": ":stuffed_flatbread:",
+    "code_decimal": "&#129369;",
+    "category": "d",
+    "emoji_order": "1488"
+  },*/
   {
     "name": "egg",
     "unicode": "1f95a",
@@ -3272,22 +3272,22 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1489"
   },
-  // {
-  //   "name": "cooking",
-  //   "unicode": "1f373",
-  //   "shortname": ":cooking:",
-  //   "code_decimal": "&#127859;",
-  //   "category": "d",
-  //   "emoji_order": "1490"
-  // },
-  // {
-  //   "name": "shallow_pan_of_food",
-  //   "unicode": "1f958",
-  //   "shortname": ":shallow_pan_of_food:",
-  //   "code_decimal": "&#129368;",
-  //   "category": "d",
-  //   "emoji_order": "1491"
-  // },
+  /*{ //@todo not found on image
+    "name": "cooking",
+    "unicode": "1f373",
+    "shortname": ":cooking:",
+    "code_decimal": "&#127859;",
+    "category": "d",
+    "emoji_order": "1490"
+  },*/
+  /*{ //@todo not found on image
+    "name": "shallow_pan_of_f",
+    "unicode": "1f958",
+    "shortname": ":shallow_pan_of_f:",
+    "code_decimal": "&#129368;",
+    "category": "d",
+    "emoji_order": "1491"
+  },*/
   {
     "name": "stew",
     "unicode": "1f372",
@@ -3296,14 +3296,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1492"
   },
-  // {
-  //   "name": "salad",
-  //   "unicode": "1f957",
-  //   "shortname": ":salad:",
-  //   "code_decimal": "&#129367;",
-  //   "category": "d",
-  //   "emoji_order": "1493"
-  // },
+  /*{ //@todo not found on image
+    "name": "salad",
+    "unicode": "1f957",
+    "shortname": ":salad:",
+    "code_decimal": "&#129367;",
+    "category": "d",
+    "emoji_order": "1493"
+  },*/
   {
     "name": "popcorn",
     "unicode": "1f37f",
@@ -3520,14 +3520,14 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1520"
   },
-  // {
-  //   "name": "milk",
-  //   "unicode": "1f95b",
-  //   "shortname": ":milk:",
-  //   "code_decimal": "&#129371;",
-  //   "category": "d",
-  //   "emoji_order": "1521"
-  // },
+  /*{ //@todo not found on image
+    "name": "milk",
+    "unicode": "1f95b",
+    "shortname": ":milk:",
+    "code_decimal": "&#129371;",
+    "category": "d",
+    "emoji_order": "1521"
+  },*/
   {
     "name": "coffee",
     "unicode": "2615",
@@ -3600,30 +3600,30 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1530"
   },
-  // {
-  //   "name": "champagne_glass",
-  //   "unicode": "1f942",
-  //   "shortname": ":champagne_glass:",
-  //   "code_decimal": "&#129346;",
-  //   "category": "d",
-  //   "emoji_order": "1531"
-  // },
-  // {
-  //   "name": "tumbler_glass",
-  //   "unicode": "1f943",
-  //   "shortname": ":tumbler_glass:",
-  //   "code_decimal": "&#129347;",
-  //   "category": "d",
-  //   "emoji_order": "1532"
-  // },
-  // {
-  //   "name": "fork_knife_plate",
-  //   "unicode": "1f37d",
-  //   "shortname": ":fork_knife_plate:",
-  //   "code_decimal": "&#127869;",
-  //   "category": "d",
-  //   "emoji_order": "1533"
-  // },
+  /*{ //@todo not found on image
+    "name": "champagne_glass",
+    "unicode": "1f942",
+    "shortname": ":champagne_glass:",
+    "code_decimal": "&#129346;",
+    "category": "d",
+    "emoji_order": "1531"
+  },*/
+  /*{ //@todo not found on image
+    "name": "tumbler_glass",
+    "unicode": "1f943",
+    "shortname": ":tumbler_glass:",
+    "code_decimal": "&#129347;",
+    "category": "d",
+    "emoji_order": "1532"
+  },*/
+  {
+    "name": "knife_fork_plate",
+    "unicode": "1f37d",
+    "shortname": ":fork_knife_plate:",
+    "code_decimal": "&#127869;",
+    "category": "d",
+    "emoji_order": "1533"
+  },
   {
     "name": "fork_and_knife",
     "unicode": "1f374",
@@ -3632,22 +3632,22 @@ let emojiList = [
     "category": "d",
     "emoji_order": "1534"
   },
-  // {
-  //   "name": "spoon",
-  //   "unicode": "1f944",
-  //   "shortname": ":spoon:",
-  //   "code_decimal": "&#129348;",
-  //   "category": "d",
-  //   "emoji_order": "1535"
-  // },
-  // {
-  //   "name": "knife",
-  //   "unicode": "1f52a",
-  //   "shortname": ":knife:",
-  //   "code_decimal": "&#128298;",
-  //   "category": "o",
-  //   "emoji_order": "1536"
-  // },
+  /*{ //@todo not found on image
+    "name": "spoon",
+    "unicode": "1f944",
+    "shortname": ":spoon:",
+    "code_decimal": "&#129348;",
+    "category": "d",
+    "emoji_order": "1535"
+  },*/
+  /*{ //@todo not found on image
+    "name": "knife",
+    "unicode": "1f52a",
+    "shortname": ":knife:",
+    "code_decimal": "&#128298;",
+    "category": "o",
+    "emoji_order": "1536"
+  },*/
   {
     "name": "amphora",
     "unicode": "1f3fa",
@@ -3688,14 +3688,14 @@ let emojiList = [
     "category": "s",
     "emoji_order": "1541"
   },
-  // {
-  //   "name": "map",
-  //   "unicode": "1f5fa",
-  //   "shortname": ":map:",
-  //   "code_decimal": "&#128506;",
-  //   "category": "o",
-  //   "emoji_order": "1542"
-  // },
+  {
+    "name": "world_map",
+    "unicode": "1f5fa",
+    "shortname": ":map:",
+    "code_decimal": "&#128506;",
+    "category": "o",
+    "emoji_order": "1542"
+  },
   {
     "name": "japan",
     "unicode": "1f5fe",
@@ -3704,14 +3704,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1543"
   },
-  // {
-  //   "name": "mountain_snow",
-  //   "unicode": "1f3d4",
-  //   "shortname": ":mountain_snow:",
-  //   "code_decimal": "&#127956;",
-  //   "category": "t",
-  //   "emoji_order": "1544"
-  // },
+  {
+    "name": "snow_capped_mountain",
+    "unicode": "1f3d4",
+    "shortname": ":mountain_snow:",
+    "code_decimal": "&#127956;",
+    "category": "t",
+    "emoji_order": "1544"
+  },
   {
     "name": "mountain",
     "unicode": "26f0",
@@ -3744,14 +3744,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1548"
   },
-  // {
-  //   "name": "beach",
-  //   "unicode": "1f3d6",
-  //   "shortname": ":beach:",
-  //   "code_decimal": "&#127958;",
-  //   "category": "t",
-  //   "emoji_order": "1549"
-  // },
+  {
+    "name": "beach_with_umbrella",
+    "unicode": "1f3d6",
+    "shortname": ":beach:",
+    "code_decimal": "&#127958;",
+    "category": "t",
+    "emoji_order": "1549"
+  },
   {
     "name": "desert",
     "unicode": "1f3dc",
@@ -3760,22 +3760,22 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1550"
   },
-  // {
-  //   "name": "island",
-  //   "unicode": "1f3dd",
-  //   "shortname": ":island:",
-  //   "code_decimal": "&#127965;",
-  //   "category": "t",
-  //   "emoji_order": "1551"
-  // },
-  // {
-  //   "name": "park",
-  //   "unicode": "1f3de",
-  //   "shortname": ":park:",
-  //   "code_decimal": "&#127966;",
-  //   "category": "t",
-  //   "emoji_order": "1552"
-  // },
+  {
+    "name": "desert_island",
+    "unicode": "1f3dd",
+    "shortname": ":island:",
+    "code_decimal": "&#127965;",
+    "category": "t",
+    "emoji_order": "1551"
+  },
+  {
+    "name": "national_park",
+    "unicode": "1f3de",
+    "shortname": ":park:",
+    "code_decimal": "&#127966;",
+    "category": "t",
+    "emoji_order": "1552"
+  },
   {
     "name": "stadium",
     "unicode": "1f3df",
@@ -3792,22 +3792,22 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1554"
   },
-  // {
-  //   "name": "construction_site",
-  //   "unicode": "1f3d7",
-  //   "shortname": ":construction_site:",
-  //   "code_decimal": "&#127959;",
-  //   "category": "t",
-  //   "emoji_order": "1555"
-  // },
-  // {
-  //   "name": "homes",
-  //   "unicode": "1f3d8",
-  //   "shortname": ":homes:",
-  //   "code_decimal": "&#127960;",
-  //   "category": "t",
-  //   "emoji_order": "1556"
-  // },
+  {
+    "name": "building_construction",
+    "unicode": "1f3d7",
+    "shortname": ":construction_site:",
+    "code_decimal": "&#127959;",
+    "category": "t",
+    "emoji_order": "1555"
+  },
+  {
+    "name": "house_buildings",
+    "unicode": "1f3d8",
+    "shortname": ":homes:",
+    "code_decimal": "&#127960;",
+    "category": "t",
+    "emoji_order": "1556"
+  },
   {
     "name": "cityscape",
     "unicode": "1f3d9",
@@ -3816,14 +3816,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1557"
   },
-  // {
-  //   "name": "house_abandoned",
-  //   "unicode": "1f3da",
-  //   "shortname": ":house_abandoned:",
-  //   "code_decimal": "&#127962;",
-  //   "category": "t",
-  //   "emoji_order": "1558"
-  // },
+  {
+    "name": "derelict_house_building",
+    "unicode": "1f3da",
+    "shortname": ":house_abandoned:",
+    "code_decimal": "&#127962;",
+    "category": "t",
+    "emoji_order": "1558"
+  },
   {
     "name": "house",
     "unicode": "1f3e0",
@@ -4056,14 +4056,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1587"
   },
-  // {
-  //   "name": "city_dusk",
-  //   "unicode": "1f306",
-  //   "shortname": ":city_dusk:",
-  //   "code_decimal": "&#127750;",
-  //   "category": "t",
-  //   "emoji_order": "1588"
-  // },
+  /*{ //@todo not found on image
+    "name": "city_dusk",
+    "unicode": "1f306",
+    "shortname": ":city_dusk:",
+    "code_decimal": "&#127750;",
+    "category": "t",
+    "emoji_order": "1588"
+  },*/
   {
     "name": "city_sunset",
     "unicode": "1f307",
@@ -4144,22 +4144,22 @@ let emojiList = [
     "category": "a",
     "emoji_order": "1598"
   },
-  // {
-  //   "name": "frame_photo",
-  //   "unicode": "1f5bc",
-  //   "shortname": ":frame_photo:",
-  //   "code_decimal": "&#128444;",
-  //   "category": "o",
-  //   "emoji_order": "1599"
-  // },
-  // {
-  //   "name": "art",
-  //   "unicode": "1f3a8",
-  //   "shortname": ":art:",
-  //   "code_decimal": "&#127912;",
-  //   "category": "a",
-  //   "emoji_order": "1600"
-  // },
+  {
+    "name": "frame_with_picture",
+    "unicode": "1f5bc",
+    "shortname": ":frame_photo:",
+    "code_decimal": "&#128444;",
+    "category": "o",
+    "emoji_order": "1599"
+  },
+  {
+    "name": "art",
+    "unicode": "1f3a8",
+    "shortname": ":art:",
+    "code_decimal": "&#127912;",
+    "category": "a",
+    "emoji_order": "1600"
+  },
   {
     "name": "slot_machine",
     "unicode": "1f3b0",
@@ -4344,14 +4344,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1623"
   },
-  // {
-  //   "name": "red_car",
-  //   "unicode": "1f697",
-  //   "shortname": ":red_car:",
-  //   "code_decimal": "&#128663;",
-  //   "category": "t",
-  //   "emoji_order": "1624"
-  // },
+  {
+    "name": "car",
+    "unicode": "1f697",
+    "shortname": ":red_car:",
+    "code_decimal": "&#128663;",
+    "category": "t",
+    "emoji_order": "1624"
+  },
   {
     "name": "oncoming_automobile",
     "unicode": "1f698",
@@ -4400,22 +4400,22 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1630"
   },
-  // {
-  //   "name": "scooter",
-  //   "unicode": "1f6f4",
-  //   "shortname": ":scooter:",
-  //   "code_decimal": "&#128756;",
-  //   "category": "t",
-  //   "emoji_order": "1631"
-  // },
-  // {
-  //   "name": "motor_scooter",
-  //   "unicode": "1f6f5",
-  //   "shortname": ":motor_scooter:",
-  //   "code_decimal": "&#128757;",
-  //   "category": "t",
-  //   "emoji_order": "1632"
-  // },
+  /*{ //@todo not found on image
+    "name": "scooter",
+    "unicode": "1f6f4",
+    "shortname": ":scooter:",
+    "code_decimal": "&#128756;",
+    "category": "t",
+    "emoji_order": "1631"
+  },*/
+  /*{ //@todo not found on image
+    "name": "motor_scooter",
+    "unicode": "1f6f5",
+    "shortname": ":motor_scooter:",
+    "code_decimal": "&#128757;",
+    "category": "t",
+    "emoji_order": "1632"
+  },*/
   {
     "name": "busstop",
     "unicode": "1f68f",
@@ -4496,22 +4496,22 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1642"
   },
-  // {
-  //   "name": "sailboat",
-  //   "unicode": "26f5",
-  //   "shortname": ":sailboat:",
-  //   "code_decimal": "&#9973;",
-  //   "category": "t",
-  //   "emoji_order": "1643"
-  // },
-  // {
-  //   "name": "canoe",
-  //   "unicode": "1f6f6",
-  //   "shortname": ":canoe:",
-  //   "code_decimal": "&#128758;",
-  //   "category": "t",
-  //   "emoji_order": "1644"
-  // },
+  {
+    "name": "boat",
+    "unicode": "26f5",
+    "shortname": ":sailboat:",
+    "code_decimal": "&#9973;",
+    "category": "t",
+    "emoji_order": "1643"
+  },
+  /*{ //@todo not found on image
+    "name": "canoe",
+    "unicode": "1f6f6",
+    "shortname": ":canoe:",
+    "code_decimal": "&#128758;",
+    "category": "t",
+    "emoji_order": "1644"
+  },*/
   {
     "name": "speedboat",
     "unicode": "1f6a4",
@@ -4520,14 +4520,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1645"
   },
-  // {
-  //   "name": "cruise_ship",
-  //   "unicode": "1f6f3",
-  //   "shortname": ":cruise_ship:",
-  //   "code_decimal": "&#128755;",
-  //   "category": "t",
-  //   "emoji_order": "1646"
-  // },
+  {
+    "name": "passenger_ship",
+    "unicode": "1f6f3",
+    "shortname": ":cruise_ship:",
+    "code_decimal": "&#128755;",
+    "category": "t",
+    "emoji_order": "1646"
+  },
   {
     "name": "ferry",
     "unicode": "26f4",
@@ -4536,14 +4536,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1647"
   },
-  // {
-  //   "name": "motorboat",
-  //   "unicode": "1f6e5",
-  //   "shortname": ":motorboat:",
-  //   "code_decimal": "&#128741;",
-  //   "category": "t",
-  //   "emoji_order": "1648"
-  // },
+  {
+    "name": "motor_boat",
+    "unicode": "1f6e5",
+    "shortname": ":motorboat:",
+    "code_decimal": "&#128741;",
+    "category": "t",
+    "emoji_order": "1648"
+  },
   {
     "name": "ship",
     "unicode": "1f6a2",
@@ -4560,14 +4560,14 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1650"
   },
-  // {
-  //   "name": "airplane_small",
-  //   "unicode": "1f6e9",
-  //   "shortname": ":airplane_small:",
-  //   "code_decimal": "&#128745;",
-  //   "category": "t",
-  //   "emoji_order": "1651"
-  // },
+  {
+    "name": "small_airplane",
+    "unicode": "1f6e9",
+    "shortname": ":airplane_small:",
+    "code_decimal": "&#128745;",
+    "category": "t",
+    "emoji_order": "1651"
+  },
   {
     "name": "airplane_departure",
     "unicode": "1f6eb",
@@ -4632,22 +4632,22 @@ let emojiList = [
     "category": "t",
     "emoji_order": "1659"
   },
-  // {
-  //   "name": "satellite_orbital",
-  //   "unicode": "1f6f0",
-  //   "shortname": ":satellite_orbital:",
-  //   "code_decimal": "&#128752;",
-  //   "category": "t",
-  //   "emoji_order": "1660"
-  // },
-  // {
-  //   "name": "bellhop",
-  //   "unicode": "1f6ce",
-  //   "shortname": ":bellhop:",
-  //   "code_decimal": "&#128718;",
-  //   "category": "o",
-  //   "emoji_order": "1661"
-  // },
+  {
+    "name": "satellite",
+    "unicode": "1f6f0",
+    "shortname": ":satellite_orbital:",
+    "code_decimal": "&#128752;",
+    "category": "t",
+    "emoji_order": "1660"
+  },
+  {
+    "name": "bellhop_bell",
+    "unicode": "1f6ce",
+    "shortname": ":bellhop:",
+    "code_decimal": "&#128718;",
+    "category": "o",
+    "emoji_order": "1661"
+  },
   {
     "name": "door",
     "unicode": "1f6aa",
@@ -4672,14 +4672,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1669"
   },
-  // {
-  //   "name": "couch",
-  //   "unicode": "1f6cb",
-  //   "shortname": ":couch:",
-  //   "code_decimal": "&#128715;",
-  //   "category": "o",
-  //   "emoji_order": "1670"
-  // },
+  {
+    "name": "couch_and_lamp",
+    "unicode": "1f6cb",
+    "shortname": ":couch:",
+    "code_decimal": "&#128715;",
+    "category": "o",
+    "emoji_order": "1670"
+  },
   {
     "name": "toilet",
     "unicode": "1f6bd",
@@ -4752,22 +4752,22 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1684"
   },
-  // {
-  //   "name": "timer",
-  //   "unicode": "23f2",
-  //   "shortname": ":timer:",
-  //   "code_decimal": "&#9202;",
-  //   "category": "o",
-  //   "emoji_order": "1685"
-  // },
-  // {
-  //   "name": "clock",
-  //   "unicode": "1f570",
-  //   "shortname": ":clock:",
-  //   "code_decimal": "&#128368;",
-  //   "category": "o",
-  //   "emoji_order": "1686"
-  // },
+  {
+    "name": "timer_clock",
+    "unicode": "23f2",
+    "shortname": ":timer:",
+    "code_decimal": "&#9202;",
+    "category": "o",
+    "emoji_order": "1685"
+  },
+  {
+    "name": "mantelpiece_clock",
+    "unicode": "1f570",
+    "shortname": ":clock:",
+    "code_decimal": "&#128368;",
+    "category": "o",
+    "emoji_order": "1686"
+  },
   {
     "name": "clock12",
     "unicode": "1f55b",
@@ -4984,14 +4984,14 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1713"
   },
-  // {
-  //   "name": "waxing_gibbous_moon",
-  //   "unicode": "1f314",
-  //   "shortname": ":waxing_gibbous_moon:",
-  //   "code_decimal": "&#127764;",
-  //   "category": "n",
-  //   "emoji_order": "1714"
-  // },
+  /*{ //@todo not found on image
+    "name": "waxing_gibbous_moon",
+    "unicode": "1f314",
+    "shortname": ":waxing_gibbous_moon:",
+    "code_decimal": "&#127764;",
+    "category": "n",
+    "emoji_order": "1714"
+  },*/
   {
     "name": "full_moon",
     "unicode": "1f315",
@@ -5128,70 +5128,70 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1731"
   },
-  // {
-  //   "name": "thunder_cloud_rain",
-  //   "unicode": "26c8",
-  //   "shortname": ":thunder_cloud_rain:",
-  //   "code_decimal": "&#9928;",
-  //   "category": "n",
-  //   "emoji_order": "1732"
-  // },
-  // {
-  //   "name": "white_sun_small_cloud",
-  //   "unicode": "1f324",
-  //   "shortname": ":white_sun_small_cloud:",
-  //   "code_decimal": "&#127780;",
-  //   "category": "n",
-  //   "emoji_order": "1733"
-  // },
-  // {
-  //   "name": "white_sun_cloud",
-  //   "unicode": "1f325",
-  //   "shortname": ":white_sun_cloud:",
-  //   "code_decimal": "&#127781;",
-  //   "category": "n",
-  //   "emoji_order": "1734"
-  // },
-  // {
-  //   "name": "white_sun_rain_cloud",
-  //   "unicode": "1f326",
-  //   "shortname": ":white_sun_rain_cloud:",
-  //   "code_decimal": "&#127782;",
-  //   "category": "n",
-  //   "emoji_order": "1735"
-  // },
-  // {
-  //   "name": "cloud_rain",
-  //   "unicode": "1f327",
-  //   "shortname": ":cloud_rain:",
-  //   "code_decimal": "&#127783;",
-  //   "category": "n",
-  //   "emoji_order": "1736"
-  // },
-  // {
-  //   "name": "cloud_snow",
-  //   "unicode": "1f328",
-  //   "shortname": ":cloud_snow:",
-  //   "code_decimal": "&#127784;",
-  //   "category": "n",
-  //   "emoji_order": "1737"
-  // },
-  // {
-  //   "name": "cloud_lightning",
-  //   "unicode": "1f329",
-  //   "shortname": ":cloud_lightning:",
-  //   "code_decimal": "&#127785;",
-  //   "category": "n",
-  //   "emoji_order": "1738"
-  // },
-  // {
-  //   "name": "cloud_tornado",
-  //   "unicode": "1f32a",
-  //   "shortname": ":cloud_tornado:",
-  //   "code_decimal": "&#127786;",
-  //   "category": "n",
-  //   "emoji_order": "1739"
-  // },
+  {
+    "name": "thunder_cloud_and_rain",
+    "unicode": "26c8",
+    "shortname": ":thunder_cloud_rain:",
+    "code_decimal": "&#9928;",
+    "category": "n",
+    "emoji_order": "1732"
+  },
+  /*{ //@todo not found on image
+    "name": "white_sun_small_cloud",
+    "unicode": "1f324",
+    "shortname": ":white_sun_small_cloud:",
+    "code_decimal": "&#127780;",
+    "category": "n",
+    "emoji_order": "1733"
+  },*/
+  /*{ //@todo not found on image
+    "name": "white_sun_cloud",
+    "unicode": "1f325",
+    "shortname": ":white_sun_cloud:",
+    "code_decimal": "&#127781;",
+    "category": "n",
+    "emoji_order": "1734"
+  },*/
+  /*{ //@todo not found on image
+    "name": "white_sun_rain_cloud",
+    "unicode": "1f326",
+    "shortname": ":white_sun_rain_cloud:",
+    "code_decimal": "&#127782;",
+    "category": "n",
+    "emoji_order": "1735"
+  },*/
+  {
+    "name": "rain_cloud",
+    "unicode": "1f327",
+    "shortname": ":cloud_rain:",
+    "code_decimal": "&#127783;",
+    "category": "n",
+    "emoji_order": "1736"
+  },
+  {
+    "name": "snow_cloud",
+    "unicode": "1f328",
+    "shortname": ":cloud_snow:",
+    "code_decimal": "&#127784;",
+    "category": "n",
+    "emoji_order": "1737"
+  },
+  /*{ //@todo not found on image
+    "name": "cloud_lightning",
+    "unicode": "1f329",
+    "shortname": ":cloud_lightning:",
+    "code_decimal": "&#127785;",
+    "category": "n",
+    "emoji_order": "1738"
+  },*/
+  /*{ //@todo not found on image
+    "name": "cloud_tornado",
+    "unicode": "1f32a",
+    "shortname": ":cloud_tornado:",
+    "code_decimal": "&#127786;",
+    "category": "n",
+    "emoji_order": "1739"
+  },*/
   {
     "name": "fog",
     "unicode": "1f32b",
@@ -5232,16 +5232,16 @@ let emojiList = [
     "category": "p",
     "emoji_order": "1744"
   },
-  // {
-  //   "name": "umbrella2",
-  //   "unicode": "2602",
-  //   "shortname": ":umbrella2:",
-  //   "code_decimal": "&#9730;",
-  //   "category": "n",
-  //   "emoji_order": "1745"
-  // },
   {
     "name": "umbrella",
+    "unicode": "2602",
+    "shortname": ":umbrella2:",
+    "code_decimal": "&#9730;",
+    "category": "n",
+    "emoji_order": "1745"
+  },
+  {
+    "name": "umbrella_with_rain_drops",
     "unicode": "2614",
     "shortname": ":umbrella:",
     "code_decimal": "&#9748;",
@@ -5272,16 +5272,16 @@ let emojiList = [
     "category": "n",
     "emoji_order": "1749"
   },
-  // {
-  //   "name": "snowman2",
-  //   "unicode": "2603",
-  //   "shortname": ":snowman2:",
-  //   "code_decimal": "&#9731;",
-  //   "category": "n",
-  //   "emoji_order": "1750"
-  // },
   {
     "name": "snowman",
+    "unicode": "2603",
+    "shortname": ":snowman2:",
+    "code_decimal": "&#9731;",
+    "category": "n",
+    "emoji_order": "1750"
+  },
+  {
+    "name": "snowman_without_snow",
     "unicode": "26c4",
     "shortname": ":snowman:",
     "code_decimal": "&#9924;",
@@ -5409,7 +5409,7 @@ let emojiList = [
     "emoji_order": "1766"
   },
   {
-    "name": "flags",
+    "name": "f",
     "unicode": "1f38f",
     "shortname": ":flags:",
     "code_decimal": "&#127887;",
@@ -5456,14 +5456,14 @@ let emojiList = [
     "category": "a",
     "emoji_order": "1772"
   },
-  // {
-  //   "name": "tickets",
-  //   "unicode": "1f39f",
-  //   "shortname": ":tickets:",
-  //   "code_decimal": "&#127903;",
-  //   "category": "a",
-  //   "emoji_order": "1773"
-  // },
+  {
+    "name": "admission_tickets",
+    "unicode": "1f39f",
+    "shortname": ":tickets:",
+    "code_decimal": "&#127903;",
+    "category": "a",
+    "emoji_order": "1773"
+  },
   {
     "name": "ticket",
     "unicode": "1f3ab",
@@ -5472,14 +5472,14 @@ let emojiList = [
     "category": "a",
     "emoji_order": "1774"
   },
-  // {
-  //   "name": "military_medal",
-  //   "unicode": "1f396",
-  //   "shortname": ":military_medal:",
-  //   "code_decimal": "&#127894;",
-  //   "category": "a",
-  //   "emoji_order": "1775"
-  // },
+  {
+    "name": "medal",
+    "unicode": "1f396",
+    "shortname": ":military_medal:",
+    "code_decimal": "&#127894;",
+    "category": "a",
+    "emoji_order": "1775"
+  },
   {
     "name": "trophy",
     "unicode": "1f3c6",
@@ -5489,37 +5489,37 @@ let emojiList = [
     "emoji_order": "1776"
   },
   {
-    "name": "medal",
+    "name": "sports_medal",
     "unicode": "1f3c5",
     "shortname": ":medal:",
     "code_decimal": "&#127941;",
     "category": "a",
     "emoji_order": "1777"
   },
-  // {
-  //   "name": "first_place",
-  //   "unicode": "1f947",
-  //   "shortname": ":first_place:",
-  //   "code_decimal": "&#129351;",
-  //   "category": "a",
-  //   "emoji_order": "1778"
-  // },
-  // {
-  //   "name": "second_place",
-  //   "unicode": "1f948",
-  //   "shortname": ":second_place:",
-  //   "code_decimal": "&#129352;",
-  //   "category": "a",
-  //   "emoji_order": "1779"
-  // },
-  // {
-  //   "name": "third_place",
-  //   "unicode": "1f949",
-  //   "shortname": ":third_place:",
-  //   "code_decimal": "&#129353;",
-  //   "category": "a",
-  //   "emoji_order": "1780"
-  // },
+  /*{ //@todo not found on image
+    "name": "first_place",
+    "unicode": "1f947",
+    "shortname": ":first_place:",
+    "code_decimal": "&#129351;",
+    "category": "a",
+    "emoji_order": "1778"
+  },*/
+  /*{ //@todo not found on image
+    "name": "second_place",
+    "unicode": "1f948",
+    "shortname": ":second_place:",
+    "code_decimal": "&#129352;",
+    "category": "a",
+    "emoji_order": "1779"
+  },*/
+  /*{ //@todo not found on image
+    "name": "third_place",
+    "unicode": "1f949",
+    "shortname": ":third_place:",
+    "code_decimal": "&#129353;",
+    "category": "a",
+    "emoji_order": "1780"
+  },*/
   {
     "name": "soccer",
     "unicode": "26bd",
@@ -5592,70 +5592,70 @@ let emojiList = [
     "category": "a",
     "emoji_order": "1789"
   },
-  // {
-  //   "name": "cricket",
-  //   "unicode": "1f3cf",
-  //   "shortname": ":cricket:",
-  //   "code_decimal": "&#127951;",
-  //   "category": "a",
-  //   "emoji_order": "1790"
-  // },
-  // {
-  //   "name": "field_hockey",
-  //   "unicode": "1f3d1",
-  //   "shortname": ":field_hockey:",
-  //   "code_decimal": "&#127953;",
-  //   "category": "a",
-  //   "emoji_order": "1791"
-  // },
-  // {
-  //   "name": "hockey",
-  //   "unicode": "1f3d2",
-  //   "shortname": ":hockey:",
-  //   "code_decimal": "&#127954;",
-  //   "category": "a",
-  //   "emoji_order": "1792"
-  // },
-  // {
-  //   "name": "ping_pong",
-  //   "unicode": "1f3d3",
-  //   "shortname": ":ping_pong:",
-  //   "code_decimal": "&#127955;",
-  //   "category": "a",
-  //   "emoji_order": "1793"
-  // },
-  // {
-  //   "name": "badminton",
-  //   "unicode": "1f3f8",
-  //   "shortname": ":badminton:",
-  //   "code_decimal": "&#127992;",
-  //   "category": "a",
-  //   "emoji_order": "1794"
-  // },
-  // {
-  //   "name": "boxing_glove",
-  //   "unicode": "1f94a",
-  //   "shortname": ":boxing_glove:",
-  //   "code_decimal": "&#129354;",
-  //   "category": "a",
-  //   "emoji_order": "1795"
-  // },
-  // {
-  //   "name": "martial_arts_uniform",
-  //   "unicode": "1f94b",
-  //   "shortname": ":martial_arts_uniform:",
-  //   "code_decimal": "&#129355;",
-  //   "category": "a",
-  //   "emoji_order": "1796"
-  // },
-  // {
-  //   "name": "goal",
-  //   "unicode": "1f945",
-  //   "shortname": ":goal:",
-  //   "code_decimal": "&#129349;",
-  //   "category": "a",
-  //   "emoji_order": "1797"
-  // },
+  {
+    "name": "cricket_bat_and_ball",
+    "unicode": "1f3cf",
+    "shortname": ":cricket_game:",
+    "code_decimal": "&#127951;",
+    "category": "a",
+    "emoji_order": "1790"
+  },
+  {
+    "name": "field_hockey_stick_and_ball",
+    "unicode": "1f3d1",
+    "shortname": ":field_hockey:",
+    "code_decimal": "&#127953;",
+    "category": "a",
+    "emoji_order": "1791"
+  },
+  {
+    "name": "ice_hockey_stick_and_puck",
+    "unicode": "1f3d2",
+    "shortname": ":hockey:",
+    "code_decimal": "&#127954;",
+    "category": "a",
+    "emoji_order": "1792"
+  },
+  {
+    "name": "table_tennis_paddle_and_ball",
+    "unicode": "1f3d3",
+    "shortname": ":ping_pong:",
+    "code_decimal": "&#127955;",
+    "category": "a",
+    "emoji_order": "1793"
+  },
+  {
+    "name": "badminton_racquet_and_shuttlecock",
+    "unicode": "1f3f8",
+    "shortname": ":badminton:",
+    "code_decimal": "&#127992;",
+    "category": "a",
+    "emoji_order": "1794"
+  },
+  /*{ //@todo not found on image
+    "name": "boxing_glove",
+    "unicode": "1f94a",
+    "shortname": ":boxing_glove:",
+    "code_decimal": "&#129354;",
+    "category": "a",
+    "emoji_order": "1795"
+  },*/
+  /*{ //@todo not found on image
+    "name": "martial_arts_uniform",
+    "unicode": "1f94b",
+    "shortname": ":martial_arts_uniform:",
+    "code_decimal": "&#129355;",
+    "category": "a",
+    "emoji_order": "1796"
+  },*/
+  /*{ @todo not found on image
+    "name": "goal",
+    "unicode": "1f945",
+    "shortname": ":goal:",
+    "code_decimal": "&#129349;",
+    "category": "a",
+    "emoji_order": "1797"
+  },*/
   {
     "name": "dart",
     "unicode": "1f3af",
@@ -5880,14 +5880,14 @@ let emojiList = [
     "category": "s",
     "emoji_order": "1825"
   },
-  // {
-  //   "name": "microphone2",
-  //   "unicode": "1f399",
-  //   "shortname": ":microphone2:",
-  //   "code_decimal": "&#127897;",
-  //   "category": "o",
-  //   "emoji_order": "1826"
-  // },
+  {
+    "name": "studio_microphone",
+    "unicode": "1f399",
+    "shortname": ":microphone2:",
+    "code_decimal": "&#127897;",
+    "category": "o",
+    "emoji_order": "1826"
+  },
   {
     "name": "level_slider",
     "unicode": "1f39a",
@@ -5968,14 +5968,14 @@ let emojiList = [
     "category": "a",
     "emoji_order": "1836"
   },
-  {
+  /*{ //@todo not found on image
     "name": "drum",
     "unicode": "1f941",
     "shortname": ":drum:",
     "code_decimal": "&#129345;",
     "category": "a",
     "emoji_order": "1837"
-  },
+  },*/
   {
     "name": "iphone",
     "unicode": "1f4f1",
@@ -6048,14 +6048,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1846"
   },
-  // {
-  //   "name": "desktop",
-  //   "unicode": "1f5a5",
-  //   "shortname": ":desktop:",
-  //   "code_decimal": "&#128421;",
-  //   "category": "o",
-  //   "emoji_order": "1847"
-  // },
+  {
+    "name": "desktop_computer",
+    "unicode": "1f5a5",
+    "shortname": ":desktop:",
+    "code_decimal": "&#128421;",
+    "category": "o",
+    "emoji_order": "1847"
+  },
   {
     "name": "printer",
     "unicode": "1f5a8",
@@ -6072,14 +6072,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1849"
   },
-  // {
-  //   "name": "mouse_three_button",
-  //   "unicode": "1f5b1",
-  //   "shortname": ":mouse_three_button:",
-  //   "code_decimal": "&#128433;",
-  //   "category": "o",
-  //   "emoji_order": "1850"
-  // },
+  {
+    "name": "three_button_mouse",
+    "unicode": "1f5b1",
+    "shortname": ":mouse_three_button:",
+    "code_decimal": "&#128433;",
+    "category": "o",
+    "emoji_order": "1850"
+  },
   {
     "name": "trackball",
     "unicode": "1f5b2",
@@ -6136,14 +6136,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1857"
   },
-  // {
-  //   "name": "projector",
-  //   "unicode": "1f4fd",
-  //   "shortname": ":projector:",
-  //   "code_decimal": "&#128253;",
-  //   "category": "o",
-  //   "emoji_order": "1858"
-  // },
+  {
+    "name": "film_projector",
+    "unicode": "1f4fd",
+    "shortname": ":projector:",
+    "code_decimal": "&#128253;",
+    "category": "o",
+    "emoji_order": "1858"
+  },
   {
     "name": "clapper",
     "unicode": "1f3ac",
@@ -6225,7 +6225,7 @@ let emojiList = [
     "emoji_order": "1868"
   },
   {
-    "name": "satellite",
+    "name": "satellite_antenna",
     "unicode": "1f4e1",
     "shortname": ":satellite:",
     "code_decimal": "&#128225;",
@@ -6368,14 +6368,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1886"
   },
-  // {
-  //   "name": "newspaper2",
-  //   "unicode": "1f5de",
-  //   "shortname": ":newspaper2:",
-  //   "code_decimal": "&#128478;",
-  //   "category": "o",
-  //   "emoji_order": "1887"
-  // },
+  {
+    "name": "rolled_up_newspaper",
+    "unicode": "1f5de",
+    "shortname": ":newspaper2:",
+    "code_decimal": "&#128478;",
+    "category": "o",
+    "emoji_order": "1887"
+  },
   {
     "name": "bookmark_tabs",
     "unicode": "1f4d1",
@@ -6480,14 +6480,14 @@ let emojiList = [
     "category": "s",
     "emoji_order": "1900"
   },
-  // {
-  //   "name": "envelope",
-  //   "unicode": "2709",
-  //   "shortname": ":envelope:",
-  //   "code_decimal": "&#9993;",
-  //   "category": "o",
-  //   "emoji_order": "1901"
-  // },
+  /* { //@todo not found on image
+    "name": "envelope",
+    "unicode": "2709",
+    "shortname": ":envelope:",
+    "code_decimal": "&#9993;",
+    "category": "o",
+    "emoji_order": "1901"
+  },*/
   {
     "name": "e-mail",
     "unicode": "1f4e7",
@@ -6577,7 +6577,7 @@ let emojiList = [
     "emoji_order": "1912"
   },
   {
-    "name": "ballot_box",
+    "name": "ballot_box_with_ballot",
     "unicode": "1f5f3",
     "shortname": ":ballot_box:",
     "code_decimal": "&#128499;",
@@ -6600,46 +6600,46 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1915"
   },
-  // {
-  //   "name": "pen_fountain",
-  //   "unicode": "1f58b",
-  //   "shortname": ":pen_fountain:",
-  //   "code_decimal": "&#128395;",
-  //   "category": "o",
-  //   "emoji_order": "1916"
-  // },
-  // {
-  //   "name": "pen_ballpoint",
-  //   "unicode": "1f58a",
-  //   "shortname": ":pen_ballpoint:",
-  //   "code_decimal": "&#128394;",
-  //   "category": "o",
-  //   "emoji_order": "1917"
-  // },
-  // {
-  //   "name": "paintbrush",
-  //   "unicode": "1f58c",
-  //   "shortname": ":paintbrush:",
-  //   "code_decimal": "&#128396;",
-  //   "category": "o",
-  //   "emoji_order": "1918"
-  // },
-  // {
-  //   "name": "crayon",
-  //   "unicode": "1f58d",
-  //   "shortname": ":crayon:",
-  //   "code_decimal": "&#128397;",
-  //   "category": "o",
-  //   "emoji_order": "1919"
-  // },
-  // {
-  //   "name": "pencil",
-  //   "unicode": "1f4dd",
-  //   "shortname": ":pencil:",
-  //   "code_decimal": "&#128221;",
-  //   "category": "o",
-  //   "emoji_order": "1920"
-  // },
+  {
+    "name": "lower_left_fountain_pen",
+    "unicode": "1f58b",
+    "shortname": ":pen_fountain:",
+    "code_decimal": "&#128395;",
+    "category": "o",
+    "emoji_order": "1916"
+  },
+  {
+    "name": "lower_left_ballpoint_pen",
+    "unicode": "1f58a",
+    "shortname": ":pen_ballpoint:",
+    "code_decimal": "&#128394;",
+    "category": "o",
+    "emoji_order": "1917"
+  },
+  {
+    "name": "lower_left_paintbrush",
+    "unicode": "1f58c",
+    "shortname": ":paintbrush:",
+    "code_decimal": "&#128396;",
+    "category": "o",
+    "emoji_order": "1918"
+  },
+  {
+    "name": "lower_left_crayon",
+    "unicode": "1f58d",
+    "shortname": ":crayon:",
+    "code_decimal": "&#128397;",
+    "category": "o",
+    "emoji_order": "1919"
+  },
+  {
+    "name": "memo",
+    "unicode": "1f4dd",
+    "shortname": ":pencil:",
+    "code_decimal": "&#128221;",
+    "category": "o",
+    "emoji_order": "1920"
+  },
   {
     "name": "briefcase",
     "unicode": "1f4bc",
@@ -6664,14 +6664,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1923"
   },
-  // {
-  //   "name": "dividers",
-  //   "unicode": "1f5c2",
-  //   "shortname": ":dividers:",
-  //   "code_decimal": "&#128450;",
-  //   "category": "o",
-  //   "emoji_order": "1924"
-  // },
+  {
+    "name": "card_index_dividers",
+    "unicode": "1f5c2",
+    "shortname": ":dividers:",
+    "code_decimal": "&#128450;",
+    "category": "o",
+    "emoji_order": "1924"
+  },
   {
     "name": "date",
     "unicode": "1f4c5",
@@ -6688,22 +6688,22 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1926"
   },
-  // {
-  //   "name": "notepad_spiral",
-  //   "unicode": "1f5d2",
-  //   "shortname": ":notepad_spiral:",
-  //   "code_decimal": "&#128466;",
-  //   "category": "o",
-  //   "emoji_order": "1927"
-  // },
-  // {
-  //   "name": "calendar_spiral",
-  //   "unicode": "1f5d3",
-  //   "shortname": ":calendar_spiral:",
-  //   "code_decimal": "&#128467;",
-  //   "category": "o",
-  //   "emoji_order": "1928"
-  // },
+  {
+    "name": "spiral_note_pad",
+    "unicode": "1f5d2",
+    "shortname": ":notepad_spiral:",
+    "code_decimal": "&#128466;",
+    "category": "o",
+    "emoji_order": "1927"
+  },
+  {
+    "name": "spiral_calendar_pad",
+    "unicode": "1f5d3",
+    "shortname": ":calendar_spiral:",
+    "code_decimal": "&#128467;",
+    "category": "o",
+    "emoji_order": "1928"
+  },
   {
     "name": "card_index",
     "unicode": "1f4c7",
@@ -6768,14 +6768,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1936"
   },
-  // {
-  //   "name": "paperclips",
-  //   "unicode": "1f587",
-  //   "shortname": ":paperclips:",
-  //   "code_decimal": "&#128391;",
-  //   "category": "o",
-  //   "emoji_order": "1937"
-  // },
+  {
+    "name": "linked_paperclips",
+    "unicode": "1f587",
+    "shortname": ":paperclips:",
+    "code_decimal": "&#128391;",
+    "category": "o",
+    "emoji_order": "1937"
+  },
   {
     "name": "straight_ruler",
     "unicode": "1f4cf",
@@ -6800,14 +6800,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1940"
   },
-  // {
-  //   "name": "card_box",
-  //   "unicode": "1f5c3",
-  //   "shortname": ":card_box:",
-  //   "code_decimal": "&#128451;",
-  //   "category": "o",
-  //   "emoji_order": "1941"
-  // },
+  {
+    "name": "card_file_box",
+    "unicode": "1f5c3",
+    "shortname": ":card_box:",
+    "code_decimal": "&#128451;",
+    "category": "o",
+    "emoji_order": "1941"
+  },
   {
     "name": "file_cabinet",
     "unicode": "1f5c4",
@@ -6864,14 +6864,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1948"
   },
-  // {
-  //   "name": "key2",
-  //   "unicode": "1f5dd",
-  //   "shortname": ":key2:",
-  //   "code_decimal": "&#128477;",
-  //   "category": "o",
-  //   "emoji_order": "1949"
-  // },
+  {
+    "name": "old_key",
+    "unicode": "1f5dd",
+    "shortname": ":key2:",
+    "code_decimal": "&#128477;",
+    "category": "o",
+    "emoji_order": "1949"
+  },
   {
     "name": "hammer",
     "unicode": "1f528",
@@ -6888,30 +6888,30 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1951"
   },
-  // {
-  //   "name": "hammer_pick",
-  //   "unicode": "2692",
-  //   "shortname": ":hammer_pick:",
-  //   "code_decimal": "&#9874;",
-  //   "category": "o",
-  //   "emoji_order": "1952"
-  // },
-  // {
-  //   "name": "tools",
-  //   "unicode": "1f6e0",
-  //   "shortname": ":tools:",
-  //   "code_decimal": "&#128736;",
-  //   "category": "o",
-  //   "emoji_order": "1953"
-  // },
-  // {
-  //   "name": "dagger",
-  //   "unicode": "1f5e1",
-  //   "shortname": ":dagger:",
-  //   "code_decimal": "&#128481;",
-  //   "category": "o",
-  //   "emoji_order": "1954"
-  // },
+  {
+    "name": "hammer_and_pick",
+    "unicode": "2692",
+    "shortname": ":hammer_pick:",
+    "code_decimal": "&#9874;",
+    "category": "o",
+    "emoji_order": "1952"
+  },
+  {
+    "name": "hammer_and_wrench",
+    "unicode": "1f6e0",
+    "shortname": ":tools:",
+    "code_decimal": "&#128736;",
+    "category": "o",
+    "emoji_order": "1953"
+  },
+  {
+    "name": "dagger_knife",
+    "unicode": "1f5e1",
+    "shortname": ":dagger:",
+    "code_decimal": "&#128481;",
+    "category": "o",
+    "emoji_order": "1954"
+  },
   {
     "name": "crossed_swords",
     "unicode": "2694",
@@ -7040,14 +7040,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1970"
   },
-  // {
-  //   "name": "urn",
-  //   "unicode": "26b1",
-  //   "shortname": ":urn:",
-  //   "code_decimal": "&#9905;",
-  //   "category": "o",
-  //   "emoji_order": "1971"
-  // },
+  {
+    "name": "funeral_urn",
+    "unicode": "26b1",
+    "shortname": ":urn:",
+    "code_decimal": "&#9905;",
+    "category": "o",
+    "emoji_order": "1971"
+  },
   {
     "name": "moyai",
     "unicode": "1f5ff",
@@ -7056,14 +7056,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1972"
   },
-  // {
-  //   "name": "oil",
-  //   "unicode": "1f6e2",
-  //   "shortname": ":oil:",
-  //   "code_decimal": "&#128738;",
-  //   "category": "o",
-  //   "emoji_order": "1973"
-  // },
+  {
+    "name": "oil_drum",
+    "unicode": "1f6e2",
+    "shortname": ":oil:",
+    "code_decimal": "&#128738;",
+    "category": "o",
+    "emoji_order": "1973"
+  },
   {
     "name": "crystal_ball",
     "unicode": "1f52e",
@@ -7072,14 +7072,14 @@ let emojiList = [
     "category": "o",
     "emoji_order": "1974"
   },
-  // {
-  //   "name": "shopping_cart",
-  //   "unicode": "1f6d2",
-  //   "shortname": ":shopping_cart:",
-  //   "code_decimal": "&#128722;",
-  //   "category": "o",
-  //   "emoji_order": "1975"
-  // },
+  /*{ //@todo not found on image
+    "name": "shopping_cart",
+    "unicode": "1f6d2",
+    "shortname": ":shopping_cart:",
+    "code_decimal": "&#128722;",
+    "category": "o",
+    "emoji_order": "1975"
+  },*/
   {
     "name": "atm",
     "unicode": "1f3e7",
@@ -7465,7 +7465,7 @@ let emojiList = [
     "emoji_order": "2023"
   },
   {
-    "name": "atom",
+    "name": "atom_symbol",
     "unicode": "269b",
     "shortname": ":atom:",
     "code_decimal": "&#9883;",
@@ -7505,7 +7505,7 @@ let emojiList = [
     "emoji_order": "2028"
   },
   {
-    "name": "cross",
+    "name": "latin_cross",
     "unicode": "271d",
     "shortname": ":cross:",
     "code_decimal": "&#10013;",
@@ -7529,7 +7529,7 @@ let emojiList = [
     "emoji_order": "2031"
   },
   {
-    "name": "peace",
+    "name": "peace_symbol",
     "unicode": "262e",
     "shortname": ":peace:",
     "code_decimal": "&#9774;",
@@ -7537,7 +7537,7 @@ let emojiList = [
     "emoji_order": "2032"
   },
   {
-    "name": "menorah",
+    "name": "menorah_with_nine_branches",
     "unicode": "1f54e",
     "shortname": ":menorah:",
     "code_decimal": "&#128334;",
@@ -7697,7 +7697,7 @@ let emojiList = [
     "emoji_order": "2052"
   },
   {
-    "name": "track_next",
+    "name": "black_right_pointing_double_triangle_with_vertical_bar",
     "unicode": "23ed",
     "shortname": ":track_next:",
     "code_decimal": "&#9197;",
@@ -7705,7 +7705,7 @@ let emojiList = [
     "emoji_order": "2053"
   },
   {
-    "name": "play_pause",
+    "name": "black_right_pointing_triangle_with_double_vertical_bar",
     "unicode": "23ef",
     "shortname": ":play_pause:",
     "code_decimal": "&#9199;",
@@ -7729,7 +7729,7 @@ let emojiList = [
     "emoji_order": "2056"
   },
   {
-    "name": "track_previous",
+    "name": "black_left_pointing_double_triangle_with_vertical_bar",
     "unicode": "23ee",
     "shortname": ":track_previous:",
     "code_decimal": "&#9198;",
@@ -7768,38 +7768,38 @@ let emojiList = [
     "category": "s",
     "emoji_order": "2061"
   },
-  // {
-  //   "name": "pause_button",
-  //   "unicode": "23f8",
-  //   "shortname": ":pause_button:",
-  //   "code_decimal": "&#9208;",
-  //   "category": "s",
-  //   "emoji_order": "2062"
-  // },
-  // {
-  //   "name": "stop_button",
-  //   "unicode": "23f9",
-  //   "shortname": ":stop_button:",
-  //   "code_decimal": "&#9209;",
-  //   "category": "s",
-  //   "emoji_order": "2063"
-  // },
-  // {
-  //   "name": "record_button",
-  //   "unicode": "23fa",
-  //   "shortname": ":record_button:",
-  //   "code_decimal": "&#9210;",
-  //   "category": "s",
-  //   "emoji_order": "2064"
-  // },
-  // {
-  //   "name": "eject",
-  //   "unicode": "23cf",
-  //   "shortname": ":eject:",
-  //   "code_decimal": "&#9167;",
-  //   "category": "s",
-  //   "emoji_order": "2065"
-  // },
+  {
+    "name": "double_vertical_bar",
+    "unicode": "23f8",
+    "shortname": ":pause_button:",
+    "code_decimal": "&#9208;",
+    "category": "s",
+    "emoji_order": "2062"
+  },
+  {
+    "name": "black_square_for_stop",
+    "unicode": "23f9",
+    "shortname": ":stop_button:",
+    "code_decimal": "&#9209;",
+    "category": "s",
+    "emoji_order": "2063"
+  },
+  {
+    "name": "black_circle_for_record",
+    "unicode": "23fa",
+    "shortname": ":record_button:",
+    "code_decimal": "&#9210;",
+    "category": "s",
+    "emoji_order": "2064"
+  },
+  /*{ //@todo not found on image
+    "name": "eject",
+    "unicode": "23cf",
+    "shortname": ":eject:",
+    "code_decimal": "&#9167;",
+    "category": "s",
+    "emoji_order": "2065"
+  },*/
   {
     "name": "cinema",
     "unicode": "1f3a6",
@@ -7865,7 +7865,7 @@ let emojiList = [
     "emoji_order": "2073"
   },
   {
-    "name": "fleur-de-lis",
+    "name": "fleur_de_lis",
     "unicode": "269c",
     "shortname": ":fleur-de-lis:",
     "code_decimal": "&#9884;",
@@ -8105,7 +8105,7 @@ let emojiList = [
     "emoji_order": "2106"
   },
   {
-    "name": "asterisk",
+    "name": "keycap_star",
     "unicode": "002a-20e3",
     "shortname": ":asterisk:",
     "code_decimal": "*&#8419;",
@@ -8217,9 +8217,9 @@ let emojiList = [
     "emoji_order": "2121"
   },
   {
-    "name": "symbols",
+    "name": "s",
     "unicode": "1f523",
-    "shortname": ":symbols:",
+    "shortname": ":s:",
     "code_decimal": "&#128291;",
     "category": "s",
     "emoji_order": "2123"
@@ -8673,7 +8673,7 @@ let emojiList = [
     "emoji_order": "2179"
   },
   {
-    "name": "blue_circle",
+    "name": "large_blue_circle",
     "unicode": "1f535",
     "shortname": ":blue_circle:",
     "code_decimal": "&#128309;",
