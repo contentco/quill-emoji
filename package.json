@@ -2,7 +2,7 @@
   "name": "quill-emoji",
   "version": "0.1.5",
   "description": "Quill Extension for Emoji Selection",
-  "main": "src/quill-emoji.js",
+  "main": "dist/quill-emoji.js",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
@@ -73,5 +73,8 @@
       "browser": true,
       "node": true
     }
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
