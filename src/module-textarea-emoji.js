@@ -5,10 +5,10 @@ import emojiList from './emoji-list.js';
 const Delta = Quill.import('delta');
 const Module = Quill.import('core/module');
 
-class TextAreaEmoji extends Module {  
+class TextAreaEmoji extends Module {
     constructor(quill, options){
         super(quill, options);
-      
+
         this.quill = quill;
         this.container  = document.createElement('div');
         this.container.classList.add('textarea-emoji-control');
@@ -17,7 +17,7 @@ class TextAreaEmoji extends Module {
         this.quill.container.appendChild(this.container);
         this.container.addEventListener('click', this.checkEmojiBoxExist.bind(this),false);
     }
-  
+
     checkEmojiBoxExist(){
         let elementExists = document.getElementById("textarea-emoji");
         if (elementExists) {
@@ -70,13 +70,13 @@ class TextAreaEmoji extends Module {
                 emojiFilter.addEventListener('click',function(){
                     const emojiContainer = document.getElementById("textarea-emoji");
                     const tab = emojiContainer && emojiContainer.querySelector('.active');
-                    
+
                     if (tab) {
                         tab.classList.remove('active');
                     }
 
                     emojiFilter.classList.toggle('active');
-                    
+
                     while (panel.firstChild) {
                         panel.removeChild(panel.firstChild);
                     }
@@ -156,7 +156,7 @@ function fn_emojiElementsToPanel(type,panel,quill){
                 // quill.insertText(range.index, customButton.innerHTML);
                 // quill.setSelection(range.index + customButton.innerHTML.length, 0);
                 // range.index = range.index + customButton.innerHTML.length;
-                quill.insertEmbed(range.index, 'emoji', emoji);
+                quill.insertEmbed(range.index, 'emoji', emoji, Quill.sources.USER);
                 setTimeout(() => quill.setSelection(range.index + 1), 0);
                 fn_close();
             });

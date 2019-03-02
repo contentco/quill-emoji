@@ -106,7 +106,7 @@ class ShortNameEmoji extends Module {
       if(event && this.isWhiteSpace(this.query)){
         this.close(null);
         return;
-      }  
+      }
     } catch(e) { console.warn(e); }
 
     this.query = this.query.trim();
@@ -146,7 +146,7 @@ class ShortNameEmoji extends Module {
           return;
         }
       }
-      if (event) {return;}      
+      if (event) {return;}
     } catch(e) { console.warn(e); }
 
     while (this.container.firstChild){
@@ -236,7 +236,7 @@ class ShortNameEmoji extends Module {
     this.quill.off('text-change', this.onTextChange);
     if (value) {
       this.quill.deleteText(this.atIndex, this.query.length + 1 + trailingDelete, Quill.sources.USER);
-      this.quill.insertEmbed(this.atIndex, 'emoji', value);
+      this.quill.insertEmbed(this.atIndex, 'emoji', value, Quill.sources.USER);
       setTimeout(() => this.quill.setSelection(this.atIndex + 1), 0);
     }
     this.quill.focus();
