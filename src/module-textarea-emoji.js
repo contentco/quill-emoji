@@ -49,7 +49,7 @@ class TextAreaEmoji extends Module {
                 let closeDiv = document.createElement('div');
                 closeDiv.id = 'emoji-close-div';
                 closeDiv.addEventListener("click", fn_close, false);
-                document.getElementsByTagName('body')[0].appendChild(closeDiv);
+                quill.container.appendChild(closeDiv);
             }
             else{
                 document.getElementById('emoji-close-div').style.display = "block";
