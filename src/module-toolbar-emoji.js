@@ -66,16 +66,25 @@ function fn_showEmojiPalatte(quill) {
   const atSignBounds = quill.getBounds(range.index);
 
   quill.container.appendChild(ele_emoji_area);
+  const editorCenter = quill.container.offsetWidth / 2;
+  const editorMiddle = quill.container.offsetHeight / 2;
+  const selectionCenter = (atSignBounds.left + atSignBounds.right) / 2;
+  const selectionMiddle = (atSignBounds.top + atSignBounds.bottom) / 2;
   let paletteMaxPos = atSignBounds.left + 250;//palette max width is 250
   ele_emoji_area.id = 'emoji-palette';
   ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px";
-  if (paletteMaxPos > quill.container.offsetWidth) {
-    ele_emoji_area.style.left = (atSignBounds.left - 250)+ "px";
-  }
-  else{
-    ele_emoji_area.style.left = atSignBounds.left + "px";
+
+  if (selectionCenter < editorCenter) {
+    ele_emoji_area.style.left = selectionCenter + "px";
+  } else {
+    ele_emoji_area.style.left = (selectionCenter - 250) + "px";
   }
 
+  if (selectionMiddle < editorMiddle) {
+    ele_emoji_area.style.top = (selectionMiddle) + "px";
+  } else {
+    ele_emoji_area.style.top = (selectionMiddle - 250) + "px";
+  }
 
   let tabToolbar = document.createElement('div');
   tabToolbar.id="tab-toolbar";
