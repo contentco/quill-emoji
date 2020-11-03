@@ -38,6 +38,16 @@ const quill = new Quill(editor, {
   }
 });
 ```
+
+### Import styles
+
+Styles are presen under
+
+```
+import "quill-emoji/dist/quill-emoji.css";
+
+```
+
 ### Examples
 - [Classic HTML/JS](demo/index.html)
 - [AngularJS](demo/angular.html) using [ng-quill](https://github.com/KillerCodeMonkey/ng-quill)
