@@ -42,7 +42,7 @@ or
 
 ```
 import * as Emoji from "quill-emoji";
-Quill.register("modules/quill", Emoji);
+Quill.register("modules/emoji", Emoji);
 
 <Quill
   defaultValue=""
