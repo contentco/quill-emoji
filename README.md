@@ -45,7 +45,6 @@ Styles are presen under
 
 ```
 import "quill-emoji/dist/quill-emoji.css";
-
 ```
 
 ### Examples
