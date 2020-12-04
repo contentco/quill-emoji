@@ -29,7 +29,7 @@ const config = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'resolve-url-loader',
-          { 
+          {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
@@ -69,8 +69,8 @@ const config = {
     minimizer: [
       new UglifyJsPlugin({
         uglifyOptions: {
+          warnings: false,
           compress: {
-            warnings: false,
             conditionals: true,
             unused: true,
             comparisons: true,
