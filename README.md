@@ -38,6 +38,25 @@ const quill = new Quill(editor, {
   }
 });
 ```
+or 
+
+```
+import * as Emoji from "quill-emoji";
+Quill.register("modules/emoji", Emoji);
+
+<Quill
+  defaultValue=""
+  theme="snow"
+  modules={{
+    toolbar: toolbarOptions,
+    "emoji-toolbar": true,
+    "emoji-textarea": true,
+    "emoji-shortname": true,
+  }}
+  value={quill_data.delta}
+/>
+```
+
 ### Examples
 - [Classic HTML/JS](demo/index.html)
 - [AngularJS](demo/angular.html) using [ng-quill](https://github.com/KillerCodeMonkey/ng-quill)
