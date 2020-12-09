@@ -38,9 +38,10 @@ const quill = new Quill(editor, {
   }
 });
 ```
+
 or 
 
-```
+```javascript
 import * as Emoji from "quill-emoji";
 Quill.register("modules/emoji", Emoji);
 
@@ -56,6 +57,16 @@ Quill.register("modules/emoji", Emoji);
   value={quill_data.delta}
 />
 ```
+
+### Import styles
+
+Styles are present under
+
+```javascript
+import "quill-emoji/dist/quill-emoji.css";
+```
+
+
 
 ### Examples
 - [Classic HTML/JS](demo/index.html)
