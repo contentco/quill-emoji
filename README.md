@@ -39,13 +39,34 @@ const quill = new Quill(editor, {
 });
 ```
 
+or 
+
+```javascript
+import * as Emoji from "quill-emoji";
+Quill.register("modules/emoji", Emoji);
+
+<Quill
+  defaultValue=""
+  theme="snow"
+  modules={{
+    toolbar: toolbarOptions,
+    "emoji-toolbar": true,
+    "emoji-textarea": true,
+    "emoji-shortname": true,
+  }}
+  value={quill_data.delta}
+/>
+```
+
 ### Import styles
 
-Styles are presen under
+Styles are present under
 
-```
+```javascript
 import "quill-emoji/dist/quill-emoji.css";
 ```
+
+
 
 ### Examples
 - [Classic HTML/JS](demo/index.html)

@@ -10782,6 +10782,14 @@ let emojiList = [
     "code_decimal": "&#127487;&#127484;",
     "category": "f",
     "emoji_order": "2444"
+  },
+  {
+    "name": "speech",
+    "unicode": "1f600",
+    "shortname": ":speech:",
+    "code_decimal": "&#128172;",
+    "category": "p",
+    "emoji_order": "1"
   }
 ];
 
