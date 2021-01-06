@@ -8098,7 +8098,7 @@ let emojiList = [
   },
   {
     "name": "hash",
-    "unicode": "0023-20e3",
+    "unicode": "0023-fe0f-20e3",
     "shortname": ":hash:",
     "code_decimal": "#&#8419;",
     "category": "s",
@@ -8106,7 +8106,7 @@ let emojiList = [
   },
   {
     "name": "keycap_star",
-    "unicode": "002a-20e3",
+    "unicode": "002a-fe0f-20e3",
     "shortname": ":asterisk:",
     "code_decimal": "*&#8419;",
     "category": "s",
@@ -8114,7 +8114,7 @@ let emojiList = [
   },
   {
     "name": "zero",
-    "unicode": "0030-20e3",
+    "unicode": "0030-fe0f-20e3",
     "shortname": ":zero:",
     "code_decimal": "0&#8419;",
     "category": "s",
@@ -8122,7 +8122,7 @@ let emojiList = [
   },
   {
     "name": "one",
-    "unicode": "0031-20e3",
+    "unicode": "0031-fe0f-20e3",
     "shortname": ":one:",
     "code_decimal": "1&#8419;",
     "category": "s",
@@ -8130,7 +8130,7 @@ let emojiList = [
   },
   {
     "name": "two",
-    "unicode": "0032-20e3",
+    "unicode": "0032-fe0f-20e3",
     "shortname": ":two:",
     "code_decimal": "2&#8419;",
     "category": "s",
@@ -8138,7 +8138,7 @@ let emojiList = [
   },
   {
     "name": "three",
-    "unicode": "0033-20e3",
+    "unicode": "0033-fe0f-20e3",
     "shortname": ":three:",
     "code_decimal": "3&#8419;",
     "category": "s",
@@ -8146,7 +8146,7 @@ let emojiList = [
   },
   {
     "name": "four",
-    "unicode": "0034-20e3",
+    "unicode": "0034-fe0f-20e3",
     "shortname": ":four:",
     "code_decimal": "4&#8419;",
     "category": "s",
@@ -8154,7 +8154,7 @@ let emojiList = [
   },
   {
     "name": "five",
-    "unicode": "0035-20e3",
+    "unicode": "0035-fe0f-20e3",
     "shortname": ":five:",
     "code_decimal": "5&#8419;",
     "category": "s",
@@ -8162,7 +8162,7 @@ let emojiList = [
   },
   {
     "name": "six",
-    "unicode": "0036-20e3",
+    "unicode": "0036-fe0f-20e3",
     "shortname": ":six:",
     "code_decimal": "6&#8419;",
     "category": "s",
@@ -8170,7 +8170,7 @@ let emojiList = [
   },
   {
     "name": "seven",
-    "unicode": "0037-20e3",
+    "unicode": "0037-fe0f-20e3",
     "shortname": ":seven:",
     "code_decimal": "7&#8419;",
     "category": "s",
@@ -8178,7 +8178,7 @@ let emojiList = [
   },
   {
     "name": "eight",
-    "unicode": "0038-20e3",
+    "unicode": "0038-fe0f-20e3",
     "shortname": ":eight:",
     "code_decimal": "8&#8419;",
     "category": "s",
@@ -8186,7 +8186,7 @@ let emojiList = [
   },
   {
     "name": "nine",
-    "unicode": "0039-20e3",
+    "unicode": "0039-fe0f-20e3",
     "shortname": ":nine:",
     "code_decimal": "9&#8419;",
     "category": "s",
