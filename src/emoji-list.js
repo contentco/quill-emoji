@@ -8100,7 +8100,7 @@ let emojiList = [
     "name": "hash",
     "unicode": "0023-fe0f-20e3",
     "shortname": ":hash:",
-    "code_decimal": "#&#8419;",
+    "code_decimal": "&#35;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2106"
   },
@@ -8108,7 +8108,7 @@ let emojiList = [
     "name": "keycap_star",
     "unicode": "002a-fe0f-20e3",
     "shortname": ":asterisk:",
-    "code_decimal": "*&#8419;",
+    "code_decimal": "&#42;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2107"
   },
@@ -8116,7 +8116,7 @@ let emojiList = [
     "name": "zero",
     "unicode": "0030-fe0f-20e3",
     "shortname": ":zero:",
-    "code_decimal": "0&#8419;",
+    "code_decimal": "&#48;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2108"
   },
@@ -8124,7 +8124,7 @@ let emojiList = [
     "name": "one",
     "unicode": "0031-fe0f-20e3",
     "shortname": ":one:",
-    "code_decimal": "1&#8419;",
+    "code_decimal": "&#49;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2109"
   },
@@ -8132,7 +8132,7 @@ let emojiList = [
     "name": "two",
     "unicode": "0032-fe0f-20e3",
     "shortname": ":two:",
-    "code_decimal": "2&#8419;",
+    "code_decimal": "&#50;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2110"
   },
@@ -8140,7 +8140,7 @@ let emojiList = [
     "name": "three",
     "unicode": "0033-fe0f-20e3",
     "shortname": ":three:",
-    "code_decimal": "3&#8419;",
+    "code_decimal": "&#51;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2111"
   },
@@ -8148,7 +8148,7 @@ let emojiList = [
     "name": "four",
     "unicode": "0034-fe0f-20e3",
     "shortname": ":four:",
-    "code_decimal": "4&#8419;",
+    "code_decimal": "&#52;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2112"
   },
@@ -8156,7 +8156,7 @@ let emojiList = [
     "name": "five",
     "unicode": "0035-fe0f-20e3",
     "shortname": ":five:",
-    "code_decimal": "5&#8419;",
+    "code_decimal": "&#53;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2113"
   },
@@ -8164,7 +8164,7 @@ let emojiList = [
     "name": "six",
     "unicode": "0036-fe0f-20e3",
     "shortname": ":six:",
-    "code_decimal": "6&#8419;",
+    "code_decimal": "&#54;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2114"
   },
@@ -8172,7 +8172,7 @@ let emojiList = [
     "name": "seven",
     "unicode": "0037-fe0f-20e3",
     "shortname": ":seven:",
-    "code_decimal": "7&#8419;",
+    "code_decimal": "&#55;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2115"
   },
@@ -8180,7 +8180,7 @@ let emojiList = [
     "name": "eight",
     "unicode": "0038-fe0f-20e3",
     "shortname": ":eight:",
-    "code_decimal": "8&#8419;",
+    "code_decimal": "&#56;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2116"
   },
@@ -8188,7 +8188,7 @@ let emojiList = [
     "name": "nine",
     "unicode": "0039-fe0f-20e3",
     "shortname": ":nine:",
-    "code_decimal": "9&#8419;",
+    "code_decimal": "&#57;&#65039;&#8419;",
     "category": "s",
     "emoji_order": "2117"
   },
