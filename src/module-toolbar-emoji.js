@@ -11,7 +11,7 @@ class ToolbarEmoji extends Module {
     this.quill = quill;
     this.toolbar = quill.getModule('toolbar');
     if (typeof this.toolbar !== 'undefined')
-      this.toolbar.addHandler('emoji', this.checkPalatteExist);
+      this.toolbar.addHandler('emoji', this.checkPaletteExists);
 
     var emojiBtns = document.getElementsByClassName('ql-emoji');
     if (emojiBtns) {
@@ -21,7 +21,7 @@ class ToolbarEmoji extends Module {
     }
   }
 
-  checkPalatteExist() {
+  checkPaletteExists() {
     let quill = this.quill;
     fn_checkDialogOpen(quill);
     this.quill.on('text-change', function (delta, oldDelta, source) {
