@@ -2,7 +2,6 @@ import Quill from 'quill';
 import Fuse from 'fuse.js';
 import emojiList from './emoji-list.js';
 
-const Delta = Quill.import('delta');
 const Module = Quill.import('core/module');
 
 class ToolbarEmoji extends Module {
@@ -28,7 +27,6 @@ class ToolbarEmoji extends Module {
     this.quill.on('text-change', function (delta, oldDelta, source) {
       if (source === 'user') {
         fn_close();
-        fn_updateRange(quill);
       }
     });
   }
