@@ -51,7 +51,7 @@ function fn_checkDialogOpen(quill) {
   if (elementExists) {
     elementExists.remove();
   } else {
-    fn_showEmojiPalatte(quill);
+    fn_showEmojiPalette(quill);
   }
 }
 
@@ -60,7 +60,7 @@ function fn_updateRange(quill) {
   return range;
 }
 
-function fn_showEmojiPalatte(quill) {
+function fn_showEmojiPalette(quill) {
   let ele_emoji_area = document.createElement('div');
   let range = quill.getSelection();
   const atSignBounds = quill.getBounds(range.index);
