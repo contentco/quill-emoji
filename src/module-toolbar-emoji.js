@@ -53,11 +53,6 @@ function fn_checkDialogOpen(quill) {
   }
 }
 
-function fn_updateRange(quill) {
-  let range = quill.getSelection();
-  return range;
-}
-
 function fn_showEmojiPalette(quill) {
   const paletteWidthAndHeight = 250;
   let ele_emoji_area = document.createElement('div');
@@ -157,7 +152,7 @@ function fn_emojiElementsToPanel(type, panel, quill) {
   });
 
   quill.focus();
-  let range = fn_updateRange(quill);
+  let range = quill.getSelection();
 
   result.map(function (emoji) {
     let span = document.createElement('span');
