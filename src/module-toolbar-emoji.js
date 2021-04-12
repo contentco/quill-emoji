@@ -72,17 +72,8 @@ function fn_showEmojiPalette(quill) {
   const selectionMiddle = (selectionBounds.top + selectionBounds.bottom) / 2;
   ele_emoji_area.id = 'emoji-palette';
 
-  if (selectionCenter < editorCenter) {
-    ele_emoji_area.style.left = selectionCenter + "px";
-  } else {
-    ele_emoji_area.style.left = (selectionCenter - 250) + "px";
-  }
-
-  if (selectionMiddle < editorMiddle) {
-    ele_emoji_area.style.top = (selectionMiddle) + "px";
-  } else {
-    ele_emoji_area.style.top = (selectionMiddle - 250) + "px";
-  }
+  ele_emoji_area.style.left = selectionCenter < editorCenter ? `${selectionCenter}px` : `${selectionCenter - 250}px`;
+  ele_emoji_area.style.top = selectionMiddle < editorMiddle ? `${selectionMiddle}px` : `${selectionMiddle - 250}px`;
 
   let tabToolbar = document.createElement('div');
   tabToolbar.id = "tab-toolbar";
