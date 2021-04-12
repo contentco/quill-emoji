@@ -71,7 +71,6 @@ function fn_showEmojiPalatte(quill) {
   const selectionCenter = (atSignBounds.left + atSignBounds.right) / 2;
   const selectionMiddle = (atSignBounds.top + atSignBounds.bottom) / 2;
   ele_emoji_area.id = 'emoji-palette';
-  ele_emoji_area.style.top = 10 + atSignBounds.top + atSignBounds.height + "px";
 
   if (selectionCenter < editorCenter) {
     ele_emoji_area.style.left = selectionCenter + "px";
