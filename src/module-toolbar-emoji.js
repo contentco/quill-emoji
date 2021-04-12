@@ -169,7 +169,7 @@ function fn_emojiElementsToPanel(type, panel, quill) {
     let customButton = document.querySelector('.bem-' + emoji.name);
     if (customButton) {
       customButton.addEventListener('click', function () {
-        let emoji_icon_html = makeElement("span", {className: "ico", innerHTML: '' + emoji.code_decimal + ' '});
+        makeElement("span", {className: "ico", innerHTML: '' + emoji.code_decimal + ' '});
         quill.insertEmbed(range.index, 'emoji', emoji, Quill.sources.USER);
         setTimeout(() => quill.setSelection(range.index + 1), 0);
         fn_close();
