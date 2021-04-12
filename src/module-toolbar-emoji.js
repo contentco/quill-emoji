@@ -109,8 +109,7 @@ function fn_showEmojiPalette(quill) {
     let tabElement = document.createElement('li');
     tabElement.classList.add('emoji-tab');
     tabElement.classList.add('filter-' + emojiType.name);
-    let tabValue = emojiType.content;
-    tabElement.innerHTML = tabValue;
+    tabElement.innerHTML = emojiType.content;
     tabElement.dataset.filter = emojiType.type;
     tabElementHolder.appendChild(tabElement);
 
