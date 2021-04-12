@@ -170,7 +170,6 @@ function fn_emojiElementsToPanel(type, panel, quill) {
     if (customButton) {
       customButton.addEventListener('click', function () {
         let emoji_icon_html = makeElement("span", {className: "ico", innerHTML: '' + emoji.code_decimal + ' '});
-        let emoji_icon = emoji_icon_html.innerHTML;
         quill.insertEmbed(range.index, 'emoji', emoji, Quill.sources.USER);
         setTimeout(() => quill.setSelection(range.index + 1), 0);
         fn_close();
