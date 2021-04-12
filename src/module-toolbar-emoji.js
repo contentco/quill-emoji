@@ -62,14 +62,14 @@ function fn_updateRange(quill) {
 
 function fn_showEmojiPalette(quill) {
   let ele_emoji_area = document.createElement('div');
-  let range = quill.getSelection();
-  const atSignBounds = quill.getBounds(range.index);
+  let selection = quill.getSelection();
+  const selectionBounds = quill.getBounds(selection.index);
 
   quill.container.appendChild(ele_emoji_area);
   const editorCenter = quill.container.offsetWidth / 2;
   const editorMiddle = quill.container.offsetHeight / 2;
-  const selectionCenter = (atSignBounds.left + atSignBounds.right) / 2;
-  const selectionMiddle = (atSignBounds.top + atSignBounds.bottom) / 2;
+  const selectionCenter = (selectionBounds.left + selectionBounds.right) / 2;
+  const selectionMiddle = (selectionBounds.top + selectionBounds.bottom) / 2;
   ele_emoji_area.id = 'emoji-palette';
 
   if (selectionCenter < editorCenter) {
