@@ -104,7 +104,7 @@ function fn_showEmojiPalatte(quill) {
     let closeDiv = document.createElement('div');
     closeDiv.id = 'emoji-close-div';
     closeDiv.addEventListener("click", fn_close, false);
-    document.getElementsByTagName('body')[0].appendChild(closeDiv);
+    quill.container.appendChild(closeDiv);
   }
   else{
     document.getElementById('emoji-close-div').style.display = "block";
@@ -123,7 +123,7 @@ function fn_showEmojiPalatte(quill) {
 
     let emojiFilter = document.querySelector('.filter-'+emojiType.name);
     emojiFilter.addEventListener('click',function(){
-      let tab = document.querySelector('.active');
+      let tab = document.querySelector('#emoji-palette .emoji-tab.active');
       if (tab) {
         tab.classList.remove('active');
       }
