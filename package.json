@@ -11,7 +11,7 @@
     "file-loader": "^2.0.0",
     "image-webpack-loader": "^4.6.0",
     "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "resolve-url-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
