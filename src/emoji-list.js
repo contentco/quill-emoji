@@ -10785,11 +10785,11 @@ let emojiList = [
   },
   {
     "name": "speech",
-    "unicode": "1f4ac",
+    "unicode": "1f600",
     "shortname": ":speech:",
     "code_decimal": "&#128172;",
     "category": "p",
-    "emoji_order": "2445"
+    "emoji_order": "1"
   }
 ];
 
