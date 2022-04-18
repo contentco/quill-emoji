@@ -115,7 +115,7 @@ function fn_showEmojiPalette(quill) {
 
     let emojiFilter = document.querySelector('.filter-' + emojiType.name);
     emojiFilter.addEventListener('click', function () {
-      let tab = document.querySelector('.active');
+      let tab = document.querySelector('#emoji-palette .emoji-tab.active');
       if (tab) {
         tab.classList.remove('active');
       }
@@ -161,14 +161,14 @@ function fn_emojiElementsToPanel(type, panel, quill) {
     span.classList.add('bem-' + emoji.name);
     span.classList.add('ap');
     span.classList.add('ap-' + emoji.name);
-    let output = '' + emoji.code_decimal + '';
+    let output = ` ${emoji.code_decimal} `;
     span.innerHTML = output + ' ';
     panel.appendChild(span);
 
     let customButton = document.querySelector('.bem-' + emoji.name);
     if (customButton) {
       customButton.addEventListener('click', function () {
-        makeElement("span", {className: "ico", innerHTML: '' + emoji.code_decimal + ' '});
+        makeElement("span", {className: "ico", innerHTML: output});
         quill.insertEmbed(range.index, 'emoji', emoji, Quill.sources.USER);
         setTimeout(() => quill.setSelection(range.index + 1), 0);
         fn_close();

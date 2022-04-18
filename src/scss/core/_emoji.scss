@@ -8,19 +8,17 @@
 
 .ap {
     display: inline-flex;
-    height: 20px;
-    width: 20px;
-    background-image: url('../../sheet_apple_64.png');
-    background-size: 820px;
-    background-repeat: no-repeat;
-    text-indent: -999px;
-    // padding-left: 20px;
-    box-sizing: border-box;
-    // For emoji fallback
-    font-size: 20px;
+    height: inherit;
+    width: inherit;
+    font-size: inherit;
     line-height: 1;
     overflow: hidden;
-    margin-top: -3px;
+}
+
+span.bem {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
 }
 
 .ap-copyright {
