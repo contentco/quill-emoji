@@ -39,18 +39,6 @@ const config = {
         ],
       },
       {
-        test: /\.(jpg|png|gif)$/i,
-        include: /src/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ],
-      },
-      {
         test: /\.js$/,
         include: [
           path.resolve(__dirname, "src/")
