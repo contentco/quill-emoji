@@ -25,9 +25,11 @@ class ToolbarEmoji extends Module {
     let quill = this.quill;
     fn_checkDialogOpen(quill);
     this.quill.on('text-change', function (delta, oldDelta, source) {
-      if (source === 'user') {
-        fn_close();
-      }
+      if (source === 'user') fn_close();
+    });
+
+    this.quill.on('selection-change', (delta, oldDelta, source) => {
+      if (source === 'user') fn_close();
     });
   }
 }
@@ -36,7 +38,8 @@ ToolbarEmoji.DEFAULTS = {
   buttonIcon: '<svg viewbox="0 0 18 18"><circle class="ql-fill" cx="7" cy="7" r="1"></circle><circle class="ql-fill" cx="11" cy="7" r="1"></circle><path class="ql-stroke" d="M7,10a2,2,0,0,0,4,0H7Z"></path><circle class="ql-stroke" cx="9" cy="9" r="6"></circle></svg>'
 };
 
-function fn_close() {
+function fn_close(e) {
+  e.stopPropagation();
   let ele_emoji_plate = document.getElementById('emoji-palette');
   document.getElementById('emoji-close-div').style.display = "none";
   if (ele_emoji_plate) {
@@ -114,7 +117,8 @@ function fn_showEmojiPalette(quill) {
     tabElementHolder.appendChild(tabElement);
 
     let emojiFilter = document.querySelector('.filter-' + emojiType.name);
-    emojiFilter.addEventListener('click', function () {
+    emojiFilter.addEventListener('click', function (e) {
+      e.stopPropagation();
       let tab = document.querySelector('#emoji-palette .emoji-tab.active');
       if (tab) {
         tab.classList.remove('active');
@@ -167,7 +171,8 @@ function fn_emojiElementsToPanel(type, panel, quill) {
 
     let customButton = document.querySelector('.bem-' + emoji.name);
     if (customButton) {
-      customButton.addEventListener('click', function () {
+      customButton.addEventListener('click', function (e) {
+        e.stopPropagation();
         makeElement("span", {className: "ico", innerHTML: output});
         quill.insertEmbed(range.index, 'emoji', emoji, Quill.sources.USER);
         setTimeout(() => quill.setSelection(range.index + 1), 0);
