@@ -41,6 +41,7 @@
   "homepage": "https://github.com/contentco/quill-emoji#readme",
   "dependencies": {
     "emoji-data-css": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "fuse.js": "^3.3.0"
   },
   "peerDependencies": {
