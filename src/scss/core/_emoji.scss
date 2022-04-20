@@ -6,15 +6,13 @@
 
 .ap {
   display: inline-flex;
-  width: 1.3em;
   font-size: 1.3em;
   box-sizing: border-box;
   line-height: 1;
 }
 
 span.bem {
-  line-height: inherit;
-  font-size: 24px;
-  width: 34px;
   display: inline-block;
+  font-size: 24px;
+  line-height: inherit;
 }
