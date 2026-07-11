@@ -21,7 +21,17 @@ class EmojiBlot extends Embed {
   }
 
   static value(node) {
-    return node.dataset.name;
+    const name = node.dataset.name;
+    const imageUrl = node.dataset.imageUrl;
+
+    if (imageUrl) {
+      return {
+        name,
+        imageUrl,
+        isAnimated: node.dataset.isAnimated === "true",
+      }
+    }
+    return name;
   }
 
   static buildSpan(value, node) {
@@ -29,10 +39,26 @@ class EmojiBlot extends Embed {
     let emojiSpan = document.createElement('span');
     emojiSpan.classList.add(this.emojiClass);
     emojiSpan.classList.add(this.emojiPrefix + value.name);
-    // unicode can be '1f1f5-1f1ea',see emoji-list.js.
-    emojiSpan.innerText = String.fromCodePoint(...EmojiBlot.parseUnicode(value.unicode));
+
+    if (value.imageUrl) {
+      node.setAttribute('data-image-url', value.imageUrl);
+      if (value.isAnimated) node.setAttribute('data-is-animated', value.isAnimated);
+      let image = document.createElement('img');
+      image.src = value.imageUrl;
+      image.alt = `:${value.name}:`; // :emoji-name: rather than emoji-name
+      image.draggable = false;
+
+      emojiSpan.classList.add(this.imageClass);
+      if (value.isAnimated) emojiSpan.classList.add(this.animatedClass);
+      emojiSpan.appendChild(image);
+    } else {
+      // unicode can be '1f1f5-1f1ea',see emoji-list.js.
+      emojiSpan.innerText = String.fromCodePoint(...EmojiBlot.parseUnicode(value.unicode));
+    }
+
     node.appendChild(emojiSpan);
   }
+
   static parseUnicode(string) {
     return string.split('-').map(str => parseInt(str, 16));
   }
@@ -43,5 +69,7 @@ EmojiBlot.className = 'ql-emojiblot';
 EmojiBlot.tagName = 'span';
 EmojiBlot.emojiClass = 'ap';
 EmojiBlot.emojiPrefix = 'ap-';
+EmojiBlot.imageClass = 'qe-image';
+EmojiBlot.animatedClass = 'qe-image-animated';
 
 export default EmojiBlot;
